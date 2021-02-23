@@ -65,7 +65,7 @@ class Biblioteca {
 public:
 
 	/**
-	 * @broef	Constructor por defecto de la clase Biblioteca
+	 * @brief	Constructor por defecto de la clase Biblioteca
 	 */
 	Biblioteca() :
 			usur(), pedido_usu(), pedidoBi(), libro() {
@@ -90,7 +90,7 @@ public:
 	Usuario* buscaUsuario(string login, string clave);
 
 	/**
-	 * @biref
+	 * @brief
 	 * @param [in] fichero string.
 	 */
 	void cargaLibros(string fichero);
