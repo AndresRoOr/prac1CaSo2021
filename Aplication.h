@@ -1,6 +1,6 @@
 /**
  * @file	Aplication.h
- * @brief
+ * @brief	Archivo cabecera donde se almacena la información de la clase Aplication
  */
 
 #ifndef APLICATION_H

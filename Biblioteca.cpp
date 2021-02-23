@@ -1,3 +1,7 @@
+/**
+ * @file	Biblioteca.cpp
+ * @brief	Contiene el código fuente de los elementos del archivo cabecera Biblioteca.h
+ */
 #include "Biblioteca.h"
 
 bool Biblioteca::nuevoUsuario(string login, string nombre, string clave) {
@@ -62,9 +66,6 @@ void Biblioteca::cargaLibros(string fichero) {
     entrada.close();
 }
 
-/*
- * Devuelve una lista con los libros que contengan el STRING TITULO
- */
 lista_sin<Libro *> * Biblioteca::consultaLibros(string titulo) {
     unsigned i;
     int pos = -1;
@@ -81,9 +82,6 @@ lista_sin<Libro *> * Biblioteca::consultaLibros(string titulo) {
 
 }
 
-/*
- * Crea un pedido de Usuario.
- */
 PedidoUsuario* Biblioteca::creaPedidoUsuario(Usuario *usuario, Libro *libro, int prioridad) {
 
     Fecha fecha;
@@ -94,10 +92,6 @@ PedidoUsuario* Biblioteca::creaPedidoUsuario(Usuario *usuario, Libro *libro, int
     return pusus;
 }
 
-/*
- * Crea lista pedidio de Biblioteca y devuelvo su referencia.
- * Inicialmente estará vacío a espera de que se añadan pedidos de Usuario.
- */
 PedidoBiblioteca* Biblioteca::abrePedidoBiblioteca(unsigned anum) {
 
     PedidoBiblioteca * ped = new PedidoBiblioteca(anum);
@@ -105,9 +99,6 @@ PedidoBiblioteca* Biblioteca::abrePedidoBiblioteca(unsigned anum) {
     return ped;
 }
 
-/*
- * Añade un pedido de Usuario a un pedido de Biblioteca, pone pedidoUsuario tramitado.
- */
 void Biblioteca::tramitaPedidoUsuario(PedidoUsuario* pedidoUsuario, PedidoBiblioteca *ped) {
     if (ped != NULL) {
         ped->insertaPedidoLibro(pedidoUsuario);
@@ -115,9 +106,6 @@ void Biblioteca::tramitaPedidoUsuario(PedidoUsuario* pedidoUsuario, PedidoBiblio
     } else throw excepcionesBi::pedidoBibliotecaNoencontrado();
 }
 
-/*
- * Cierra un pedido de biblioteca marcándolo como tramitado.
- */
 void Biblioteca::cierraPedidoBiblioteca(PedidoBiblioteca *ped, unsigned num) {
 
     if (ped != NULL) {
@@ -129,9 +117,6 @@ void Biblioteca::cierraPedidoBiblioteca(PedidoBiblioteca *ped, unsigned num) {
     } else throw excepcionesBi::pedidoBibliotecaNoencontrado();
 }
 
-/*
- * Devuelve una lista con las refencias a todos los pedidos de un usuario pendientes
- */
 lista_sin<PedidoUsuario *> * Biblioteca::buscaPedidosUsuarioPendientes(Usuario *usuario) {
 
     unsigned i = 0;
@@ -148,9 +133,6 @@ lista_sin<PedidoUsuario *> * Biblioteca::buscaPedidosUsuarioPendientes(Usuario *
 
 }
 
-/*
- * Devuelve una lista con las referencias a todos los pedidos de un usuario tramitados
- */
 lista_sin<PedidoUsuario *> * Biblioteca::buscaPedidosUsuarioTramitados(Usuario *usuario) {
 
     unsigned i = 0;
@@ -167,9 +149,6 @@ lista_sin<PedidoUsuario *> * Biblioteca::buscaPedidosUsuarioTramitados(Usuario *
     return pedTramitados;
 }
 
-/*
- * Devuelve una lista con las referencias a los pedidios de biblioteca pendientes
- */
 lista_sin<PedidoBiblioteca *> * Biblioteca::buscaPedidosBibliotecaPendientes() {
 
     unsigned i = 0;
@@ -186,9 +165,6 @@ lista_sin<PedidoBiblioteca *> * Biblioteca::buscaPedidosBibliotecaPendientes() {
     else throw excepcionesBi::pedidoBibliotecaNoencontrado();
 }
 
-/*
- * Devuelve una lista de las referencias de los pedidos de biblioteca tramitados
- */
 lista_sin<PedidoBiblioteca *> * Biblioteca::buscaPedidosBibliotecaTramitados() {
 
     unsigned i = 0;
