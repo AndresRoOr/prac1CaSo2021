@@ -1,3 +1,8 @@
+/**
+ * @file Libro.cpp
+ * @brief Contiene el código fuente de todas las funciones del archivo cabecera Libro.h
+ */
+
 #include "Libro.h"
 
 Libro::Libro() {
