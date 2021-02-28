@@ -1,10 +1,16 @@
 /**
  * @file	Aplication.cpp
- * @brief
+ * @brief Desarrollo de la clase Aplicacion comenzando por su constructor por defecto en el cual
+ * se inicializan todas las estructuras de datos para llevar a cabo la gestion.
  */
 
 #include "Aplication.h"
 
+/**
+ * @brief Constructor por defecto.
+ * @param Nada.
+ * @return Nada.
+ */
 Aplication::Aplication() {
 	pedusu = new lista_sin<PedidoUsuario *>;
 	pedbi = new lista_sin<PedidoBiblioteca *>;
@@ -16,45 +22,36 @@ Aplication::Aplication() {
 
 }
 
+/**
+ * @brief Aqui se ha solicitado previamente una clave que si coincide da entrada al esquema de admin.
+ * @param [in] Clave.
+ * @return Nada.
+ */
 void Aplication::aplicacion_admin() {
 
 	int opcion;
 	unsigned i = 0, num, nume_ped_bi, cpb = 0;
 	string aclave, alogin, contra = "hola", contrase;
-	cout << " Introduzca contrasenia: " << endl;
+	cout << " Introduzca contrase�a: " << endl;
 	cin >> contrase;
 	if (contrase.compare(contra) == 0) {
 
 		do {
-			cout
-					<< "  			*********   Bienvenido a la Administracion de la Aplicacion Wikilibros   ********\n\n"
-					<< endl;
-			cout
-					<< "De entre las siguientes opciones indique la que quiera elegir, para salir pulse 0: "
-					<< endl;
-			cout << endl;
-			cout
-					<< " 		1.- Muestra lista de pedidos pendientes de un usuario. \n 		2.- Cierra pedido biblioteca. "
-					<< endl;
+			cout << "  			#########   Bienvenido a la Administracion de la nuestra biblioteca.   #########\n\n" << endl;
+			cout << "De entre las siguientes opciones indique la que quiera elegir, para salir pulse 0: " << endl << endl;
+			cout << " 		1.- Muestra lista de pedidos pendientes de un usuario. \n" << endl;
+			cout <<	"  		2.- Cierra pedido biblioteca. "	<< endl;
 			cout << "		3.- Crear pedido biblioteca. " << endl;
 			cout << " 		4.- Tramitar pedidos de un usuario. " << endl;
-			cout
-					<< " 		5.- Muestra una lista de pedidos de un usuario tramitados . "
-					<< endl;
-			cout
-					<< " 		6.- Muestra una lista de pedidos tramitados de la biblioteca. "
-					<< endl;
-			cout
-					<< " 		7.- Muestra una lista de pedidos pednientes de la biblioteca. "
-					<< endl;
+			cout << " 		5.- Muestra una lista de pedidos de un usuario tramitados . " << endl;
+			cout << " 		6.- Muestra una lista de pedidos tramitados de la biblioteca. "	<< endl;
+			cout << " 		7.- Muestra una lista de pedidos pednientes de la biblioteca. "	<< endl;
 			cin >> opcion;
-
 			switch (opcion) {
+
 			case 1: {
 				i = 0;
-				cout
-						<< " Introduzca el usuario del cual quiere saber sus pedidos pendientes: "
-						<< endl;
+				cout << " Introduzca el usuario del cual quiere saber sus pedidos pendientes: "	<< endl;
 				cout << " Introduzca el login: " << endl;
 				cin >> alogin;
 				cout << " Introudzca la clave del usuario: " << endl;
@@ -72,7 +69,6 @@ void Aplication::aplicacion_admin() {
 				} catch (excepcionesBi::pedidoUsuarioNoencontrado) {
 					cout << " El usuario no tiene pedidos pendientes. " << endl;
 				}
-
 			}
 				break;
 
@@ -198,9 +194,15 @@ void Aplication::aplicacion_admin() {
 			}
 		} while (opcion != 0);
 	} else
-		cout << " Contrasenia introducida no válida. " << endl;
+		cout << " Contrase�a introducida no valida. " << endl;
 }
 
+
+/**
+ * @brief Si no sabes la clave de admin has de entrar como usuario registrandote en el sistema.
+ * @param [in] Registro de usuario.
+ * @return Nada.
+ */
 void Aplication::aplicacion_usuario() {
 
 	int opcion;
@@ -213,11 +215,11 @@ void Aplication::aplicacion_usuario() {
 		cout << " No se han podido cargar los libros. " << endl;
 	}
 
-	cout << "Bienvenido a la Biblioteca\n\n" << endl;
+	cout << "Bienvenido a nuestra Biblioteca\n\n" << endl;
 	do {
 		cout << "Elija una opcion, para salir pulse 0" << endl;
-		cout << "1. Registrase en la aplicación. " << endl;
-		cout << "2. Cambiar contraseña. " << endl;
+		cout << "1. Registrase en la aplicacion. " << endl;
+		cout << "2. Cambiar contrase�a. " << endl;
 		cout << "3. Consultar un libro. " << endl;
 		cout << "4. Realizar pedido. " << endl;
 		cin >> opcion;
@@ -228,11 +230,11 @@ void Aplication::aplicacion_usuario() {
 			cin >> alogin;
 			cout << " Introduzca nombre. " << endl;
 			cin >> anombre;
-			cout << " Introduzca una contraseña. " << endl;
+			cout << " Introduzca una contrase�a. " << endl;
 			cin >> aclave;
 			var = bi.nuevoUsuario(alogin, anombre, aclave);
 			if (var == false)
-				cout << "El login o clave están ya en uso. " << endl;
+				cout << "El login o clave estan ya en uso. " << endl;
 			else {
 				cout << " Registro correcto. " << endl;
 			}
@@ -249,7 +251,7 @@ void Aplication::aplicacion_usuario() {
 				cin >> claven;
 				usu->cambiarClave(claven);
 			} catch (excepcionesBi::usuNoEncontrado) {
-				cout << " La clave introducida no es válida. " << endl;
+				cout << " La clave introducida no es valida. " << endl;
 			}
 		}
 			break;

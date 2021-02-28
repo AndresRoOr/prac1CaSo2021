@@ -7,8 +7,8 @@ int main() {
     unsigned opcion;
     Aplication aplica;
     do {
-        cout << "Bienvenido a mi biblioteca pulse:\n" << endl;
-        cout << "1.- ContraseÃ±a de admin. " << endl;
+        cout << "Bienvenido a nuestra biblioteca pulse:\n" << endl;
+        cout << "1.- Contraseña de admin. " << endl;
         cout << "2.- Registrarse como usuario. " << endl;
         cout << "0.- Salir. " << endl;
         cin >> opcion;
