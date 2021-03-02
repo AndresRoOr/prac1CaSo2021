@@ -33,14 +33,14 @@ public:
 	void rellena(string anombre, string alogin, string aclave);
 
 	/**
-	 * @brief
+	 * @brief Devuelve un booleano para saber si existe la clave.
 	 * @param [in] claven string.
-	 * @return
+	 * @return True si existe la clave, false en cualquier otro caso
 	 */
 	bool validarClave(string claven);
 
 	/**
-	 * @brief
+	 * @brief Cambia el atributo clave con el valor pasado como parámetro
 	 * @param [in] nuevaClave string.
 	 */
 	void cambiarClave(string nuevaClave);
