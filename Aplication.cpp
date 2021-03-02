@@ -24,7 +24,7 @@ Aplication::Aplication() {
 
 /**
  * @brief Aqui se ha solicitado previamente una clave que si coincide da entrada al esquema de admin.
- * @param [in] Clave.
+ * @pre Clave correcta.
  * @return Nada.
  */
 void Aplication::aplicacion_admin() {
@@ -73,9 +73,7 @@ void Aplication::aplicacion_admin() {
 				break;
 
 			case 2: {
-				cout
-						<< " Introduzca la numeracion del pedido biblioteca el cual quiere tramitar. "
-						<< endl;
+				cout << " Introduzca la numeracion del pedido de la biblioteca que quiere tramitar: "	<< endl;
 				cin >> num;
 				num--;
 				try {
@@ -88,8 +86,7 @@ void Aplication::aplicacion_admin() {
 				break;
 
 			case 3: {
-				cout << " Se ha creado el pedido de biblioteca nÂº: " << ++cpb
-						<< endl;
+				cout << " Se ha creado el pedido de biblioteca num: " << ++cpb << endl;
 				pedbipunt = bi.abrePedidoBiblioteca(--cpb);
 				cpb++;
 			}
@@ -97,23 +94,17 @@ void Aplication::aplicacion_admin() {
 
 			case 4: {
 				PedidoUsuario * min = new PedidoUsuario;
-				cout
-						<< " Introduzca los datos del usuario el cual quiere tramitar su pedidos: "
-						<< endl;
+				cout << " Introduzca los datos del usuario del que quiere tramitar sus pedidos: " << endl;
 				cout << " Introudzca la clave del usuario: " << endl;
 				cin >> aclave;
 				cout << " Introduzca el login: " << endl;
 				cin >> alogin;
-				cout
-						<< " Introduzca el numero del pedido biblioteca al cual quiere dirigir el pedido usuario. "
-						<< endl;
+				cout << " Introduzca el numero del pedido de la biblioteca a la que quiere dirigir el pedido del usuario: " << endl;
 				cin >> nume_ped_bi;
 				nume_ped_bi--;
 				try {
-					//Obtengo el pedido biblioteca cn el numero especificado
-					pedBi = bi.daListaPedBiblioteca(nume_ped_bi);
+					pedBi = bi.daListaPedBiblioteca(nume_ped_bi);///< Obtengo el pedido biblioteca con el numero especificado.
 					usu = bi.buscaUsuario(alogin, aclave);
-
 					pedusu = bi.buscaPedidosUsuarioPendientes(usu);
 					i = 0;
 					min = pedusu->lee(0);
@@ -128,16 +119,14 @@ void Aplication::aplicacion_admin() {
 				} catch (excepcionesBi::usuNoEncontrado) {
 					cout << " Usuario no encontrado. " << endl;
 				} catch (excepcionesBi::pedidoBibliotecaNoencontrado) {
-					cout << " El Pedido Biblioteca no fue creado. " << endl;
+					cout << " El Pedido de la Biblioteca no fue creado. " << endl;
 				}
 			}
 				break;
 
 			case 5: {
 				i = 0;
-				cout
-						<< " Introduzca el usuario del cual quiere saber sus pedidos pendientes: "
-						<< endl;
+				cout << " Introduzca el usuario del que quiere saber sus pedidos pendientes: " << endl;
 				cout << " Introduzca la clave del usuario: " << endl;
 				cin >> aclave;
 				cout << " Introduzca el login: " << endl;
@@ -160,16 +149,13 @@ void Aplication::aplicacion_admin() {
 				try {
 					i = 0;
 					pedbi = bi.buscaPedidosBibliotecaTramitados();
-					cout
-							<< " La lista de pedidos de bilioteca tramitados es la siguiente"
-							<< endl;
+					cout << " La lista de pedidos de la bilioteca tramitados es la siguiente: " << endl;
 					while (i < pedbi->tamanio()) {
 						cout << *(pedbi->lee(i)) << endl;
 						i++;
 					}
 				} catch (excepcionesBi::pedidoBibliotecaNoencontrado) {
-					cout << " No existen pedidos de biblioteca ttramitados. "
-							<< endl;
+					cout << " No existen pedidos de la biblioteca tramitados. " << endl;
 				}
 			}
 				break;
@@ -179,17 +165,14 @@ void Aplication::aplicacion_admin() {
 				try {
 					pedbi = bi.buscaPedidosBibliotecaPendientes();
 					cout
-							<< " La lista de pedidos de bilioteca pendientes es la siguiente"
-							<< endl;
+							<< " La lista de pedidos de la bilioteca pendientes es la siguiente: "	<< endl;
 					while (i < pedbi->tamanio()) {
 						cout << *(pedbi->lee(i)) << endl;
 						i++;
 					}
 				} catch (excepcionesBi::pedidoBibliotecaNoencontrado) {
-					cout << " No existen pedidos de biblioteca pendientes. "
-							<< endl;
+					cout << " No existen pedidos de la biblioteca pendientes. " << endl;
 				}
-
 			}
 			}
 		} while (opcion != 0);
@@ -200,7 +183,7 @@ void Aplication::aplicacion_admin() {
 
 /**
  * @brief Si no sabes la clave de admin has de entrar como usuario registrandote en el sistema.
- * @param [in] Registro de usuario.
+ * @pre Clave de usuario o posibilidad de registrarte como un nuevo usuario.
  * @return Nada.
  */
 void Aplication::aplicacion_usuario() {
@@ -215,26 +198,26 @@ void Aplication::aplicacion_usuario() {
 		cout << " No se han podido cargar los libros. " << endl;
 	}
 
-	cout << "Bienvenido a nuestra Biblioteca\n\n" << endl;
+	cout << "Bienvenido a nuestra Biblioteca.\n\n" << endl;
 	do {
-		cout << "Elija una opcion, para salir pulse 0" << endl;
-		cout << "1. Registrase en la aplicacion. " << endl;
+		cout << "Elija una opcion, para salir pulse 0." << endl;
+		cout << "1. Registrarse en la aplicacion. " << endl;
 		cout << "2. Cambiar contraseña. " << endl;
 		cout << "3. Consultar un libro. " << endl;
-		cout << "4. Realizar pedido. " << endl;
+		cout << "4. Realizar un pedido. " << endl;
 		cin >> opcion;
 		switch (opcion) {
 		case 1: {
 			i = 0;
 			cout << " Introduzca un login. " << endl;
 			cin >> alogin;
-			cout << " Introduzca nombre. " << endl;
+			cout << " Introduzca un nombre. " << endl;
 			cin >> anombre;
 			cout << " Introduzca una contraseña. " << endl;
 			cin >> aclave;
 			var = bi.nuevoUsuario(alogin, anombre, aclave);
 			if (var == false)
-				cout << "El login o clave estan ya en uso. " << endl;
+				cout << "El login o la clave estan ya en uso. " << endl;
 			else {
 				cout << " Registro correcto. " << endl;
 			}
@@ -243,7 +226,7 @@ void Aplication::aplicacion_usuario() {
 		case 2: {
 			cout << " Introduzca login actual. " << endl;
 			cin >> alogin;
-			cout << " Introduzca contraseÃ±a actual. " << endl;
+			cout << " Introduzca contraseña actual. " << endl;
 			cin >> aclave;
 			try {
 				usu = bi.buscaUsuario(alogin, aclave);
@@ -256,7 +239,7 @@ void Aplication::aplicacion_usuario() {
 		}
 			break;
 		case 3: {
-			cout << " Introduzca una palabra clave del libro. " << endl;
+			cout << " Introduzca una palabra clave del libro: " << endl;
 			cin >> atitulo;
 			try {
 				libro = bi.consultaLibros(atitulo);
@@ -272,9 +255,9 @@ void Aplication::aplicacion_usuario() {
 		}
 			break;
 		case 4: {
-			cout << " Introduzca el ISBN. " << endl;
+			cout << " Introduzca el ISBN: " << endl;
 			cin >> aISBN;
-			cout << " Introduzca el titulo. " << endl;
+			cout << " Introduzca el titulo: " << endl;
 			cin >> atitulo;
 			try {
 				libro = bi.consultaLibros(atitulo);
