@@ -10,6 +10,7 @@ PedidoBiblioteca::PedidoBiblioteca() :
 	importe = 0;
 	tramitado = false;
 	this->pedido_usu = pedido_usu;
+	num = 0;
 }
 
 void PedidoBiblioteca::insertaPedidoLibro(PedidoUsuario *pedidoUsuario) {

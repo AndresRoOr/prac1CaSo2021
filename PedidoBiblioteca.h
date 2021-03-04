@@ -14,7 +14,7 @@
  * @brief Clase que representa de manera generica un pedido hecho por la biblioteca.
  */
 class PedidoBiblioteca {
-	Fecha fecha;    ///< Queda registrada la fecha del pedido actualizada con la fecha y hora del sistema.
+	Fecha fecha; ///< Queda registrada la fecha del pedido actualizada con la fecha y hora del sistema.
 	float importe;  ///< Importe total de todos los usuarios.
 	bool tramitado; ///< Booleano a true si el pedido esta tramitado, false en otro caso.
 	unsigned num;   ///< Numero de pedido de biblioteca.

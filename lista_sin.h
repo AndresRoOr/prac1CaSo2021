@@ -15,8 +15,8 @@ template<class T>
  */
 struct nodo {
 
-	T date;///<
-	nodo<T> * sige;///<
+	T date; ///<
+	nodo<T> * sige; ///<
 };
 
 template<class T>
@@ -24,10 +24,10 @@ template<class T>
  * @brief
  */
 class lista_sin {
-	nodo<T> *nuevo;///<
-	nodo<T> *primero;///<
-	nodo<T> *ultimo;///<
-	unsigned numElem;///<
+	nodo<T> *nuevo; ///<
+	nodo<T> *primero; ///<
+	nodo<T> *ultimo; ///<
+	unsigned numElem; ///<
 
 public:
 
@@ -117,12 +117,14 @@ lista_sin<T>::lista_sin() {
 
 template<class T>
 lista_sin<T>::lista_sin(lista_sin &list) {
+	nuevo = NULL;
 	primero = NULL;
 	ultimo = NULL;
 	numElem = 0;
 	for (unsigned i = 0; i < list.tamanio(); i++) {
 		this->aumenta(list.lee(i));
 	}
+
 }
 
 template<class T>

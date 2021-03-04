@@ -10,10 +10,12 @@
  * @return La inicializacion de un pedido por parte del usuario con su fecha, precio, etc.
  */
 PedidoUsuario::PedidoUsuario() :
-	fecha()      {     ///< Fecha que queda registrada al hacer un pedido.
+		fecha() {     ///< Fecha que queda registrada al hacer un pedido.
 	prioridad = 0;     ///< Prioridad concedida al pedido del usuario.
 	precio = 0;        ///< Precio del pedido inicializado a cero.
 	tramitado = false; ///< De entrada el pedido aun no ha sido tramitado.
+	libro = NULL;
+	usuario = NULL;
 }
 
 /**
@@ -26,9 +28,10 @@ PedidoUsuario::PedidoUsuario() :
  * @param tramitado.
  * @return La instancia copia de un objeto PedidoUsuario con todos sus atributos.
  */
-PedidoUsuario::PedidoUsuario(Libro *libro, Usuario *usuario, Fecha aFecha, int aPrioridad, float aPrecio, bool aTramitado) {
-	fecha = aFecha;          ///< Copia de la fecha que queda registrada al hacer un pedido.
-	prioridad = aPrioridad;  ///< Copia de la prioridad que queda registrada al hacer un pedido.
+PedidoUsuario::PedidoUsuario(Libro *libro, Usuario *usuario, Fecha aFecha,
+		int aPrioridad, float aPrecio, bool aTramitado) {
+	fecha = aFecha; ///< Copia de la fecha que queda registrada al hacer un pedido.
+	prioridad = aPrioridad; ///< Copia de la prioridad que queda registrada al hacer un pedido.
 	precio = aPrecio;        ///< Copia del precio de un pedido.
 	tramitado = aTramitado;  ///< Copia de la tramitacion de un pedido.
 	this->usuario = usuario; ///< Referencia al usuario mediante el objeto this.
@@ -51,8 +54,8 @@ bool PedidoUsuario::tramitaPedido() {
  */
 ostream& operator<<(ostream& co, const PedidoUsuario& pu) {
 	co << "Fecha: " << pu.fecha << endl << "Precio: " << pu.precio << endl
-	   << "Tramitado: " << pu.tramitado << endl << "Prioridad: "
-       << pu.prioridad << endl;
+			<< "Tramitado: " << pu.tramitado << endl << "Prioridad: "
+			<< pu.prioridad << endl;
 	return co;
 }
 
