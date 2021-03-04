@@ -32,15 +32,11 @@ public:
 
 	/**
 	 * @brief Da la entrada al esquema de usuario.
-	 * @param Nada.
-	 * @return Nada.
 	 */
 	void aplicacion_usuario();
 
 	/**
 	 * @brief Da la entrada al esquema de usuario.
-	 * @param Nada.
-	 * @return Nada.
 	 */
 	void aplicacion_admin();
 
