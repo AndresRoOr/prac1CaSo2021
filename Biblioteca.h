@@ -99,7 +99,7 @@ public:
 	PedidoBiblioteca* abrePedidoBiblioteca(unsigned anum);
 
 	/**
-	 * @brief Añade un pedido de Usuario a un pedido de Biblioteca, pone pedidoUsuario tramitado.
+	 * @brief AÃ±ade un pedido de Usuario a un pedido de Biblioteca, pone pedidoUsuario tramitado.
 	 */
 	void tramitaPedidoUsuario(PedidoUsuario *pedidoUsuario,	PedidoBiblioteca *ped);
 
