@@ -67,7 +67,7 @@ public:
 	}
 
 	/**
-	 * @brief Sobrecarga del operador << (de insercion) que permite entre otras cosas mostrar una fecha con cout.
+	 * @brief Sobrecarga del operador << (de insercion) que permite entre otras cosas mostrar un usuario con cout.
 	 */
 	friend ostream& operator<<(ostream&, const Usuario&);
 
