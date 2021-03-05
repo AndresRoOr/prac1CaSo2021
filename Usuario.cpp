@@ -79,7 +79,7 @@ void Usuario::cambiarClave(string claven) {
 
 
 /**
- * @brief Sobrecarga del operador << (de insercion) que permite entre otras cosas mostrar una fecha con cout.
+ * @brief Sobrecarga del operador << (de insercion) que permite entre otras cosas mostrar un usuario con cout.
  * @param [in] ostream. El propio flujo de salida (por referencia).
  * @param [in] Usuario. Un usuario en concreto con su nombre y login (por referencia tambien).
  * @return El flujo de salida ostream debidamente sobrecargado.
