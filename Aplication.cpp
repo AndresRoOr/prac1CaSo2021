@@ -8,8 +8,6 @@
 
 /**
  * @brief Constructor por defecto.
- * @param Nada.
- * @return Nada.
  */
 Aplication::Aplication() {
 	pedusu = new lista_sin<PedidoUsuario *>;
@@ -23,16 +21,15 @@ Aplication::Aplication() {
 }
 
 /**
- * @brief Aqui se ha solicitado previamente una clave que si coincide da entrada al esquema de admin.
- * @pre Clave correcta.
- * @return Nada.
+ * @brief Aqui se ha solicitado previamente una clave que, si coincide, da entrada al esquema de admin.
+ * @pre La clave debe ser correcta.
  */
 void Aplication::aplicacion_admin() {
 
 	int opcion;
 	unsigned i = 0, num, nume_ped_bi, cpb = 0;
 	string aclave, alogin, contra = "hola", contrase;
-	cout << " Introduzca contraseña: " << endl;
+	cout << " Introduzca contraseï¿½a: " << endl;
 	cin >> contrase;
 	if (contrase.compare(contra) == 0) {
 
@@ -176,13 +173,12 @@ void Aplication::aplicacion_admin() {
 			}
 		} while (opcion != 0);
 	} else
-		cout << " Contraseña introducida no valida. " << endl;
+		cout << " Contraseï¿½a introducida no valida. " << endl;
 }
 
 /**
  * @brief Si no sabes la clave de admin has de entrar como usuario registrandote en el sistema.
  * @pre Clave de usuario o posibilidad de registrarte como un nuevo usuario.
- * @return Nada.
  */
 void Aplication::aplicacion_usuario() {
 
@@ -211,7 +207,7 @@ void Aplication::aplicacion_usuario() {
 			cin >> alogin;
 			cout << " Introduzca un nombre. " << endl;
 			cin >> anombre;
-			cout << " Introduzca una contraseña. " << endl;
+			cout << " Introduzca una contraseï¿½a. " << endl;
 			cin >> aclave;
 			var = bi.nuevoUsuario(alogin, anombre, aclave);
 			if (var == false)
@@ -224,7 +220,7 @@ void Aplication::aplicacion_usuario() {
 		case 2: {
 			cout << " Introduzca login actual. " << endl;
 			cin >> alogin;
-			cout << " Introduzca contraseña actual. " << endl;
+			cout << " Introduzca contraseï¿½a actual. " << endl;
 			cin >> aclave;
 			try {
 				usu = bi.buscaUsuario(alogin, aclave);
