@@ -1,6 +1,6 @@
 /**
  * @file PedidoUsusario.h
- * @brief Archivo cabecera donde se almacena la informacion de la clase PedidoUsuario
+ * @brief Archivo cabecera donde se almacena la informacion de la clase PedidoUsuario.
  */
 
 #ifndef PEDIDOUSUARIO_H
@@ -18,7 +18,7 @@ class PedidoUsuario {
 	Fecha fecha;      ///< Fecha que queda registrada al hacer un pedido.
 	int prioridad;    ///< Prioridad concedida al pedido del usuario.
 	float precio;     ///< Precio del pedido que ha hecho el usuario.
-	bool tramitado; ///< Booleano que nos va a indicar si el pedido ha sido tramitado o no.
+	bool tramitado;   ///< Booleano que nos va a indicar si el pedido ha sido tramitado o no.
 	Usuario *usuario; ///< Puntero que referencia a un usuario en concreto.
 	Libro *libro;     ///< Puntero que referencia a un libro en concreto.
 
@@ -28,6 +28,17 @@ public:
 	 * @brief Constructor por defecto de la clase PedidoUsuario.
 	 */
 	PedidoUsuario();
+
+	/**
+	 * @brief Constructor por copia de la clase PedidoUsusario.
+	 * @param [in] libro Libro (ref).
+	 * @param [in] usuario Usuario (ref).
+	 * @param [in] aFecha Fecha.
+	 * @param [in] aPrioridad int.
+	 * @param [in] aPrecio float.
+	 * @param [in] aTramitado bool.
+	 */
+	PedidoUsuario(Libro *libro, Usuario *usuario, Fecha aFecha, int aPrioridad, float aPrecio, bool aTramitado);
 
 	/**
 	 * @brief Operador de asignacion de la clase PedidoUsuario.
@@ -54,70 +65,45 @@ public:
 	}
 
 	/**
-	 * @brief Metodo getter del atributo ususario.
-	 * @return usuario Ususario (ref). Atributo de la clase.
+	 * @brief Metodo getter del atributo usuario.
 	 */
-	Usuario* daUsuario() {
-		return usuario;
-	}
+	Usuario* daUsuario();
 
 	/**
 	 * @brief Metodo getter del atributo libro.
-	 * @return libro Libro (ref). Atributo de la clase.
 	 */
-	Libro* daLibro() {
-		return libro;
-	}
+	Libro* daLibro();
 
 	/**
 	 * @brief Metodo getter del atributo prioridad.
-	 * @return prioridad int. Atributo de la clase.
 	 */
-	int daPrioridad() {
-		return prioridad;
-	}
+	int daPrioridad();
 
 	/**
-	 * @brief Constructor por copia de la clase PedidoUsusario.
-	 * @param [in] libro Libro (ref).
-	 * @param [in] usuario Usuario (ref).
-	 * @param [in] aFecha Fecha.
-	 * @param [in] aPrioridad int.
-	 * @param [in] aPrecio float.
-	 * @param [in] aTramitado bool.
+	 * @brief Indicacion que permite constatar si un usuario ha hecho un pedido o no.
 	 */
-	PedidoUsuario(Libro *libro, Usuario *usuario, Fecha aFecha, int aPrioridad,
-			float aPrecio, bool aTramitado);
+	bool tramitaPedido();
 
 	/**
-	 * @brief Sobrecarga del operador << (de insercion) que permite entre otras cosas mostrar una fecha con cout.
+	 * @brief Metodo getter del atributo precio.
+	 */
+	float daPrecio();
+
+	/**
+	 * @brief Metodo getter del atributo tramitado.
+	 */
+		bool daTramitado();
+
+
+
+	/**
+	 * @brief Sobrecarga del operador << (de insercion) que permite entre otras cosas mostrar un PedidoUsuario con cout.
 	 * @param [in] ostream. El propio flujo de salida (por referencia).
 	 * @param [in] PedidoUsuario. El pedido de un usuario en concreto (por referencia tambien).
 	 * @return El flujo de salida ostream debidamente sobrecargado.
 	 */
 	friend ostream& operator<<(ostream&, const PedidoUsuario&);
 
-	/**
-	 * @brief Indicacion que permite constatar si un usuario ha hecho un pedido o no.
-	 * @return True, si esta tramitado, false en otro caso.
-	 */
-	bool tramitaPedido();
-
-	/**
-	 * @brief Metodo getter del atributo precio.
-	 * @return precio float. Atributo de la clase.
-	 */
-	float daPrecio() {
-		return precio;
-	}
-
-	/**
-	 * @brief Metodo getter del atributo tramitado.
-	 * @return tramitado bool. Atributo de la clase.
-	 */
-	bool daTramitado() {
-		return tramitado;
-	}
 
 	/**
 	 * @brief Destructor de la clase PedidoUsuario.
