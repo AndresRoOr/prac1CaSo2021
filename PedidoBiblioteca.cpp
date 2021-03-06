@@ -1,6 +1,6 @@
 /**
  * @file PedidoBiblioteca.cpp
- * @brief Contiene el codigo fuente de todas las funciones del archivo cabecera PedidoBiblioteca.h
+ * @brief Contiene el código fuente de todas las funciones del archivo cabecera PedidoBiblioteca.h
  */
 
 #include "PedidoBiblioteca.h"
@@ -19,7 +19,6 @@ PedidoBiblioteca::PedidoBiblioteca() :
 /**
  * @brief Se inserta el pedido de un usuario a un libro en concreto en la estructura de datos.
  * @param [in] pedidoUsuario.
- * @return Nada.
  */
 void PedidoBiblioteca::insertaPedidoLibro(PedidoUsuario *pedidoUsuario) {
 	this->pedido_usu.aumenta(pedidoUsuario);
@@ -29,8 +28,6 @@ void PedidoBiblioteca::insertaPedidoLibro(PedidoUsuario *pedidoUsuario) {
 
 /**
  * @brief Da por concluido el tramite de hacer el pedido.
- * @param [in] Nada.
- * @return Nada.
  */
 void PedidoBiblioteca::cierraPedido() {
 	tramitado = true;
@@ -69,6 +66,12 @@ PedidoUsuario* PedidoBiblioteca::daPedidoUsuario(unsigned i) {
 	return pedido_usu.lee(i);
 }
 
+/**
+	 * @brief Sobrecarga del operador << (de insercion) que permite entre otras cosas mostrar un PedidoBiblioteca con cout.
+	 * @param [in] ostream. El propio flujo de salida (por referencia).
+	 * @param [in] PedidoBiblioteca. El pedido de la biblioteca (por referencia tambien).
+	 * @return [out] co. El flujo de salida ostream debidamente sobrecargado.
+	 */
 ostream& operator<<(ostream& co, PedidoBiblioteca& pb) {
 	co << "Fecha: " << pb.fecha << endl << "Importes: " << pb.importe << endl
 			<< "Tramitado: " << pb.tramitado << endl << "Tamanio: "

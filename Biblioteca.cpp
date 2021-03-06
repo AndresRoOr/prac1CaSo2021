@@ -6,9 +6,9 @@
 
 /**
  * @brief Introduce un nuevo usuario en la biblioteca.
- * @param [in] login string. Login del usuario.
- * @param [in] nombre string. Nombre del usuario.
- * @param [in] clave string. Clave del usuario.
+ * @param [in] login string. Login del usuario. Login del nuevo usuario
+ * @param [in] nombre string. Nombre del usuario. Nombre del nuevo usuario
+ * @param [in] clave string. Clave del usuario. Clave del nuevo usuario
  * @return bool. true si no se puede introducir el usuario, false en cualquier otro caso.
  */
 bool Biblioteca::nuevoUsuario(string login, string nombre, string clave) {
@@ -33,8 +33,8 @@ bool Biblioteca::nuevoUsuario(string login, string nombre, string clave) {
 
 /**
  * @brief Busca un usuario en la biblioteca.
- * @param [in] login string. Login del usuario.
- * @param [in] clave string. Clave del usuario.
+ * @param [in] login string. Login del usuario. Login del usuario que se busca
+ * @param [in] clave string. Clave del usuario. Clave del usuario que se busca
  * @return Devuelve un puntero al usuario que se busca.
  */
 Usuario* Biblioteca::buscaUsuario(string login, string clave) {
@@ -121,7 +121,7 @@ PedidoUsuario* Biblioteca::creaPedidoUsuario(Usuario *usuario, Libro *libro, int
 
 /**
  * @brief Crea lista pedido de Biblioteca y devuelve su referencia.
- * @pre Inicialmente estara vacio a la espera de que se añadan pedidos de usuario.
+ * @pre Inicialmente estara vacio a la espera de que se aÃ±adan pedidos de usuario.
  * @param [in] anum unsigned, refiriendose al numero de pedido.
  * @return La referencia al pedido.
  */
@@ -132,8 +132,8 @@ PedidoBiblioteca* Biblioteca::abrePedidoBiblioteca(unsigned anum) {
 }
 
 /**
- * @brief Añade un pedido de Usuario a un pedido de Biblioteca, pone pedidoUsuario tramitado.
- * @param [in] pedidoUsuario PedidoUsuario(ref). Pedido de usuario que queremos añadir.
+ * @brief AÃ±ade un pedido de Usuario a un pedido de Biblioteca, pone pedidoUsuario tramitado.
+ * @param [in] pedidoUsuario PedidoUsuario(ref). Pedido de usuario que queremos aÃ±adir.
  * @param [in] ped PedidoBiblioteca(ref). Pedido de biblioteca donde queremeos incluir el pedido de usuario.
  */
 void Biblioteca::tramitaPedidoUsuario(PedidoUsuario* pedidoUsuario,	PedidoBiblioteca *ped) {

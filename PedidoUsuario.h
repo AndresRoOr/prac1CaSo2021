@@ -18,7 +18,7 @@ class PedidoUsuario {
 	Fecha fecha;      ///< Fecha que queda registrada al hacer un pedido.
 	int prioridad;    ///< Prioridad concedida al pedido del usuario.
 	float precio;     ///< Precio del pedido que ha hecho el usuario.
-	bool tramitado;   ///< Booleano que nos va a indicar si el pedido ha sido tramitado o no.
+	bool tramitado; ///< Booleano que nos va a indicar si el pedido ha sido tramitado o no.
 	Usuario *usuario; ///< Puntero que referencia a un usuario en concreto.
 	Libro *libro;     ///< Puntero que referencia a un libro en concreto.
 
@@ -30,19 +30,14 @@ public:
 	PedidoUsuario();
 
 	/**
-	 * @brief Constructor por copia de la clase PedidoUsusario.
-	 * @param [in] libro Libro (ref).
-	 * @param [in] usuario Usuario (ref).
-	 * @param [in] aFecha Fecha.
-	 * @param [in] aPrioridad int.
-	 * @param [in] aPrecio float.
-	 * @param [in] aTramitado bool.
+	 * @brief Constructor parametrizado de la clase PedidoUsusario.
 	 */
-	PedidoUsuario(Libro *libro, Usuario *usuario, Fecha aFecha, int aPrioridad, float aPrecio, bool aTramitado);
+	PedidoUsuario(Libro *libro, Usuario *usuario, Fecha aFecha, int aPrioridad,
+			float aPrecio, bool aTramitado);
 
 	/**
 	 * @brief Operador de asignacion de la clase PedidoUsuario.
-	 * @param [in] pedido PedidoUsuario (ref).
+	 * @param [in] pedido PedidoUsuario (ref). Instancia de PedidoUsuario que se quiere copiar
 	 * @return Instancia copia creada de la clase PedidoUsuario.
 	 */
 	PedidoUsuario& operator=(PedidoUsuario &pedido) {
@@ -92,18 +87,12 @@ public:
 	/**
 	 * @brief Metodo getter del atributo tramitado.
 	 */
-		bool daTramitado();
-
-
+	bool daTramitado();
 
 	/**
 	 * @brief Sobrecarga del operador << (de insercion) que permite entre otras cosas mostrar un PedidoUsuario con cout.
-	 * @param [in] ostream. El propio flujo de salida (por referencia).
-	 * @param [in] PedidoUsuario. El pedido de un usuario en concreto (por referencia tambien).
-	 * @return El flujo de salida ostream debidamente sobrecargado.
 	 */
 	friend ostream& operator<<(ostream&, const PedidoUsuario&);
-
 
 	/**
 	 * @brief Destructor de la clase PedidoUsuario.

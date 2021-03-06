@@ -17,10 +17,9 @@ Usuario::Usuario() {
 
 /**
  * @brief Funcion que asigna a un usuario su nombre, su clave, y por supuesto su login.
- * @param [in] anombre string.
- * @param [in] alogin string.
- * @param [in] aclave string.
- * @return Nada.
+ * @param [in] anombre string. Nombre del usuario
+ * @param [in] alogin string. Login del usuario
+ * @param [in] aclave string. Clave del usuario
  */
 void Usuario::rellena(string anombre, string alogin, string aclave) {
 	nombre = anombre;
@@ -46,7 +45,6 @@ bool Usuario::validarClave(string claven) {
  * @brief Cambia el atributo clave con el string pasado como parametro.
  * @param [in] nuevaClave string.
  * @pre Antes ha de ser utilizada la funcion anterior.
- * @return Nada.
  */
 void Usuario::cambiarClave(string claven) {
 	this->clave = claven;
@@ -56,16 +54,16 @@ void Usuario::cambiarClave(string claven) {
  * @brief Metodo getter del atributo clave.
  * @return clave string. Atributo de la clase.
  */
-	string Usuario::daClave() {
-		return clave;
+string Usuario::daClave() {
+	return clave;
 }
 
 /**
  * @brief Metodo getter del atributo login.
  * @return login string. Atributo de la clase.
  */
-	string Usuario::daLogin() {
-		return login;
+string Usuario::daLogin() {
+	return login;
 }
 
 /**
@@ -73,10 +71,9 @@ void Usuario::cambiarClave(string claven) {
  * @param [in] usuario Ususario (ref).
  * @return Devuelve el usuario logueado en el sistema.
  */
-	string Usuario::daLogin(Usuario *usuario) {
-		return login;
+string Usuario::daLogin(Usuario *usuario) {
+	return login;
 }
-
 
 /**
  * @brief Sobrecarga del operador << (de insercion) que permite entre otras cosas mostrar un usuario con cout.

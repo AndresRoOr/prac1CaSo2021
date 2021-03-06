@@ -6,37 +6,35 @@
 
 /**
  * @brief Constructor por defecto del pedido de un usuario en concreto.
- * @param Nada.
  * @return La inicializacion de un pedido por parte del usuario con su fecha, precio, etc.
  */
 PedidoUsuario::PedidoUsuario() :
-	fecha() {          ///< Fecha que queda registrada al hacer un pedido.
+		fecha() {          ///< Fecha que queda registrada al hacer un pedido.
 	prioridad = 0;     ///< Prioridad concedida al pedido del usuario.
 	precio = 0;        ///< Precio del pedido inicializado a cero.
 	tramitado = false; ///< De entrada el pedido aun no ha sido tramitado.
-	libro = NULL;      ///< De entrada no se esta apuntando a ningun libro en concreto.
-	usuario = NULL;    ///< De entrada no se esta apuntando a ningun usuario en concreto.
+	libro = NULL; ///< De entrada no se esta apuntando a ningun libro en concreto.
+	usuario = NULL; ///< De entrada no se esta apuntando a ningun usuario en concreto.
 }
 
 /**
- * @brief Constructor por copia del pedido de un usuario en concreto.
- * @param libro.
- * @param usuario.
- * @param fecha.
- * @param prioridad.
- * @param precio.
- * @param tramitado.
- * @return La instancia copia de un objeto PedidoUsuario con todos sus atributos.
+ * @brief Constructor parametrizado de la clase PedidoUsusario.
+ * @param [in] libro Libro (ref).
+ * @param [in] usuario Usuario (ref).
+ * @param [in] aFecha Fecha.
+ * @param [in] aPrioridad int.
+ * @param [in] aPrecio float.
+ * @param [in] aTramitado bool.
  */
-PedidoUsuario::PedidoUsuario(Libro *libro, Usuario *usuario, Fecha aFecha, int aPrioridad, float aPrecio, bool aTramitado) {
-	fecha = aFecha;          ///< Copia de la fecha que queda registrada al hacer un pedido.
-	prioridad = aPrioridad;  ///< Copia de la prioridad que queda registrada al hacer un pedido.
+PedidoUsuario::PedidoUsuario(Libro *libro, Usuario *usuario, Fecha aFecha,
+		int aPrioridad, float aPrecio, bool aTramitado) {
+	fecha = aFecha; ///< Copia de la fecha que queda registrada al hacer un pedido.
+	prioridad = aPrioridad; ///< Copia de la prioridad que queda registrada al hacer un pedido.
 	precio = aPrecio;        ///< Copia del precio de un pedido.
 	tramitado = aTramitado;  ///< Copia de la tramitacion de un pedido.
 	this->usuario = usuario; ///< Referencia al usuario mediante el objeto this.
 	this->libro = libro;     ///< Referencia al libro mediante el objeto this.
 }
-
 
 /**
  * @brief Metodo getter del atributo ususario.
@@ -90,12 +88,12 @@ bool PedidoUsuario::daTramitado() {
  * @brief Sobrecarga del operador << (de insercion) que permite entre otras cosas mostrar un PedidoUsuario con cout.
  * @param [in] ostream. El propio flujo de salida (por referencia).
  * @param [in] PedidoUsuario. El pedido de un usuario en concreto (por referencia tambien).
- * @return co ostream. Flujo de salida con la informacion anteriormente mencionada.
+ * @return El flujo de salida ostream debidamente sobrecargado.
  */
 ostream& operator<<(ostream& co, const PedidoUsuario& pu) {
 	co << "Fecha: " << pu.fecha << endl << "Precio: " << pu.precio << endl
-	   << "Tramitado: " << pu.tramitado << endl << "Prioridad: "
-	   << pu.prioridad << endl;
+			<< "Tramitado: " << pu.tramitado << endl << "Prioridad: "
+			<< pu.prioridad << endl;
 	return co;
 }
 

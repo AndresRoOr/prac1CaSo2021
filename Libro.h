@@ -19,7 +19,7 @@ class Libro {
 	string autores;     ///< Autor/es del libro.
 	string editorial;   ///< Editorial que publica el libro.
 	string ISBN;        ///< Codigo ISBN identificativo del libro (International Standard Book Number).
-	int anio;           ///< Año en el que se publica el libro.
+	int anio;           ///< AÃ±o en el que se publica el libro.
 	float precioActual; ///< Precio actual del libro.
 
 public:

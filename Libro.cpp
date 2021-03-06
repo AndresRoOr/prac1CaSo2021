@@ -25,7 +25,7 @@ Libro::Libro() {
  * @param [in] aAutores string. Autor/es del libro.
  * @param [in] aEditorial string. Editorial del libro.
  * @param [in] aISBN string. ISBN del libro.
- * @param [in] aAnio int. A�o de publicacion del libro.
+ * @param [in] aAnio int. Año de publicación del libro.
  * @param [in] aPrecioActual float. Precio del libro.
  */
 Libro::Libro(string aTitulo, string aAutores, string aEditorial, string aISBN, int aAnio, float aPrecioActual) {
@@ -59,7 +59,7 @@ ostream& operator<<(ostream& co, const Libro& l) {
 
 /**
  * @brief Metodo getter del atributo titulo con parametro.
- * @param [in] libro Libro(ref).
+ * @param [in] libro Libro(ref). Libro del que queremos obtener el título
  * @return titulo string. El titulo del libro referenciado.
  */
 	string Libro::daTitulo(Libro *libro) {

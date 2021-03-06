@@ -56,7 +56,7 @@ public:
 
 	/**
 	 * @brief Operador de asignacion de la clase Usuario.
-	 * @param [in] usu Usuario (const, dir).
+	 * @param [in] usu Usuario (const, dir). Instancia de Usuario que queremos copiar
 	 * @return Instancia copia de la clase Usuario creada.
 	 */
 	Usuario& operator=(const Usuario &usu) {
@@ -73,7 +73,7 @@ public:
 
 	/**
 	 * @brief Operador "menor que" de la clase Usuario.
-	 * @param [in] usu Usuario (dir).
+	 * @param [in] usu Usuario (dir). Instancia de Usuario que queremos comparar
 	 * @return true si el nombre de usu es mayor, false en cualquier otro caso.
 	 */
 	bool operator<(const Usuario &usu) {
