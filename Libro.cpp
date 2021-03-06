@@ -25,7 +25,7 @@ Libro::Libro() {
  * @param [in] aAutores string. Autor/es del libro.
  * @param [in] aEditorial string. Editorial del libro.
  * @param [in] aISBN string. ISBN del libro.
- * @param [in] aAnio int. Año de publicación del libro.
+ * @param [in] aAnio int. A�o de publicacion del libro.
  * @param [in] aPrecioActual float. Precio del libro.
  */
 Libro::Libro(string aTitulo, string aAutores, string aEditorial, string aISBN, int aAnio, float aPrecioActual) {
@@ -35,18 +35,6 @@ Libro::Libro(string aTitulo, string aAutores, string aEditorial, string aISBN, i
 	ISBN = aISBN;
 	anio = aAnio;
 	precioActual = aPrecioActual;
-}
-
-/**
- * @brief Sobrecarga del operador << (de insercion) que permite entre otras cosas, mostrar un libro con cout.
- * @param [in]  co ostream. El propio flujo de salida (por referencia).
- * @param [in] Libro. Un libro en concreto con su titulo, ISBN, Editorial y autor/es (por referencia tambien).
- * @return [out] co. El flujo de salida ostream debidamente sobrecargado.
- */
-ostream& operator<<(ostream& co, const Libro& l) {
-	co << "Titulo: " << l.titulo << endl << "ISBN: " << l.ISBN << endl
-			<< "Editorial: " << l.editorial << endl << "Autores: " << l.autores << endl;
-	return co;
 }
 
 /**
@@ -83,8 +71,20 @@ ostream& operator<<(ostream& co, const Libro& l) {
 	}
 
 /**
+ * @brief Sobrecarga del operador << (de insercion) que permite entre otras cosas, mostrar un libro con cout.
+ * @param [in]  co ostream. El propio flujo de salida (por referencia).
+ * @param [in] Libro. Un libro en concreto con su titulo, ISBN, Editorial y autor/es (por referencia tambien).
+ * @return [out] co. El flujo de salida ostream debidamente sobrecargado.
+ */
+ostream& operator<<(ostream& co, const Libro& l) {
+	co << "Titulo: " << l.titulo << endl << "ISBN: " << l.ISBN << endl
+   	   << "Editorial: " << l.editorial << endl << "Autores: " << l.autores << endl;
+	return co;
+}
+
+/**
  * @brief Destructor de la clase Libro.
  */
-Libro::~Libro() {
-}
+	Libro::~Libro() {
+	}
 

@@ -29,12 +29,12 @@ void Aplication::aplicacion_admin() {
 	int opcion;
 	unsigned i = 0, num, nume_ped_bi, cpb = 0;
 	string aclave, alogin, contra = "hola", contrase;
-	cout << " Introduzca contraseï¿½a: " << endl;
+	cout << " Introduzca contraseña: " << endl;
 	cin >> contrase;
 	if (contrase.compare(contra) == 0) {
 
 		do {
-			cout << "  			#########   Bienvenido a la Administracion de la nuestra biblioteca.   #########\n\n" << endl;
+			cout << "  			#########   Bienvenido a la Administracion de la biblioteca.   #########\n\n" << endl;
 			cout << "De entre las siguientes opciones indique la que quiera elegir, para salir pulse 0: " << endl << endl;
 			cout << " 		1.- Muestra lista de pedidos pendientes de un usuario. \n" << endl;
 			cout << "  		2.- Cierra pedido biblioteca. " << endl;
@@ -100,7 +100,7 @@ void Aplication::aplicacion_admin() {
 				cin >> nume_ped_bi;
 				nume_ped_bi--;
 				try {
-					pedBi = bi.daListaPedBiblioteca(nume_ped_bi); ///< Obtengo el pedido biblioteca con el numero especificado.
+					pedBi = bi.daListaPedBiblioteca(nume_ped_bi); /// Obtengo el pedido biblioteca con el numero especificado.
 					usu = bi.buscaUsuario(alogin, aclave);
 					pedusu = bi.buscaPedidosUsuarioPendientes(usu);
 					i = 0;
@@ -196,7 +196,7 @@ void Aplication::aplicacion_usuario() {
 	do {
 		cout << "Elija una opcion, para salir pulse 0." << endl;
 		cout << "1. Registrarse en la aplicacion. " << endl;
-		cout << "2. Cambiar contraseï¿½a. " << endl;
+		cout << "2. Cambiar contraseña. " << endl;
 		cout << "3. Consultar un libro. " << endl;
 		cout << "4. Realizar un pedido. " << endl;
 		cin >> opcion;
@@ -220,7 +220,7 @@ void Aplication::aplicacion_usuario() {
 		case 2: {
 			cout << " Introduzca login actual. " << endl;
 			cin >> alogin;
-			cout << " Introduzca contraseï¿½a actual. " << endl;
+			cout << " Introduzca contraseña actual. " << endl;
 			cin >> aclave;
 			try {
 				usu = bi.buscaUsuario(alogin, aclave);

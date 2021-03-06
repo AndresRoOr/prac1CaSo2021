@@ -14,12 +14,11 @@ using namespace std;
  * @brief Clase que representa toda la informacion necesaria de un libro.
  */
 class Libro {
-
 	string titulo;      ///< Titulo del libro.
 	string autores;     ///< Autor/es del libro.
 	string editorial;   ///< Editorial que publica el libro.
 	string ISBN;        ///< Codigo ISBN identificativo del libro (International Standard Book Number).
-	int anio;           ///< AÃ±o en el que se publica el libro.
+	int anio;           ///< Año en el que se publica el libro.
 	float precioActual; ///< Precio actual del libro.
 
 public:
@@ -48,6 +47,26 @@ public:
 	}
 
 	/**
+	 * @brief Metodo getter del atributo ISBN.
+	 */
+	string daISBN();
+
+	/**
+	 * @brief Metodo getter del atributo titulo con parametro.
+	 */
+	string daTitulo(Libro *libro);
+
+	/**
+	 * @brief Metodo getter del atributo titulo.
+	 */
+	string daTitulo();
+
+	/**
+	 * @brief Metodo getter del atributo precio.
+	 */
+	float daPrecioActual();
+
+	/**
 	 * @brief Operador de asignacion de la clase Libro.
 	 * @param [in] lib Libro(dir). Instancia de la clase Libro de la cual se va a realizar una copia.
 	 * @return Devuelve una nueva instancia de la clase Libro con la informacion de lib.
@@ -74,32 +93,10 @@ public:
 	 */
 	friend ostream& operator<<(ostream&, const Libro&);
 
-
-	/**
-	 * @brief Metodo getter del atributo ISBN.
-	 */
-	string daISBN();
-
-	/**
-	 * @brief Metodo getter del atributo titulo con parametro.
-	 */
-	string daTitulo(Libro *libro);
-
-	/**
-	 * @brief Metodo getter del atributo titulo.
-	 */
-	string daTitulo();
-
-	/**
-	 * @brief Metodo getter del atributo precio.
-	 */
-	float daPrecioActual();
-
 	/**
 	 * @brief Destructor de la clase Libro.
 	 */
 	~Libro();
-
 };
 
 #endif	/* LIBRO_H */

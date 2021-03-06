@@ -14,10 +14,10 @@
  * @brief Clase que representa de manera generica un pedido hecho por la biblioteca.
  */
 class PedidoBiblioteca {
-	Fecha fecha; ///< Queda registrada la fecha del pedido actualizada con la fecha y hora del sistema.
-	float importe; ///< Importe total de todos los usuarios.
-	bool tramitado; ///< Booleano a true si el pedido esta tramitado, false en otro caso.
-	unsigned num; ///< Numero de pedido de biblioteca.
+	Fecha fecha;        ///< Queda registrada la fecha del pedido actualizada con la fecha y hora del sistema.
+	float importe;      ///< Importe total de todos los usuarios.
+	bool tramitado;     ///< Booleano a true si el pedido esta tramitado, false en otro caso.
+	unsigned num;       ///< Numero de pedido de biblioteca.
 	lista_sin<PedidoUsuario *> pedido_usu; ///< Registro en la estructura de datos del pedido de un usuario.
 
 public:
@@ -32,7 +32,7 @@ public:
 	 * @param [in] anum unsigned.
 	 */
 	PedidoBiblioteca(unsigned anum) :
-			fecha() {
+		fecha() {
 		importe = 0;
 		tramitado = false;
 		this->pedido_usu = pedido_usu;
@@ -40,8 +40,8 @@ public:
 	}
 
 	/**
-	 * @brief Constructor por copia de la clase PedidoBiblioteca
-	 * @param [in] pedbi PedidoBiblioteca (dir). Instancia de PedidoBiblioteca que se quiere copiar
+	 * @brief Constructor por copia de la clase PedidoBiblioteca.
+	 * @param [in] pedbi PedidoBiblioteca (dir). Instancia de PedidoBiblioteca que se quiere copiar.
 	 */
 	PedidoBiblioteca(PedidoBiblioteca &pedbi) {
 		this->fecha = pedbi.fecha;
@@ -50,16 +50,6 @@ public:
 		this->pedido_usu = pedbi.pedido_usu;
 		this->num = pedbi.num;
 	}
-
-	/**
-	 * @brief Se inserta el pedido de un usuario a un libro en concreto en la estructura de datos.
-	 */
-	void insertaPedidoLibro(PedidoUsuario *pedidoUsuario);
-
-	/**
-	 * @brief Da por concluido el tramite de hacer el pedido.
-	 */
-	void cierraPedido();
 
 	/**
 	 * @brief Metodo getter del atributo tramitado.
@@ -75,6 +65,16 @@ public:
 	 * @brief Metodo getter del atributo importe.
 	 */
 	float daImporte();
+
+	/**
+	 * @brief Se inserta el pedido de un usuario a un libro en concreto en la estructura de datos.
+	 */
+	void insertaPedidoLibro(PedidoUsuario *pedidoUsuario);
+
+	/**
+	 * @brief Da por concluido el tramite de hacer el pedido.
+	 */
+	void cierraPedido();
 
 	/**
 	 * @brief Funcion necesaria para la clase Biblioteca en busqueda de pedidos.

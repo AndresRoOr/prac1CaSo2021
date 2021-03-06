@@ -1,7 +1,7 @@
 /**
  * @file lista_sin.h
- * @brief Contiene toda la informaci√≥n referente a la plantilla de clase lista_sin, en estructura de datos
- *        gen√©rica mediante un patron.
+ * @brief Contiene toda la informacionn referente a la plantilla de clase lista_sin, en estructura de datos
+ *        generica mediante un patron.
  */
 
 #ifndef LISTA_SIN_H
@@ -13,10 +13,10 @@ using namespace std;
 template<class T>
 
 /**
- * @brief Plantilla gen√©rica para un nodo de las estructuras de datos que soportara esta aplicacion.
+ * @brief Plantilla generica para un nodo de las estructuras de datos que soportara esta aplicacion.
  */
 struct nodo {
-	T date; ///< Dato parametrizado. Puede ser un usuario, un libro, una fecha, un ISBN...etc.
+	T date;         ///< Dato parametrizado. Puede ser un usuario, un libro, una fecha, un ISBN...etc.
 	nodo<T> * sige; ///< Nodo siguiente en la estructura parametrizado a cualquier tipo de los anteriores.
 };
 
@@ -38,8 +38,8 @@ public:
 	lista_sin();
 
 	/**
-	 * @brief A√±ade un elemento nuevo a la lista_sin.
-	 * @param [in] elem T. Objeto que queremos a√±adir.
+	 * @brief AÒade un elemento nuevo a la lista_sin.
+	 * @param [in] elem T. Objeto que queremos aÒadir.
 	 */
 	void aumenta(T elem);
 
@@ -72,8 +72,8 @@ public:
 	T elimina_dato(unsigned pos);
 
 	/**
-	 * @brief Devuelve el tama√±o de la lista_sin.
-	 * @return Devuelve el tama√±o de la lista_sin representado como un entero sin signo.
+	 * @brief Devuelve el tamaÒo de la lista_sin.
+	 * @return Devuelve el tamaÒo de la lista_sin representado como un entero sin signo.
 	 */
 	unsigned tamanio();
 
@@ -98,7 +98,7 @@ public:
 	/**
 	 * @brief Destructor de la clase lista_sin.
 	 */
-	~lista_sin(void); ///< Solo un elemento.
+	~lista_sin(void); /// Solo un elemento.
 };
 
 /**
@@ -119,7 +119,7 @@ lista_sin<T>::lista_sin() {
 template<class T>
 
 /**
- * @brief Constructor copia y por ello se inicializan los punteros a NULL y la variable tamaÔøΩo.
+ * @brief Constructor copia y por ello se inicializan los punteros a NULL y la variable tamanio.
  * @param [in] Una lista_sin por referencia. lista_sin que queremos copiar.
  */
 lista_sin<T>::lista_sin(lista_sin &list) {
@@ -143,7 +143,7 @@ template<class T>
 lista_sin<T>& lista_sin<T>::operator=(lista_sin &list) {
 	this->limpia();
 	for (unsigned i = 0; i < list.tamanio(); i++) {
-		this->aumenta(list.lee(i)); ///< Gracias a aumenta se reserva memoria para cada nodo.
+		this->aumenta(list.lee(i)); /// Gracias a "aumenta" se reserva memoria para cada nodo.
 	}
 	return (*this);
 }
@@ -152,7 +152,7 @@ template<class T>
 
 /**
  * @brief Aumenta la lista en elem elementos.
- * @param [in] elem T. Objeto que queremos a√±adir.
+ * @param [in] elem T. Objeto que queremos aÒadir.
  */
 void lista_sin<T>::aumenta(T elem) {
 	nuevo = new struct nodo<T>;
@@ -191,7 +191,7 @@ T lista_sin<T>::lee(unsigned pos) {
 template<class T>
 
 /**
- * @brief Modifica el elemento con elem de la posicion a la que alude pos.
+ * @brief Modifica el elemento con "elem" de la posicion a la que alude "pos".
  * @param [in] elem T. Objeto que queremos introducir.
  * @param [in] pos unsigned. Posicion de la lista_sin en la que queremos introducir el objeto.
  */
@@ -214,7 +214,7 @@ void lista_sin<T>::modifica(T elem, unsigned pos) {
 template<class T>
 
 /**
- * @brief Inserta el dato de tipo T en la posicion a la que alude pos.
+ * @brief Inserta el dato de tipo T en la posicion a la que alude "pos".
  * @param [in] dato T (const,dir). Objeto que queremos introducir en lista_sin.
 	 * @param [in] pos unsigned. Posicion en la que queremos introducir el objeto.
  */
@@ -238,13 +238,13 @@ void lista_sin<T>::inserta_dato(const T &dato, unsigned pos) {
 			nuevo->sige = iter;
 		}
 	}
-	numElem++; ///< Incremento numElem porque hay un dato mas en la lista.
+	numElem++; /// Incremento "numElem" porque hay un dato mas en la lista.
 }
 
 template<class T>
 
 /**
- * @brief Devuelve el elemento eliminado, con solo pasarle la posicion pos de dicho elemento.
+ * @brief Devuelve el elemento eliminado, con solo pasarle la posicion "pos" de dicho elemento.
 * @param [in] pos unsigned. Posicion en la que se encuentra el dato que queremos eliminar.
 	 * @return Devuelve el objeto que hemos eliminado de tipo T.
  */
@@ -280,8 +280,8 @@ T lista_sin<T>::elimina_dato(unsigned pos) {
 template<class T>
 
 /**
- * @brief Devuelve el tama√±o de la lista debido a que la clase lista ha sido creada con una variable designada para ello.
- * @return Devuelve el tama√±o de la lista_sin representado como un entero sin signo.
+ * @brief Devuelve el tamaÒo de la lista debido a que la clase lista ha sido creada con una variable designada para ello.
+ * @return Devuelve el tamaÒo de la lista_sin representado como un entero sin signo.
  */
 unsigned lista_sin<T>::tamanio() {
 	return numElem;
@@ -303,7 +303,7 @@ void lista_sin<T>::limpia() {
 template<class T>
 
 /**
- * @brief Destructor y para abreviar se llama a la funcion limpia y no se tendra que llamar desde el main.
+ * @brief Destructor y para abreviar se llama a la funcion limpia y ya no se tendra que llamar desde el main.
  */
 lista_sin<T>::~lista_sin(void) {
 	limpia();

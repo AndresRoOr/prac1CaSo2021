@@ -1,6 +1,6 @@
 /**
  * @file Fecha.cpp
- * @brief Contiene el código fuente de todas las funciones del archivo cabecera Fecha.h
+ * @brief Contiene el codigo fuente de todas las funciones del archivo cabecera Fecha.h
  */
 
 #include "Fecha.h"
@@ -8,33 +8,26 @@
 #include <cstdio>
 #include "Fecha.h"
 
-const unsigned Fecha::diasMes[12] = { 31, 29, 31, 30, 31, 30, 31, 31, 30, 31,
-		30, 31 };
+const unsigned Fecha::diasMes[12] = { 31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
 
 /**
- * @brief Constructor por defecto de la clase Fecha
- *
- * Crea una fecha con la hora actual
+ * @brief Constructor por defecto de la clase Fecha.
+ * Crea una fecha con la hora actual.
  */
 Fecha::Fecha() {
 	time_t tiempoActual;
 	struct tm *fechaActual;
-
-	time(&tiempoActual); // Obtener hora actual
-	fechaActual = localtime(&tiempoActual); // Decodificar la hora en campos separados
-
+	time(&tiempoActual); /// Obtiene la hora actual del sistema.
+	fechaActual = localtime(&tiempoActual); /// Decodifica la hora en campos separados.
 	leerTiempo(*fechaActual);
 }
 
 /**
- * @brief Constructor parametrizado de la clase Fecha
- *
- * Crea una fecha concreta. Devuelve una excepción ErrorFechaIncorrecta si la fecha introducida no es correcta
+ * @brief Constructor parametrizado de la clase Fecha.
+ * Crea una fecha concreta. Devuelve una excepcion ErrorFechaIncorrecta si la fecha introducida no es correcta.
  */
-Fecha::Fecha(unsigned aDia, unsigned aMes, unsigned aAnio, unsigned aHora,
-		unsigned aMin) {
-	// Filtrado de fechas incorrectas
-	comprobarFecha(aDia, aMes, aAnio, aHora, aMin);
+Fecha::Fecha(unsigned aDia, unsigned aMes, unsigned aAnio, unsigned aHora, unsigned aMin) {
+	comprobarFecha(aDia, aMes, aAnio, aHora, aMin); /// Filtra las fechas incorrectas.
 	dia = aDia;
 	mes = aMes;
 	anio = aAnio;
@@ -43,10 +36,10 @@ Fecha::Fecha(unsigned aDia, unsigned aMes, unsigned aAnio, unsigned aHora,
 }
 
 /**
- * @brief Asigna un nuevo día
- * @param [in] aDia unsigned. Nuevo día
- * @param [in] aMes unsigned. Nuevo mes
- * @param [in] aAnio unsigned. Nuevo año
+ * @brief Asigna un nuevo dia.
+ * @param [in] aDia unsigned. Nuevo dia.
+ * @param [in] aMes unsigned. Nuevo mes.
+ * @param [in] aAnio unsigned. Nuevo a�o.
  */
 void Fecha::asignarDia(unsigned aDia, unsigned aMes, unsigned aAnio) {
 	comprobarFecha(aDia, aMes, aAnio, hora, min);
@@ -56,9 +49,9 @@ void Fecha::asignarDia(unsigned aDia, unsigned aMes, unsigned aAnio) {
 }
 
 /**
- * @brief Asigna una nueva hora
- * @param [in] aHora unsigned. Nueva hora
- * @param [in] aMin unsigned. Nuevos minutos
+ * @brief Asigna una nueva hora.
+ * @param [in] aHora unsigned. Nueva hora.
+ * @param [in] aMin unsigned. Nuevos minutos.
  */
 void Fecha::asignarHora(unsigned aHora, unsigned aMin) {
 	comprobarFecha(dia, mes, anio, aHora, aMin);
@@ -67,9 +60,9 @@ void Fecha::asignarHora(unsigned aHora, unsigned aMin) {
 }
 
 /**
- * @brief Comparar fechas
+ * @brief Comparar fechas.
  * @param [in] f Fecha(dir, const).
- * @return bool. True en el caso de que la fecha actual sea menor que la fecha parámetro, false en cualquier otro caso
+ * @return bool. True en el caso de que la fecha actual sea menor que la fecha parametro, false en cualquier otro caso.
  */
 bool Fecha::operator<(const Fecha &f) {
 	if (anio < f.anio)
@@ -99,9 +92,9 @@ bool Fecha::operator<(const Fecha &f) {
 }
 
 /**
- * @brief Operador de asignación de la clase Fecha
- * @param [in] f Fehca(const, dir). Fecha que queremos copiar
- * @return Devuelve una nueva instancia de la clase Fecha con los datos de la Fecha pasada como parámetro.
+ * @brief Operador de asignacion de la clase Fecha.
+ * @param [in] f Fecha (const, dir). Fecha que queremos copiar.
+ * @return Devuelve una nueva instancia de la clase Fecha con los datos de la Fecha pasada como parametro.
  */
 Fecha &Fecha::operator=(const Fecha &f) {
 	dia = f.dia;
@@ -113,8 +106,8 @@ Fecha &Fecha::operator=(const Fecha &f) {
 }
 
 /**
- * @brief Añadir un número de minutos indicado
- * @param [in] numMin int. Minutos que queremos incrementar
+ * @brief A�adir un numero de minutos indicado.
+ * @param [in] numMin int. Minutos que queremos incrementar.
  */
 void Fecha::anadirMin(int numMin) {
 	struct tm fecha;
@@ -125,8 +118,8 @@ void Fecha::anadirMin(int numMin) {
 }
 
 /**
- * @brief Añadir un número de horas indicado
- * @param [in] numHoras int. Horas que queremos incrementar
+ * @brief Añadir un numero de horas indicado.
+ * @param [in] numHoras int. Horas que queremos incrementar.
  */
 void Fecha::anadirHoras(int numHoras) {
 	struct tm fecha;
@@ -137,8 +130,8 @@ void Fecha::anadirHoras(int numHoras) {
 }
 
 /**
- * @brief Añadir un número de días indicado
- * @param [in] numDias int. Días que queremos incrementar
+ * @brief A�adir un numero de dias indicado.
+ * @param [in] numDias int. Dias que queremos incrementar.
  */
 void Fecha::anadirDias(int numDias) {
 	struct tm fecha;
@@ -149,8 +142,8 @@ void Fecha::anadirDias(int numDias) {
 }
 
 /**
- * @brief Añadir un número de meses indicado
- * @param [in] numMeses int. Meses que queremos incrementar
+ * @brief A�adir un numero de meses indicado.
+ * @param [in] numMeses int. Meses que queremos incrementar.
  */
 void Fecha::anadirMeses(int numMeses) {
 	struct tm fecha;
@@ -161,8 +154,8 @@ void Fecha::anadirMeses(int numMeses) {
 }
 
 /**
- * @brief Añadir un número de años indicado
- * @param [in] numAnios int. Años que queremos incrementar
+ * @brief A�adir un numero de a�os indicado.
+ * @param [in] numAnios int. A�os que queremos incrementar.
  */
 void Fecha::anadirAnios(int numAnios) {
 	struct tm fecha;
@@ -173,8 +166,8 @@ void Fecha::anadirAnios(int numAnios) {
 }
 
 /**
- * @brief Obtener una cadena con el día
- * @return Devuelve la fecha en formato string
+ * @brief Obtener una cadena con el dia.
+ * @return Devuelve la fecha en formato string.
  */
 string Fecha::cadenaDia() const {
 	char buffer[11];
@@ -183,8 +176,8 @@ string Fecha::cadenaDia() const {
 }
 
 /**
- * @brief Obtener una cadena con la hora
- * @return Devuelve la hora en formato string
+ * @brief Obtener una cadena con la hora.
+ * @return Devuelve la hora en formato string.
  */
 string Fecha::cadenaHora() const {
 	char buffer[6];
@@ -193,21 +186,20 @@ string Fecha::cadenaHora() const {
 }
 
 /**
- * @brief Destructor de la clase Fecha
+ * @brief Destructor de la clase Fecha.
  */
 Fecha::~Fecha() {
 }
 
 /**
- * @brief Comprobación de la validez de una fecha
- * @param [in] aDia unsigned. Día de la fecha
- * @param [in] aMes unsigned. Mes de la fecha
- * @param [in] aAnio unsigned. Año de la fecha
- * @param [in] aHora unsigned. Hora de la fecha
- * @param [in] aMin unsigned. Minuto de la fecha
+ * @brief Comprobacion de la validez de una fecha.
+ * @param [in] aDia unsigned. Dia de la fecha.
+ * @param [in] aMes unsigned. Mes de la fecha.
+ * @param [in] aAnio unsigned. A�o de la fecha.
+ * @param [in] aHora unsigned. Hora de la fecha.
+ * @param [in] aMin unsigned. Minuto de la fecha.
  */
-void Fecha::comprobarFecha(unsigned aDia, unsigned aMes, unsigned aAnio,
-		unsigned aHora, unsigned aMin) const {
+void Fecha::comprobarFecha(unsigned aDia, unsigned aMes, unsigned aAnio, unsigned aHora, unsigned aMin) const {
 	if (aMin > 59 || aHora > 23)
 		throw ErrorFechaIncorrecta();
 	if (aMes < 1 || aMes > 12)
@@ -220,8 +212,8 @@ void Fecha::comprobarFecha(unsigned aDia, unsigned aMes, unsigned aAnio,
 }
 
 /**
- * @brief Función auxiliar de conversión desde estructura de tiempo tm de time.h
- * @param [out] t tm(const, dir).
+ * @brief Funcion auxiliar de conversion desde estructura de tiempo tm de time.h.
+ * @param [out] t tm (const, dir).
  */
 void Fecha::leerTiempo(const tm &t) {
 	dia = t.tm_mday;
@@ -232,8 +224,8 @@ void Fecha::leerTiempo(const tm &t) {
 }
 
 /**
- * @brief Función auxiliar de conversión a estructura de tiempo tm de time.h
- * @param [out] t tm(dir).
+ * @brief Funcion auxiliar de conversion a estructura de tiempo tm de time.h.
+ * @param [out] t tm (dir).
  */
 void Fecha::escribirTiempo(tm &t) {
 	t.tm_mday = dia;
@@ -245,8 +237,8 @@ void Fecha::escribirTiempo(tm &t) {
 }
 
 /**
- * @brief Serialización de fechas
- * @param [out] os ostream(dir).
+ * @brief Serializacion de fechas.
+ * @param [out] os ostream (dir).
  * @param [in] f Fecha(const, dir).
  * @return os ostream.
  */

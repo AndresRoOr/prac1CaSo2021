@@ -1,6 +1,6 @@
 /**
  * @file PedidoBiblioteca.cpp
- * @brief Contiene el código fuente de todas las funciones del archivo cabecera PedidoBiblioteca.h
+ * @brief Contiene el codigo fuente de todas las funciones del archivo cabecera PedidoBiblioteca.h
  */
 
 #include "PedidoBiblioteca.h"
@@ -14,23 +14,6 @@ PedidoBiblioteca::PedidoBiblioteca() :
 	tramitado = false;
 	this->pedido_usu = pedido_usu;
 	num = 0;
-}
-
-/**
- * @brief Se inserta el pedido de un usuario a un libro en concreto en la estructura de datos.
- * @param [in] pedidoUsuario.
- */
-void PedidoBiblioteca::insertaPedidoLibro(PedidoUsuario *pedidoUsuario) {
-	this->pedido_usu.aumenta(pedidoUsuario);
-	float pre = pedidoUsuario->daPrecio();
-	this->importe = this->importe + pre;
-}
-
-/**
- * @brief Da por concluido el tramite de hacer el pedido.
- */
-void PedidoBiblioteca::cierraPedido() {
-	tramitado = true;
 }
 
 /**
@@ -64,6 +47,23 @@ float PedidoBiblioteca::daImporte() {
  */
 PedidoUsuario* PedidoBiblioteca::daPedidoUsuario(unsigned i) {
 	return pedido_usu.lee(i);
+}
+
+/**
+ * @brief Se inserta el pedido de un usuario a un libro en concreto en la estructura de datos.
+ * @param [in] pedidoUsuario.
+ */
+void PedidoBiblioteca::insertaPedidoLibro(PedidoUsuario *pedidoUsuario) {
+	this->pedido_usu.aumenta(pedidoUsuario);
+	float pre = pedidoUsuario->daPrecio();
+	this->importe = this->importe + pre;
+}
+
+/**
+ * @brief Da por concluido el tramite de hacer el pedido.
+ */
+void PedidoBiblioteca::cierraPedido() {
+	tramitado = true;
 }
 
 /**

@@ -5,6 +5,14 @@
 #include "Biblioteca.h"
 
 /**
+ * @brief Metodo getter del atributo pedidoBi de la clase.
+ * @return El atributo pedidoBi de la clase.
+ */
+lista_sin<PedidoBiblioteca *> * Biblioteca::daLBiblioteca() {
+		return &pedidoBi;
+	}
+
+/**
  * @brief Introduce un nuevo usuario en la biblioteca.
  * @param [in] login string. Login del usuario. Login del nuevo usuario
  * @param [in] nombre string. Nombre del usuario. Nombre del nuevo usuario
@@ -66,10 +74,10 @@ void Biblioteca::cargaLibros(string fichero) {
 		while (!entrada.eof()) {
 			getline(entrada, aTitulo);
 			getline(entrada, aAutores);
-			getline(entrada, aAnio); ///< Convierte a entero un string.
+			getline(entrada, aAnio); /// Convierte a entero un string.
 			getline(entrada, aEditorial);
 			getline(entrada, aISBN);
-			getline(entrada, aPrecioActual); ///< Convierte a entero un string.
+			getline(entrada, aPrecioActual); /// Convierte a entero un string.
 			getline(entrada, espacio);
 			Libro *lib = new Libro(aTitulo, aAutores, aEditorial, aISBN,
 					atoi(aAnio.c_str()), (float) atof(aPrecioActual.c_str()));
@@ -92,8 +100,8 @@ lista_sin<Libro *> * Biblioteca::consultaLibros(string titulo) {
 	lista_sin<Libro *> *libros = new lista_sin<Libro *>;
 
 	for (i = 0; i < libro.tamanio(); i++) {
-		pos = libro.lee(i)->daTitulo().find(titulo); ///< Devuelve la posicion en la cadena.
-		if (pos != -1) { ///< Si no se modifica el -1 entonces es que no esta.
+		pos = libro.lee(i)->daTitulo().find(titulo); /// Devuelve la posicion en la cadena.
+		if (pos != -1) { /// Si no se modifica el -1 entonces es que no esta.
 			libros->aumenta(libro.lee(i));
 		}
 	}
@@ -121,7 +129,7 @@ PedidoUsuario* Biblioteca::creaPedidoUsuario(Usuario *usuario, Libro *libro, int
 
 /**
  * @brief Crea lista pedido de Biblioteca y devuelve su referencia.
- * @pre Inicialmente estara vacio a la espera de que se aÃ±adan pedidos de usuario.
+ * @pre Inicialmente estara vacio a la espera de que se añadan pedidos de usuario.
  * @param [in] anum unsigned, refiriendose al numero de pedido.
  * @return La referencia al pedido.
  */
@@ -132,8 +140,8 @@ PedidoBiblioteca* Biblioteca::abrePedidoBiblioteca(unsigned anum) {
 }
 
 /**
- * @brief AÃ±ade un pedido de Usuario a un pedido de Biblioteca, pone pedidoUsuario tramitado.
- * @param [in] pedidoUsuario PedidoUsuario(ref). Pedido de usuario que queremos aÃ±adir.
+ * @brief Añade un pedido de Usuario a un pedido de Biblioteca, pone pedidoUsuario tramitado.
+ * @param [in] pedidoUsuario PedidoUsuario(ref). Pedido de usuario que queremos añadir.
  * @param [in] ped PedidoBiblioteca(ref). Pedido de biblioteca donde queremeos incluir el pedido de usuario.
  */
 void Biblioteca::tramitaPedidoUsuario(PedidoUsuario* pedidoUsuario,	PedidoBiblioteca *ped) {
@@ -169,7 +177,7 @@ lista_sin<PedidoUsuario *> * Biblioteca::buscaPedidosUsuarioPendientes(Usuario *
 
 	unsigned i = 0;
 	lista_sin<PedidoUsuario *> * pedPendientes = new lista_sin<PedidoUsuario *>;
-	while (i < pedido_usu.tamanio()) { ///< //Se buscan los pedidos pendientes de ese usuario y se devuelven en esta lista.
+	while (i < pedido_usu.tamanio()) { /// Se buscan los pedidos pendientes de ese usuario y se devuelven en esta lista.
 		if (pedido_usu.lee(i)->daTramitado() == false
 				&& usu->daLogin(pedido_usu.lee(0)->daUsuario())	== usuario->daLogin()) {
 			pedPendientes->aumenta(pedido_usu.lee(i));
@@ -191,7 +199,7 @@ lista_sin<PedidoUsuario *> * Biblioteca::buscaPedidosUsuarioTramitados(Usuario *
 
 	unsigned i = 0;
 	lista_sin<PedidoUsuario *> * pedTramitados = new lista_sin<PedidoUsuario *>;
-	while (i < pedido_usu.tamanio()) { ///< Busca pedidos de usuario tramitados devolviendolos en una lista.
+	while (i < pedido_usu.tamanio()) { /// Busca pedidos de usuario tramitados devolviendolos en una lista.
 		if (pedido_usu.lee(i)->daTramitado() == true
 				&& usu->daLogin(pedido_usu.lee(0)->daUsuario())	== usuario->daLogin()) {
 			pedTramitados->aumenta(pedido_usu.lee(i));
@@ -213,7 +221,7 @@ lista_sin<PedidoBiblioteca *> * Biblioteca::buscaPedidosBibliotecaPendientes() {
 	if (biPendientes->tamanio() == 0)
 		throw excepcionesBi::pedidoBibliotecaNoencontrado();
 
-	while (i < pedidoBi.tamanio()) { ///< Se buscan los pedidos de biblioteca pendientes y se devuelven en una lista.
+	while (i < pedidoBi.tamanio()) { /// Se buscan los pedidos de biblioteca pendientes y se devuelven en una lista.
 		if (pedidoBi.lee(i)->daTrami() == false	&& pedidoBi.lee(i)->daImporte() > 1) {
 			biPendientes->aumenta(pedidoBi.lee(i));
 		}
@@ -234,7 +242,7 @@ lista_sin<PedidoBiblioteca *> * Biblioteca::buscaPedidosBibliotecaTramitados() {
 	unsigned i = 0;
 	lista_sin<PedidoBiblioteca *> * biTramitados = new lista_sin<PedidoBiblioteca *>;
 
-	while (i < pedidoBi.tamanio()) { ///< Busca pedidos tramitados de biblioteca y los devuelve en una lista.
+	while (i < pedidoBi.tamanio()) { /// Busca pedidos tramitados de biblioteca y los devuelve en una lista.
 		if (pedidoBi.lee(i)->daTrami() == true) {
 			biTramitados->aumenta(pedidoBi.lee(i));
 		}
@@ -245,14 +253,6 @@ lista_sin<PedidoBiblioteca *> * Biblioteca::buscaPedidosBibliotecaTramitados() {
 	else
 		throw excepcionesBi::pedidoBibliotecaNoencontrado();
 }
-
-/**
- * @brief Metodo getter del atributo pedidoBi de la clase.
- * @return El atributo pedidoBi de la clase.
- */
-lista_sin<PedidoBiblioteca *> * Biblioteca::daLBiblioteca() {
-		return &pedidoBi;
-	}
 
 /**
  * @brief Devuelve la lista del pedido de la biblioteca del numero de pedido que se le pasa.

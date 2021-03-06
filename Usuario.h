@@ -1,6 +1,6 @@
 /**
  * @file Usuario.h
- * @brief Archivo cabecera donde se almacena la informacion de la clase Ususario.
+ * @brief Archivo cabecera donde se almacena la informacion de la clase Usuario.
  */
 
 #ifndef USUARIO_H
@@ -20,10 +20,19 @@ class Usuario {
 public:
 
 	/**
-	 * @brief Constructor por defecto de la clase Ususario.
+	 * @brief Constructor por defecto de la clase Usuario.
 	 */
 	Usuario();
 
+	/**
+	 * @brief Metodo getter del atributo clave.
+	 */
+	string daClave();
+
+	/**
+	 * @brief Metodo getter del atributo login.
+	 */
+	string daLogin();
 	/**
 	 * @brief Funcion que asigna a un usuario su nombre, su clave, y por supuesto su login.
 	 */
@@ -40,23 +49,13 @@ public:
 	void cambiarClave(string nuevaClave);
 
 	/**
-	 * @brief Metodo getter del atributo clave.
-	 */
-	string daClave();
-
-	/**
-	 * @brief Metodo getter del atributo login.
-	 */
-	string daLogin();
-
-	/**
 	 * @brief Metodo para loguear a un usuario con nombre y clave corectos.
 	 */
 	string daLogin(Usuario *usuario);
 
 	/**
 	 * @brief Operador de asignacion de la clase Usuario.
-	 * @param [in] usu Usuario (const, dir). Instancia de Usuario que queremos copiar
+	 * @param [in] usu Usuario (const, dir). Instancia de Usuario que queremos copiar.
 	 * @return Instancia copia de la clase Usuario creada.
 	 */
 	Usuario& operator=(const Usuario &usu) {
@@ -67,14 +66,14 @@ public:
 	}
 
 	/**
-	 * @brief Sobrecarga del operador << (de insercion) que permite entre otras cosas mostrar un usuario con cout.
+	 * @brief Sobrecarga del operador << (de insercion) que permite entre otras cosas mostrar un Usuario con cout.
 	 */
 	friend ostream& operator<<(ostream&, const Usuario&);
 
 	/**
 	 * @brief Operador "menor que" de la clase Usuario.
-	 * @param [in] usu Usuario (dir). Instancia de Usuario que queremos comparar
-	 * @return true si el nombre de usu es mayor, false en cualquier otro caso.
+	 * @param [in] usu Usuario (dir). Instancia de Usuario que queremos comparar.
+	 * @return true si el nombre de "usu" es mayor, false en cualquier otro caso.
 	 */
 	bool operator<(const Usuario &usu) {
 		return (this->nombre < usu.nombre);

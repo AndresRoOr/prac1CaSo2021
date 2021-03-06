@@ -1,6 +1,6 @@
 /**
- * @file Ususario.cpp
- * @brief Contiene el codigo fuente de todas las funciones del archivo cabecera Ususario.h
+ * @file Usuario.cpp
+ * @brief Contiene el codigo fuente de todas las funciones del archivo cabecera Usuario.h
  */
 
 #include "Usuario.h"
@@ -16,10 +16,26 @@ Usuario::Usuario() {
 }
 
 /**
- * @brief Funcion que asigna a un usuario su nombre, su clave, y por supuesto su login.
- * @param [in] anombre string. Nombre del usuario
- * @param [in] alogin string. Login del usuario
- * @param [in] aclave string. Clave del usuario
+ * @brief Metodo getter del atributo clave.
+ * @return clave string. Atributo de la clase.
+ */
+string Usuario::daClave() {
+	return clave;
+}
+
+/**
+ * @brief Metodo getter del atributo login.
+ * @return login string. Atributo de la clase.
+ */
+string Usuario::daLogin() {
+	return login;
+}
+
+/**
+ * @brief Funcion que asigna a un Usuario su nombre, su Clave, y por supuesto su Login.
+ * @param [in] anombre string. Nombre del Usuario.
+ * @param [in] alogin string. Login del Usuario.
+ * @param [in] aclave string. Clave del Usuario.
  */
 void Usuario::rellena(string anombre, string alogin, string aclave) {
 	nombre = anombre;
@@ -50,21 +66,6 @@ void Usuario::cambiarClave(string claven) {
 	this->clave = claven;
 }
 
-/**
- * @brief Metodo getter del atributo clave.
- * @return clave string. Atributo de la clase.
- */
-string Usuario::daClave() {
-	return clave;
-}
-
-/**
- * @brief Metodo getter del atributo login.
- * @return login string. Atributo de la clase.
- */
-string Usuario::daLogin() {
-	return login;
-}
 
 /**
  * @brief Metodo para loguear a un usuario con nombre y clave corectos.
@@ -76,9 +77,9 @@ string Usuario::daLogin(Usuario *usuario) {
 }
 
 /**
- * @brief Sobrecarga del operador << (de insercion) que permite entre otras cosas mostrar un usuario con cout.
+ * @brief Sobrecarga del operador << (de insercion) que permite entre otras cosas mostrar un Usuario con cout.
  * @param [in] ostream. El propio flujo de salida (por referencia).
- * @param [in] Usuario. Un usuario en concreto con su nombre y login (por referencia tambien).
+ * @param [in] Usuario. Un Usuario en concreto con su Nombre y Login (por referencia tambien).
  * @return El flujo de salida ostream debidamente sobrecargado.
  */
 ostream& operator<<(ostream& co, const Usuario& u) {
