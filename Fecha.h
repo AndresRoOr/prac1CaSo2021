@@ -79,7 +79,7 @@ public:
 	}
 
 	/**
-	 * @brief Obtener año
+	 * @brief Obtener aï¿½o
 	 * @return anio unsigned. Atributo de la clase.
 	 */
 	unsigned verAnio() const {
@@ -124,32 +124,27 @@ public:
 	Fecha &operator=(const Fecha &f);
 
 	/**
-	 * @brief Serializacion de fechas.
-	 */
-	ostream &operator<<(ostream &os, const Fecha &f);
-
-	/**
-	 * @brief Añadir un numero de minutos indicado.
+	 * @brief Aï¿½adir un numero de minutos indicado.
 	 */
 	void anadirMin(int numMin);
 
 	/**
-	 * @brief Añadir un numero de horas indicado.
+	 * @brief Aï¿½adir un numero de horas indicado.
 	 */
 	void anadirHoras(int numHoras);
 
 	/**
-	 * @brief Añadir un numero de dias indicado.
+	 * @brief Aï¿½adir un numero de dias indicado.
 	 */
 	void anadirDias(int numDias);
 
 	/**
-	 * @brief Añadir un numero de meses indicado.
+	 * @brief Aï¿½adir un numero de meses indicado.
 	 */
 	void anadirMeses(int numMeses);
 
 	/**
-	 * @brief Añadir un numero de años indicado.
+	 * @brief Aï¿½adir un numero de aï¿½os indicado.
 	 */
 	void anadirAnios(int numAnios);
 
@@ -180,5 +175,10 @@ public:
 	 */
 	~Fecha();
 };
+
+/**
+ * @brief Serializacion de fechas.
+ */
+ostream &operator<<(ostream &os, const Fecha &f);
 
 #endif
