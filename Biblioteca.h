@@ -1,6 +1,6 @@
 /**
  * @file	Biblioteca.h
- * @brief	Archivo cabecera donde se almacena la informacion de la clase Biblioteca.
+ * @brief	Archivo cabecera donde se almacena la información de la clase Biblioteca.
  */
 #ifndef BIBLIOTECA_H
 #define	BIBLIOTECA_H
@@ -22,38 +22,38 @@ using namespace std;
 namespace excepcionesBi {
 
 /**
- * @brief Excepcion personalizada para indicar que no se ha encontrado un usuario.
+ * @brief Excepción personalizada para indicar que no se ha encontrado un usuario.
  */
 class usuNoEncontrado {
 };
 
 /**
- * @brief Excepcion personalizada para indicar que ha habido un error en la apertura de un archivo.
+ * @brief Excepción personalizada para indicar que ha habido un error en la apertura de un archivo.
  */
 class errorApertura {
 };
 
 /**
- * @brief Excepcion personalizada para indicar que no se ha encontrado un libro.
+ * @brief Excepción personalizada para indicar que no se ha encontrado un libro.
  */
 class libroNoencontrado {
 };
 
 /**
- * @brief Excepcion personalizada para indicar que no se ha encontrado un pedido de un usuario.
+ * @brief Excepción personalizada para indicar que no se ha encontrado un pedido de un usuario.
  */
 class pedidoUsuarioNoencontrado {
 };
 
 /**
- * @brief Excepcion personalizada para indicar que no se ha encontrado un pedido hecho por la biblioteca.
+ * @brief Excepción personalizada para indicar que no se ha encontrado un pedido hecho por la biblioteca.
  */
 class pedidoBibliotecaNoencontrado {
 };
 }
 
 /**
- * @brief Clase que representa la informacion y el funcionamiento de una biblioteca.
+ * @brief Clase que representa la información y el funcionamiento de una biblioteca.
  */
 class Biblioteca {
 
@@ -61,7 +61,7 @@ class Biblioteca {
 	lista_sin<PedidoUsuario *> pedido_usu; ///< Lista donde se almacenan todos los pedidos de los usuarios.
 	lista_sin<PedidoBiblioteca *> pedidoBi; ///< Lista donde se almacenan todos los pedidos hechos por la biblioteca.
 	lista_sin<Libro *> libro; ///< Lista donde se almacenan todos los libros que posee la biblioteca.
-	Usuario *usu;   ///< Puntero al ultimo usuario introducido en la biblioteca.
+	Usuario *usu;   ///< Puntero al último usuario introducido en la biblioteca.
 
 public:
 
@@ -74,7 +74,7 @@ public:
 	}
 
 	/**
-	 * @brief Metodo getter del atributo pedidoBi de la clase.
+	 * @brief Método getter del atributo pedidoBi de la clase.
 	 */
 	lista_sin<PedidoBiblioteca *> * daLBiblioteca();
 
@@ -94,7 +94,7 @@ public:
 	void cargaLibros(string fichero);
 
 	/**
-	 * @brief Devuelve una lista con los libros que contengan el titulo que se le pasa como parametro.
+	 * @brief Devuelve una lista con los libros que contengan el título que se le pasa como parámetro.
 	 */
 	lista_sin<Libro *> * consultaLibros(string titulo);
 
@@ -110,13 +110,13 @@ public:
 	PedidoBiblioteca* abrePedidoBiblioteca(unsigned anum);
 
 	/**
-	 * @brief A�ade un pedido de Usuario a un pedido de Biblioteca, pone pedidoUsuario tramitado.
+	 * @brief Añade un pedido de Usuario a un pedido de Biblioteca, pone pedidoUsuario tramitado.
 	 */
 	void tramitaPedidoUsuario(PedidoUsuario *pedidoUsuario,
 			PedidoBiblioteca *ped);
 
 	/**
-	 * @brief Cierra un pedido de biblioteca marcandolo como tramitado.
+	 * @brief Cierra un pedido de biblioteca marcándolo como tramitado.
 	 */
 	void cierraPedidoBiblioteca(PedidoBiblioteca *ped, unsigned num);
 
@@ -143,7 +143,7 @@ public:
 	lista_sin<PedidoBiblioteca *> * buscaPedidosBibliotecaTramitados();
 
 	/**
-	 * @brief Devuelve la lista del pedido de la biblioteca del numero de pedido que se le pasa.
+	 * @brief Devuelve la lista del pedido de la biblioteca del número de pedido que se le pasa.
 	 */
 	PedidoBiblioteca * daListaPedBiblioteca(unsigned num);
 

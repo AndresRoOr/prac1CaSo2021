@@ -1,6 +1,6 @@
 /**
  * @file PedidoUsusario.h
- * @brief Archivo cabecera donde se almacena la informacion de la clase PedidoUsuario.
+ * @brief Archivo cabecera donde se almacena la información de la clase PedidoUsuario.
  */
 
 #ifndef PEDIDOUSUARIO_H
@@ -36,37 +36,37 @@ public:
 			float aPrecio, bool aTramitado);
 
 	/**
-	 * @brief Metodo getter del atributo usuario.
+	 * @brief Método getter del atributo usuario.
 	 */
 	Usuario* daUsuario();
 
 	/**
-	 * @brief Metodo getter del atributo libro.
+	 * @brief Método getter del atributo libro.
 	 */
 	Libro* daLibro();
 
 	/**
-	 * @brief Metodo getter del atributo prioridad.
+	 * @brief Método getter del atributo prioridad.
 	 */
 	int daPrioridad();
 
 	/**
-	 * @brief Metodo getter del atributo precio.
+	 * @brief Método getter del atributo precio.
 	 */
 	float daPrecio();
 
 	/**
-	 * @brief Metodo getter del atributo tramitado.
+	 * @brief Método getter del atributo tramitado.
 	 */
 	bool daTramitado();
 
 	/**
-	 * @brief Indicacion que permite constatar si un usuario ha hecho un pedido o no.
+	 * @brief Indicación que permite constatar si un usuario ha hecho un pedido o no.
 	 */
 	bool tramitaPedido();
 
 	/**
-	 * @brief Operador de asignacion de la clase PedidoUsuario.
+	 * @brief Operador de asignación de la clase PedidoUsuario.
 	 * @param [in] pedido PedidoUsuario (ref). Instancia de PedidoUsuario que se quiere copiar
 	 * @return Instancia copia creada de la clase PedidoUsuario.
 	 */

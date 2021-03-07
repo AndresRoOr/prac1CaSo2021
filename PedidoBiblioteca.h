@@ -1,6 +1,6 @@
 /**
  * @file PedidoBiblioteca.h
- * @brief Archivo cabecera donde se almacena toda la informacion relacionada con la clase PedidoBiblioteca.
+ * @brief Archivo cabecera donde se almacena toda la información relacionada con la clase PedidoBiblioteca.
  */
 
 #ifndef PEDIDOBIBLIOTECA_H
@@ -11,13 +11,13 @@
 #include "Fecha.h"
 
 /**
- * @brief Clase que representa de manera generica un pedido hecho por la biblioteca.
+ * @brief Clase que representa de manera genérica un pedido hecho por la biblioteca.
  */
 class PedidoBiblioteca {
 	Fecha fecha;        ///< Queda registrada la fecha del pedido actualizada con la fecha y hora del sistema.
 	float importe;      ///< Importe total de todos los usuarios.
 	bool tramitado;     ///< Booleano a true si el pedido esta tramitado, false en otro caso.
-	unsigned num;       ///< Numero de pedido de biblioteca.
+	unsigned num;       ///< Número de pedido de biblioteca.
 	lista_sin<PedidoUsuario *> pedido_usu; ///< Registro en la estructura de datos del pedido de un usuario.
 
 public:
@@ -52,17 +52,17 @@ public:
 	}
 
 	/**
-	 * @brief Metodo getter del atributo tramitado.
+	 * @brief Método getter del atributo tramitado.
 	 */
 	bool daTrami();
 
 	/**
-	 * @brief Metodo getter del atributo num.
+	 * @brief Método getter del atributo num.
 	 */
 	unsigned daNumero();
 
 	/**
-	 * @brief Metodo getter del atributo importe.
+	 * @brief Método getter del atributo importe.
 	 */
 	float daImporte();
 
@@ -72,22 +72,22 @@ public:
 	void insertaPedidoLibro(PedidoUsuario *pedidoUsuario);
 
 	/**
-	 * @brief Da por concluido el tramite de hacer el pedido.
+	 * @brief Da por concluido el trámite de hacer el pedido.
 	 */
 	void cierraPedido();
 
 	/**
-	 * @brief Funcion necesaria para la clase Biblioteca en busqueda de pedidos.
+	 * @brief Función necesaria para la clase Biblioteca en búsqueda de pedidos.
 	 */
 	PedidoUsuario* daPedidoUsuario(unsigned i);
 
 	/**
-	 * @brief Sobrecarga del operador << (de insercion) que permite entre otras cosas mostrar un PedidoBiblioteca con cout.
+	 * @brief Sobrecarga del operador << (de inserción) que permite entre otras cosas mostrar un PedidoBiblioteca con cout.
 	 */
 	friend ostream& operator<<(ostream&, PedidoBiblioteca&);
 
 	/**
-	 * @brief Operador de asignacion de la clase PedidoBiblioteca.
+	 * @brief Operador de asignación de la clase PedidoBiblioteca.
 	 * @param pedbi [in] PedidoBiblioteca (ref). PedidoBiblioteca de la que se quiere realizar una copia.
 	 * @return Instancia copia realizada.
 	 */

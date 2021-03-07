@@ -1,6 +1,6 @@
 /**
  * @file	Fecha.h
- * @brief	Archivo cabecera donde se almacena toda la informacion relacionada con la clase Fecha.
+ * @brief	Archivo cabecera donde se almacena toda la información relacionada con la clase Fecha.
  */
 
 #pragma once
@@ -13,7 +13,7 @@ using namespace std;
  * @brief Clase sencilla para representar fechas y horas.
  */
 class Fecha {
-	unsigned dia, mes, anio, hora, min; ///< Informacion de fecha y hora.
+	unsigned dia, mes, anio, hora, min; ///< Información de fecha y hora.
 	static const unsigned diasMes[12]; ///< Almacena los dias por mes.
 
 public:
@@ -37,7 +37,7 @@ public:
 	}
 
 	/**
-	 * @brief Asigna un nuevo dia.
+	 * @brief Asigna un nuevo día.
 	 */
 	void asignarDia(unsigned aDia, unsigned aMes, unsigned aAnio);
 
@@ -63,7 +63,7 @@ public:
 	}
 
 	/**
-	 * @brief Obtener dia.
+	 * @brief Obtener día.
 	 * @return dia unsigned. Atributo de la clase.
 	 */
 	unsigned verDia() const {
@@ -79,7 +79,7 @@ public:
 	}
 
 	/**
-	 * @brief Obtener a�o
+	 * @brief Obtener año
 	 * @return anio unsigned. Atributo de la clase.
 	 */
 	unsigned verAnio() const {
@@ -87,7 +87,7 @@ public:
 	}
 
 	/**
-	 * @brief Obtener una cadena con el dia.
+	 * @brief Obtener una cadena con el día.
 	 */
 	string cadenaDia() const;
 
@@ -97,17 +97,17 @@ public:
 	string cadenaHora() const;
 
 	/**
-	 * @brief Obtener una cadena con dia y hora.
-	 * @return Devuelve un string con toda la informacion de la clase.
+	 * @brief Obtener una cadena con día y hora.
+	 * @return Devuelve un string con toda la información de la clase.
 	 */
 	string cadena() const {
 		return cadenaDia() + " " + cadenaHora();
 	}
 
 	/**
-	 * @brief Indica si las dos fechas tienen el mismo dia.
+	 * @brief Indica si las dos fechas tienen el mismo día.
 	 * @param [in] f Fecha(dir, const). Fecha que queremos comprobar.
-	 * @return bool. True en el caso de que las dos fechas tengan el mismo dia, false en cualquier otro caso.
+	 * @return bool. True en el caso de que las dos fechas tengan el mismo día, false en cualquier otro caso.
 	 */
 	bool mismoDia(const Fecha &f) const {
 		return dia == f.dia && mes == f.mes && anio == f.anio;
@@ -119,53 +119,53 @@ public:
 	bool operator<(const Fecha &f);
 
 	/**
-	 * @brief Operador de asignacion de la clase Fecha.
+	 * @brief Operador de asignación de la clase Fecha.
 	 */
 	Fecha &operator=(const Fecha &f);
 
 	/**
-	 * @brief A�adir un numero de minutos indicado.
+	 * @brief Añadir un número de minutos indicado.
 	 */
 	void anadirMin(int numMin);
 
 	/**
-	 * @brief A�adir un numero de horas indicado.
+	 * @brief Añadir un número de horas indicado.
 	 */
 	void anadirHoras(int numHoras);
 
 	/**
-	 * @brief A�adir un numero de dias indicado.
+	 * @brief Añadir un número de dias indicado.
 	 */
 	void anadirDias(int numDias);
 
 	/**
-	 * @brief A�adir un numero de meses indicado.
+	 * @brief Añadir un número de meses indicado.
 	 */
 	void anadirMeses(int numMeses);
 
 	/**
-	 * @brief A�adir un numero de a�os indicado.
+	 * @brief Añadir un numero de años indicado.
 	 */
 	void anadirAnios(int numAnios);
 
 	/**
-	 * @brief Comprobacion de la validez de una fecha.
+	 * @brief Comprobación de la validez de una fecha.
 	 */
 	void comprobarFecha(unsigned aDia, unsigned aMes, unsigned aAnio,
 			unsigned aHora, unsigned aMin) const;
 
 	/**
-	 * @brief Funcion auxiliar de conversion desde estructura de tiempo tm de time.h.
+	 * @brief Función auxiliar de conversión desde estructura de tiempo tm de time.h.
 	 */
 	void leerTiempo(const tm &t);
 
 	/**
-	 * @brief Funcion auxiliar de conversion a estructura de tiempo tm de time.h.
+	 * @brief Función auxiliar de conversión a estructura de tiempo tm de time.h.
 	 */
 	void escribirTiempo(tm &t);
 
 	/**
-	 * @brief Excepcion que representa fechas incorrectas.
+	 * @brief Excepción que representa fechas incorrectas.
 	 */
 	class ErrorFechaIncorrecta {
 	};
@@ -177,7 +177,7 @@ public:
 };
 
 /**
- * @brief Serializacion de fechas.
+ * @brief Serialización de fechas.
  */
 ostream &operator<<(ostream &os, const Fecha &f);
 

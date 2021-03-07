@@ -1,6 +1,6 @@
 /**
  * @file PedidoBiblioteca.cpp
- * @brief Contiene el codigo fuente de todas las funciones del archivo cabecera PedidoBiblioteca.h
+ * @brief Contiene el código fuente de todas las funciones del archivo cabecera PedidoBiblioteca.h
  */
 
 #include "PedidoBiblioteca.h"
@@ -17,7 +17,7 @@ PedidoBiblioteca::PedidoBiblioteca() :
 }
 
 /**
- * @brief Metodo getter del atributo tramitado.
+ * @brief Método getter del atributo tramitado.
  * @return tramitado bool. Atributo de la clase.
  */
 bool PedidoBiblioteca::daTrami() {
@@ -25,7 +25,7 @@ bool PedidoBiblioteca::daTrami() {
 }
 
 /**
- * @brief Metodo getter del atributo num.
+ * @brief Método getter del atributo num.
  * @return num unsigned. Atributo de la clase.
  */
 unsigned PedidoBiblioteca::daNumero() {
@@ -33,7 +33,7 @@ unsigned PedidoBiblioteca::daNumero() {
 }
 
 /**
- * @brief Metodo getter del atributo importe.
+ * @brief Método getter del atributo importe.
  * @return importe float. Atributo de la clase.
  */
 float PedidoBiblioteca::daImporte() {
@@ -41,7 +41,7 @@ float PedidoBiblioteca::daImporte() {
 }
 
 /**
- * @brief Funcion necesaria para la clase Biblioteca en busqueda de pedidos.
+ * @brief Función necesaria para la clase Biblioteca en búsqueda de pedidos.
  * @param [in] i unsigned. El usuario apuntado por i.
  * @return pedido_usu_lee PedidoUsuario*. El pedido que ha hecho el usuario referenciado por i en la estructura de datos.
  */
@@ -60,16 +60,16 @@ void PedidoBiblioteca::insertaPedidoLibro(PedidoUsuario *pedidoUsuario) {
 }
 
 /**
- * @brief Da por concluido el tramite de hacer el pedido.
+ * @brief Da por concluido el trámite de hacer el pedido.
  */
 void PedidoBiblioteca::cierraPedido() {
 	tramitado = true;
 }
 
 /**
-	 * @brief Sobrecarga del operador << (de insercion) que permite entre otras cosas mostrar un PedidoBiblioteca con cout.
+	 * @brief Sobrecarga del operador << (de inserción) que permite entre otras cosas mostrar un PedidoBiblioteca con cout.
 	 * @param [in] ostream. El propio flujo de salida (por referencia).
-	 * @param [in] PedidoBiblioteca. El pedido de la biblioteca (por referencia tambien).
+	 * @param [in] PedidoBiblioteca. El pedido de la biblioteca (por referencia también).
 	 * @return [out] co. El flujo de salida ostream debidamente sobrecargado.
 	 */
 ostream& operator<<(ostream& co, PedidoBiblioteca& pb) {

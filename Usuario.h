@@ -1,6 +1,6 @@
 /**
  * @file Usuario.h
- * @brief Archivo cabecera donde se almacena la informacion de la clase Usuario.
+ * @brief Archivo cabecera donde se almacena la información de la clase Usuario.
  */
 
 #ifndef USUARIO_H
@@ -15,7 +15,7 @@ using namespace std;
  */
 class Usuario {
 	string nombre;   ///< Nombre del usuario.
-	string clave;    ///< Clave que lo autenticara ante el sistema.
+	string clave;    ///< Clave que lo autenticará ante el sistema.
 	string login;    ///< Login del usuario.
 public:
 
@@ -25,16 +25,16 @@ public:
 	Usuario();
 
 	/**
-	 * @brief Metodo getter del atributo clave.
+	 * @brief Método getter del atributo clave.
 	 */
 	string daClave();
 
 	/**
-	 * @brief Metodo getter del atributo login.
+	 * @brief Método getter del atributo login.
 	 */
 	string daLogin();
 	/**
-	 * @brief Funcion que asigna a un usuario su nombre, su clave, y por supuesto su login.
+	 * @brief Función que asigna a un usuario su nombre, su clave, y por supuesto su login.
 	 */
 	void rellena(string anombre, string alogin, string aclave);
 
@@ -44,17 +44,17 @@ public:
 	bool validarClave(string claven);
 
 	/**
-	 * @brief Cambia el atributo clave con el string pasado como parametro.
+	 * @brief Cambia el atributo clave con el string pasado como parámetro.
 	 */
 	void cambiarClave(string nuevaClave);
 
 	/**
-	 * @brief Metodo para loguear a un usuario con nombre y clave corectos.
+	 * @brief Método para loguear a un usuario con nombre y clave corectos.
 	 */
 	string daLogin(Usuario *usuario);
 
 	/**
-	 * @brief Operador de asignacion de la clase Usuario.
+	 * @brief Operador de asignación de la clase Usuario.
 	 * @param [in] usu Usuario (const, dir). Instancia de Usuario que queremos copiar.
 	 * @return Instancia copia de la clase Usuario creada.
 	 */
@@ -66,7 +66,7 @@ public:
 	}
 
 	/**
-	 * @brief Sobrecarga del operador << (de insercion) que permite entre otras cosas mostrar un Usuario con cout.
+	 * @brief Sobrecarga del operador << (de inserción) que permite entre otras cosas mostrar un Usuario con cout.
 	 */
 	friend ostream& operator<<(ostream&, const Usuario&);
 

@@ -1,6 +1,6 @@
 /**
  * @file main.cpp
- * @brief Archivo principal de la aplicacion.
+ * @brief Archivo principal de la aplicaci贸n.
  */
 #include <cstdlib>
 #include "Aplication.h"
@@ -8,15 +8,15 @@
 using namespace std;
 
 /**
- * @brief Funcion principal de la aplicacion.
- * @return 0 en caso de ejecucion satisfactoria, distinto valor en cualquier otro caso.
+ * @brief Funci贸n principal de la aplicaci贸n.
+ * @return 0 en caso de ejecuci贸n satisfactoria, distinto valor en cualquier otro caso.
  */
 int main() {
 	unsigned opcion;
 	Aplication aplica;
 	do {
 		cout << "Bienvenido a nuestra biblioteca pulse:\n" << endl;
-		cout << "1.- Contrase馻 de admin. " << endl;
+		cout << "1.- Contrase帽a de admin. " << endl;
 		cout << "2.- Registrarse como usuario. " << endl;
 		cout << "0.- Salir. " << endl;
 		cin >> opcion;

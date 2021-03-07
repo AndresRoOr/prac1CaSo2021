@@ -1,6 +1,6 @@
 /**
  * @file  Biblioteca.cpp
- * @brief Contiene el codigo fuente de los elementos del archivo cabecera Biblioteca.h.
+ * @brief Contiene el código fuente de los elementos del archivo cabecera Biblioteca.h.
  */
 #include "Biblioteca.h"
 
@@ -14,7 +14,7 @@
 bool Biblioteca::nuevoUsuario(string login, string nombre, string clave) {
 	usu->rellena(login, nombre, clave);
 	unsigned i;
-	if (usur.tamanio() == 0) { /// Devuelve true si esta el Usuario y ya no se puede introducir Usuario por motivos obvios.
+	if (usur.tamanio() == 0) { /// Devuelve true si está el Usuario y ya no se puede introducir Usuario por motivos obvios.
 		usur.aumenta(usu);
 		return true;
 	} else {
@@ -31,7 +31,7 @@ bool Biblioteca::nuevoUsuario(string login, string nombre, string clave) {
 }
 
 /**
- * @brief Metodo getter del atributo pedidoBi de la clase.
+ * @brief Método getter del atributo pedidoBi de la clase.
  * @return El atributo pedidoBi de la clase.
  */
 lista_sin<PedidoBiblioteca *> * Biblioteca::daLBiblioteca() {
@@ -57,7 +57,7 @@ Usuario* Biblioteca::buscaUsuario(string login, string clave) {
 
 /**
  * @brief Devuelve una lista con los libros que contengan el titulo que se le pasa como parametro.
- * @param [in] fichero string. Fichero donde se encuentra almacenada la informacion de los libros.
+ * @param [in] fichero string. Fichero donde se encuentra almacenada la información de los libros.
  */
 void Biblioteca::cargaLibros(string fichero) {
 	ifstream entrada;
@@ -89,17 +89,17 @@ void Biblioteca::cargaLibros(string fichero) {
 }
 
 /**
- * @brief Devuelve una lista con los libros que contengan el titulo que se le pasa como parametro.
- * @param [in] titulo string. Titulo que deben contener los libros.
- * @return Lista con todos los libros que coinciden con la busqueda realizada.
+ * @brief Devuelve una lista con los libros que contengan el título que se le pasa como parámetro.
+ * @param [in] titulo string. Título que deben contener los libros.
+ * @return Lista con todos los libros que coinciden con la búsqueda realizada.
  */
 lista_sin<Libro *> * Biblioteca::consultaLibros(string titulo) {
 	unsigned i;
 	int pos = -1;
 	lista_sin<Libro *> *libros = new lista_sin<Libro *>;
 	for (i = 0; i < libro.tamanio(); i++) {
-		pos = libro.lee(i)->daTitulo().find(titulo); /// Devuelve la posicion en la cadena.
-		if (pos != -1) { /// Si no se modifica el -1 entonces es que no esta.
+		pos = libro.lee(i)->daTitulo().find(titulo); /// Devuelve la posición en la cadena.
+		if (pos != -1) { /// Si no se modifica el -1 entonces es que no está.
 			libros->aumenta(libro.lee(i));
 		}
 	}
@@ -127,8 +127,8 @@ PedidoUsuario* Biblioteca::creaPedidoUsuario(Usuario *usuario, Libro *libro, int
 
 /**
  * @brief Crea lista pedido de Biblioteca y devuelve su referencia.
- * @pre Inicialmente estara vacio a la espera de que se a�adan pedidos de Usuario.
- * @param [in] anum unsigned, refiriendose al numero de pedido.
+ * @pre Inicialmente estara vacío a la espera de que se añadan pedidos de Usuario.
+ * @param [in] anum unsigned, refiriéndose al número de pedido.
  * @return La referencia al pedido.
  */
 PedidoBiblioteca* Biblioteca::abrePedidoBiblioteca(unsigned anum) {
@@ -138,8 +138,8 @@ PedidoBiblioteca* Biblioteca::abrePedidoBiblioteca(unsigned anum) {
 }
 
 /**
- * @brief A�ade un pedido de Usuario a un pedido de Biblioteca, pone pedidoUsuario tramitado.
- * @param [in] pedidoUsuario PedidoUsuario(ref). Pedido de Usuario que queremos a�adir.
+ * @brief Añade un pedido de Usuario a un pedido de Biblioteca, pone pedidoUsuario tramitado.
+ * @param [in] pedidoUsuario PedidoUsuario(ref). Pedido de Usuario que queremos añadir.
  * @param [in] ped PedidoBiblioteca(ref). Pedido de biblioteca donde queremeos incluir el pedido de Usuario.
  */
 void Biblioteca::tramitaPedidoUsuario(PedidoUsuario* pedidoUsuario,	PedidoBiblioteca *ped) {
@@ -151,9 +151,9 @@ void Biblioteca::tramitaPedidoUsuario(PedidoUsuario* pedidoUsuario,	PedidoBiblio
 }
 
 /**
- * @brief Cierra un pedido de biblioteca marcandolo como tramitado.
+ * @brief Cierra un pedido de biblioteca marcándolo como tramitado.
  * @param [in] ped PedidoBiblioteca(ref). Pedido de biblioteca que queremos cerrar.
- * @param [in] num unsigned, se refiere al numero de pedido hecho por la biblioteca.
+ * @param [in] num unsigned, se refiere al número de pedido hecho por la biblioteca.
  */
 void Biblioteca::cierraPedidoBiblioteca(PedidoBiblioteca *ped, unsigned num) {
 	if (ped != NULL) {
@@ -195,7 +195,7 @@ lista_sin<PedidoUsuario *> * Biblioteca::buscaPedidosUsuarioPendientes(Usuario *
 lista_sin<PedidoUsuario *> * Biblioteca::buscaPedidosUsuarioTramitados(Usuario *usuario) {
 	unsigned i = 0;
 	lista_sin<PedidoUsuario *> * pedTramitados = new lista_sin<PedidoUsuario *>;
-	while (i < pedido_usu.tamanio()) { /// Busca pedidos de Usuario tramitados devolviendolos en una lista.
+	while (i < pedido_usu.tamanio()) { /// Busca pedidos de Usuario tramitados devolviéndolos en una lista.
 		if (pedido_usu.lee(i)->daTramitado() == true
 				&& usu->daLogin(pedido_usu.lee(0)->daUsuario())	== usuario->daLogin()) {
 			pedTramitados->aumenta(pedido_usu.lee(i));
@@ -249,9 +249,9 @@ lista_sin<PedidoBiblioteca *> * Biblioteca::buscaPedidosBibliotecaTramitados() {
 }
 
 /**
- * @brief Devuelve la lista del pedido de la biblioteca del numero de pedido que se le pasa.
- * @param [in] num unsigned, se refiere al numero de pedido hecho por la biblioteca.
- * @return El puntero a la lista del numero de pedido que se le ha pasado.
+ * @brief Devuelve la lista del pedido de la biblioteca del número de pedido que se le pasa.
+ * @param [in] num unsigned, se refiere al número de pedido hecho por la biblioteca.
+ * @return El puntero a la lista del número de pedido que se le ha pasado.
  */
 PedidoBiblioteca * Biblioteca::daListaPedBiblioteca(unsigned num) {
 	unsigned i = 0;

@@ -1,6 +1,6 @@
 /**
  * @file Libro.cpp
- * @brief Contiene el codigo fuente de todas las funciones del archivo cabecera Libro.h
+ * @brief Contiene el código fuente de todas las funciones del archivo cabecera Libro.h
  */
 
 #include "Libro.h"
@@ -8,7 +8,7 @@
 
 /**
  * @brief Constructor por defecto de la clase Libro.
- * @pre Al estar inicializando un objeto de la clase, todos los atributos aparecen vacios o inicializados a cero.
+ * @pre Al estar inicializando un objeto de la clase, todos los atributos aparecen vacíos o inicializados a cero.
  */
 Libro::Libro() {
 	titulo = "";
@@ -21,11 +21,11 @@ Libro::Libro() {
 
 /**
  * @brief Constructor parametrizado de la clase Libro.
- * @param [in] aTitulo string. Titulo del libro.
+ * @param [in] aTitulo string. Título del libro.
  * @param [in] aAutores string. Autor/es del libro.
  * @param [in] aEditorial string. Editorial del libro.
  * @param [in] aISBN string. ISBN del libro.
- * @param [in] aAnio int. A�o de publicacion del libro.
+ * @param [in] aAnio int. Año de publicación del libro.
  * @param [in] aPrecioActual float. Precio del libro.
  */
 Libro::Libro(string aTitulo, string aAutores, string aEditorial, string aISBN, int aAnio, float aPrecioActual) {
@@ -38,7 +38,7 @@ Libro::Libro(string aTitulo, string aAutores, string aEditorial, string aISBN, i
 }
 
 /**
- * @brief Metodo getter del atributo ISBN.
+ * @brief Método getter del atributo ISBN.
  * @return ISBN string. El International Standard Book Number del libro.
  */
 	string Libro::daISBN() {
@@ -46,34 +46,34 @@ Libro::Libro(string aTitulo, string aAutores, string aEditorial, string aISBN, i
 	}
 
 /**
- * @brief Metodo getter del atributo titulo con parametro.
+ * @brief Método getter del atributo título con parámetro.
  * @param [in] libro Libro(ref). Libro del que queremos obtener el título
- * @return titulo string. El titulo del libro referenciado.
+ * @return titulo string. El título del libro referenciado.
  */
 	string Libro::daTitulo(Libro *libro) {
 			return titulo;
 	}
 
 /**
- * @brief Metodo getter del atributo titulo.
- * @return titulo string. El titulo del libro.
+ * @brief Método getter del atributo título.
+ * @return titulo string. El título del libro.
  */
 	string Libro::daTitulo() {
 		return titulo;
 	}
 
 /**
- * @brief Metodo getter del atributo precio.
- * @return precioActual float. El coste de la adquisicion del libro.
+ * @brief Método getter del atributo precio.
+ * @return precioActual float. El coste de la adquisición del libro.
  */
 	float Libro::daPrecioActual() {
 		return precioActual;
 	}
 
 /**
- * @brief Sobrecarga del operador << (de insercion) que permite entre otras cosas, mostrar un libro con cout.
+ * @brief Sobrecarga del operador << (de inserción) que permite entre otras cosas, mostrar un libro con cout.
  * @param [in]  co ostream. El propio flujo de salida (por referencia).
- * @param [in] Libro. Un libro en concreto con su titulo, ISBN, Editorial y autor/es (por referencia tambien).
+ * @param [in] Libro. Un libro en concreto con su título, ISBN, Editorial y autor/es (por referencia también).
  * @return [out] co. El flujo de salida ostream debidamente sobrecargado.
  */
 ostream& operator<<(ostream& co, const Libro& l) {

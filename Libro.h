@@ -1,6 +1,6 @@
 /**
  * @file Libro.h
- * @brief Archivo cabecera donde se almacena toda la informacion relacionada con la clase Libro.
+ * @brief Archivo cabecera donde se almacena toda la información relacionada con la clase Libro.
  */
 
 #ifndef LIBRO_H
@@ -11,14 +11,14 @@
 using namespace std;
 
 /**
- * @brief Clase que representa toda la informacion necesaria de un libro.
+ * @brief Clase que representa toda la información necesaria de un libro.
  */
 class Libro {
-	string titulo;      ///< Titulo del libro.
+	string titulo;      ///< Título del libro.
 	string autores;     ///< Autor/es del libro.
 	string editorial;   ///< Editorial que publica el libro.
-	string ISBN;        ///< Codigo ISBN identificativo del libro (International Standard Book Number).
-	int anio;           ///< A�o en el que se publica el libro.
+	string ISBN;        ///< Código ISBN identificativo del libro (International Standard Book Number).
+	int anio;           ///< Año en el que se publica el libro.
 	float precioActual; ///< Precio actual del libro.
 
 public:
@@ -47,29 +47,29 @@ public:
 	}
 
 	/**
-	 * @brief Metodo getter del atributo ISBN.
+	 * @brief Método getter del atributo ISBN.
 	 */
 	string daISBN();
 
 	/**
-	 * @brief Metodo getter del atributo titulo con parametro.
+	 * @brief Método getter del atributo título con parámetro.
 	 */
 	string daTitulo(Libro *libro);
 
 	/**
-	 * @brief Metodo getter del atributo titulo.
+	 * @brief Método getter del atributo título.
 	 */
 	string daTitulo();
 
 	/**
-	 * @brief Metodo getter del atributo precio.
+	 * @brief Método getter del atributo precio.
 	 */
 	float daPrecioActual();
 
 	/**
-	 * @brief Operador de asignacion de la clase Libro.
+	 * @brief Operador de asignación de la clase Libro.
 	 * @param [in] lib Libro(dir). Instancia de la clase Libro de la cual se va a realizar una copia.
-	 * @return Devuelve una nueva instancia de la clase Libro con la informacion de lib.
+	 * @return Devuelve una nueva instancia de la clase Libro con la información de lib.
 	 */
 	Libro& operator=(const Libro &lib) {
 		this->titulo = lib.titulo;
@@ -81,15 +81,15 @@ public:
 
 	/**
 	 * @brief Operador "menor que" de la clase Libro.
-	 * @param [in] lib(dir, const). Instancia de la clase Libro con la que queremos realizar la comparacion.
-	 * @return True en el caso de que el ISBN de la instancia actual sea menor que el de la instancia pasada como parametro.
+	 * @param [in] lib(dir, const). Instancia de la clase Libro con la que queremos realizar la comparación.
+	 * @return True en el caso de que el ISBN de la instancia actual sea menor que el de la instancia pasada como parámetro.
 	 */
 	bool operator<(const Libro &lib) {
 		return (this->ISBN < lib.ISBN);
 	}
 
 	/**
-	 * @brief Sobrecarga del operador << (de insercion) que permite entre otras cosas, mostrar un libro con cout.
+	 * @brief Sobrecarga del operador << (de inserción) que permite entre otras cosas, mostrar un libro con cout.
 	 */
 	friend ostream& operator<<(ostream&, const Libro&);
 

@@ -1,12 +1,12 @@
 /**
  * @file PedidoUsusario.cpp
- * @brief Contiene el codigo fuente de todas las funciones del archivo cabecera PedidoUsusario.h
+ * @brief Contiene el código fuente de todas las funciones del archivo cabecera PedidoUsusario.h
  */
 #include "PedidoUsuario.h"
 
 /**
  * @brief Constructor por defecto del pedido de un usuario en concreto.
- * @return La inicializacion de un pedido por parte del usuario con su fecha, precio, etc.
+ * @return La inicialización de un pedido por parte del usuario con su fecha, precio, etc.
  */
 PedidoUsuario::PedidoUsuario() :
 	fecha() {              ///< Fecha que queda registrada al hacer un pedido.
@@ -30,13 +30,13 @@ PedidoUsuario::PedidoUsuario(Libro *libro, Usuario *usuario, Fecha aFecha, int a
 	fecha = aFecha;          ///< Copia de la fecha que queda registrada al hacer un pedido.
 	prioridad = aPrioridad;  ///< Copia de la prioridad que queda registrada al hacer un pedido.
 	precio = aPrecio;        ///< Copia del precio de un pedido.
-	tramitado = aTramitado;  ///< Copia de la tramitacion de un pedido.
+	tramitado = aTramitado;  ///< Copia de la tramitación de un pedido.
 	this->usuario = usuario; ///< Referencia al usuario mediante el objeto this.
 	this->libro = libro;     ///< Referencia al libro mediante el objeto this.
 }
 
 /**
- * @brief Metodo getter del atributo ususario.
+ * @brief Método getter del atributo ususario.
  * @return usuario Usuario (ref). Atributo de la clase.
  */
 Usuario* PedidoUsuario::daUsuario() {
@@ -44,7 +44,7 @@ Usuario* PedidoUsuario::daUsuario() {
 }
 
 /**
- * @brief Metodo getter del atributo libro.
+ * @brief Método getter del atributo libro.
  * @return libro Libro (ref). Atributo de la clase.
  */
 Libro* PedidoUsuario::daLibro() {
@@ -52,7 +52,7 @@ Libro* PedidoUsuario::daLibro() {
 }
 
 /**
- * @brief Metodo getter del atributo prioridad.
+ * @brief Método getter del atributo prioridad.
  * @return prioridad int. Atributo de la clase.
  */
 int PedidoUsuario::daPrioridad() {
@@ -60,7 +60,7 @@ int PedidoUsuario::daPrioridad() {
 }
 
 /**
- * @brief Metodo getter del atributo precio.
+ * @brief Método getter del atributo precio.
  * @return precio float. Atributo de la clase.
  */
 float PedidoUsuario::daPrecio() {
@@ -68,7 +68,7 @@ float PedidoUsuario::daPrecio() {
 }
 
 /**
- * @brief Metodo getter del atributo tramitado.
+ * @brief Método getter del atributo tramitado.
  * @return tramitado bool. Atributo de la clase.
  */
 bool PedidoUsuario::daTramitado() {
@@ -76,7 +76,7 @@ bool PedidoUsuario::daTramitado() {
 }
 
 /**
- * @brief Indicacion que permite confirmar que un usuario ha hecho un pedido y por tanto, se tramita.
+ * @brief Indicación que permite confirmar que un usuario ha hecho un pedido y por tanto, se tramita.
  * @return tramitado bool. Por tanto se pone a true.
  */
 bool PedidoUsuario::tramitaPedido() {
@@ -84,9 +84,9 @@ bool PedidoUsuario::tramitaPedido() {
 }
 
 /**
- * @brief Sobrecarga del operador << (de insercion) que permite entre otras cosas mostrar un PedidoUsuario con cout.
+ * @brief Sobrecarga del operador << (de inserción) que permite entre otras cosas mostrar un PedidoUsuario con cout.
  * @param [in] ostream. El propio flujo de salida (por referencia).
- * @param [in] PedidoUsuario. El pedido de un usuario en concreto (por referencia tambien).
+ * @param [in] PedidoUsuario. El pedido de un usuario en concreto (por referencia también).
  * @return El flujo de salida ostream debidamente sobrecargado.
  */
 ostream& operator<<(ostream& co, const PedidoUsuario& pu) {
