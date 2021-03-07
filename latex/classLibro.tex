@@ -1,0 +1,224 @@
+\hypertarget{classLibro}{}\doxysection{Libro Class Reference}
+\label{classLibro}\index{Libro@{Libro}}
+
+
+Clase que representa toda la información necesaria de un libro.  
+
+
+
+
+{\ttfamily \#include $<$Libro.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classLibro_a9892c534a717676fdd96b48bb2e0f8bc}{Libro}} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto de la clase \mbox{\hyperlink{classLibro}{Libro}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classLibro_a28268bd21c111a925b4c3bb0f9b034bb}{Libro}} (string a\+Titulo, string a\+Autores, string a\+Editorial, string a\+I\+S\+BN, int a\+Anio, float a\+Precio\+Actual)
+\begin{DoxyCompactList}\small\item\em Constructor parametrizado de la clase \mbox{\hyperlink{classLibro}{Libro}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classLibro_a29478b07d3792787e5d5e8ad8ed8f3fe}{Libro}} (const \mbox{\hyperlink{classLibro}{Libro}} \&lib)
+\begin{DoxyCompactList}\small\item\em Constructor por copia de la clase \mbox{\hyperlink{classLibro}{Libro}}. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classLibro_a560bc9e9e484c7717aeed024ac95d768}{da\+I\+S\+BN}} ()
+\begin{DoxyCompactList}\small\item\em Método getter del atributo I\+S\+BN. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classLibro_a66965add10036095e6ec1a11bb83d104}{da\+Titulo}} (\mbox{\hyperlink{classLibro}{Libro}} $\ast$libro)
+\begin{DoxyCompactList}\small\item\em Método getter del atributo título con parámetro. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classLibro_a41db89f9bb9dd9a32da615dcbd392b39}{da\+Titulo}} ()
+\begin{DoxyCompactList}\small\item\em Método getter del atributo título. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classLibro_a4d1adcb439076ad7e6648b15c6a17365}{da\+Precio\+Actual}} ()
+\begin{DoxyCompactList}\small\item\em Método getter del atributo precio. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classLibro}{Libro}} \& \mbox{\hyperlink{classLibro_a62a3366dfc43574c6ce118e74ab63dbd}{operator=}} (const \mbox{\hyperlink{classLibro}{Libro}} \&lib)
+\begin{DoxyCompactList}\small\item\em Operador de asignación de la clase \mbox{\hyperlink{classLibro}{Libro}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classLibro_aae098610c35ece0b7584bcea394697ac}{operator$<$}} (const \mbox{\hyperlink{classLibro}{Libro}} \&lib)
+\begin{DoxyCompactList}\small\item\em Operador \char`\"{}menor que\char`\"{} de la clase \mbox{\hyperlink{classLibro}{Libro}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLibro_ab8e4fbae43d4cb308d61ebbadf7dd774}\label{classLibro_ab8e4fbae43d4cb308d61ebbadf7dd774}} 
+\mbox{\hyperlink{classLibro_ab8e4fbae43d4cb308d61ebbadf7dd774}{$\sim$\+Libro}} ()
+\begin{DoxyCompactList}\small\item\em Destructor de la clase \mbox{\hyperlink{classLibro}{Libro}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \mbox{\hyperlink{classLibro_a42a73435f49d0133368ed928fa21f942}{operator$<$$<$}} (ostream \&, const \mbox{\hyperlink{classLibro}{Libro}} \&)
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador $<$$<$ (de inserción) que permite entre otras cosas, mostrar un libro con cout. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase que representa toda la información necesaria de un libro. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classLibro_a9892c534a717676fdd96b48bb2e0f8bc}\label{classLibro_a9892c534a717676fdd96b48bb2e0f8bc}} 
+\index{Libro@{Libro}!Libro@{Libro}}
+\index{Libro@{Libro}!Libro@{Libro}}
+\doxysubsubsection{\texorpdfstring{Libro()}{Libro()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Libro\+::\+Libro (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor por defecto de la clase \mbox{\hyperlink{classLibro}{Libro}}. 
+
+\begin{DoxyPrecond}{Precondition}
+Al estar inicializando un objeto de la clase, todos los atributos aparecen vacíos o inicializados a cero. 
+\end{DoxyPrecond}
+\mbox{\Hypertarget{classLibro_a28268bd21c111a925b4c3bb0f9b034bb}\label{classLibro_a28268bd21c111a925b4c3bb0f9b034bb}} 
+\index{Libro@{Libro}!Libro@{Libro}}
+\index{Libro@{Libro}!Libro@{Libro}}
+\doxysubsubsection{\texorpdfstring{Libro()}{Libro()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Libro\+::\+Libro (\begin{DoxyParamCaption}\item[{string}]{a\+Titulo,  }\item[{string}]{a\+Autores,  }\item[{string}]{a\+Editorial,  }\item[{string}]{a\+I\+S\+BN,  }\item[{int}]{a\+Anio,  }\item[{float}]{a\+Precio\+Actual }\end{DoxyParamCaption})}
+
+
+
+Constructor parametrizado de la clase \mbox{\hyperlink{classLibro}{Libro}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em a\+Titulo} & string. Título del libro. \\
+\hline
+\mbox{\texttt{ in}}  & {\em a\+Autores} & string. Autor/es del libro. \\
+\hline
+\mbox{\texttt{ in}}  & {\em a\+Editorial} & string. Editorial del libro. \\
+\hline
+\mbox{\texttt{ in}}  & {\em a\+I\+S\+BN} & string. I\+S\+BN del libro. \\
+\hline
+\mbox{\texttt{ in}}  & {\em a\+Anio} & int. Año de publicación del libro. \\
+\hline
+\mbox{\texttt{ in}}  & {\em a\+Precio\+Actual} & float. Precio del libro. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classLibro_a29478b07d3792787e5d5e8ad8ed8f3fe}\label{classLibro_a29478b07d3792787e5d5e8ad8ed8f3fe}} 
+\index{Libro@{Libro}!Libro@{Libro}}
+\index{Libro@{Libro}!Libro@{Libro}}
+\doxysubsubsection{\texorpdfstring{Libro()}{Libro()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Libro\+::\+Libro (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classLibro}{Libro}} \&}]{lib }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor por copia de la clase \mbox{\hyperlink{classLibro}{Libro}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em lib} & \mbox{\hyperlink{classLibro}{Libro(dir)}}. Instancia de la clase \mbox{\hyperlink{classLibro}{Libro}} de la cual se va realizar una copia. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classLibro_a560bc9e9e484c7717aeed024ac95d768}\label{classLibro_a560bc9e9e484c7717aeed024ac95d768}} 
+\index{Libro@{Libro}!daISBN@{daISBN}}
+\index{daISBN@{daISBN}!Libro@{Libro}}
+\doxysubsubsection{\texorpdfstring{daISBN()}{daISBN()}}
+{\footnotesize\ttfamily string Libro\+::da\+I\+S\+BN (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Método getter del atributo I\+S\+BN. 
+
+\begin{DoxyReturn}{Returns}
+I\+S\+BN string. El International Standard Book Number del libro. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLibro_a4d1adcb439076ad7e6648b15c6a17365}\label{classLibro_a4d1adcb439076ad7e6648b15c6a17365}} 
+\index{Libro@{Libro}!daPrecioActual@{daPrecioActual}}
+\index{daPrecioActual@{daPrecioActual}!Libro@{Libro}}
+\doxysubsubsection{\texorpdfstring{daPrecioActual()}{daPrecioActual()}}
+{\footnotesize\ttfamily float Libro\+::da\+Precio\+Actual (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Método getter del atributo precio. 
+
+\begin{DoxyReturn}{Returns}
+precio\+Actual float. El coste de la adquisición del libro. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLibro_a41db89f9bb9dd9a32da615dcbd392b39}\label{classLibro_a41db89f9bb9dd9a32da615dcbd392b39}} 
+\index{Libro@{Libro}!daTitulo@{daTitulo}}
+\index{daTitulo@{daTitulo}!Libro@{Libro}}
+\doxysubsubsection{\texorpdfstring{daTitulo()}{daTitulo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily string Libro\+::da\+Titulo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Método getter del atributo título. 
+
+\begin{DoxyReturn}{Returns}
+titulo string. El título del libro. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLibro_a66965add10036095e6ec1a11bb83d104}\label{classLibro_a66965add10036095e6ec1a11bb83d104}} 
+\index{Libro@{Libro}!daTitulo@{daTitulo}}
+\index{daTitulo@{daTitulo}!Libro@{Libro}}
+\doxysubsubsection{\texorpdfstring{daTitulo()}{daTitulo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily string Libro\+::da\+Titulo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classLibro}{Libro}} $\ast$}]{libro }\end{DoxyParamCaption})}
+
+
+
+Método getter del atributo título con parámetro. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em libro} & \mbox{\hyperlink{classLibro}{Libro(ref)}}. \mbox{\hyperlink{classLibro}{Libro}} del que queremos obtener el título \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+titulo string. El título del libro referenciado. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLibro_aae098610c35ece0b7584bcea394697ac}\label{classLibro_aae098610c35ece0b7584bcea394697ac}} 
+\index{Libro@{Libro}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Libro@{Libro}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool Libro\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classLibro}{Libro}} \&}]{lib }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operador \char`\"{}menor que\char`\"{} de la clase \mbox{\hyperlink{classLibro}{Libro}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em lib(dir,const).} & Instancia de la clase \mbox{\hyperlink{classLibro}{Libro}} con la que queremos realizar la comparación. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True en el caso de que el I\+S\+BN de la instancia actual sea menor que el de la instancia pasada como parámetro. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLibro_a62a3366dfc43574c6ce118e74ab63dbd}\label{classLibro_a62a3366dfc43574c6ce118e74ab63dbd}} 
+\index{Libro@{Libro}!operator=@{operator=}}
+\index{operator=@{operator=}!Libro@{Libro}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLibro}{Libro}}\& Libro\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classLibro}{Libro}} \&}]{lib }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operador de asignación de la clase \mbox{\hyperlink{classLibro}{Libro}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em lib} & \mbox{\hyperlink{classLibro}{Libro(dir)}}. Instancia de la clase \mbox{\hyperlink{classLibro}{Libro}} de la cual se va a realizar una copia. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Devuelve una nueva instancia de la clase \mbox{\hyperlink{classLibro}{Libro}} con la información de lib. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classLibro_a42a73435f49d0133368ed928fa21f942}\label{classLibro_a42a73435f49d0133368ed928fa21f942}} 
+\index{Libro@{Libro}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Libro@{Libro}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{co,  }\item[{const \mbox{\hyperlink{classLibro}{Libro}} \&}]{l }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Sobrecarga del operador $<$$<$ (de inserción) que permite entre otras cosas, mostrar un libro con cout. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em co} & ostream. El propio flujo de salida (por referencia). \\
+\hline
+\mbox{\texttt{ in}}  & {\em Libro.} & Un libro en concreto con su título, I\+S\+BN, Editorial y autor/es (por referencia también). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{[}out\mbox{]} co. El flujo de salida ostream debidamente sobrecargado. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Libro_8h}{Libro.\+h}}\item 
+\mbox{\hyperlink{Libro_8cpp}{Libro.\+cpp}}\end{DoxyCompactItemize}

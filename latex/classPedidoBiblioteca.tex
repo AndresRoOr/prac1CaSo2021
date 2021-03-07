@@ -1,0 +1,202 @@
+\hypertarget{classPedidoBiblioteca}{}\doxysection{Pedido\+Biblioteca Class Reference}
+\label{classPedidoBiblioteca}\index{PedidoBiblioteca@{PedidoBiblioteca}}
+
+
+Clase que representa de manera genérica un pedido hecho por la biblioteca.  
+
+
+
+
+{\ttfamily \#include $<$Pedido\+Biblioteca.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPedidoBiblioteca_ae17219848a942ac63366da50c908bb3b}\label{classPedidoBiblioteca_ae17219848a942ac63366da50c908bb3b}} 
+\mbox{\hyperlink{classPedidoBiblioteca_ae17219848a942ac63366da50c908bb3b}{Pedido\+Biblioteca}} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto de la clase \mbox{\hyperlink{classPedidoBiblioteca}{Pedido\+Biblioteca}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPedidoBiblioteca_afb5396b14b6b311a6d060d18487361e6}{Pedido\+Biblioteca}} (unsigned anum)
+\begin{DoxyCompactList}\small\item\em Constructor parametrizado de la clase \mbox{\hyperlink{classPedidoBiblioteca}{Pedido\+Biblioteca}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPedidoBiblioteca_a8b901b0702ba8a820f0eda5fc3712bf7}{Pedido\+Biblioteca}} (\mbox{\hyperlink{classPedidoBiblioteca}{Pedido\+Biblioteca}} \&pedbi)
+\begin{DoxyCompactList}\small\item\em Constructor por copia de la clase \mbox{\hyperlink{classPedidoBiblioteca}{Pedido\+Biblioteca}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPedidoBiblioteca_a6cd15a1bd98be02a107251c92a43e7de}{da\+Trami}} ()
+\begin{DoxyCompactList}\small\item\em Método getter del atributo tramitado. \end{DoxyCompactList}\item 
+unsigned \mbox{\hyperlink{classPedidoBiblioteca_a1f35ca9770d64dd4cdc35f448d3991ec}{da\+Numero}} ()
+\begin{DoxyCompactList}\small\item\em Método getter del atributo num. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classPedidoBiblioteca_ad0c8e6542a41d72220ae39deda647db7}{da\+Importe}} ()
+\begin{DoxyCompactList}\small\item\em Método getter del atributo importe. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPedidoBiblioteca_ae67a9f6f56c9b36615df9952ac7dd7d3}{inserta\+Pedido\+Libro}} (\mbox{\hyperlink{classPedidoUsuario}{Pedido\+Usuario}} $\ast$pedido\+Usuario)
+\begin{DoxyCompactList}\small\item\em Se inserta el pedido de un usuario a un libro en concreto en la estructura de datos. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPedidoBiblioteca_a7886124ecb1579d5887e1177a163dc7f}\label{classPedidoBiblioteca_a7886124ecb1579d5887e1177a163dc7f}} 
+void \mbox{\hyperlink{classPedidoBiblioteca_a7886124ecb1579d5887e1177a163dc7f}{cierra\+Pedido}} ()
+\begin{DoxyCompactList}\small\item\em Da por concluido el trámite de hacer el pedido. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPedidoUsuario}{Pedido\+Usuario}} $\ast$ \mbox{\hyperlink{classPedidoBiblioteca_aac70c7b0ced52ece03164b5c3b7fa750}{da\+Pedido\+Usuario}} (unsigned i)
+\begin{DoxyCompactList}\small\item\em Función necesaria para la clase \mbox{\hyperlink{classBiblioteca}{Biblioteca}} en búsqueda de pedidos. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPedidoBiblioteca}{Pedido\+Biblioteca}} \& \mbox{\hyperlink{classPedidoBiblioteca_a36e2ecdfe252b5f7a96ca9efdd40411c}{operator=}} (\mbox{\hyperlink{classPedidoBiblioteca}{Pedido\+Biblioteca}} \&pedbi)
+\begin{DoxyCompactList}\small\item\em Operador de asignación de la clase \mbox{\hyperlink{classPedidoBiblioteca}{Pedido\+Biblioteca}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPedidoBiblioteca_aabaa3f92e8b15d2baeeffcaa8df61653}\label{classPedidoBiblioteca_aabaa3f92e8b15d2baeeffcaa8df61653}} 
+\mbox{\hyperlink{classPedidoBiblioteca_aabaa3f92e8b15d2baeeffcaa8df61653}{$\sim$\+Pedido\+Biblioteca}} ()
+\begin{DoxyCompactList}\small\item\em Destructor de la clase \mbox{\hyperlink{classPedidoBiblioteca}{Pedido\+Biblioteca}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \mbox{\hyperlink{classPedidoBiblioteca_a0d888cc70ddcd998af0a676d47e4d485}{operator$<$$<$}} (ostream \&, \mbox{\hyperlink{classPedidoBiblioteca}{Pedido\+Biblioteca}} \&)
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador $<$$<$ (de inserción) que permite entre otras cosas mostrar un \mbox{\hyperlink{classPedidoBiblioteca}{Pedido\+Biblioteca}} con cout. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase que representa de manera genérica un pedido hecho por la biblioteca. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPedidoBiblioteca_afb5396b14b6b311a6d060d18487361e6}\label{classPedidoBiblioteca_afb5396b14b6b311a6d060d18487361e6}} 
+\index{PedidoBiblioteca@{PedidoBiblioteca}!PedidoBiblioteca@{PedidoBiblioteca}}
+\index{PedidoBiblioteca@{PedidoBiblioteca}!PedidoBiblioteca@{PedidoBiblioteca}}
+\doxysubsubsection{\texorpdfstring{PedidoBiblioteca()}{PedidoBiblioteca()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Pedido\+Biblioteca\+::\+Pedido\+Biblioteca (\begin{DoxyParamCaption}\item[{unsigned}]{anum }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor parametrizado de la clase \mbox{\hyperlink{classPedidoBiblioteca}{Pedido\+Biblioteca}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em anum} & unsigned. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPedidoBiblioteca_a8b901b0702ba8a820f0eda5fc3712bf7}\label{classPedidoBiblioteca_a8b901b0702ba8a820f0eda5fc3712bf7}} 
+\index{PedidoBiblioteca@{PedidoBiblioteca}!PedidoBiblioteca@{PedidoBiblioteca}}
+\index{PedidoBiblioteca@{PedidoBiblioteca}!PedidoBiblioteca@{PedidoBiblioteca}}
+\doxysubsubsection{\texorpdfstring{PedidoBiblioteca()}{PedidoBiblioteca()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Pedido\+Biblioteca\+::\+Pedido\+Biblioteca (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPedidoBiblioteca}{Pedido\+Biblioteca}} \&}]{pedbi }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor por copia de la clase \mbox{\hyperlink{classPedidoBiblioteca}{Pedido\+Biblioteca}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pedbi} & \mbox{\hyperlink{classPedidoBiblioteca}{Pedido\+Biblioteca}} (dir). Instancia de \mbox{\hyperlink{classPedidoBiblioteca}{Pedido\+Biblioteca}} que se quiere copiar. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPedidoBiblioteca_ad0c8e6542a41d72220ae39deda647db7}\label{classPedidoBiblioteca_ad0c8e6542a41d72220ae39deda647db7}} 
+\index{PedidoBiblioteca@{PedidoBiblioteca}!daImporte@{daImporte}}
+\index{daImporte@{daImporte}!PedidoBiblioteca@{PedidoBiblioteca}}
+\doxysubsubsection{\texorpdfstring{daImporte()}{daImporte()}}
+{\footnotesize\ttfamily float Pedido\+Biblioteca\+::da\+Importe (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Método getter del atributo importe. 
+
+\begin{DoxyReturn}{Returns}
+importe float. Atributo de la clase. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPedidoBiblioteca_a1f35ca9770d64dd4cdc35f448d3991ec}\label{classPedidoBiblioteca_a1f35ca9770d64dd4cdc35f448d3991ec}} 
+\index{PedidoBiblioteca@{PedidoBiblioteca}!daNumero@{daNumero}}
+\index{daNumero@{daNumero}!PedidoBiblioteca@{PedidoBiblioteca}}
+\doxysubsubsection{\texorpdfstring{daNumero()}{daNumero()}}
+{\footnotesize\ttfamily unsigned Pedido\+Biblioteca\+::da\+Numero (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Método getter del atributo num. 
+
+\begin{DoxyReturn}{Returns}
+num unsigned. Atributo de la clase. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPedidoBiblioteca_aac70c7b0ced52ece03164b5c3b7fa750}\label{classPedidoBiblioteca_aac70c7b0ced52ece03164b5c3b7fa750}} 
+\index{PedidoBiblioteca@{PedidoBiblioteca}!daPedidoUsuario@{daPedidoUsuario}}
+\index{daPedidoUsuario@{daPedidoUsuario}!PedidoBiblioteca@{PedidoBiblioteca}}
+\doxysubsubsection{\texorpdfstring{daPedidoUsuario()}{daPedidoUsuario()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPedidoUsuario}{Pedido\+Usuario}} $\ast$ Pedido\+Biblioteca\+::da\+Pedido\+Usuario (\begin{DoxyParamCaption}\item[{unsigned}]{i }\end{DoxyParamCaption})}
+
+
+
+Función necesaria para la clase \mbox{\hyperlink{classBiblioteca}{Biblioteca}} en búsqueda de pedidos. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i} & unsigned. El usuario apuntado por i. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pedido\+\_\+usu\+\_\+lee Pedido\+Usuario$\ast$. El pedido que ha hecho el usuario referenciado por i en la estructura de datos. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPedidoBiblioteca_a6cd15a1bd98be02a107251c92a43e7de}\label{classPedidoBiblioteca_a6cd15a1bd98be02a107251c92a43e7de}} 
+\index{PedidoBiblioteca@{PedidoBiblioteca}!daTrami@{daTrami}}
+\index{daTrami@{daTrami}!PedidoBiblioteca@{PedidoBiblioteca}}
+\doxysubsubsection{\texorpdfstring{daTrami()}{daTrami()}}
+{\footnotesize\ttfamily bool Pedido\+Biblioteca\+::da\+Trami (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Método getter del atributo tramitado. 
+
+\begin{DoxyReturn}{Returns}
+tramitado bool. Atributo de la clase. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPedidoBiblioteca_ae67a9f6f56c9b36615df9952ac7dd7d3}\label{classPedidoBiblioteca_ae67a9f6f56c9b36615df9952ac7dd7d3}} 
+\index{PedidoBiblioteca@{PedidoBiblioteca}!insertaPedidoLibro@{insertaPedidoLibro}}
+\index{insertaPedidoLibro@{insertaPedidoLibro}!PedidoBiblioteca@{PedidoBiblioteca}}
+\doxysubsubsection{\texorpdfstring{insertaPedidoLibro()}{insertaPedidoLibro()}}
+{\footnotesize\ttfamily void Pedido\+Biblioteca\+::inserta\+Pedido\+Libro (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPedidoUsuario}{Pedido\+Usuario}} $\ast$}]{pedido\+Usuario }\end{DoxyParamCaption})}
+
+
+
+Se inserta el pedido de un usuario a un libro en concreto en la estructura de datos. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pedido\+Usuario.} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPedidoBiblioteca_a36e2ecdfe252b5f7a96ca9efdd40411c}\label{classPedidoBiblioteca_a36e2ecdfe252b5f7a96ca9efdd40411c}} 
+\index{PedidoBiblioteca@{PedidoBiblioteca}!operator=@{operator=}}
+\index{operator=@{operator=}!PedidoBiblioteca@{PedidoBiblioteca}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPedidoBiblioteca}{Pedido\+Biblioteca}}\& Pedido\+Biblioteca\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPedidoBiblioteca}{Pedido\+Biblioteca}} \&}]{pedbi }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operador de asignación de la clase \mbox{\hyperlink{classPedidoBiblioteca}{Pedido\+Biblioteca}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pedbi} & \mbox{[}in\mbox{]} \mbox{\hyperlink{classPedidoBiblioteca}{Pedido\+Biblioteca}} (ref). \mbox{\hyperlink{classPedidoBiblioteca}{Pedido\+Biblioteca}} de la que se quiere realizar una copia. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Instancia copia realizada. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classPedidoBiblioteca_a0d888cc70ddcd998af0a676d47e4d485}\label{classPedidoBiblioteca_a0d888cc70ddcd998af0a676d47e4d485}} 
+\index{PedidoBiblioteca@{PedidoBiblioteca}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!PedidoBiblioteca@{PedidoBiblioteca}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{co,  }\item[{\mbox{\hyperlink{classPedidoBiblioteca}{Pedido\+Biblioteca}} \&}]{pb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Sobrecarga del operador $<$$<$ (de inserción) que permite entre otras cosas mostrar un \mbox{\hyperlink{classPedidoBiblioteca}{Pedido\+Biblioteca}} con cout. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em ostream.} & El propio flujo de salida (por referencia). \\
+\hline
+\mbox{\texttt{ in}}  & {\em Pedido\+Biblioteca.} & El pedido de la biblioteca (por referencia también). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{[}out\mbox{]} co. El flujo de salida ostream debidamente sobrecargado. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{PedidoBiblioteca_8h}{Pedido\+Biblioteca.\+h}}\item 
+\mbox{\hyperlink{PedidoBiblioteca_8cpp}{Pedido\+Biblioteca.\+cpp}}\end{DoxyCompactItemize}

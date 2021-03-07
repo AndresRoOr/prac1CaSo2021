@@ -1,0 +1,323 @@
+\hypertarget{classBiblioteca}{}\doxysection{Biblioteca Class Reference}
+\label{classBiblioteca}\index{Biblioteca@{Biblioteca}}
+
+
+Clase que representa la información y el funcionamiento de una biblioteca.  
+
+
+
+
+{\ttfamily \#include $<$Biblioteca.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classBiblioteca_a5e12ea4e7a4edb14d210a41708fc1c10}\label{classBiblioteca_a5e12ea4e7a4edb14d210a41708fc1c10}} 
+\mbox{\hyperlink{classBiblioteca_a5e12ea4e7a4edb14d210a41708fc1c10}{Biblioteca}} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto de la clase \mbox{\hyperlink{classBiblioteca}{Biblioteca}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classlista__sin}{lista\+\_\+sin}}$<$ \mbox{\hyperlink{classPedidoBiblioteca}{Pedido\+Biblioteca}} $\ast$ $>$ $\ast$ \mbox{\hyperlink{classBiblioteca_aa69ed9cf1a50c3d37f2a69c12bc4acf8}{da\+L\+Biblioteca}} ()
+\begin{DoxyCompactList}\small\item\em Método getter del atributo pedido\+Bi de la clase. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classBiblioteca_aa4c063048c2da1da78b87c35c531b9de}{nuevo\+Usuario}} (string login, string nombre, string clave)
+\begin{DoxyCompactList}\small\item\em Introduce un nuevo usuario en la biblioteca. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classUsuario}{Usuario}} $\ast$ \mbox{\hyperlink{classBiblioteca_a1b41ecaa2b16d0b541747d9f56e8c5c5}{busca\+Usuario}} (string login, string clave)
+\begin{DoxyCompactList}\small\item\em Busca un usuario en la biblioteca. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBiblioteca_ab5be25778d211d7a754d1b53149bb59f}{carga\+Libros}} (string fichero)
+\begin{DoxyCompactList}\small\item\em Carga toda la informacion de un fichero en la biblioteca. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classlista__sin}{lista\+\_\+sin}}$<$ \mbox{\hyperlink{classLibro}{Libro}} $\ast$ $>$ $\ast$ \mbox{\hyperlink{classBiblioteca_ae9e4cef236ed508af0d2d8945dbd502b}{consulta\+Libros}} (string titulo)
+\begin{DoxyCompactList}\small\item\em Devuelve una lista con los libros que contengan el título que se le pasa como parámetro. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPedidoUsuario}{Pedido\+Usuario}} $\ast$ \mbox{\hyperlink{classBiblioteca_a2aa9dd521a77232ebc47893d85aa222c}{crea\+Pedido\+Usuario}} (\mbox{\hyperlink{classUsuario}{Usuario}} $\ast$usuario, \mbox{\hyperlink{classLibro}{Libro}} $\ast$libro, int prioridad)
+\begin{DoxyCompactList}\small\item\em Crea un pedido de usuario. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPedidoBiblioteca}{Pedido\+Biblioteca}} $\ast$ \mbox{\hyperlink{classBiblioteca_a47e69811bf055693e17ddcec2da38d12}{abre\+Pedido\+Biblioteca}} (unsigned anum)
+\begin{DoxyCompactList}\small\item\em Crea lista pedidio de \mbox{\hyperlink{classBiblioteca}{Biblioteca}} y devuelve su referencia. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBiblioteca_ab93622295e20ec1136344962e8886eea}{tramita\+Pedido\+Usuario}} (\mbox{\hyperlink{classPedidoUsuario}{Pedido\+Usuario}} $\ast$pedido\+Usuario, \mbox{\hyperlink{classPedidoBiblioteca}{Pedido\+Biblioteca}} $\ast$ped)
+\begin{DoxyCompactList}\small\item\em Añade un pedido de \mbox{\hyperlink{classUsuario}{Usuario}} a un pedido de \mbox{\hyperlink{classBiblioteca}{Biblioteca}}, pone pedido\+Usuario tramitado. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBiblioteca_aa85618140ee8be7b2b1a643e96e30d6f}{cierra\+Pedido\+Biblioteca}} (\mbox{\hyperlink{classPedidoBiblioteca}{Pedido\+Biblioteca}} $\ast$ped, unsigned num)
+\begin{DoxyCompactList}\small\item\em Cierra un pedido de biblioteca marcándolo como tramitado. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classlista__sin}{lista\+\_\+sin}}$<$ \mbox{\hyperlink{classPedidoUsuario}{Pedido\+Usuario}} $\ast$ $>$ $\ast$ \mbox{\hyperlink{classBiblioteca_a65a47a1d6b1ed23e8e9ba64b7ee42027}{busca\+Pedidos\+Usuario\+Pendientes}} (\mbox{\hyperlink{classUsuario}{Usuario}} $\ast$usuario)
+\begin{DoxyCompactList}\small\item\em Devuelve una lista con las refencias a todos los pedidos de un usuario pendientes. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classlista__sin}{lista\+\_\+sin}}$<$ \mbox{\hyperlink{classPedidoUsuario}{Pedido\+Usuario}} $\ast$ $>$ $\ast$ \mbox{\hyperlink{classBiblioteca_aaa7c3cf3add42ba5bdfaaf29a790c330}{busca\+Pedidos\+Usuario\+Tramitados}} (\mbox{\hyperlink{classUsuario}{Usuario}} $\ast$usuario)
+\begin{DoxyCompactList}\small\item\em Devuelve una lista con las referencias a todos los pedidos de un usuario tramitados. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classlista__sin}{lista\+\_\+sin}}$<$ \mbox{\hyperlink{classPedidoBiblioteca}{Pedido\+Biblioteca}} $\ast$ $>$ $\ast$ \mbox{\hyperlink{classBiblioteca_a3d37a667ede7eac8bf7ab79c9ea91aa7}{busca\+Pedidos\+Biblioteca\+Pendientes}} ()
+\begin{DoxyCompactList}\small\item\em Devuelve una lista con las referencias a los pedidios de biblioteca pendientes. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classlista__sin}{lista\+\_\+sin}}$<$ \mbox{\hyperlink{classPedidoBiblioteca}{Pedido\+Biblioteca}} $\ast$ $>$ $\ast$ \mbox{\hyperlink{classBiblioteca_a50f37e6e56e3188920bc7714ba07a6bf}{busca\+Pedidos\+Biblioteca\+Tramitados}} ()
+\begin{DoxyCompactList}\small\item\em Devuelve una lista de las referencias de los pedidos de biblioteca tramitados. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPedidoBiblioteca}{Pedido\+Biblioteca}} $\ast$ \mbox{\hyperlink{classBiblioteca_a26f40c3834ff5718cea7b1e742ebfb0c}{da\+Lista\+Ped\+Biblioteca}} (unsigned num)
+\begin{DoxyCompactList}\small\item\em Devuelve la lista del pedido de la biblioteca del número de pedido que se le pasa. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBiblioteca_ae3f55e8952ed4bdddb82ece48c52f6c0}\label{classBiblioteca_ae3f55e8952ed4bdddb82ece48c52f6c0}} 
+\mbox{\hyperlink{classBiblioteca_ae3f55e8952ed4bdddb82ece48c52f6c0}{$\sim$\+Biblioteca}} ()
+\begin{DoxyCompactList}\small\item\em Destructor de la clase \mbox{\hyperlink{classBiblioteca}{Biblioteca}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase que representa la información y el funcionamiento de una biblioteca. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBiblioteca_a47e69811bf055693e17ddcec2da38d12}\label{classBiblioteca_a47e69811bf055693e17ddcec2da38d12}} 
+\index{Biblioteca@{Biblioteca}!abrePedidoBiblioteca@{abrePedidoBiblioteca}}
+\index{abrePedidoBiblioteca@{abrePedidoBiblioteca}!Biblioteca@{Biblioteca}}
+\doxysubsubsection{\texorpdfstring{abrePedidoBiblioteca()}{abrePedidoBiblioteca()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPedidoBiblioteca}{Pedido\+Biblioteca}} $\ast$ Biblioteca\+::abre\+Pedido\+Biblioteca (\begin{DoxyParamCaption}\item[{unsigned}]{anum }\end{DoxyParamCaption})}
+
+
+
+Crea lista pedidio de \mbox{\hyperlink{classBiblioteca}{Biblioteca}} y devuelve su referencia. 
+
+Crea lista pedido de \mbox{\hyperlink{classBiblioteca}{Biblioteca}} y devuelve su referencia.
+
+\begin{DoxyPrecond}{Precondition}
+Inicialmente estara vacío a la espera de que se añadan pedidos de \mbox{\hyperlink{classUsuario}{Usuario}}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em anum} & unsigned, refiriéndose al número de pedido. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+La referencia al pedido. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBiblioteca_a3d37a667ede7eac8bf7ab79c9ea91aa7}\label{classBiblioteca_a3d37a667ede7eac8bf7ab79c9ea91aa7}} 
+\index{Biblioteca@{Biblioteca}!buscaPedidosBibliotecaPendientes@{buscaPedidosBibliotecaPendientes}}
+\index{buscaPedidosBibliotecaPendientes@{buscaPedidosBibliotecaPendientes}!Biblioteca@{Biblioteca}}
+\doxysubsubsection{\texorpdfstring{buscaPedidosBibliotecaPendientes()}{buscaPedidosBibliotecaPendientes()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classlista__sin}{lista\+\_\+sin}}$<$ \mbox{\hyperlink{classPedidoBiblioteca}{Pedido\+Biblioteca}} $\ast$ $>$ $\ast$ Biblioteca\+::busca\+Pedidos\+Biblioteca\+Pendientes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Devuelve una lista con las referencias a los pedidios de biblioteca pendientes. 
+
+\begin{DoxyReturn}{Returns}
+Lista de referencias a los pedidos de biblioteca pendientes. 
+\end{DoxyReturn}
+Se buscan los pedidos de biblioteca pendientes y se devuelven en una lista.\mbox{\Hypertarget{classBiblioteca_a50f37e6e56e3188920bc7714ba07a6bf}\label{classBiblioteca_a50f37e6e56e3188920bc7714ba07a6bf}} 
+\index{Biblioteca@{Biblioteca}!buscaPedidosBibliotecaTramitados@{buscaPedidosBibliotecaTramitados}}
+\index{buscaPedidosBibliotecaTramitados@{buscaPedidosBibliotecaTramitados}!Biblioteca@{Biblioteca}}
+\doxysubsubsection{\texorpdfstring{buscaPedidosBibliotecaTramitados()}{buscaPedidosBibliotecaTramitados()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classlista__sin}{lista\+\_\+sin}}$<$ \mbox{\hyperlink{classPedidoBiblioteca}{Pedido\+Biblioteca}} $\ast$ $>$ $\ast$ Biblioteca\+::busca\+Pedidos\+Biblioteca\+Tramitados (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Devuelve una lista de las referencias de los pedidos de biblioteca tramitados. 
+
+\begin{DoxyReturn}{Returns}
+Lista de referencias a los pedidos de biblioteca tramitados. 
+\end{DoxyReturn}
+Busca pedidos tramitados de biblioteca y los devuelve en una lista.\mbox{\Hypertarget{classBiblioteca_a65a47a1d6b1ed23e8e9ba64b7ee42027}\label{classBiblioteca_a65a47a1d6b1ed23e8e9ba64b7ee42027}} 
+\index{Biblioteca@{Biblioteca}!buscaPedidosUsuarioPendientes@{buscaPedidosUsuarioPendientes}}
+\index{buscaPedidosUsuarioPendientes@{buscaPedidosUsuarioPendientes}!Biblioteca@{Biblioteca}}
+\doxysubsubsection{\texorpdfstring{buscaPedidosUsuarioPendientes()}{buscaPedidosUsuarioPendientes()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classlista__sin}{lista\+\_\+sin}}$<$ \mbox{\hyperlink{classPedidoUsuario}{Pedido\+Usuario}} $\ast$ $>$ $\ast$ Biblioteca\+::busca\+Pedidos\+Usuario\+Pendientes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classUsuario}{Usuario}} $\ast$}]{usuario }\end{DoxyParamCaption})}
+
+
+
+Devuelve una lista con las refencias a todos los pedidos de un usuario pendientes. 
+
+Devuelve una lista con las refencias a todos los pedidos de un \mbox{\hyperlink{classUsuario}{Usuario}} pendientes.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em usuario} & \mbox{\hyperlink{classUsuario}{Usuario(ref)}}. \mbox{\hyperlink{classUsuario}{Usuario}} para el que queremos consultar los pedidos pendientes \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Lista de referencias a los pedidos del \mbox{\hyperlink{classUsuario}{Usuario}} pendientes 
+\end{DoxyReturn}
+Se buscan los pedidos pendientes de ese \mbox{\hyperlink{classUsuario}{Usuario}} y se devuelven en esta lista.\mbox{\Hypertarget{classBiblioteca_aaa7c3cf3add42ba5bdfaaf29a790c330}\label{classBiblioteca_aaa7c3cf3add42ba5bdfaaf29a790c330}} 
+\index{Biblioteca@{Biblioteca}!buscaPedidosUsuarioTramitados@{buscaPedidosUsuarioTramitados}}
+\index{buscaPedidosUsuarioTramitados@{buscaPedidosUsuarioTramitados}!Biblioteca@{Biblioteca}}
+\doxysubsubsection{\texorpdfstring{buscaPedidosUsuarioTramitados()}{buscaPedidosUsuarioTramitados()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classlista__sin}{lista\+\_\+sin}}$<$ \mbox{\hyperlink{classPedidoUsuario}{Pedido\+Usuario}} $\ast$ $>$ $\ast$ Biblioteca\+::busca\+Pedidos\+Usuario\+Tramitados (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classUsuario}{Usuario}} $\ast$}]{usuario }\end{DoxyParamCaption})}
+
+
+
+Devuelve una lista con las referencias a todos los pedidos de un usuario tramitados. 
+
+Devuelve una lista con las referencias a todos los pedidos de un \mbox{\hyperlink{classUsuario}{Usuario}} tramitados.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em usuario} & \mbox{\hyperlink{classUsuario}{Usuario(ref)}}. \mbox{\hyperlink{classUsuario}{Usuario}} para el que queremos consultar los pedidos tramitados. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Lista de referencias a los pedidos del \mbox{\hyperlink{classUsuario}{Usuario}} tramitados. 
+\end{DoxyReturn}
+Busca pedidos de \mbox{\hyperlink{classUsuario}{Usuario}} tramitados devolviéndolos en una lista.\mbox{\Hypertarget{classBiblioteca_a1b41ecaa2b16d0b541747d9f56e8c5c5}\label{classBiblioteca_a1b41ecaa2b16d0b541747d9f56e8c5c5}} 
+\index{Biblioteca@{Biblioteca}!buscaUsuario@{buscaUsuario}}
+\index{buscaUsuario@{buscaUsuario}!Biblioteca@{Biblioteca}}
+\doxysubsubsection{\texorpdfstring{buscaUsuario()}{buscaUsuario()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classUsuario}{Usuario}} $\ast$ Biblioteca\+::busca\+Usuario (\begin{DoxyParamCaption}\item[{string}]{login,  }\item[{string}]{clave }\end{DoxyParamCaption})}
+
+
+
+Busca un usuario en la biblioteca. 
+
+Busca un \mbox{\hyperlink{classUsuario}{Usuario}} en la biblioteca.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em login} & string. Login del \mbox{\hyperlink{classUsuario}{Usuario}}. Login del \mbox{\hyperlink{classUsuario}{Usuario}} que se busca \\
+\hline
+\mbox{\texttt{ in}}  & {\em clave} & string. Clave del \mbox{\hyperlink{classUsuario}{Usuario}}. Clave del \mbox{\hyperlink{classUsuario}{Usuario}} que se busca \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Devuelve un puntero al \mbox{\hyperlink{classUsuario}{Usuario}} que se busca. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBiblioteca_ab5be25778d211d7a754d1b53149bb59f}\label{classBiblioteca_ab5be25778d211d7a754d1b53149bb59f}} 
+\index{Biblioteca@{Biblioteca}!cargaLibros@{cargaLibros}}
+\index{cargaLibros@{cargaLibros}!Biblioteca@{Biblioteca}}
+\doxysubsubsection{\texorpdfstring{cargaLibros()}{cargaLibros()}}
+{\footnotesize\ttfamily void Biblioteca\+::carga\+Libros (\begin{DoxyParamCaption}\item[{string}]{fichero }\end{DoxyParamCaption})}
+
+
+
+Carga toda la informacion de un fichero en la biblioteca. 
+
+Devuelve una lista con los libros que contengan el titulo que se le pasa como parametro.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em fichero} & string. Fichero donde se encuentra almacenada la información de los libros. \\
+\hline
+\end{DoxyParams}
+Convierte a entero un string.
+
+Convierte a entero un string.\mbox{\Hypertarget{classBiblioteca_aa85618140ee8be7b2b1a643e96e30d6f}\label{classBiblioteca_aa85618140ee8be7b2b1a643e96e30d6f}} 
+\index{Biblioteca@{Biblioteca}!cierraPedidoBiblioteca@{cierraPedidoBiblioteca}}
+\index{cierraPedidoBiblioteca@{cierraPedidoBiblioteca}!Biblioteca@{Biblioteca}}
+\doxysubsubsection{\texorpdfstring{cierraPedidoBiblioteca()}{cierraPedidoBiblioteca()}}
+{\footnotesize\ttfamily void Biblioteca\+::cierra\+Pedido\+Biblioteca (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPedidoBiblioteca}{Pedido\+Biblioteca}} $\ast$}]{ped,  }\item[{unsigned}]{num }\end{DoxyParamCaption})}
+
+
+
+Cierra un pedido de biblioteca marcándolo como tramitado. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em ped} & \mbox{\hyperlink{classPedidoBiblioteca}{Pedido\+Biblioteca(ref)}}. Pedido de biblioteca que queremos cerrar. \\
+\hline
+\mbox{\texttt{ in}}  & {\em num} & unsigned, se refiere al número de pedido hecho por la biblioteca. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBiblioteca_ae9e4cef236ed508af0d2d8945dbd502b}\label{classBiblioteca_ae9e4cef236ed508af0d2d8945dbd502b}} 
+\index{Biblioteca@{Biblioteca}!consultaLibros@{consultaLibros}}
+\index{consultaLibros@{consultaLibros}!Biblioteca@{Biblioteca}}
+\doxysubsubsection{\texorpdfstring{consultaLibros()}{consultaLibros()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classlista__sin}{lista\+\_\+sin}}$<$ \mbox{\hyperlink{classLibro}{Libro}} $\ast$ $>$ $\ast$ Biblioteca\+::consulta\+Libros (\begin{DoxyParamCaption}\item[{string}]{titulo }\end{DoxyParamCaption})}
+
+
+
+Devuelve una lista con los libros que contengan el título que se le pasa como parámetro. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em titulo} & string. Título que deben contener los libros. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Lista con todos los libros que coinciden con la búsqueda realizada. 
+\end{DoxyReturn}
+Devuelve la posición en la cadena.
+
+Si no se modifica el -\/1 entonces es que no está.\mbox{\Hypertarget{classBiblioteca_a2aa9dd521a77232ebc47893d85aa222c}\label{classBiblioteca_a2aa9dd521a77232ebc47893d85aa222c}} 
+\index{Biblioteca@{Biblioteca}!creaPedidoUsuario@{creaPedidoUsuario}}
+\index{creaPedidoUsuario@{creaPedidoUsuario}!Biblioteca@{Biblioteca}}
+\doxysubsubsection{\texorpdfstring{creaPedidoUsuario()}{creaPedidoUsuario()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPedidoUsuario}{Pedido\+Usuario}} $\ast$ Biblioteca\+::crea\+Pedido\+Usuario (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classUsuario}{Usuario}} $\ast$}]{usuario,  }\item[{\mbox{\hyperlink{classLibro}{Libro}} $\ast$}]{libro,  }\item[{int}]{prioridad }\end{DoxyParamCaption})}
+
+
+
+Crea un pedido de usuario. 
+
+Crea un pedido de \mbox{\hyperlink{classUsuario}{Usuario}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em usuario} & \mbox{\hyperlink{classUsuario}{Usuario(ref)}}. \mbox{\hyperlink{classUsuario}{Usuario}} que realiza el pedido. \\
+\hline
+\mbox{\texttt{ in}}  & {\em libro} & \mbox{\hyperlink{classLibro}{Libro(ref)}}. \mbox{\hyperlink{classLibro}{Libro}} que el \mbox{\hyperlink{classUsuario}{Usuario}} ha pedido. \\
+\hline
+\mbox{\texttt{ in}}  & {\em prioridad} & int. Prioridad del pedido. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Devueve un puntero al \mbox{\hyperlink{classPedidoUsuario}{Pedido\+Usuario}} creado. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBiblioteca_aa69ed9cf1a50c3d37f2a69c12bc4acf8}\label{classBiblioteca_aa69ed9cf1a50c3d37f2a69c12bc4acf8}} 
+\index{Biblioteca@{Biblioteca}!daLBiblioteca@{daLBiblioteca}}
+\index{daLBiblioteca@{daLBiblioteca}!Biblioteca@{Biblioteca}}
+\doxysubsubsection{\texorpdfstring{daLBiblioteca()}{daLBiblioteca()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classlista__sin}{lista\+\_\+sin}}$<$ \mbox{\hyperlink{classPedidoBiblioteca}{Pedido\+Biblioteca}} $\ast$ $>$ $\ast$ Biblioteca\+::da\+L\+Biblioteca (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Método getter del atributo pedido\+Bi de la clase. 
+
+\begin{DoxyReturn}{Returns}
+El atributo pedido\+Bi de la clase. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBiblioteca_a26f40c3834ff5718cea7b1e742ebfb0c}\label{classBiblioteca_a26f40c3834ff5718cea7b1e742ebfb0c}} 
+\index{Biblioteca@{Biblioteca}!daListaPedBiblioteca@{daListaPedBiblioteca}}
+\index{daListaPedBiblioteca@{daListaPedBiblioteca}!Biblioteca@{Biblioteca}}
+\doxysubsubsection{\texorpdfstring{daListaPedBiblioteca()}{daListaPedBiblioteca()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPedidoBiblioteca}{Pedido\+Biblioteca}} $\ast$ Biblioteca\+::da\+Lista\+Ped\+Biblioteca (\begin{DoxyParamCaption}\item[{unsigned}]{num }\end{DoxyParamCaption})}
+
+
+
+Devuelve la lista del pedido de la biblioteca del número de pedido que se le pasa. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em num} & unsigned, se refiere al número de pedido hecho por la biblioteca. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+El puntero a la lista del número de pedido que se le ha pasado. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBiblioteca_aa4c063048c2da1da78b87c35c531b9de}\label{classBiblioteca_aa4c063048c2da1da78b87c35c531b9de}} 
+\index{Biblioteca@{Biblioteca}!nuevoUsuario@{nuevoUsuario}}
+\index{nuevoUsuario@{nuevoUsuario}!Biblioteca@{Biblioteca}}
+\doxysubsubsection{\texorpdfstring{nuevoUsuario()}{nuevoUsuario()}}
+{\footnotesize\ttfamily bool Biblioteca\+::nuevo\+Usuario (\begin{DoxyParamCaption}\item[{string}]{login,  }\item[{string}]{nombre,  }\item[{string}]{clave }\end{DoxyParamCaption})}
+
+
+
+Introduce un nuevo usuario en la biblioteca. 
+
+Introduce un nuevo \mbox{\hyperlink{classUsuario}{Usuario}} en la biblioteca.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em login} & string. Login del usuario. Login del nuevo \mbox{\hyperlink{classUsuario}{Usuario}}. \\
+\hline
+\mbox{\texttt{ in}}  & {\em nombre} & string. Nombre del \mbox{\hyperlink{classUsuario}{Usuario}}. Nombre del nuevo \mbox{\hyperlink{classUsuario}{Usuario}}. \\
+\hline
+\mbox{\texttt{ in}}  & {\em clave} & string. Clave del \mbox{\hyperlink{classUsuario}{Usuario}}. Clave del nuevo \mbox{\hyperlink{classUsuario}{Usuario}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool. True si no se puede introducir el \mbox{\hyperlink{classUsuario}{Usuario}}, false en cualquier otro caso. 
+\end{DoxyReturn}
+Devuelve true si está el \mbox{\hyperlink{classUsuario}{Usuario}} y ya no se puede introducir \mbox{\hyperlink{classUsuario}{Usuario}} por motivos obvios.\mbox{\Hypertarget{classBiblioteca_ab93622295e20ec1136344962e8886eea}\label{classBiblioteca_ab93622295e20ec1136344962e8886eea}} 
+\index{Biblioteca@{Biblioteca}!tramitaPedidoUsuario@{tramitaPedidoUsuario}}
+\index{tramitaPedidoUsuario@{tramitaPedidoUsuario}!Biblioteca@{Biblioteca}}
+\doxysubsubsection{\texorpdfstring{tramitaPedidoUsuario()}{tramitaPedidoUsuario()}}
+{\footnotesize\ttfamily void Biblioteca\+::tramita\+Pedido\+Usuario (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPedidoUsuario}{Pedido\+Usuario}} $\ast$}]{pedido\+Usuario,  }\item[{\mbox{\hyperlink{classPedidoBiblioteca}{Pedido\+Biblioteca}} $\ast$}]{ped }\end{DoxyParamCaption})}
+
+
+
+Añade un pedido de \mbox{\hyperlink{classUsuario}{Usuario}} a un pedido de \mbox{\hyperlink{classBiblioteca}{Biblioteca}}, pone pedido\+Usuario tramitado. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pedido\+Usuario} & \mbox{\hyperlink{classPedidoUsuario}{Pedido\+Usuario(ref)}}. Pedido de \mbox{\hyperlink{classUsuario}{Usuario}} que queremos añadir. \\
+\hline
+\mbox{\texttt{ in}}  & {\em ped} & \mbox{\hyperlink{classPedidoBiblioteca}{Pedido\+Biblioteca(ref)}}. Pedido de biblioteca donde queremeos incluir el pedido de \mbox{\hyperlink{classUsuario}{Usuario}}. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Biblioteca_8h}{Biblioteca.\+h}}\item 
+\mbox{\hyperlink{Biblioteca_8cpp}{Biblioteca.\+cpp}}\end{DoxyCompactItemize}

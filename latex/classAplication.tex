@@ -1,0 +1,78 @@
+\hypertarget{classAplication}{}\doxysection{Aplication Class Reference}
+\label{classAplication}\index{Aplication@{Aplication}}
+
+
+Clase principal la cual derivará en sus variantes de admin y de usuario.  
+
+
+
+
+{\ttfamily \#include $<$Aplication.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classAplication_a850e8c0cbe8b2f42fbab5885c9be2a5a}{Aplication}} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto de la clase \mbox{\hyperlink{classAplication}{Aplication}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAplication_a56864498f795bc4ce0026528a0c52af7}{aplicacion\+\_\+usuario}} ()
+\begin{DoxyCompactList}\small\item\em Da la entrada al esquema de usuario. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAplication_a77f916111feec5cace30c5e143835bfb}{aplicacion\+\_\+admin}} ()
+\begin{DoxyCompactList}\small\item\em Da la entrada al esquema de administrador. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classAplication_a4966b07c0e074426a2843892356d9b13}\label{classAplication_a4966b07c0e074426a2843892356d9b13}} 
+virtual \mbox{\hyperlink{classAplication_a4966b07c0e074426a2843892356d9b13}{$\sim$\+Aplication}} ()
+\begin{DoxyCompactList}\small\item\em Destructor de la clase \mbox{\hyperlink{classAplication}{Aplication}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase principal la cual derivará en sus variantes de admin y de usuario. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAplication_a850e8c0cbe8b2f42fbab5885c9be2a5a}\label{classAplication_a850e8c0cbe8b2f42fbab5885c9be2a5a}} 
+\index{Aplication@{Aplication}!Aplication@{Aplication}}
+\index{Aplication@{Aplication}!Aplication@{Aplication}}
+\doxysubsubsection{\texorpdfstring{Aplication()}{Aplication()}}
+{\footnotesize\ttfamily Aplication\+::\+Aplication (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor por defecto de la clase \mbox{\hyperlink{classAplication}{Aplication}}. 
+
+Constructor por defecto. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classAplication_a77f916111feec5cace30c5e143835bfb}\label{classAplication_a77f916111feec5cace30c5e143835bfb}} 
+\index{Aplication@{Aplication}!aplicacion\_admin@{aplicacion\_admin}}
+\index{aplicacion\_admin@{aplicacion\_admin}!Aplication@{Aplication}}
+\doxysubsubsection{\texorpdfstring{aplicacion\_admin()}{aplicacion\_admin()}}
+{\footnotesize\ttfamily void Aplication\+::aplicacion\+\_\+admin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Da la entrada al esquema de administrador. 
+
+Aquí se ha solicitado previamente una clave que, si coincide, da entrada al esquema de admin.
+
+\begin{DoxyPrecond}{Precondition}
+La clave debe ser correcta. 
+\end{DoxyPrecond}
+Obtengo el pedido biblioteca con el número especificado.\mbox{\Hypertarget{classAplication_a56864498f795bc4ce0026528a0c52af7}\label{classAplication_a56864498f795bc4ce0026528a0c52af7}} 
+\index{Aplication@{Aplication}!aplicacion\_usuario@{aplicacion\_usuario}}
+\index{aplicacion\_usuario@{aplicacion\_usuario}!Aplication@{Aplication}}
+\doxysubsubsection{\texorpdfstring{aplicacion\_usuario()}{aplicacion\_usuario()}}
+{\footnotesize\ttfamily void Aplication\+::aplicacion\+\_\+usuario (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Da la entrada al esquema de usuario. 
+
+Si no sabes la clave de admin has de entrar como usuario registrandote en el sistema.
+
+\begin{DoxyPrecond}{Precondition}
+Clave de usuario o posibilidad de registrarte como un nuevo usuario. 
+\end{DoxyPrecond}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Aplication_8h}{Aplication.\+h}}\item 
+\mbox{\hyperlink{Aplication_8cpp}{Aplication.\+cpp}}\end{DoxyCompactItemize}
