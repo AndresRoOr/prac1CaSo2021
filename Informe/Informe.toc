@@ -1,0 +1,23 @@
+\babel@toc {spanish}{}
+\contentsline {paragraph}{}{1}{section*.1}%
+\contentsline {paragraph}{}{1}{section*.2}%
+\contentsline {section}{\numberline {1}Introducción}{2}{section.1}%
+\contentsline {paragraph}{}{2}{section*.4}%
+\contentsline {paragraph}{}{2}{section*.5}%
+\contentsline {paragraph}{}{2}{section*.6}%
+\contentsline {paragraph}{}{2}{section*.7}%
+\contentsline {paragraph}{}{2}{section*.8}%
+\contentsline {paragraph}{}{2}{section*.9}%
+\contentsline {paragraph}{}{2}{section*.10}%
+\contentsline {section}{\numberline {2}Detección y corrección de errores y avisos}{3}{section.2}%
+\contentsline {paragraph}{}{3}{section*.11}%
+\contentsline {paragraph}{}{3}{section*.12}%
+\contentsline {paragraph}{}{3}{section*.14}%
+\contentsline {paragraph}{}{3}{section*.16}%
+\contentsline {paragraph}{}{4}{section*.19}%
+\contentsline {paragraph}{}{5}{section*.21}%
+\contentsline {paragraph}{}{6}{section*.25}%
+\contentsline {paragraph}{}{6}{section*.27}%
+\contentsline {paragraph}{}{7}{section*.30}%
+\contentsline {paragraph}{}{7}{section*.32}%
+\contentsline {paragraph}{}{8}{section*.34}%
