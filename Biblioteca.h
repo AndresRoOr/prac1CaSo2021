@@ -19,16 +19,49 @@
 
 using namespace std;
 
+namespace excepcionesBi {
+
+/**
+ * @brief Excepcion personalizada para indicar que no se ha encontrado un usuario.
+ */
+class usuNoEncontrado {
+};
+
+/**
+ * @brief Excepcion personalizada para indicar que ha habido un error en la apertura de un archivo.
+ */
+class errorApertura {
+};
+
+/**
+ * @brief Excepcion personalizada para indicar que no se ha encontrado un libro.
+ */
+class libroNoencontrado {
+};
+
+/**
+ * @brief Excepcion personalizada para indicar que no se ha encontrado un pedido de un usuario.
+ */
+class pedidoUsuarioNoencontrado {
+};
+
+/**
+ * @brief Excepcion personalizada para indicar que no se ha encontrado un pedido hecho por la biblioteca.
+ */
+class pedidoBibliotecaNoencontrado {
+};
+}
+
 /**
  * @brief Clase que representa la informacion y el funcionamiento de una biblioteca.
  */
 class Biblioteca {
 
-	lista_sin<Usuario *> usur;              ///< Lista donde se almacenan todos los usuarios.
-	lista_sin<PedidoUsuario *> pedido_usu;  ///< Lista donde se almacenan todos los pedidos de los usuarios.
+	lista_sin<Usuario *> usur; ///< Lista donde se almacenan todos los usuarios.
+	lista_sin<PedidoUsuario *> pedido_usu; ///< Lista donde se almacenan todos los pedidos de los usuarios.
 	lista_sin<PedidoBiblioteca *> pedidoBi; ///< Lista donde se almacenan todos los pedidos hechos por la biblioteca.
-	lista_sin<Libro *> libro;               ///< Lista donde se almacenan todos los libros que posee la biblioteca.
-	Usuario *usu;                           ///< Puntero al ultimo usuario introducido en la biblioteca.
+	lista_sin<Libro *> libro; ///< Lista donde se almacenan todos los libros que posee la biblioteca.
+	Usuario *usu;   ///< Puntero al ultimo usuario introducido en la biblioteca.
 
 public:
 
@@ -68,7 +101,8 @@ public:
 	/**
 	 * @brief Crea un pedido de usuario.
 	 */
-	PedidoUsuario* creaPedidoUsuario(Usuario *usuario, Libro *libro, int prioridad);
+	PedidoUsuario* creaPedidoUsuario(Usuario *usuario, Libro *libro,
+			int prioridad);
 
 	/**
 	 * @brief Crea lista pedidio de Biblioteca y devuelve su referencia.
@@ -76,9 +110,10 @@ public:
 	PedidoBiblioteca* abrePedidoBiblioteca(unsigned anum);
 
 	/**
-	 * @brief Añade un pedido de Usuario a un pedido de Biblioteca, pone pedidoUsuario tramitado.
+	 * @brief Aï¿½ade un pedido de Usuario a un pedido de Biblioteca, pone pedidoUsuario tramitado.
 	 */
-	void tramitaPedidoUsuario(PedidoUsuario *pedidoUsuario,	PedidoBiblioteca *ped);
+	void tramitaPedidoUsuario(PedidoUsuario *pedidoUsuario,
+			PedidoBiblioteca *ped);
 
 	/**
 	 * @brief Cierra un pedido de biblioteca marcandolo como tramitado.
@@ -88,12 +123,14 @@ public:
 	/**
 	 * @brief Devuelve una lista con las refencias a todos los pedidos de un usuario pendientes.
 	 */
-	lista_sin<PedidoUsuario *> * buscaPedidosUsuarioPendientes(Usuario *usuario);
+	lista_sin<PedidoUsuario *> * buscaPedidosUsuarioPendientes(
+			Usuario *usuario);
 
 	/**
 	 * @brief Devuelve una lista con las referencias a todos los pedidos de un usuario tramitados.
 	 */
-	lista_sin<PedidoUsuario *> * buscaPedidosUsuarioTramitados(Usuario *usuario);
+	lista_sin<PedidoUsuario *> * buscaPedidosUsuarioTramitados(
+			Usuario *usuario);
 
 	/**
 	 * @brief Devuelve una lista con las referencias a los pedidios de biblioteca pendientes.
@@ -109,34 +146,6 @@ public:
 	 * @brief Devuelve la lista del pedido de la biblioteca del numero de pedido que se le pasa.
 	 */
 	PedidoBiblioteca * daListaPedBiblioteca(unsigned num);
-
-	namespace excepcionesBi {
-
-	/**
-	 * @brief Excepcion personalizada para indicar que no se ha encontrado un usuario.
-	 */
-	class usuNoEncontrado {};
-
-	/**
-	 * @brief Excepcion personalizada para indicar que ha habido un error en la apertura de un archivo.
-	 */
-	class errorApertura {};
-
-	/**
-	 * @brief Excepcion personalizada para indicar que no se ha encontrado un libro.
-	 */
-	class libroNoencontrado {};
-
-	/**
-	 * @brief Excepcion personalizada para indicar que no se ha encontrado un pedido de un usuario.
-	 */
-	class pedidoUsuarioNoencontrado {};
-
-	/**
-	 * @brief Excepcion personalizada para indicar que no se ha encontrado un pedido hecho por la biblioteca.
-	 */
-	class pedidoBibliotecaNoencontrado {};
-	}
 
 	/**
 	 * @brief Destructor de la clase Biblioteca.
