@@ -1,0 +1,6 @@
+<map id="PedidoUsuario" name="PedidoUsuario">
+<area shape="rect" id="node1" title="Clase que representa el pedido que un usuario hace a la biblioteca." alt="" coords="74,95,190,121"/>
+<area shape="rect" id="node2" href="$classUsuario.html" title="Clase que representa a un usuario de la biblioteca." alt="" coords="5,5,77,32"/>
+<area shape="rect" id="node3" href="$classFecha.html" title="Clase sencilla para representar fechas y horas." alt="" coords="102,5,162,32"/>
+<area shape="rect" id="node4" href="$classLibro.html" title="Clase que representa toda la información necesaria de un libro." alt="" coords="186,5,241,32"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="PedidoBiblioteca.h" name="PedidoBiblioteca.h">
+<area shape="rect" id="node1" title="Archivo cabecera donde se almacena toda la información relacionada con la clase PedidoBiblioteca." alt="" coords="194,5,337,32"/>
+<area shape="rect" id="node2" href="$Biblioteca_8h.html" title="Archivo cabecera donde se almacena la información de la clase Biblioteca." alt="" coords="140,80,239,107"/>
+<area shape="rect" id="node7" href="$PedidoBiblioteca_8cpp.html" title="Contiene el código fuente de todas las funciones del archivo cabecera PedidoBiblioteca...." alt="" coords="263,80,422,107"/>
+<area shape="rect" id="node3" href="$Aplication_8h.html" title="Archivo cabecera donde se almacena la información de la clase Aplication." alt="" coords="75,155,173,181"/>
+<area shape="rect" id="node6" href="$Biblioteca_8cpp.html" title="Contiene el código fuente de los elementos del archivo cabecera Biblioteca.h." alt="" coords="197,155,312,181"/>
+<area shape="rect" id="node4" href="$Aplication_8cpp.html" title="Desarrollo de la clase Aplicación comenzando por su constructor por defecto en el cual se inicializan..." alt="" coords="5,229,120,256"/>
+<area shape="rect" id="node5" href="$main_8cpp.html" title="Archivo principal de la aplicación." alt="" coords="144,229,227,256"/>
+</map>

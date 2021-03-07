@@ -1,0 +1,7 @@
+<map id="Biblioteca::cierraPedidoBiblioteca" name="Biblioteca::cierraPedidoBiblioteca">
+<area shape="rect" id="node1" title="Cierra un pedido de biblioteca marcándolo como tramitado." alt="" coords="5,89,181,131"/>
+<area shape="rect" id="node2" href="$classPedidoBiblioteca.html#a7886124ecb1579d5887e1177a163dc7f" title="Da por concluido el trámite de hacer el pedido." alt="" coords="245,5,421,47"/>
+<area shape="rect" id="node3" href="$classPedidoBiblioteca.html#a1f35ca9770d64dd4cdc35f448d3991ec" title="Método getter del atributo num." alt="" coords="229,71,436,98"/>
+<area shape="rect" id="node4" href="$classlista__sin.html#a0bc9b82811a175ab607f7278ceac2132" title="Devuelve el objeto que se encuentra en la posición pasada como parámetro." alt="" coords="281,122,385,149"/>
+<area shape="rect" id="node5" href="$classlista__sin.html#ab5279c2eafb58f2fddec09fd814fd81e" title="Devuelve el tamaño de la lista_sin." alt="" coords="263,173,402,199"/>
+</map>

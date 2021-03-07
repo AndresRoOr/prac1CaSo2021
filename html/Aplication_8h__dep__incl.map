@@ -1,0 +1,5 @@
+<map id="Aplication.h" name="Aplication.h">
+<area shape="rect" id="node1" title="Archivo cabecera donde se almacena la información de la clase Aplication." alt="" coords="75,5,173,32"/>
+<area shape="rect" id="node2" href="$Aplication_8cpp.html" title="Desarrollo de la clase Aplicación comenzando por su constructor por defecto en el cual se inicializan..." alt="" coords="5,80,120,107"/>
+<area shape="rect" id="node3" href="$main_8cpp.html" title="Archivo principal de la aplicación." alt="" coords="144,80,227,107"/>
+</map>

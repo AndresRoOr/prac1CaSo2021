@@ -1,0 +1,5 @@
+<map id="Fecha::anadirAnios" name="Fecha::anadirAnios">
+<area shape="rect" id="node1" title="Añadir un numero de años indicado." alt="" coords="5,31,151,57"/>
+<area shape="rect" id="node2" href="$classFecha.html#a82e209d65c4597e508fdeeb5b4685d9c" title="Función auxiliar de conversión a estructura de tiempo tm de time.h." alt="" coords="199,5,364,32"/>
+<area shape="rect" id="node3" href="$classFecha.html#ab819f1bb59ce3ca92ce2a6ab41519648" title="Función auxiliar de conversión desde estructura de tiempo tm de time.h." alt="" coords="210,56,353,83"/>
+</map>
