@@ -1,0 +1,5 @@
+<map id="Fecha::anadirMeses" name="Fecha::anadirMeses">
+<area shape="rect" id="node1" title="Añadir un número de meses indicado." alt="" coords="5,31,156,57"/>
+<area shape="rect" id="node2" href="$classFecha.html#a82e209d65c4597e508fdeeb5b4685d9c" title="Función auxiliar de conversión a estructura de tiempo tm de time.h." alt="" coords="204,5,369,32"/>
+<area shape="rect" id="node3" href="$classFecha.html#ab819f1bb59ce3ca92ce2a6ab41519648" title="Función auxiliar de conversión desde estructura de tiempo tm de time.h." alt="" coords="215,56,358,83"/>
+</map>

@@ -1,0 +1,223 @@
+\hypertarget{classlista__sin}{}\doxysection{lista\+\_\+sin$<$ T $>$ Class Template Reference}
+\label{classlista__sin}\index{lista\_sin$<$ T $>$@{lista\_sin$<$ T $>$}}
+
+
+Plantilla genérica de estrucutura de datos Lista enlazada.  
+
+
+
+
+{\ttfamily \#include $<$lista\+\_\+sin.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classlista__sin_ab5d6ab39d5cf54c4e025118a498eb686}\label{classlista__sin_ab5d6ab39d5cf54c4e025118a498eb686}} 
+\mbox{\hyperlink{classlista__sin_ab5d6ab39d5cf54c4e025118a498eb686}{lista\+\_\+sin}} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto de la clase \mbox{\hyperlink{classlista__sin}{lista\+\_\+sin}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classlista__sin_a799467fd5cb655e9be70e57701b4c80a}{aumenta}} (T elem)
+\begin{DoxyCompactList}\small\item\em Añade un elemento nuevo a la \mbox{\hyperlink{classlista__sin}{lista\+\_\+sin}}. \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{classlista__sin_a0bc9b82811a175ab607f7278ceac2132}{lee}} (unsigned pos)
+\begin{DoxyCompactList}\small\item\em Devuelve el objeto que se encuentra en la posición pasada como parámetro. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classlista__sin_a31e3d402f4fa427dbaa2ef62a161091b}{modifica}} (T elem, unsigned pos)
+\begin{DoxyCompactList}\small\item\em Modifica el objeto situado en la posición pasada como parámetro con el objeto pasado como parámetro. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classlista__sin_a2a5c028ad159f9fa02ecbb8e90c69051}{inserta\+\_\+dato}} (const T \&dato, unsigned pos)
+\begin{DoxyCompactList}\small\item\em Inserta el objeto que se pasa como parámetro en una posición determinada de \mbox{\hyperlink{classlista__sin}{lista\+\_\+sin}}. \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{classlista__sin_a8582a5bc0784ce93a4d1a14ba5084f7b}{elimina\+\_\+dato}} (unsigned pos)
+\begin{DoxyCompactList}\small\item\em Elimina el objeto que se encuentra en la posición pasada como parámetro. \end{DoxyCompactList}\item 
+unsigned \mbox{\hyperlink{classlista__sin_ab5279c2eafb58f2fddec09fd814fd81e}{tamanio}} ()
+\begin{DoxyCompactList}\small\item\em Devuelve el tamaño de la \mbox{\hyperlink{classlista__sin}{lista\+\_\+sin}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlista__sin_a55afa69f5205c4d4ec4eeb1a8ff76971}\label{classlista__sin_a55afa69f5205c4d4ec4eeb1a8ff76971}} 
+void \mbox{\hyperlink{classlista__sin_a55afa69f5205c4d4ec4eeb1a8ff76971}{limpia}} ()
+\begin{DoxyCompactList}\small\item\em Elimina todos los elementos almacenados en la \mbox{\hyperlink{classlista__sin}{lista\+\_\+sin}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classlista__sin}{lista\+\_\+sin}} \& \mbox{\hyperlink{classlista__sin_a4927a48ff03e1444352759f99be5c903}{operator=}} (\mbox{\hyperlink{classlista__sin}{lista\+\_\+sin}} \&list)
+\begin{DoxyCompactList}\small\item\em Operador de asignación de la clase \mbox{\hyperlink{classlista__sin}{lista\+\_\+sin}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classlista__sin_a4328cdcbf7119f9c88e54a2e04b6e333}{lista\+\_\+sin}} (\mbox{\hyperlink{classlista__sin}{lista\+\_\+sin}} \&list)
+\begin{DoxyCompactList}\small\item\em Constructor por copia de la clase \mbox{\hyperlink{classlista__sin}{lista\+\_\+sin}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classlista__sin_a0ab5cc56d9518659da56478a87dc3853}{$\sim$lista\+\_\+sin}} (void)
+\begin{DoxyCompactList}\small\item\em Destructor de la clase \mbox{\hyperlink{classlista__sin}{lista\+\_\+sin}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class lista\+\_\+sin$<$ T $>$}
+
+Plantilla genérica de estrucutura de datos Lista enlazada. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classlista__sin_a4328cdcbf7119f9c88e54a2e04b6e333}\label{classlista__sin_a4328cdcbf7119f9c88e54a2e04b6e333}} 
+\index{lista\_sin$<$ T $>$@{lista\_sin$<$ T $>$}!lista\_sin@{lista\_sin}}
+\index{lista\_sin@{lista\_sin}!lista\_sin$<$ T $>$@{lista\_sin$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{lista\_sin()}{lista\_sin()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{classlista__sin}{lista\+\_\+sin}}$<$ T $>$\+::\mbox{\hyperlink{classlista__sin}{lista\+\_\+sin}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classlista__sin}{lista\+\_\+sin}}$<$ T $>$ \&}]{list }\end{DoxyParamCaption})}
+
+
+
+Constructor por copia de la clase \mbox{\hyperlink{classlista__sin}{lista\+\_\+sin}}. 
+
+Constructor copia y por ello se inicializan los punteros a N\+U\+LL y la variable tamanio.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em list} & \mbox{\hyperlink{classlista__sin}{lista\+\_\+sin}} (dir). \mbox{\hyperlink{classlista__sin}{lista\+\_\+sin}} que queremos copiar.\\
+\hline
+\mbox{\texttt{ in}}  & {\em Una} & \mbox{\hyperlink{classlista__sin}{lista\+\_\+sin}} por referencia. \mbox{\hyperlink{classlista__sin}{lista\+\_\+sin}} que queremos copiar. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classlista__sin_a0ab5cc56d9518659da56478a87dc3853}\label{classlista__sin_a0ab5cc56d9518659da56478a87dc3853}} 
+\index{lista\_sin$<$ T $>$@{lista\_sin$<$ T $>$}!````~lista\_sin@{$\sim$lista\_sin}}
+\index{````~lista\_sin@{$\sim$lista\_sin}!lista\_sin$<$ T $>$@{lista\_sin$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$lista\_sin()}{~lista\_sin()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{classlista__sin}{lista\+\_\+sin}}$<$ T $>$\+::$\sim$\mbox{\hyperlink{classlista__sin}{lista\+\_\+sin}} (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Destructor de la clase \mbox{\hyperlink{classlista__sin}{lista\+\_\+sin}}. 
+
+Destructor y para abreviar se llama a la función limpia y ya no se tendra que llamar desde el main. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classlista__sin_a799467fd5cb655e9be70e57701b4c80a}\label{classlista__sin_a799467fd5cb655e9be70e57701b4c80a}} 
+\index{lista\_sin$<$ T $>$@{lista\_sin$<$ T $>$}!aumenta@{aumenta}}
+\index{aumenta@{aumenta}!lista\_sin$<$ T $>$@{lista\_sin$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{aumenta()}{aumenta()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+void \mbox{\hyperlink{classlista__sin}{lista\+\_\+sin}}$<$ T $>$\+::aumenta (\begin{DoxyParamCaption}\item[{T}]{elem }\end{DoxyParamCaption})}
+
+
+
+Añade un elemento nuevo a la \mbox{\hyperlink{classlista__sin}{lista\+\_\+sin}}. 
+
+Aumenta la lista en elem elementos.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em elem} & T. Objeto que queremos añadir. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classlista__sin_a8582a5bc0784ce93a4d1a14ba5084f7b}\label{classlista__sin_a8582a5bc0784ce93a4d1a14ba5084f7b}} 
+\index{lista\_sin$<$ T $>$@{lista\_sin$<$ T $>$}!elimina\_dato@{elimina\_dato}}
+\index{elimina\_dato@{elimina\_dato}!lista\_sin$<$ T $>$@{lista\_sin$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{elimina\_dato()}{elimina\_dato()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T \mbox{\hyperlink{classlista__sin}{lista\+\_\+sin}}$<$ T $>$\+::elimina\+\_\+dato (\begin{DoxyParamCaption}\item[{unsigned}]{pos }\end{DoxyParamCaption})}
+
+
+
+Elimina el objeto que se encuentra en la posición pasada como parámetro. 
+
+Devuelve el elemento eliminado, con solo pasarle la posición \char`\"{}pos\char`\"{} de dicho elemento.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pos} & unsigned. Posición en la que se encuentra el dato que queremos eliminar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Devuelve el objeto que hemos eliminado de tipo T. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlista__sin_a2a5c028ad159f9fa02ecbb8e90c69051}\label{classlista__sin_a2a5c028ad159f9fa02ecbb8e90c69051}} 
+\index{lista\_sin$<$ T $>$@{lista\_sin$<$ T $>$}!inserta\_dato@{inserta\_dato}}
+\index{inserta\_dato@{inserta\_dato}!lista\_sin$<$ T $>$@{lista\_sin$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{inserta\_dato()}{inserta\_dato()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+void \mbox{\hyperlink{classlista__sin}{lista\+\_\+sin}}$<$ T $>$\+::inserta\+\_\+dato (\begin{DoxyParamCaption}\item[{const T \&}]{dato,  }\item[{unsigned}]{pos }\end{DoxyParamCaption})}
+
+
+
+Inserta el objeto que se pasa como parámetro en una posición determinada de \mbox{\hyperlink{classlista__sin}{lista\+\_\+sin}}. 
+
+Inserta el dato de tipo T en la posición a la que alude \char`\"{}pos\char`\"{}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em dato} & T (const,dir). Objeto que queremos introducir en \mbox{\hyperlink{classlista__sin}{lista\+\_\+sin}}. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pos} & unsigned. Posición en la que queremos introducir el objeto. \\
+\hline
+\end{DoxyParams}
+Incremento \char`\"{}num\+Elem\char`\"{} porque hay un dato mas en la lista.\mbox{\Hypertarget{classlista__sin_a0bc9b82811a175ab607f7278ceac2132}\label{classlista__sin_a0bc9b82811a175ab607f7278ceac2132}} 
+\index{lista\_sin$<$ T $>$@{lista\_sin$<$ T $>$}!lee@{lee}}
+\index{lee@{lee}!lista\_sin$<$ T $>$@{lista\_sin$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{lee()}{lee()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T \mbox{\hyperlink{classlista__sin}{lista\+\_\+sin}}$<$ T $>$\+::lee (\begin{DoxyParamCaption}\item[{unsigned}]{pos }\end{DoxyParamCaption})}
+
+
+
+Devuelve el objeto que se encuentra en la posición pasada como parámetro. 
+
+Devuelve el elemento de la posición a la que se refiere pos.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pos} & unsigned. Posición en la que se encuentra el objeto. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Devuelve el tipo de dato que se encuentra en esa posición. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlista__sin_a31e3d402f4fa427dbaa2ef62a161091b}\label{classlista__sin_a31e3d402f4fa427dbaa2ef62a161091b}} 
+\index{lista\_sin$<$ T $>$@{lista\_sin$<$ T $>$}!modifica@{modifica}}
+\index{modifica@{modifica}!lista\_sin$<$ T $>$@{lista\_sin$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{modifica()}{modifica()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+void \mbox{\hyperlink{classlista__sin}{lista\+\_\+sin}}$<$ T $>$\+::modifica (\begin{DoxyParamCaption}\item[{T}]{elem,  }\item[{unsigned}]{pos }\end{DoxyParamCaption})}
+
+
+
+Modifica el objeto situado en la posición pasada como parámetro con el objeto pasado como parámetro. 
+
+Modifica el elemento con \char`\"{}elem\char`\"{} de la posición a la que alude \char`\"{}pos\char`\"{}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em elem} & T. Objeto que queremos introducir. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pos} & unsigned. Posición de la \mbox{\hyperlink{classlista__sin}{lista\+\_\+sin}} en la que queremos introducir el objeto. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classlista__sin_a4927a48ff03e1444352759f99be5c903}\label{classlista__sin_a4927a48ff03e1444352759f99be5c903}} 
+\index{lista\_sin$<$ T $>$@{lista\_sin$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!lista\_sin$<$ T $>$@{lista\_sin$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{classlista__sin}{lista\+\_\+sin}}$<$ T $>$ \& \mbox{\hyperlink{classlista__sin}{lista\+\_\+sin}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classlista__sin}{lista\+\_\+sin}}$<$ T $>$ \&}]{list }\end{DoxyParamCaption})}
+
+
+
+Operador de asignación de la clase \mbox{\hyperlink{classlista__sin}{lista\+\_\+sin}}. 
+
+Copia mediante operador de asignación, la diferencia es que ahora tendrá que liberar memoria de la lista a ser copiada, pues puede tener restos de anteriores operaciones.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em list} & \mbox{\hyperlink{classlista__sin}{lista\+\_\+sin}} (dir). \mbox{\hyperlink{classlista__sin}{lista\+\_\+sin}} que queremos copiar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classlista__sin}{lista\+\_\+sin}} copia de la \mbox{\hyperlink{classlista__sin}{lista\+\_\+sin}} pasada como parámetro. 
+\end{DoxyReturn}
+Gracias a \char`\"{}aumenta\char`\"{} se reserva memoria para cada nodo.\mbox{\Hypertarget{classlista__sin_ab5279c2eafb58f2fddec09fd814fd81e}\label{classlista__sin_ab5279c2eafb58f2fddec09fd814fd81e}} 
+\index{lista\_sin$<$ T $>$@{lista\_sin$<$ T $>$}!tamanio@{tamanio}}
+\index{tamanio@{tamanio}!lista\_sin$<$ T $>$@{lista\_sin$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{tamanio()}{tamanio()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+unsigned \mbox{\hyperlink{classlista__sin}{lista\+\_\+sin}}$<$ T $>$\+::tamanio (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Devuelve el tamaño de la \mbox{\hyperlink{classlista__sin}{lista\+\_\+sin}}. 
+
+Devuelve el tamaño de la lista debido a que la clase lista ha sido creada con una variable designada para ello.
+
+\begin{DoxyReturn}{Returns}
+Devuelve el tamaño de la \mbox{\hyperlink{classlista__sin}{lista\+\_\+sin}} representado como un entero sin signo. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{lista__sin_8h}{lista\+\_\+sin.\+h}}\end{DoxyCompactItemize}

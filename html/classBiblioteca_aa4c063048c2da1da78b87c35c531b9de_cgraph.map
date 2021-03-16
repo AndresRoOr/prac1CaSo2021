@@ -1,0 +1,8 @@
+<map id="Biblioteca::nuevoUsuario" name="Biblioteca::nuevoUsuario">
+<area shape="rect" id="node1" title="Introduce un nuevo Usuario en la biblioteca." alt="" coords="5,107,191,133"/>
+<area shape="rect" id="node2" href="$classlista__sin.html#a799467fd5cb655e9be70e57701b4c80a" title="Añade un elemento nuevo a la lista_sin." alt="" coords="239,5,381,32"/>
+<area shape="rect" id="node3" href="$classUsuario.html#a9ae104370f83a125e1facc7e5aea3037" title="Método getter del atributo clave." alt="" coords="243,56,377,83"/>
+<area shape="rect" id="node4" href="$classlista__sin.html#a0bc9b82811a175ab607f7278ceac2132" title="Devuelve el objeto que se encuentra en la posición pasada como parámetro." alt="" coords="258,107,362,133"/>
+<area shape="rect" id="node5" href="$classUsuario.html#a092d79d196a7f670186cd80bf4acdf99" title="Función que asigna a un Usuario su nombre, su Clave, y por supuesto su Login." alt="" coords="247,157,373,184"/>
+<area shape="rect" id="node6" href="$classlista__sin.html#ab5279c2eafb58f2fddec09fd814fd81e" title="Devuelve el tamaño de la lista_sin." alt="" coords="241,208,379,235"/>
+</map>

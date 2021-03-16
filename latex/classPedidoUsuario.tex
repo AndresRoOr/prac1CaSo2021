@@ -1,0 +1,267 @@
+\hypertarget{classPedidoUsuario}{}\doxysection{Pedido\+Usuario Class Reference}
+\label{classPedidoUsuario}\index{PedidoUsuario@{PedidoUsuario}}
+
+
+Clase que representa el pedido que un usuario hace a la biblioteca.  
+
+
+
+
+{\ttfamily \#include $<$Pedido\+Usuario.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPedidoUsuario_ae34129c83eb4a2f11d839f7a0899a5ea}{Pedido\+Usuario}} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto de la clase \mbox{\hyperlink{classPedidoUsuario}{Pedido\+Usuario}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPedidoUsuario_a32719b7bdb7136de89cc75a950aa17a3}{Pedido\+Usuario}} (\mbox{\hyperlink{classLibro}{Libro}} $\ast$libro, \mbox{\hyperlink{classUsuario}{Usuario}} $\ast$usuario, \mbox{\hyperlink{classFecha}{Fecha}} a\+Fecha, int a\+Prioridad, float a\+Precio, bool a\+Tramitado)
+\begin{DoxyCompactList}\small\item\em Constructor parametrizado de la clase Pedido\+Ususario. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classUsuario}{Usuario}} $\ast$ \mbox{\hyperlink{classPedidoUsuario_aa2bc45cb599333f4e88f47842d54f563}{da\+Usuario}} ()
+\begin{DoxyCompactList}\small\item\em Método getter del atributo usuario. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classLibro}{Libro}} $\ast$ \mbox{\hyperlink{classPedidoUsuario_a181a2f2228009deef91568aae5905f62}{da\+Libro}} ()
+\begin{DoxyCompactList}\small\item\em Método getter del atributo libro. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPedidoUsuario_aa94faa3c4e6d4201662470c07f0722e9}{da\+Prioridad}} ()
+\begin{DoxyCompactList}\small\item\em Método getter del atributo prioridad. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classPedidoUsuario_a5054a655ba225d139101df6fdd2e047f}{da\+Precio}} ()
+\begin{DoxyCompactList}\small\item\em Método getter del atributo precio. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPedidoUsuario_a941ba9486999ed392291be1df61478ac}{da\+Tramitado}} ()
+\begin{DoxyCompactList}\small\item\em Método getter del atributo tramitado. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPedidoUsuario_a3ec9574e2e42c85b962684c014f969d4}{tramita\+Pedido}} ()
+\begin{DoxyCompactList}\small\item\em Indicación que permite constatar si un usuario ha hecho un pedido o no. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPedidoUsuario}{Pedido\+Usuario}} \& \mbox{\hyperlink{classPedidoUsuario_ae4b1516d170dc335d6b87dbe97ba3c33}{operator=}} (\mbox{\hyperlink{classPedidoUsuario}{Pedido\+Usuario}} \&pedido)
+\begin{DoxyCompactList}\small\item\em Operador de asignación de la clase \mbox{\hyperlink{classPedidoUsuario}{Pedido\+Usuario}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPedidoUsuario_a21c71be717f094c9a72c97500226343d}{operator$<$}} (const \mbox{\hyperlink{classPedidoUsuario}{Pedido\+Usuario}} \&pedido)
+\begin{DoxyCompactList}\small\item\em Operador \char`\"{}menorque\char`\"{} de la clase \mbox{\hyperlink{classPedidoUsuario}{Pedido\+Usuario}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPedidoUsuario_a63e40cdf466cffc6d50e16b6c521eb8b}{$\sim$\+Pedido\+Usuario}} ()
+\begin{DoxyCompactList}\small\item\em Destructor de la clase \mbox{\hyperlink{classPedidoUsuario}{Pedido\+Usuario}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \mbox{\hyperlink{classPedidoUsuario_a919701f5e74c15e7f8eaf6b2eba7ba5b}{operator$<$$<$}} (ostream \&, const \mbox{\hyperlink{classPedidoUsuario}{Pedido\+Usuario}} \&)
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador $<$$<$ (de insercion) que permite entre otras cosas mostrar un \mbox{\hyperlink{classPedidoUsuario}{Pedido\+Usuario}} con cout. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase que representa el pedido que un usuario hace a la biblioteca. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPedidoUsuario_ae34129c83eb4a2f11d839f7a0899a5ea}\label{classPedidoUsuario_ae34129c83eb4a2f11d839f7a0899a5ea}} 
+\index{PedidoUsuario@{PedidoUsuario}!PedidoUsuario@{PedidoUsuario}}
+\index{PedidoUsuario@{PedidoUsuario}!PedidoUsuario@{PedidoUsuario}}
+\doxysubsubsection{\texorpdfstring{PedidoUsuario()}{PedidoUsuario()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Pedido\+Usuario\+::\+Pedido\+Usuario (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor por defecto de la clase \mbox{\hyperlink{classPedidoUsuario}{Pedido\+Usuario}}. 
+
+Constructor por defecto del pedido de un usuario en concreto.
+
+\begin{DoxyReturn}{Returns}
+La inicialización de un pedido por parte del usuario con su fecha, precio, etc. 
+\end{DoxyReturn}
+$<$ \mbox{\hyperlink{classFecha}{Fecha}} que queda registrada al hacer un pedido.
+
+$<$ Prioridad concedida al pedido del usuario.
+
+$<$ Precio del pedido inicializado a cero.
+
+$<$ De entrada el pedido aun no ha sido tramitado.
+
+$<$ De entrada no se esta apuntando a ningun libro en concreto.
+
+$<$ De entrada no se esta apuntando a ningun usuario en concreto.\mbox{\Hypertarget{classPedidoUsuario_a32719b7bdb7136de89cc75a950aa17a3}\label{classPedidoUsuario_a32719b7bdb7136de89cc75a950aa17a3}} 
+\index{PedidoUsuario@{PedidoUsuario}!PedidoUsuario@{PedidoUsuario}}
+\index{PedidoUsuario@{PedidoUsuario}!PedidoUsuario@{PedidoUsuario}}
+\doxysubsubsection{\texorpdfstring{PedidoUsuario()}{PedidoUsuario()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Pedido\+Usuario\+::\+Pedido\+Usuario (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classLibro}{Libro}} $\ast$}]{libro,  }\item[{\mbox{\hyperlink{classUsuario}{Usuario}} $\ast$}]{usuario,  }\item[{\mbox{\hyperlink{classFecha}{Fecha}}}]{a\+Fecha,  }\item[{int}]{a\+Prioridad,  }\item[{float}]{a\+Precio,  }\item[{bool}]{a\+Tramitado }\end{DoxyParamCaption})}
+
+
+
+Constructor parametrizado de la clase Pedido\+Ususario. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em libro} & \mbox{\hyperlink{classLibro}{Libro}} (ref). \\
+\hline
+\mbox{\texttt{ in}}  & {\em usuario} & \mbox{\hyperlink{classUsuario}{Usuario}} (ref). \\
+\hline
+\mbox{\texttt{ in}}  & {\em a\+Fecha} & \mbox{\hyperlink{classFecha}{Fecha}}. \\
+\hline
+\mbox{\texttt{ in}}  & {\em a\+Prioridad} & int. \\
+\hline
+\mbox{\texttt{ in}}  & {\em a\+Precio} & float. \\
+\hline
+\mbox{\texttt{ in}}  & {\em a\+Tramitado} & bool. \\
+\hline
+\end{DoxyParams}
+$<$ Copia de la fecha que queda registrada al hacer un pedido.
+
+$<$ Copia de la prioridad que queda registrada al hacer un pedido.
+
+$<$ Copia del precio de un pedido.
+
+$<$ Copia de la tramitación de un pedido.
+
+$<$ Referencia al usuario mediante el objeto this.
+
+$<$ Referencia al libro mediante el objeto this.\mbox{\Hypertarget{classPedidoUsuario_a63e40cdf466cffc6d50e16b6c521eb8b}\label{classPedidoUsuario_a63e40cdf466cffc6d50e16b6c521eb8b}} 
+\index{PedidoUsuario@{PedidoUsuario}!````~PedidoUsuario@{$\sim$PedidoUsuario}}
+\index{````~PedidoUsuario@{$\sim$PedidoUsuario}!PedidoUsuario@{PedidoUsuario}}
+\doxysubsubsection{\texorpdfstring{$\sim$PedidoUsuario()}{~PedidoUsuario()}}
+{\footnotesize\ttfamily Pedido\+Usuario\+::$\sim$\+Pedido\+Usuario (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor de la clase \mbox{\hyperlink{classPedidoUsuario}{Pedido\+Usuario}}. 
+
+Destructor de la clase \mbox{\hyperlink{classPedidoUsuario}{Pedido\+Usuario}} en la que se limpia el pedido. Es decir, tanto el usuario como el libro. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPedidoUsuario_a181a2f2228009deef91568aae5905f62}\label{classPedidoUsuario_a181a2f2228009deef91568aae5905f62}} 
+\index{PedidoUsuario@{PedidoUsuario}!daLibro@{daLibro}}
+\index{daLibro@{daLibro}!PedidoUsuario@{PedidoUsuario}}
+\doxysubsubsection{\texorpdfstring{daLibro()}{daLibro()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLibro}{Libro}} $\ast$ Pedido\+Usuario\+::da\+Libro (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Método getter del atributo libro. 
+
+\begin{DoxyReturn}{Returns}
+libro \mbox{\hyperlink{classLibro}{Libro}} (ref). Atributo de la clase. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPedidoUsuario_a5054a655ba225d139101df6fdd2e047f}\label{classPedidoUsuario_a5054a655ba225d139101df6fdd2e047f}} 
+\index{PedidoUsuario@{PedidoUsuario}!daPrecio@{daPrecio}}
+\index{daPrecio@{daPrecio}!PedidoUsuario@{PedidoUsuario}}
+\doxysubsubsection{\texorpdfstring{daPrecio()}{daPrecio()}}
+{\footnotesize\ttfamily float Pedido\+Usuario\+::da\+Precio (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Método getter del atributo precio. 
+
+\begin{DoxyReturn}{Returns}
+precio float. Atributo de la clase. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPedidoUsuario_aa94faa3c4e6d4201662470c07f0722e9}\label{classPedidoUsuario_aa94faa3c4e6d4201662470c07f0722e9}} 
+\index{PedidoUsuario@{PedidoUsuario}!daPrioridad@{daPrioridad}}
+\index{daPrioridad@{daPrioridad}!PedidoUsuario@{PedidoUsuario}}
+\doxysubsubsection{\texorpdfstring{daPrioridad()}{daPrioridad()}}
+{\footnotesize\ttfamily int Pedido\+Usuario\+::da\+Prioridad (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Método getter del atributo prioridad. 
+
+\begin{DoxyReturn}{Returns}
+prioridad int. Atributo de la clase. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPedidoUsuario_a941ba9486999ed392291be1df61478ac}\label{classPedidoUsuario_a941ba9486999ed392291be1df61478ac}} 
+\index{PedidoUsuario@{PedidoUsuario}!daTramitado@{daTramitado}}
+\index{daTramitado@{daTramitado}!PedidoUsuario@{PedidoUsuario}}
+\doxysubsubsection{\texorpdfstring{daTramitado()}{daTramitado()}}
+{\footnotesize\ttfamily bool Pedido\+Usuario\+::da\+Tramitado (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Método getter del atributo tramitado. 
+
+\begin{DoxyReturn}{Returns}
+tramitado bool. Atributo de la clase. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPedidoUsuario_aa2bc45cb599333f4e88f47842d54f563}\label{classPedidoUsuario_aa2bc45cb599333f4e88f47842d54f563}} 
+\index{PedidoUsuario@{PedidoUsuario}!daUsuario@{daUsuario}}
+\index{daUsuario@{daUsuario}!PedidoUsuario@{PedidoUsuario}}
+\doxysubsubsection{\texorpdfstring{daUsuario()}{daUsuario()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classUsuario}{Usuario}} $\ast$ Pedido\+Usuario\+::da\+Usuario (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Método getter del atributo usuario. 
+
+Método getter del atributo ususario.
+
+\begin{DoxyReturn}{Returns}
+usuario \mbox{\hyperlink{classUsuario}{Usuario}} (ref). Atributo de la clase. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPedidoUsuario_a21c71be717f094c9a72c97500226343d}\label{classPedidoUsuario_a21c71be717f094c9a72c97500226343d}} 
+\index{PedidoUsuario@{PedidoUsuario}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!PedidoUsuario@{PedidoUsuario}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool Pedido\+Usuario\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classPedidoUsuario}{Pedido\+Usuario}} \&}]{pedido }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operador \char`\"{}menorque\char`\"{} de la clase \mbox{\hyperlink{classPedidoUsuario}{Pedido\+Usuario}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pedido} & \mbox{\hyperlink{classPedidoUsuario}{Pedido\+Usuario}} (dir). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si la prioridad de pedido es mayor, falso en otro caso. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPedidoUsuario_ae4b1516d170dc335d6b87dbe97ba3c33}\label{classPedidoUsuario_ae4b1516d170dc335d6b87dbe97ba3c33}} 
+\index{PedidoUsuario@{PedidoUsuario}!operator=@{operator=}}
+\index{operator=@{operator=}!PedidoUsuario@{PedidoUsuario}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPedidoUsuario}{Pedido\+Usuario}}\& Pedido\+Usuario\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPedidoUsuario}{Pedido\+Usuario}} \&}]{pedido }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operador de asignación de la clase \mbox{\hyperlink{classPedidoUsuario}{Pedido\+Usuario}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pedido} & \mbox{\hyperlink{classPedidoUsuario}{Pedido\+Usuario}} (ref). Instancia de \mbox{\hyperlink{classPedidoUsuario}{Pedido\+Usuario}} que se quiere copiar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Instancia copia creada de la clase \mbox{\hyperlink{classPedidoUsuario}{Pedido\+Usuario}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPedidoUsuario_a3ec9574e2e42c85b962684c014f969d4}\label{classPedidoUsuario_a3ec9574e2e42c85b962684c014f969d4}} 
+\index{PedidoUsuario@{PedidoUsuario}!tramitaPedido@{tramitaPedido}}
+\index{tramitaPedido@{tramitaPedido}!PedidoUsuario@{PedidoUsuario}}
+\doxysubsubsection{\texorpdfstring{tramitaPedido()}{tramitaPedido()}}
+{\footnotesize\ttfamily bool Pedido\+Usuario\+::tramita\+Pedido (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Indicación que permite constatar si un usuario ha hecho un pedido o no. 
+
+Indicación que permite confirmar que un usuario ha hecho un pedido y por tanto, se tramita.
+
+\begin{DoxyReturn}{Returns}
+tramitado bool. Por tanto se pone a true. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classPedidoUsuario_a919701f5e74c15e7f8eaf6b2eba7ba5b}\label{classPedidoUsuario_a919701f5e74c15e7f8eaf6b2eba7ba5b}} 
+\index{PedidoUsuario@{PedidoUsuario}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!PedidoUsuario@{PedidoUsuario}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{co,  }\item[{const \mbox{\hyperlink{classPedidoUsuario}{Pedido\+Usuario}} \&}]{pu }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Sobrecarga del operador $<$$<$ (de insercion) que permite entre otras cosas mostrar un \mbox{\hyperlink{classPedidoUsuario}{Pedido\+Usuario}} con cout. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em ostream.} & El propio flujo de salida (por referencia). \\
+\hline
+\mbox{\texttt{ in}}  & {\em Pedido\+Usuario.} & El pedido de un usuario en concreto (por referencia también). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+El flujo de salida ostream debidamente sobrecargado. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Pedido\+Usuario.\+h\item 
+Pedido\+Usuario.\+cpp\end{DoxyCompactItemize}

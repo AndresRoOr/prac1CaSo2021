@@ -1,0 +1,9 @@
+<map id="PedidoBiblioteca" name="PedidoBiblioteca">
+<area shape="rect" id="node1" title="Clase que representa de manera genérica un pedido hecho por la biblioteca." alt="" coords="5,392,136,419"/>
+<area shape="rect" id="node2" href="$classFecha.html" title="Clase sencilla para representar fechas y horas." alt="" coords="65,5,125,32"/>
+<area shape="rect" id="node5" href="$classPedidoUsuario.html" title="Clase que representa el pedido que un usuario hace a la biblioteca." alt="" coords="142,95,258,121"/>
+<area shape="rect" id="node3" href="$classlista__sin.html" title=" " alt="" coords="95,303,305,329"/>
+<area shape="rect" id="node4" href="$structnodo.html" title=" " alt="" coords="115,184,304,211"/>
+<area shape="rect" id="node6" href="$classUsuario.html" title="Clase que representa a un usuario de la biblioteca." alt="" coords="161,5,233,32"/>
+<area shape="rect" id="node7" href="$classLibro.html" title="Clase que representa toda la información necesaria de un libro." alt="" coords="258,5,313,32"/>
+</map>

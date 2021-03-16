@@ -1,0 +1,8 @@
+<map id="Biblioteca::buscaPedidosBibliotecaPendientes" name="Biblioteca::buscaPedidosBibliotecaPendientes">
+<area shape="rect" id="node1" title="Devuelve una lista con las referencias a los pedidios de biblioteca pendientes." alt="" coords="5,99,189,141"/>
+<area shape="rect" id="node2" href="$classlista__sin.html#a799467fd5cb655e9be70e57701b4c80a" title="Añade un elemento nuevo a la lista_sin." alt="" coords="269,5,412,32"/>
+<area shape="rect" id="node3" href="$classPedidoBiblioteca.html#ad0c8e6542a41d72220ae39deda647db7" title="Método getter del atributo importe." alt="" coords="237,56,444,83"/>
+<area shape="rect" id="node4" href="$classPedidoBiblioteca.html#a6cd15a1bd98be02a107251c92a43e7de" title="Método getter del atributo tramitado." alt="" coords="245,107,436,133"/>
+<area shape="rect" id="node5" href="$classlista__sin.html#a0bc9b82811a175ab607f7278ceac2132" title="Devuelve el objeto que se encuentra en la posición pasada como parámetro." alt="" coords="289,157,393,184"/>
+<area shape="rect" id="node6" href="$classlista__sin.html#ab5279c2eafb58f2fddec09fd814fd81e" title="Devuelve el tamaño de la lista_sin." alt="" coords="271,208,410,235"/>
+</map>

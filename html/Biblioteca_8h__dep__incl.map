@@ -1,0 +1,7 @@
+<map id="Biblioteca.h" name="Biblioteca.h">
+<area shape="rect" id="node1" title="Archivo cabecera donde se almacena la información de la clase Biblioteca." alt="" coords="140,5,239,32"/>
+<area shape="rect" id="node2" href="$Aplication_8h.html" title="Archivo cabecera donde se almacena la información de la clase Aplication." alt="" coords="75,80,173,107"/>
+<area shape="rect" id="node5" href="$Biblioteca_8cpp.html" title="Contiene el código fuente de los elementos del archivo cabecera Biblioteca.h." alt="" coords="197,80,312,107"/>
+<area shape="rect" id="node3" href="$Aplication_8cpp.html" title="Desarrollo de la clase Aplicación comenzando por su constructor por defecto en el cual se inicializan..." alt="" coords="5,155,120,181"/>
+<area shape="rect" id="node4" href="$main_8cpp.html" title="Archivo principal de la aplicación." alt="" coords="144,155,227,181"/>
+</map>
