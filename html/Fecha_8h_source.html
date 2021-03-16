@@ -102,98 +102,98 @@ $(document).ready(function(){initNavTree('Fecha_8h_source.html','');});
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="classFecha.html">Fecha</a>();</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="classFecha.html">Fecha</a>();</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="classFecha.html">Fecha</a>(<span class="keywordtype">unsigned</span> aDia, <span class="keywordtype">unsigned</span> aMes, <span class="keywordtype">unsigned</span> aAnio, <span class="keywordtype">unsigned</span> aHora = 0,</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            <span class="keywordtype">unsigned</span> aMin = 0);</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="classFecha.html">Fecha</a>(<span class="keywordtype">unsigned</span> aDia, <span class="keywordtype">unsigned</span> aMes, <span class="keywordtype">unsigned</span> aAnio, <span class="keywordtype">unsigned</span> aHora = 0,</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            <span class="keywordtype">unsigned</span> aMin = 0);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classFecha.html#a7201e00ac3fa1e07dfa124f3bd999dec">   35</a></span>&#160;    <a class="code" href="classFecha.html#a7201e00ac3fa1e07dfa124f3bd999dec">Fecha</a>(<span class="keyword">const</span> <a class="code" href="classFecha.html">Fecha</a> &amp;f) :</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            dia(f.dia), mes(f.mes), anio(f.anio), hora(f.hora), min(f.min) {</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    }</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> asignarDia(<span class="keywordtype">unsigned</span> aDia, <span class="keywordtype">unsigned</span> aMes, <span class="keywordtype">unsigned</span> aAnio);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> asignarHora(<span class="keywordtype">unsigned</span> aHora, <span class="keywordtype">unsigned</span> aMin);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classFecha.html#a14c51421f53202110c2dd030b4d323a8">   53</a></span>&#160;    <span class="keywordtype">unsigned</span> <a class="code" href="classFecha.html#a14c51421f53202110c2dd030b4d323a8">verHora</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordflow">return</span> hora;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classFecha.html#af10a546982dc738bef0c249357e1a0cf">   61</a></span>&#160;    <span class="keywordtype">unsigned</span> <a class="code" href="classFecha.html#af10a546982dc738bef0c249357e1a0cf">verMin</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordflow">return</span> min;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="classFecha.html#a0f6a9694242181a60f6351dd031ec265">   69</a></span>&#160;    <span class="keywordtype">unsigned</span> <a class="code" href="classFecha.html#a0f6a9694242181a60f6351dd031ec265">verDia</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keywordflow">return</span> dia;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    }</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classFecha.html#ab42ccddfc74083d405b55ecd238cd393">   77</a></span>&#160;    <span class="keywordtype">unsigned</span> <a class="code" href="classFecha.html#ab42ccddfc74083d405b55ecd238cd393">verMes</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordflow">return</span> mes;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    }</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classFecha.html#a7201e00ac3fa1e07dfa124f3bd999dec">   29</a></span>&#160;    <a class="code" href="classFecha.html#a7201e00ac3fa1e07dfa124f3bd999dec">Fecha</a>(<span class="keyword">const</span> <a class="code" href="classFecha.html">Fecha</a> &amp;f) :</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            dia(f.dia), mes(f.mes), anio(f.anio), hora(f.hora), min(f.min) {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    }</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> asignarDia(<span class="keywordtype">unsigned</span> aDia, <span class="keywordtype">unsigned</span> aMes, <span class="keywordtype">unsigned</span> aAnio);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">void</span> asignarHora(<span class="keywordtype">unsigned</span> aHora, <span class="keywordtype">unsigned</span> aMin);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classFecha.html#a14c51421f53202110c2dd030b4d323a8">   41</a></span>&#160;    <span class="keywordtype">unsigned</span> <a class="code" href="classFecha.html#a14c51421f53202110c2dd030b4d323a8">verHora</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordflow">return</span> hora;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classFecha.html#af10a546982dc738bef0c249357e1a0cf">   49</a></span>&#160;    <span class="keywordtype">unsigned</span> <a class="code" href="classFecha.html#af10a546982dc738bef0c249357e1a0cf">verMin</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordflow">return</span> min;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classFecha.html#a0f6a9694242181a60f6351dd031ec265">   57</a></span>&#160;    <span class="keywordtype">unsigned</span> <a class="code" href="classFecha.html#a0f6a9694242181a60f6351dd031ec265">verDia</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordflow">return</span> dia;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classFecha.html#ab42ccddfc74083d405b55ecd238cd393">   65</a></span>&#160;    <span class="keywordtype">unsigned</span> <a class="code" href="classFecha.html#ab42ccddfc74083d405b55ecd238cd393">verMes</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">return</span> mes;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="classFecha.html#a0b56e2d6672bc728cf82c4e26ab7fb38">   73</a></span>&#160;    <span class="keywordtype">unsigned</span> <a class="code" href="classFecha.html#a0b56e2d6672bc728cf82c4e26ab7fb38">verAnio</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keywordflow">return</span> anio;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    }</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">string</span> cadenaDia() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">string</span> cadenaHora() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="classFecha.html#a0b56e2d6672bc728cf82c4e26ab7fb38">   85</a></span>&#160;    <span class="keywordtype">unsigned</span> <a class="code" href="classFecha.html#a0b56e2d6672bc728cf82c4e26ab7fb38">verAnio</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keywordflow">return</span> anio;</div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="classFecha.html#aa6a276b8355939d81fd8972c8d4ab42c">   85</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="classFecha.html#aa6a276b8355939d81fd8972c8d4ab42c">cadena</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keywordflow">return</span> cadenaDia() + <span class="stringliteral">&quot; &quot;</span> + cadenaHora();</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    }</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">string</span> cadenaDia() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordtype">string</span> cadenaHora() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
-<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="classFecha.html#aa6a276b8355939d81fd8972c8d4ab42c">  103</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="classFecha.html#aa6a276b8355939d81fd8972c8d4ab42c">cadena</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <span class="keywordflow">return</span> cadenaDia() + <span class="stringliteral">&quot; &quot;</span> + cadenaHora();</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    }</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
-<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="classFecha.html#a1d9b65cc26a1033ac812824f90955638">  112</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classFecha.html#a1d9b65cc26a1033ac812824f90955638">mismoDia</a>(<span class="keyword">const</span> <a class="code" href="classFecha.html">Fecha</a> &amp;f)<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <span class="keywordflow">return</span> dia == f.<a class="code" href="classFecha.html#ac81f0a991bb79610170be013a86562f8">dia</a> &amp;&amp; mes == f.<a class="code" href="classFecha.html#a7566b5910abbdfc253eadd7856d8be59">mes</a> &amp;&amp; anio == f.<a class="code" href="classFecha.html#afc21eaaff9f1517358ab0c29b14dc74a">anio</a>;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    }</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordtype">bool</span> operator&lt;(<span class="keyword">const</span> <a class="code" href="classFecha.html">Fecha</a> &amp;f);</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <a class="code" href="classFecha.html">Fecha</a> &amp;operator=(<span class="keyword">const</span> <a class="code" href="classFecha.html">Fecha</a> &amp;f);</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordtype">void</span> anadirMin(<span class="keywordtype">int</span> numMin);</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keywordtype">void</span> anadirHoras(<span class="keywordtype">int</span> numHoras);</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="keywordtype">void</span> anadirDias(<span class="keywordtype">int</span> numDias);</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="keywordtype">void</span> anadirMeses(<span class="keywordtype">int</span> numMeses);</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; </div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="keywordtype">void</span> anadirAnios(<span class="keywordtype">int</span> numAnios);</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keywordtype">void</span> comprobarFecha(<span class="keywordtype">unsigned</span> aDia, <span class="keywordtype">unsigned</span> aMes, <span class="keywordtype">unsigned</span> aAnio,</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            <span class="keywordtype">unsigned</span> aHora, <span class="keywordtype">unsigned</span> aMin) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160; </div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="keywordtype">void</span> leerTiempo(<span class="keyword">const</span> tm &amp;t);</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160; </div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="keywordtype">void</span> escribirTiempo(tm &amp;t);</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160; </div>
-<div class="line"><a name="l00170"></a><span class="lineno"><a class="line" href="classFecha_1_1ErrorFechaIncorrecta.html">  170</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classFecha_1_1ErrorFechaIncorrecta.html">ErrorFechaIncorrecta</a> {</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    };</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160; </div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    ~<a class="code" href="classFecha.html">Fecha</a>();</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;};</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160; </div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;ostream &amp;<a class="code" href="Fecha_8h.html#a9b8a0b3c543945c8117c22ef6c4741a6">operator&lt;&lt;</a>(ostream &amp;os, <span class="keyword">const</span> <a class="code" href="classFecha.html">Fecha</a> &amp;f);</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160; </div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="classFecha.html#a1d9b65cc26a1033ac812824f90955638">   94</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classFecha.html#a1d9b65cc26a1033ac812824f90955638">mismoDia</a>(<span class="keyword">const</span> <a class="code" href="classFecha.html">Fecha</a> &amp;f)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keywordflow">return</span> dia == f.<a class="code" href="classFecha.html#ac81f0a991bb79610170be013a86562f8">dia</a> &amp;&amp; mes == f.<a class="code" href="classFecha.html#a7566b5910abbdfc253eadd7856d8be59">mes</a> &amp;&amp; anio == f.<a class="code" href="classFecha.html#afc21eaaff9f1517358ab0c29b14dc74a">anio</a>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    }</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">bool</span> operator&lt;(<span class="keyword">const</span> <a class="code" href="classFecha.html">Fecha</a> &amp;f);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <a class="code" href="classFecha.html">Fecha</a> &amp;operator=(<span class="keyword">const</span> <a class="code" href="classFecha.html">Fecha</a> &amp;f);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">void</span> anadirMin(<span class="keywordtype">int</span> numMin);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordtype">void</span> anadirHoras(<span class="keywordtype">int</span> numHoras);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordtype">void</span> anadirDias(<span class="keywordtype">int</span> numDias);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">void</span> anadirMeses(<span class="keywordtype">int</span> numMeses);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordtype">void</span> anadirAnios(<span class="keywordtype">int</span> numAnios);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordtype">void</span> comprobarFecha(<span class="keywordtype">unsigned</span> aDia, <span class="keywordtype">unsigned</span> aMes, <span class="keywordtype">unsigned</span> aAnio,</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            <span class="keywordtype">unsigned</span> aHora, <span class="keywordtype">unsigned</span> aMin) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordtype">void</span> leerTiempo(<span class="keyword">const</span> tm &amp;t);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordtype">void</span> escribirTiempo(tm &amp;t);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="classFecha_1_1ErrorFechaIncorrecta.html">  122</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classFecha_1_1ErrorFechaIncorrecta.html">ErrorFechaIncorrecta</a> {</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    };</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    ~<a class="code" href="classFecha.html">Fecha</a>();</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;};</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;ostream &amp;<a class="code" href="Fecha_8h.html#a9b8a0b3c543945c8117c22ef6c4741a6">operator&lt;&lt;</a>(ostream &amp;os, <span class="keyword">const</span> <a class="code" href="classFecha.html">Fecha</a> &amp;f);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassFecha_html_ab42ccddfc74083d405b55ecd238cd393"><div class="ttname"><a href="classFecha.html#ab42ccddfc74083d405b55ecd238cd393">Fecha::verMes</a></div><div class="ttdeci">unsigned verMes() const</div><div class="ttdoc">Obtener mes.</div><div class="ttdef"><b>Definition:</b> <a href="Fecha_8h_source.html#l00077">Fecha.h:77</a></div></div>
-<div class="ttc" id="aclassFecha_html_a14c51421f53202110c2dd030b4d323a8"><div class="ttname"><a href="classFecha.html#a14c51421f53202110c2dd030b4d323a8">Fecha::verHora</a></div><div class="ttdeci">unsigned verHora() const</div><div class="ttdoc">Devuelve la hora.</div><div class="ttdef"><b>Definition:</b> <a href="Fecha_8h_source.html#l00053">Fecha.h:53</a></div></div>
+<div class="ttc" id="aclassFecha_html_ab42ccddfc74083d405b55ecd238cd393"><div class="ttname"><a href="classFecha.html#ab42ccddfc74083d405b55ecd238cd393">Fecha::verMes</a></div><div class="ttdeci">unsigned verMes() const</div><div class="ttdoc">Obtener mes.</div><div class="ttdef"><b>Definition:</b> <a href="Fecha_8h_source.html#l00065">Fecha.h:65</a></div></div>
+<div class="ttc" id="aclassFecha_html_a14c51421f53202110c2dd030b4d323a8"><div class="ttname"><a href="classFecha.html#a14c51421f53202110c2dd030b4d323a8">Fecha::verHora</a></div><div class="ttdeci">unsigned verHora() const</div><div class="ttdoc">Devuelve la hora.</div><div class="ttdef"><b>Definition:</b> <a href="Fecha_8h_source.html#l00041">Fecha.h:41</a></div></div>
 <div class="ttc" id="aclassFecha_html_afc21eaaff9f1517358ab0c29b14dc74a"><div class="ttname"><a href="classFecha.html#afc21eaaff9f1517358ab0c29b14dc74a">Fecha::anio</a></div><div class="ttdeci">unsigned anio</div><div class="ttdef"><b>Definition:</b> <a href="Fecha_8h_source.html#l00016">Fecha.h:16</a></div></div>
-<div class="ttc" id="aclassFecha_html_aa6a276b8355939d81fd8972c8d4ab42c"><div class="ttname"><a href="classFecha.html#aa6a276b8355939d81fd8972c8d4ab42c">Fecha::cadena</a></div><div class="ttdeci">string cadena() const</div><div class="ttdoc">Obtener una cadena con día y hora.</div><div class="ttdef"><b>Definition:</b> <a href="Fecha_8h_source.html#l00103">Fecha.h:103</a></div></div>
+<div class="ttc" id="aclassFecha_html_aa6a276b8355939d81fd8972c8d4ab42c"><div class="ttname"><a href="classFecha.html#aa6a276b8355939d81fd8972c8d4ab42c">Fecha::cadena</a></div><div class="ttdeci">string cadena() const</div><div class="ttdoc">Obtener una cadena con día y hora.</div><div class="ttdef"><b>Definition:</b> <a href="Fecha_8h_source.html#l00085">Fecha.h:85</a></div></div>
 <div class="ttc" id="aclassFecha_html_ac81f0a991bb79610170be013a86562f8"><div class="ttname"><a href="classFecha.html#ac81f0a991bb79610170be013a86562f8">Fecha::dia</a></div><div class="ttdeci">unsigned dia</div><div class="ttdef"><b>Definition:</b> <a href="Fecha_8h_source.html#l00016">Fecha.h:16</a></div></div>
 <div class="ttc" id="aclassFecha_html_a5503d064a6797124e7c80b61261ba1a3"><div class="ttname"><a href="classFecha.html#a5503d064a6797124e7c80b61261ba1a3">Fecha::min</a></div><div class="ttdeci">unsigned min</div><div class="ttdoc">Información de fecha y hora.</div><div class="ttdef"><b>Definition:</b> <a href="Fecha_8h_source.html#l00016">Fecha.h:16</a></div></div>
 <div class="ttc" id="aclassFecha_html"><div class="ttname"><a href="classFecha.html">Fecha</a></div><div class="ttdoc">Clase sencilla para representar fechas y horas.</div><div class="ttdef"><b>Definition:</b> <a href="Fecha_8h_source.html#l00015">Fecha.h:15</a></div></div>
 <div class="ttc" id="aclassFecha_html_a7566b5910abbdfc253eadd7856d8be59"><div class="ttname"><a href="classFecha.html#a7566b5910abbdfc253eadd7856d8be59">Fecha::mes</a></div><div class="ttdeci">unsigned mes</div><div class="ttdef"><b>Definition:</b> <a href="Fecha_8h_source.html#l00016">Fecha.h:16</a></div></div>
-<div class="ttc" id="aclassFecha_1_1ErrorFechaIncorrecta_html"><div class="ttname"><a href="classFecha_1_1ErrorFechaIncorrecta.html">Fecha::ErrorFechaIncorrecta</a></div><div class="ttdoc">Excepción que representa fechas incorrectas.</div><div class="ttdef"><b>Definition:</b> <a href="Fecha_8h_source.html#l00170">Fecha.h:170</a></div></div>
-<div class="ttc" id="aclassFecha_html_a0f6a9694242181a60f6351dd031ec265"><div class="ttname"><a href="classFecha.html#a0f6a9694242181a60f6351dd031ec265">Fecha::verDia</a></div><div class="ttdeci">unsigned verDia() const</div><div class="ttdoc">Obtener día.</div><div class="ttdef"><b>Definition:</b> <a href="Fecha_8h_source.html#l00069">Fecha.h:69</a></div></div>
+<div class="ttc" id="aclassFecha_1_1ErrorFechaIncorrecta_html"><div class="ttname"><a href="classFecha_1_1ErrorFechaIncorrecta.html">Fecha::ErrorFechaIncorrecta</a></div><div class="ttdoc">Excepción que representa fechas incorrectas.</div><div class="ttdef"><b>Definition:</b> <a href="Fecha_8h_source.html#l00122">Fecha.h:122</a></div></div>
+<div class="ttc" id="aclassFecha_html_a0f6a9694242181a60f6351dd031ec265"><div class="ttname"><a href="classFecha.html#a0f6a9694242181a60f6351dd031ec265">Fecha::verDia</a></div><div class="ttdeci">unsigned verDia() const</div><div class="ttdoc">Obtener día.</div><div class="ttdef"><b>Definition:</b> <a href="Fecha_8h_source.html#l00057">Fecha.h:57</a></div></div>
 <div class="ttc" id="aFecha_8h_html_a9b8a0b3c543945c8117c22ef6c4741a6"><div class="ttname"><a href="Fecha_8h.html#a9b8a0b3c543945c8117c22ef6c4741a6">operator&lt;&lt;</a></div><div class="ttdeci">ostream &amp; operator&lt;&lt;(ostream &amp;os, const Fecha &amp;f)</div><div class="ttdoc">Serialización de fechas.</div><div class="ttdef"><b>Definition:</b> <a href="Fecha_8cpp_source.html#l00245">Fecha.cpp:245</a></div></div>
-<div class="ttc" id="aclassFecha_html_a7201e00ac3fa1e07dfa124f3bd999dec"><div class="ttname"><a href="classFecha.html#a7201e00ac3fa1e07dfa124f3bd999dec">Fecha::Fecha</a></div><div class="ttdeci">Fecha(const Fecha &amp;f)</div><div class="ttdoc">Constructor por copia de la clase Fecha.</div><div class="ttdef"><b>Definition:</b> <a href="Fecha_8h_source.html#l00035">Fecha.h:35</a></div></div>
-<div class="ttc" id="aclassFecha_html_a0b56e2d6672bc728cf82c4e26ab7fb38"><div class="ttname"><a href="classFecha.html#a0b56e2d6672bc728cf82c4e26ab7fb38">Fecha::verAnio</a></div><div class="ttdeci">unsigned verAnio() const</div><div class="ttdoc">Obtener año.</div><div class="ttdef"><b>Definition:</b> <a href="Fecha_8h_source.html#l00085">Fecha.h:85</a></div></div>
-<div class="ttc" id="aclassFecha_html_a1d9b65cc26a1033ac812824f90955638"><div class="ttname"><a href="classFecha.html#a1d9b65cc26a1033ac812824f90955638">Fecha::mismoDia</a></div><div class="ttdeci">bool mismoDia(const Fecha &amp;f) const</div><div class="ttdoc">Indica si las dos fechas tienen el mismo día.</div><div class="ttdef"><b>Definition:</b> <a href="Fecha_8h_source.html#l00112">Fecha.h:112</a></div></div>
-<div class="ttc" id="aclassFecha_html_af10a546982dc738bef0c249357e1a0cf"><div class="ttname"><a href="classFecha.html#af10a546982dc738bef0c249357e1a0cf">Fecha::verMin</a></div><div class="ttdeci">unsigned verMin() const</div><div class="ttdoc">Obtener minutos.</div><div class="ttdef"><b>Definition:</b> <a href="Fecha_8h_source.html#l00061">Fecha.h:61</a></div></div>
+<div class="ttc" id="aclassFecha_html_a7201e00ac3fa1e07dfa124f3bd999dec"><div class="ttname"><a href="classFecha.html#a7201e00ac3fa1e07dfa124f3bd999dec">Fecha::Fecha</a></div><div class="ttdeci">Fecha(const Fecha &amp;f)</div><div class="ttdoc">Constructor por copia de la clase Fecha.</div><div class="ttdef"><b>Definition:</b> <a href="Fecha_8h_source.html#l00029">Fecha.h:29</a></div></div>
+<div class="ttc" id="aclassFecha_html_a0b56e2d6672bc728cf82c4e26ab7fb38"><div class="ttname"><a href="classFecha.html#a0b56e2d6672bc728cf82c4e26ab7fb38">Fecha::verAnio</a></div><div class="ttdeci">unsigned verAnio() const</div><div class="ttdoc">Obtener año.</div><div class="ttdef"><b>Definition:</b> <a href="Fecha_8h_source.html#l00073">Fecha.h:73</a></div></div>
+<div class="ttc" id="aclassFecha_html_a1d9b65cc26a1033ac812824f90955638"><div class="ttname"><a href="classFecha.html#a1d9b65cc26a1033ac812824f90955638">Fecha::mismoDia</a></div><div class="ttdeci">bool mismoDia(const Fecha &amp;f) const</div><div class="ttdoc">Indica si las dos fechas tienen el mismo día.</div><div class="ttdef"><b>Definition:</b> <a href="Fecha_8h_source.html#l00094">Fecha.h:94</a></div></div>
+<div class="ttc" id="aclassFecha_html_af10a546982dc738bef0c249357e1a0cf"><div class="ttname"><a href="classFecha.html#af10a546982dc738bef0c249357e1a0cf">Fecha::verMin</a></div><div class="ttdeci">unsigned verMin() const</div><div class="ttdoc">Obtener minutos.</div><div class="ttdef"><b>Definition:</b> <a href="Fecha_8h_source.html#l00049">Fecha.h:49</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

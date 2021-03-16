@@ -1,7 +1,7 @@
 <map id="PedidoBiblioteca.cpp" name="PedidoBiblioteca.cpp">
 <area shape="rect" id="node1" title="Contiene el código fuente de todas las funciones del archivo cabecera PedidoBiblioteca...." alt="" coords="30,5,189,32"/>
 <area shape="rect" id="node2" href="$PedidoBiblioteca_8h.html" title="Archivo cabecera donde se almacena toda la información relacionada con la clase PedidoBiblioteca." alt="" coords="38,80,181,107"/>
-<area shape="rect" id="node3" href="$PedidoUsuario_8h.html" title=" " alt="" coords="45,155,173,181"/>
+<area shape="rect" id="node3" href="$PedidoUsuario_8h.html" title="Archivo cabecera donde se almacena la información de la clase PedidoUsuario." alt="" coords="45,155,173,181"/>
 <area shape="rect" id="node6" href="$lista__sin_8h.html" title="Contiene toda la información referente a la plantilla de clase lista_sin, en estructura de datos gené..." alt="" coords="5,304,93,331"/>
 <area shape="rect" id="node9" href="$Fecha_8h.html" title="Archivo cabecera donde se almacena toda la información relacionada con la clase Fecha." alt="" coords="251,229,323,256"/>
 <area shape="rect" id="node4" href="$Usuario_8h.html" title="Archivo cabecera donde se almacena la información de la clase Usuario." alt="" coords="142,229,226,256"/>

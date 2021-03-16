@@ -140,48 +140,48 @@ $(document).ready(function(){initNavTree('Biblioteca_8h_source.html','');});
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        usu = <span class="keyword">new</span> <a class="code" href="classUsuario.html">Usuario</a>;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <a class="code" href="classlista__sin.html">lista_sin&lt;PedidoBiblioteca *&gt;</a> * daLBiblioteca();</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">bool</span> nuevoUsuario(<span class="keywordtype">string</span> login, <span class="keywordtype">string</span> nombre, <span class="keywordtype">string</span> clave);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <a class="code" href="classlista__sin.html">lista_sin&lt;PedidoBiblioteca *&gt;</a> * daLBiblioteca();</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">bool</span> nuevoUsuario(<span class="keywordtype">string</span> login, <span class="keywordtype">string</span> nombre, <span class="keywordtype">string</span> clave);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <a class="code" href="classUsuario.html">Usuario</a>* buscaUsuario(<span class="keywordtype">string</span> login, <span class="keywordtype">string</span> clave);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">void</span> cargaLibros(<span class="keywordtype">string</span> fichero);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <a class="code" href="classlista__sin.html">lista_sin&lt;Libro *&gt;</a> * consultaLibros(<span class="keywordtype">string</span> titulo);</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <a class="code" href="classUsuario.html">Usuario</a>* buscaUsuario(<span class="keywordtype">string</span> login, <span class="keywordtype">string</span> clave);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <a class="code" href="classPedidoUsuario.html">PedidoUsuario</a>* creaPedidoUsuario(<a class="code" href="classUsuario.html">Usuario</a> *usuario, <a class="code" href="classLibro.html">Libro</a> *libro,</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            <span class="keywordtype">int</span> prioridad);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <a class="code" href="classPedidoBiblioteca.html">PedidoBiblioteca</a>* abrePedidoBiblioteca(<span class="keywordtype">unsigned</span> anum);</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordtype">void</span> cargaLibros(<span class="keywordtype">string</span> fichero);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">void</span> tramitaPedidoUsuario(<a class="code" href="classPedidoUsuario.html">PedidoUsuario</a> *pedidoUsuario,</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            <a class="code" href="classPedidoBiblioteca.html">PedidoBiblioteca</a> *ped);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordtype">void</span> cierraPedidoBiblioteca(<a class="code" href="classPedidoBiblioteca.html">PedidoBiblioteca</a> *ped, <span class="keywordtype">unsigned</span> num);</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <a class="code" href="classlista__sin.html">lista_sin&lt;Libro *&gt;</a> * consultaLibros(<span class="keywordtype">string</span> titulo);</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <a class="code" href="classPedidoUsuario.html">PedidoUsuario</a>* creaPedidoUsuario(<a class="code" href="classUsuario.html">Usuario</a> *usuario, <a class="code" href="classLibro.html">Libro</a> *libro,</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            <span class="keywordtype">int</span> prioridad);</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <a class="code" href="classPedidoBiblioteca.html">PedidoBiblioteca</a>* abrePedidoBiblioteca(<span class="keywordtype">unsigned</span> anum);</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordtype">void</span> tramitaPedidoUsuario(<a class="code" href="classPedidoUsuario.html">PedidoUsuario</a> *pedidoUsuario,</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            <a class="code" href="classPedidoBiblioteca.html">PedidoBiblioteca</a> *ped);</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordtype">void</span> cierraPedidoBiblioteca(<a class="code" href="classPedidoBiblioteca.html">PedidoBiblioteca</a> *ped, <span class="keywordtype">unsigned</span> num);</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <a class="code" href="classlista__sin.html">lista_sin&lt;PedidoUsuario *&gt;</a> * buscaPedidosUsuarioPendientes(</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            <a class="code" href="classUsuario.html">Usuario</a> *usuario);</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <a class="code" href="classlista__sin.html">lista_sin&lt;PedidoUsuario *&gt;</a> * buscaPedidosUsuarioTramitados(</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            <a class="code" href="classUsuario.html">Usuario</a> *usuario);</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <a class="code" href="classlista__sin.html">lista_sin&lt;PedidoBiblioteca *&gt;</a> * buscaPedidosBibliotecaPendientes();</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160; </div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <a class="code" href="classlista__sin.html">lista_sin&lt;PedidoBiblioteca *&gt;</a> * buscaPedidosBibliotecaTramitados();</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; </div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <a class="code" href="classPedidoBiblioteca.html">PedidoBiblioteca</a> * daListaPedBiblioteca(<span class="keywordtype">unsigned</span> num);</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160; </div>
-<div class="line"><a name="l00153"></a><span class="lineno"><a class="line" href="classBiblioteca.html#ae3f55e8952ed4bdddb82ece48c52f6c0">  153</a></span>&#160;    <a class="code" href="classBiblioteca.html#ae3f55e8952ed4bdddb82ece48c52f6c0">~Biblioteca</a>() {</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        this-&gt;usur.<a class="code" href="classlista__sin.html#a55afa69f5205c4d4ec4eeb1a8ff76971">limpia</a>();</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        this-&gt;pedido_usu.<a class="code" href="classlista__sin.html#a55afa69f5205c4d4ec4eeb1a8ff76971">limpia</a>();</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        this-&gt;libro.<a class="code" href="classlista__sin.html#a55afa69f5205c4d4ec4eeb1a8ff76971">limpia</a>();</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        this-&gt;pedidoBi.<a class="code" href="classlista__sin.html#a55afa69f5205c4d4ec4eeb1a8ff76971">limpia</a>();</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    }</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;};</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* BIBLIOTECA_H */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <a class="code" href="classlista__sin.html">lista_sin&lt;PedidoUsuario *&gt;</a> * buscaPedidosUsuarioPendientes(</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            <a class="code" href="classUsuario.html">Usuario</a> *usuario);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <a class="code" href="classlista__sin.html">lista_sin&lt;PedidoUsuario *&gt;</a> * buscaPedidosUsuarioTramitados(</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <a class="code" href="classUsuario.html">Usuario</a> *usuario);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <a class="code" href="classlista__sin.html">lista_sin&lt;PedidoBiblioteca *&gt;</a> * buscaPedidosBibliotecaPendientes();</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <a class="code" href="classlista__sin.html">lista_sin&lt;PedidoBiblioteca *&gt;</a> * buscaPedidosBibliotecaTramitados();</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <a class="code" href="classPedidoBiblioteca.html">PedidoBiblioteca</a> * daListaPedBiblioteca(<span class="keywordtype">unsigned</span> num);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="classBiblioteca.html#ae3f55e8952ed4bdddb82ece48c52f6c0">  111</a></span>&#160;    <a class="code" href="classBiblioteca.html#ae3f55e8952ed4bdddb82ece48c52f6c0">~Biblioteca</a>() {</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        this-&gt;usur.<a class="code" href="classlista__sin.html#a55afa69f5205c4d4ec4eeb1a8ff76971">limpia</a>();</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        this-&gt;pedido_usu.<a class="code" href="classlista__sin.html#a55afa69f5205c4d4ec4eeb1a8ff76971">limpia</a>();</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        this-&gt;libro.<a class="code" href="classlista__sin.html#a55afa69f5205c4d4ec4eeb1a8ff76971">limpia</a>();</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        this-&gt;pedidoBi.<a class="code" href="classlista__sin.html#a55afa69f5205c4d4ec4eeb1a8ff76971">limpia</a>();</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    }</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;};</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* BIBLIOTECA_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="alista__sin_8h_html"><div class="ttname"><a href="lista__sin_8h.html">lista_sin.h</a></div><div class="ttdoc">Contiene toda la información referente a la plantilla de clase lista_sin, en estructura de datos gené...</div></div>
@@ -189,11 +189,11 @@ $(document).ready(function(){initNavTree('Biblioteca_8h_source.html','');});
 <div class="ttc" id="aclassUsuario_html"><div class="ttname"><a href="classUsuario.html">Usuario</a></div><div class="ttdoc">Clase que representa a un usuario de la biblioteca.</div><div class="ttdef"><b>Definition:</b> <a href="Usuario_8h_source.html#l00016">Usuario.h:16</a></div></div>
 <div class="ttc" id="aclassBiblioteca_html_af5e91b0d52be82a9d5ed62465985b42d"><div class="ttname"><a href="classBiblioteca.html#af5e91b0d52be82a9d5ed62465985b42d">Biblioteca::usu</a></div><div class="ttdeci">Usuario * usu</div><div class="ttdoc">Puntero al último usuario introducido en la biblioteca.</div><div class="ttdef"><b>Definition:</b> <a href="Biblioteca_8h_source.html#l00064">Biblioteca.h:64</a></div></div>
 <div class="ttc" id="aLibro_8h_html"><div class="ttname"><a href="Libro_8h.html">Libro.h</a></div><div class="ttdoc">Archivo cabecera donde se almacena toda la información relacionada con la clase Libro.</div></div>
-<div class="ttc" id="aclasslista__sin_html_a55afa69f5205c4d4ec4eeb1a8ff76971"><div class="ttname"><a href="classlista__sin.html#a55afa69f5205c4d4ec4eeb1a8ff76971">lista_sin::limpia</a></div><div class="ttdeci">void limpia()</div><div class="ttdoc">Elimina todos los elementos almacenados en la lista_sin.</div><div class="ttdef"><b>Definition:</b> <a href="lista__sin_8h_source.html#l00298">lista_sin.h:298</a></div></div>
+<div class="ttc" id="aclasslista__sin_html_a55afa69f5205c4d4ec4eeb1a8ff76971"><div class="ttname"><a href="classlista__sin.html#a55afa69f5205c4d4ec4eeb1a8ff76971">lista_sin::limpia</a></div><div class="ttdeci">void limpia()</div><div class="ttdoc">Elimina todos los elementos almacenados en la lista_sin.</div><div class="ttdef"><b>Definition:</b> <a href="lista__sin_8h_source.html#l00245">lista_sin.h:245</a></div></div>
 <div class="ttc" id="aclassBiblioteca_html_a99d4d87d42e332c3eb40fbe5325363b5"><div class="ttname"><a href="classBiblioteca.html#a99d4d87d42e332c3eb40fbe5325363b5">Biblioteca::pedidoBi</a></div><div class="ttdeci">lista_sin&lt; PedidoBiblioteca * &gt; pedidoBi</div><div class="ttdoc">Lista donde se almacenan todos los pedidos hechos por la biblioteca.</div><div class="ttdef"><b>Definition:</b> <a href="Biblioteca_8h_source.html#l00062">Biblioteca.h:62</a></div></div>
 <div class="ttc" id="aclassexcepcionesBi_1_1usuNoEncontrado_html"><div class="ttname"><a href="classexcepcionesBi_1_1usuNoEncontrado.html">excepcionesBi::usuNoEncontrado</a></div><div class="ttdoc">Excepción personalizada para indicar que no se ha encontrado un usuario.</div><div class="ttdef"><b>Definition:</b> <a href="Biblioteca_8h_source.html#l00027">Biblioteca.h:27</a></div></div>
 <div class="ttc" id="aclasslista__sin_html"><div class="ttname"><a href="classlista__sin.html">lista_sin&lt; Usuario * &gt;</a></div></div>
-<div class="ttc" id="aPedidoUsuario_8h_html"><div class="ttname"><a href="PedidoUsuario_8h.html">PedidoUsuario.h</a></div></div>
+<div class="ttc" id="aPedidoUsuario_8h_html"><div class="ttname"><a href="PedidoUsuario_8h.html">PedidoUsuario.h</a></div><div class="ttdoc">Archivo cabecera donde se almacena la información de la clase PedidoUsuario.</div></div>
 <div class="ttc" id="aclassBiblioteca_html_a9b73834890c379465963c9346314fc1c"><div class="ttname"><a href="classBiblioteca.html#a9b73834890c379465963c9346314fc1c">Biblioteca::libro</a></div><div class="ttdeci">lista_sin&lt; Libro * &gt; libro</div><div class="ttdoc">Lista donde se almacenan todos los libros que posee la biblioteca.</div><div class="ttdef"><b>Definition:</b> <a href="Biblioteca_8h_source.html#l00063">Biblioteca.h:63</a></div></div>
 <div class="ttc" id="anamespaceexcepcionesBi_html"><div class="ttname"><a href="namespaceexcepcionesBi.html">excepcionesBi</a></div><div class="ttdef"><b>Definition:</b> <a href="Biblioteca_8h_source.html#l00022">Biblioteca.h:22</a></div></div>
 <div class="ttc" id="aclassBiblioteca_html"><div class="ttname"><a href="classBiblioteca.html">Biblioteca</a></div><div class="ttdoc">Clase que representa la información y el funcionamiento de una biblioteca.</div><div class="ttdef"><b>Definition:</b> <a href="Biblioteca_8h_source.html#l00058">Biblioteca.h:58</a></div></div>
@@ -209,7 +209,7 @@ $(document).ready(function(){initNavTree('Biblioteca_8h_source.html','');});
 <div class="ttc" id="aclassPedidoUsuario_html"><div class="ttname"><a href="classPedidoUsuario.html">PedidoUsuario</a></div><div class="ttdoc">Clase que representa el pedido que un usuario hace a la biblioteca.</div><div class="ttdef"><b>Definition:</b> <a href="PedidoUsuario_8h_source.html#l00017">PedidoUsuario.h:17</a></div></div>
 <div class="ttc" id="aclassPedidoBiblioteca_html"><div class="ttname"><a href="classPedidoBiblioteca.html">PedidoBiblioteca</a></div><div class="ttdoc">Clase que representa de manera genérica un pedido hecho por la biblioteca.</div><div class="ttdef"><b>Definition:</b> <a href="PedidoBiblioteca_8h_source.html#l00016">PedidoBiblioteca.h:16</a></div></div>
 <div class="ttc" id="aclassBiblioteca_html_ad884aa4eef7bf6f96fbf65cbba919594"><div class="ttname"><a href="classBiblioteca.html#ad884aa4eef7bf6f96fbf65cbba919594">Biblioteca::usur</a></div><div class="ttdeci">lista_sin&lt; Usuario * &gt; usur</div><div class="ttdoc">Lista donde se almacenan todos los usuarios.</div><div class="ttdef"><b>Definition:</b> <a href="Biblioteca_8h_source.html#l00060">Biblioteca.h:60</a></div></div>
-<div class="ttc" id="aclassBiblioteca_html_ae3f55e8952ed4bdddb82ece48c52f6c0"><div class="ttname"><a href="classBiblioteca.html#ae3f55e8952ed4bdddb82ece48c52f6c0">Biblioteca::~Biblioteca</a></div><div class="ttdeci">~Biblioteca()</div><div class="ttdoc">Destructor de la clase Biblioteca.</div><div class="ttdef"><b>Definition:</b> <a href="Biblioteca_8h_source.html#l00153">Biblioteca.h:153</a></div></div>
+<div class="ttc" id="aclassBiblioteca_html_ae3f55e8952ed4bdddb82ece48c52f6c0"><div class="ttname"><a href="classBiblioteca.html#ae3f55e8952ed4bdddb82ece48c52f6c0">Biblioteca::~Biblioteca</a></div><div class="ttdeci">~Biblioteca()</div><div class="ttdoc">Destructor de la clase Biblioteca.</div><div class="ttdef"><b>Definition:</b> <a href="Biblioteca_8h_source.html#l00111">Biblioteca.h:111</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

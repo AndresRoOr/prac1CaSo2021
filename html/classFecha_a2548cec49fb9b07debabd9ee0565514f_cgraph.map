@@ -1,4 +1,4 @@
 <map id="Fecha::Fecha" name="Fecha::Fecha">
-<area shape="rect" id="node1" title="Constructor parametrizado de la clase Fecha." alt="" coords="5,5,112,32"/>
+<area shape="rect" id="node1" title="Constructor parametrizado de la clase Fecha. Crea una fecha concreta. Devuelve una excepción ErrorFec..." alt="" coords="5,5,112,32"/>
 <area shape="rect" id="node2" href="$classFecha.html#a93f3f547c72cc89327e713980cd15012" title="Comprobación de la validez de una fecha." alt="" coords="160,5,336,32"/>
 </map>

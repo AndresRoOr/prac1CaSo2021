@@ -25,19 +25,10 @@ class Aplication {
 	PedidoBiblioteca *pedbipunt;            ///< Lista de los pedidos de la biblioteca no tramitados.
 public:
 
-	/**
-	 * @brief	Constructor por defecto de la clase Aplication.
-	 */
 	Aplication();
 
-	/**
-	 * @brief Da la entrada al esquema de usuario.
-	 */
 	void aplicacion_usuario();
 
-	/**
-	 * @brief Da la entrada al esquema de administrador.
-	 */
 	void aplicacion_admin();
 
 	/**

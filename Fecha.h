@@ -18,14 +18,8 @@ class Fecha {
 
 public:
 
-	/**
-	 * @brief Constructor por defecto de la clase Fecha.
-	 */
 	Fecha();
 
-	/**
-	 * @brief Constructor parametrizado de la clase Fecha.
-	 */
 	Fecha(unsigned aDia, unsigned aMes, unsigned aAnio, unsigned aHora = 0,
 			unsigned aMin = 0);
 
@@ -36,14 +30,8 @@ public:
 			dia(f.dia), mes(f.mes), anio(f.anio), hora(f.hora), min(f.min) {
 	}
 
-	/**
-	 * @brief Asigna un nuevo día.
-	 */
 	void asignarDia(unsigned aDia, unsigned aMes, unsigned aAnio);
 
-	/**
-	 * @brief Asigna una nueva hora.
-	 */
 	void asignarHora(unsigned aHora, unsigned aMin);
 
 	/**
@@ -86,14 +74,8 @@ public:
 		return anio;
 	}
 
-	/**
-	 * @brief Obtener una cadena con el día.
-	 */
 	string cadenaDia() const;
 
-	/**
-	 * @brief Obtener una cadena con la hora.
-	 */
 	string cadenaHora() const;
 
 	/**
@@ -113,55 +95,25 @@ public:
 		return dia == f.dia && mes == f.mes && anio == f.anio;
 	}
 
-	/**
-	 * @brief Comparar fechas.
-	 */
 	bool operator<(const Fecha &f);
 
-	/**
-	 * @brief Operador de asignación de la clase Fecha.
-	 */
 	Fecha &operator=(const Fecha &f);
 
-	/**
-	 * @brief Añadir un número de minutos indicado.
-	 */
 	void anadirMin(int numMin);
 
-	/**
-	 * @brief Añadir un número de horas indicado.
-	 */
 	void anadirHoras(int numHoras);
 
-	/**
-	 * @brief Añadir un número de dias indicado.
-	 */
 	void anadirDias(int numDias);
 
-	/**
-	 * @brief Añadir un número de meses indicado.
-	 */
 	void anadirMeses(int numMeses);
 
-	/**
-	 * @brief Añadir un numero de años indicado.
-	 */
 	void anadirAnios(int numAnios);
 
-	/**
-	 * @brief Comprobación de la validez de una fecha.
-	 */
 	void comprobarFecha(unsigned aDia, unsigned aMes, unsigned aAnio,
 			unsigned aHora, unsigned aMin) const;
 
-	/**
-	 * @brief Función auxiliar de conversión desde estructura de tiempo tm de time.h.
-	 */
 	void leerTiempo(const tm &t);
 
-	/**
-	 * @brief Función auxiliar de conversión a estructura de tiempo tm de time.h.
-	 */
 	void escribirTiempo(tm &t);
 
 	/**
@@ -170,15 +122,9 @@ public:
 	class ErrorFechaIncorrecta {
 	};
 
-	/**
-	 * @brief Destructor de la clase Fecha.
-	 */
 	~Fecha();
 };
 
-/**
- * @brief Serialización de fechas.
- */
 ostream &operator<<(ostream &os, const Fecha &f);
 
 #endif

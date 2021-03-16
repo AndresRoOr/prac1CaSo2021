@@ -1,5 +1,5 @@
 <map id="Biblioteca::creaPedidoUsuario" name="Biblioteca::creaPedidoUsuario">
-<area shape="rect" id="node1" title="Crea un pedido de usuario." alt="" coords="5,31,223,57"/>
+<area shape="rect" id="node1" title="Crea un pedido de Usuario." alt="" coords="5,31,223,57"/>
 <area shape="rect" id="node2" href="$classlista__sin.html#a799467fd5cb655e9be70e57701b4c80a" title="Añade un elemento nuevo a la lista_sin." alt="" coords="271,5,413,32"/>
 <area shape="rect" id="node3" href="$classlista__sin.html#ab5279c2eafb58f2fddec09fd814fd81e" title="Devuelve el tamaño de la lista_sin." alt="" coords="273,56,411,83"/>
 </map>

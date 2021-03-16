@@ -1,7 +1,8 @@
 /**
- * @file PedidoUsusario.cpp
- * @brief Contiene el código fuente de todas las funciones del archivo cabecera PedidoUsusario.h
+ * @file PedidoUsuario.cpp
+ * @brief Contiene el código fuente de todas las funciones del archivo cabecera PedidoUsuario.h
  */
+
 #include "PedidoUsuario.h"
 
 /**

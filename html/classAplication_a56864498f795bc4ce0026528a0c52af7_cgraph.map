@@ -1,16 +1,16 @@
 <map id="Aplication::aplicacion_usuario" name="Aplication::aplicacion_usuario">
-<area shape="rect" id="node1" title="Da la entrada al esquema de usuario." alt="" coords="5,226,167,267"/>
-<area shape="rect" id="node2" href="$classBiblioteca.html#a1b41ecaa2b16d0b541747d9f56e8c5c5" title="Busca un usuario en la biblioteca." alt="" coords="232,56,415,83"/>
+<area shape="rect" id="node1" title="Si no sabes la clave de admin has de entrar como usuario registrandote en el sistema." alt="" coords="5,226,167,267"/>
+<area shape="rect" id="node2" href="$classBiblioteca.html#a1b41ecaa2b16d0b541747d9f56e8c5c5" title="Busca un Usuario en la biblioteca." alt="" coords="232,56,415,83"/>
 <area shape="rect" id="node5" href="$classlista__sin.html#a0bc9b82811a175ab607f7278ceac2132" title="Devuelve el objeto que se encuentra en la posición pasada como parámetro." alt="" coords="499,107,603,133"/>
 <area shape="rect" id="node6" href="$classlista__sin.html#ab5279c2eafb58f2fddec09fd814fd81e" title="Devuelve el tamaño de la lista_sin." alt="" coords="482,208,621,235"/>
 <area shape="rect" id="node7" href="$classUsuario.html#a6eaa8c8c13f25d4cb539aa432f163d23" title="Cambia el atributo clave con el string pasado como parámetro." alt="" coords="238,411,409,437"/>
-<area shape="rect" id="node8" href="$classBiblioteca.html#ab5be25778d211d7a754d1b53149bb59f" title="Carga toda la informacion de un fichero en la biblioteca." alt="" coords="238,360,409,387"/>
+<area shape="rect" id="node8" href="$classBiblioteca.html#ab5be25778d211d7a754d1b53149bb59f" title="Devuelve una lista con los libros que contengan el titulo que se le pasa como parametro." alt="" coords="238,360,409,387"/>
 <area shape="rect" id="node10" href="$classBiblioteca.html#ae9e4cef236ed508af0d2d8945dbd502b" title="Devuelve una lista con los libros que contengan el título que se le pasa como parámetro." alt="" coords="229,259,418,285"/>
-<area shape="rect" id="node12" href="$classBiblioteca.html#a2aa9dd521a77232ebc47893d85aa222c" title="Crea un pedido de usuario." alt="" coords="215,309,432,336"/>
-<area shape="rect" id="node13" href="$classBiblioteca.html#aa4c063048c2da1da78b87c35c531b9de" title="Introduce un nuevo usuario en la biblioteca." alt="" coords="231,157,416,184"/>
+<area shape="rect" id="node12" href="$classBiblioteca.html#a2aa9dd521a77232ebc47893d85aa222c" title="Crea un pedido de Usuario." alt="" coords="215,309,432,336"/>
+<area shape="rect" id="node13" href="$classBiblioteca.html#aa4c063048c2da1da78b87c35c531b9de" title="Introduce un nuevo Usuario en la biblioteca." alt="" coords="231,157,416,184"/>
 <area shape="rect" id="node3" href="$classUsuario.html#a9ae104370f83a125e1facc7e5aea3037" title="Método getter del atributo clave." alt="" coords="485,56,618,83"/>
 <area shape="rect" id="node4" href="$classUsuario.html#ab83b5bf1b61f6330e56c6c89e6e81e7f" title="Método getter del atributo login." alt="" coords="486,5,617,32"/>
 <area shape="rect" id="node9" href="$classlista__sin.html#a799467fd5cb655e9be70e57701b4c80a" title="Añade un elemento nuevo a la lista_sin." alt="" coords="480,309,623,336"/>
 <area shape="rect" id="node11" href="$classLibro.html#a66965add10036095e6ec1a11bb83d104" title="Método getter del atributo título con parámetro." alt="" coords="494,259,609,285"/>
-<area shape="rect" id="node14" href="$classUsuario.html#a092d79d196a7f670186cd80bf4acdf99" title="Función que asigna a un usuario su nombre, su clave, y por supuesto su login." alt="" coords="489,157,614,184"/>
+<area shape="rect" id="node14" href="$classUsuario.html#a092d79d196a7f670186cd80bf4acdf99" title="Función que asigna a un Usuario su nombre, su Clave, y por supuesto su Login." alt="" coords="489,157,614,184"/>
 </map>

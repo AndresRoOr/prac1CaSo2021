@@ -19,38 +19,18 @@ class Usuario {
 	string login;    ///< Login del usuario.
 public:
 
-	/**
-	 * @brief Constructor por defecto de la clase Usuario.
-	 */
 	Usuario();
 
-	/**
-	 * @brief Método getter del atributo clave.
-	 */
 	string daClave();
 
-	/**
-	 * @brief Método getter del atributo login.
-	 */
 	string daLogin();
-	/**
-	 * @brief Función que asigna a un usuario su nombre, su clave, y por supuesto su login.
-	 */
+
 	void rellena(string anombre, string alogin, string aclave);
 
-	/**
-	 * @brief Comprueba si existe la clave.
-	 */
 	bool validarClave(string claven);
 
-	/**
-	 * @brief Cambia el atributo clave con el string pasado como parámetro.
-	 */
 	void cambiarClave(string nuevaClave);
 
-	/**
-	 * @brief Método para loguear a un usuario con nombre y clave corectos.
-	 */
 	string daLogin(Usuario *usuario);
 
 	/**
@@ -65,9 +45,6 @@ public:
 		return *this;
 	}
 
-	/**
-	 * @brief Sobrecarga del operador << (de inserción) que permite entre otras cosas mostrar un Usuario con cout.
-	 */
 	friend ostream& operator<<(ostream&, const Usuario&);
 
 	/**
@@ -79,9 +56,6 @@ public:
 		return (this->nombre < usu.nombre);
 	}
 
-	/**
-	 * @brief Destructor de la clase Usuario.
-	 */
 	~Usuario();
 };
 

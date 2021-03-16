@@ -1,5 +1,5 @@
 <map id="Fecha::anadirDias" name="Fecha::anadirDias">
-<area shape="rect" id="node1" title="Añadir un número de dias indicado." alt="" coords="5,31,144,57"/>
+<area shape="rect" id="node1" title="Añadir un número de días indicado." alt="" coords="5,31,144,57"/>
 <area shape="rect" id="node2" href="$classFecha.html#a82e209d65c4597e508fdeeb5b4685d9c" title="Función auxiliar de conversión a estructura de tiempo tm de time.h." alt="" coords="192,5,357,32"/>
 <area shape="rect" id="node3" href="$classFecha.html#ab819f1bb59ce3ca92ce2a6ab41519648" title="Función auxiliar de conversión desde estructura de tiempo tm de time.h." alt="" coords="203,56,346,83"/>
 </map>
