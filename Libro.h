@@ -23,14 +23,8 @@ class Libro {
 
 public:
 
-	/**
-	 * @brief Constructor por defecto de la clase Libro.
-	 */
 	Libro();
 
-	/**
-	 * @brief Constructor parametrizado de la clase Libro.
-	 */
 	Libro(string aTitulo, string aAutores, string aEditorial, string aISBN,	int aAnio, float aPrecioActual);
 
 	/**
@@ -46,24 +40,12 @@ public:
 		this->precioActual = lib.precioActual;
 	}
 
-	/**
-	 * @brief Método getter del atributo ISBN.
-	 */
 	string daISBN();
 
-	/**
-	 * @brief Método getter del atributo título con parámetro.
-	 */
 	string daTitulo(Libro *libro);
 
-	/**
-	 * @brief Método getter del atributo título.
-	 */
 	string daTitulo();
 
-	/**
-	 * @brief Método getter del atributo precio.
-	 */
 	float daPrecioActual();
 
 	/**
@@ -88,14 +70,8 @@ public:
 		return (this->ISBN < lib.ISBN);
 	}
 
-	/**
-	 * @brief Sobrecarga del operador << (de inserción) que permite entre otras cosas, mostrar un libro con cout.
-	 */
 	friend ostream& operator<<(ostream&, const Libro&);
 
-	/**
-	 * @brief Destructor de la clase Libro.
-	 */
 	~Libro();
 };
 

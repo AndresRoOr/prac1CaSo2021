@@ -1,4 +1,4 @@
 <map id="Fecha::Fecha" name="Fecha::Fecha">
-<area shape="rect" id="node1" title="Constructor por defecto de la clase Fecha." alt="" coords="5,5,112,32"/>
+<area shape="rect" id="node1" title="Constructor por defecto de la clase Fecha. Crea una fecha con la hora actual." alt="" coords="5,5,112,32"/>
 <area shape="rect" id="node2" href="$classFecha.html#ab819f1bb59ce3ca92ce2a6ab41519648" title="Función auxiliar de conversión desde estructura de tiempo tm de time.h." alt="" coords="160,5,303,32"/>
 </map>

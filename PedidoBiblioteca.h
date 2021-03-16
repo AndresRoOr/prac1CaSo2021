@@ -22,9 +22,6 @@ class PedidoBiblioteca {
 
 public:
 
-	/**
-	 * @brief Constructor por defecto de la clase PedidoBiblioteca.
-	 */
 	PedidoBiblioteca();
 
 	/**
@@ -51,39 +48,18 @@ public:
 		this->num = pedbi.num;
 	}
 
-	/**
-	 * @brief Método getter del atributo tramitado.
-	 */
 	bool daTrami();
 
-	/**
-	 * @brief Método getter del atributo num.
-	 */
 	unsigned daNumero();
 
-	/**
-	 * @brief Método getter del atributo importe.
-	 */
 	float daImporte();
 
-	/**
-	 * @brief Se inserta el pedido de un usuario a un libro en concreto en la estructura de datos.
-	 */
 	void insertaPedidoLibro(PedidoUsuario *pedidoUsuario);
 
-	/**
-	 * @brief Da por concluido el trámite de hacer el pedido.
-	 */
 	void cierraPedido();
 
-	/**
-	 * @brief Función necesaria para la clase Biblioteca en búsqueda de pedidos.
-	 */
 	PedidoUsuario* daPedidoUsuario(unsigned i);
 
-	/**
-	 * @brief Sobrecarga del operador << (de inserción) que permite entre otras cosas mostrar un PedidoBiblioteca con cout.
-	 */
 	friend ostream& operator<<(ostream&, PedidoBiblioteca&);
 
 	/**

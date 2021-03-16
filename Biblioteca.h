@@ -73,78 +73,36 @@ public:
 		usu = new Usuario;
 	}
 
-	/**
-	 * @brief Método getter del atributo pedidoBi de la clase.
-	 */
 	lista_sin<PedidoBiblioteca *> * daLBiblioteca();
 
-	/**
-	 * @brief Introduce un nuevo usuario en la biblioteca.
-	 */
 	bool nuevoUsuario(string login, string nombre, string clave);
 
-	/**
-	 * @brief Busca un usuario en la biblioteca.
-	 */
 	Usuario* buscaUsuario(string login, string clave);
 
-	/**
-	 * @brief Carga toda la informacion de un fichero en la biblioteca.
-	 */
 	void cargaLibros(string fichero);
 
-	/**
-	 * @brief Devuelve una lista con los libros que contengan el título que se le pasa como parámetro.
-	 */
 	lista_sin<Libro *> * consultaLibros(string titulo);
 
-	/**
-	 * @brief Crea un pedido de usuario.
-	 */
 	PedidoUsuario* creaPedidoUsuario(Usuario *usuario, Libro *libro,
 			int prioridad);
 
-	/**
-	 * @brief Crea lista pedidio de Biblioteca y devuelve su referencia.
-	 */
 	PedidoBiblioteca* abrePedidoBiblioteca(unsigned anum);
 
-	/**
-	 * @brief Añade un pedido de Usuario a un pedido de Biblioteca, pone pedidoUsuario tramitado.
-	 */
 	void tramitaPedidoUsuario(PedidoUsuario *pedidoUsuario,
 			PedidoBiblioteca *ped);
 
-	/**
-	 * @brief Cierra un pedido de biblioteca marcándolo como tramitado.
-	 */
 	void cierraPedidoBiblioteca(PedidoBiblioteca *ped, unsigned num);
 
-	/**
-	 * @brief Devuelve una lista con las refencias a todos los pedidos de un usuario pendientes.
-	 */
 	lista_sin<PedidoUsuario *> * buscaPedidosUsuarioPendientes(
 			Usuario *usuario);
 
-	/**
-	 * @brief Devuelve una lista con las referencias a todos los pedidos de un usuario tramitados.
-	 */
 	lista_sin<PedidoUsuario *> * buscaPedidosUsuarioTramitados(
 			Usuario *usuario);
 
-	/**
-	 * @brief Devuelve una lista con las referencias a los pedidios de biblioteca pendientes.
-	 */
 	lista_sin<PedidoBiblioteca *> * buscaPedidosBibliotecaPendientes();
 
-	/**
-	 * @brief Devuelve una lista de las referencias de los pedidos de biblioteca tramitados.
-	 */
 	lista_sin<PedidoBiblioteca *> * buscaPedidosBibliotecaTramitados();
 
-	/**
-	 * @brief Devuelve la lista del pedido de la biblioteca del número de pedido que se le pasa.
-	 */
 	PedidoBiblioteca * daListaPedBiblioteca(unsigned num);
 
 	/**

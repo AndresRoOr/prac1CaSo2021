@@ -1,5 +1,5 @@
 <map id="Biblioteca::buscaUsuario" name="Biblioteca::buscaUsuario">
-<area shape="rect" id="node1" title="Busca un usuario en la biblioteca." alt="" coords="5,81,188,108"/>
+<area shape="rect" id="node1" title="Busca un Usuario en la biblioteca." alt="" coords="5,81,188,108"/>
 <area shape="rect" id="node2" href="$classUsuario.html#a9ae104370f83a125e1facc7e5aea3037" title="Método getter del atributo clave." alt="" coords="239,5,372,32"/>
 <area shape="rect" id="node3" href="$classUsuario.html#ab83b5bf1b61f6330e56c6c89e6e81e7f" title="Método getter del atributo login." alt="" coords="240,56,371,83"/>
 <area shape="rect" id="node4" href="$classlista__sin.html#a0bc9b82811a175ab607f7278ceac2132" title="Devuelve el objeto que se encuentra en la posición pasada como parámetro." alt="" coords="253,107,357,133"/>

@@ -28,7 +28,6 @@ var classFecha =
     [ "verMin", "classFecha.html#af10a546982dc738bef0c249357e1a0cf", null ],
     [ "anio", "classFecha.html#afc21eaaff9f1517358ab0c29b14dc74a", null ],
     [ "dia", "classFecha.html#ac81f0a991bb79610170be013a86562f8", null ],
-    [ "diasMes", "classFecha.html#a282cd7299fec7bb49830b313b68e5e1a", null ],
     [ "hora", "classFecha.html#a763ed4dd0d89c41a7a0e3725f6a81663", null ],
     [ "mes", "classFecha.html#a7566b5910abbdfc253eadd7856d8be59", null ],
     [ "min", "classFecha.html#a5503d064a6797124e7c80b61261ba1a3", null ]

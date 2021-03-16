@@ -1,7 +1,7 @@
 <map id="Biblioteca::tramitaPedidoUsuario" name="Biblioteca::tramitaPedidoUsuario">
 <area shape="rect" id="node1" title="Añade un pedido de Usuario a un pedido de Biblioteca, pone pedidoUsuario tramitado." alt="" coords="5,53,192,94"/>
 <area shape="rect" id="node2" href="$classPedidoBiblioteca.html#ae67a9f6f56c9b36615df9952ac7dd7d3" title="Se inserta el pedido de un usuario a un libro en concreto en la estructura de datos." alt="" coords="256,23,440,65"/>
-<area shape="rect" id="node5" href="$classPedidoUsuario.html#a3ec9574e2e42c85b962684c014f969d4" title="Indicación que permite constatar si un usuario ha hecho un pedido o no." alt="" coords="240,89,456,116"/>
+<area shape="rect" id="node5" href="$classPedidoUsuario.html#a3ec9574e2e42c85b962684c014f969d4" title="Indicación que permite confirmar que un usuario ha hecho un pedido y por tanto, se tramita." alt="" coords="240,89,456,116"/>
 <area shape="rect" id="node3" href="$classlista__sin.html#a799467fd5cb655e9be70e57701b4c80a" title="Añade un elemento nuevo a la lista_sin." alt="" coords="523,5,665,32"/>
 <area shape="rect" id="node4" href="$classPedidoUsuario.html#a5054a655ba225d139101df6fdd2e047f" title="Método getter del atributo precio." alt="" coords="504,56,684,83"/>
 </map>

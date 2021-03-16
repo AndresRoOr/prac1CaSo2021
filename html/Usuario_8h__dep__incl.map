@@ -1,10 +1,10 @@
 <map id="Usuario.h" name="Usuario.h">
 <area shape="rect" id="node1" title="Archivo cabecera donde se almacena la información de la clase Usuario." alt="" coords="369,5,453,32"/>
-<area shape="rect" id="node2" href="$PedidoUsuario_8h.html" title=" " alt="" coords="217,80,345,107"/>
+<area shape="rect" id="node2" href="$PedidoUsuario_8h.html" title="Archivo cabecera donde se almacena la información de la clase PedidoUsuario." alt="" coords="217,80,345,107"/>
 <area shape="rect" id="node4" href="$Biblioteca_8h.html" title="Archivo cabecera donde se almacena la información de la clase Biblioteca." alt="" coords="311,229,410,256"/>
 <area shape="rect" id="node11" href="$Usuario_8cpp.html" title="Contiene el código fuente de todas las funciones del archivo cabecera Usuario.h." alt="" coords="449,80,547,107"/>
 <area shape="rect" id="node3" href="$PedidoBiblioteca_8h.html" title="Archivo cabecera donde se almacena toda la información relacionada con la clase PedidoBiblioteca." alt="" coords="13,155,156,181"/>
-<area shape="rect" id="node10" href="$PedidoUsuario_8cpp.html" title=" " alt="" coords="180,155,323,181"/>
+<area shape="rect" id="node10" href="$PedidoUsuario_8cpp.html" title="Contiene el código fuente de todas las funciones del archivo cabecera PedidoUsuario...." alt="" coords="180,155,323,181"/>
 <area shape="rect" id="node9" href="$PedidoBiblioteca_8cpp.html" title="Contiene el código fuente de todas las funciones del archivo cabecera PedidoBiblioteca...." alt="" coords="5,229,164,256"/>
 <area shape="rect" id="node5" href="$Aplication_8h.html" title="Archivo cabecera donde se almacena la información de la clase Aplication." alt="" coords="246,304,345,331"/>
 <area shape="rect" id="node8" href="$Biblioteca_8cpp.html" title="Contiene el código fuente de los elementos del archivo cabecera Biblioteca.h." alt="" coords="369,304,483,331"/>

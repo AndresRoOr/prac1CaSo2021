@@ -1,5 +1,5 @@
 /**
- * @file PedidoUsusario.h
+ * @file PedidoUsuario.h
  * @brief Archivo cabecera donde se almacena la información de la clase PedidoUsuario.
  */
 
@@ -18,51 +18,27 @@ class PedidoUsuario {
 	Fecha fecha;      ///< Fecha que queda registrada al hacer un pedido.
 	int prioridad;    ///< Prioridad concedida al pedido del usuario.
 	float precio;     ///< Precio del pedido que ha hecho el usuario.
-	bool tramitado;   ///< Booleano que nos va a indicar si el pedido ha sido tramitado o no.
+	bool tramitado; ///< Booleano que nos va a indicar si el pedido ha sido tramitado o no.
 	Usuario *usuario; ///< Puntero que referencia a un usuario en concreto.
 	Libro *libro;     ///< Puntero que referencia a un libro en concreto.
 
 public:
 
-	/**
-	 * @brief Constructor por defecto de la clase PedidoUsuario.
-	 */
 	PedidoUsuario();
 
-	/**
-	 * @brief Constructor parametrizado de la clase PedidoUsusario.
-	 */
 	PedidoUsuario(Libro *libro, Usuario *usuario, Fecha aFecha, int aPrioridad,
 			float aPrecio, bool aTramitado);
 
-	/**
-	 * @brief Método getter del atributo usuario.
-	 */
 	Usuario* daUsuario();
 
-	/**
-	 * @brief Método getter del atributo libro.
-	 */
 	Libro* daLibro();
 
-	/**
-	 * @brief Método getter del atributo prioridad.
-	 */
 	int daPrioridad();
 
-	/**
-	 * @brief Método getter del atributo precio.
-	 */
 	float daPrecio();
 
-	/**
-	 * @brief Método getter del atributo tramitado.
-	 */
 	bool daTramitado();
 
-	/**
-	 * @brief Indicación que permite constatar si un usuario ha hecho un pedido o no.
-	 */
 	bool tramitaPedido();
 
 	/**
@@ -89,14 +65,8 @@ public:
 		return (this->prioridad < pedido.prioridad);
 	}
 
-	/**
-	 * @brief Sobrecarga del operador << (de insercion) que permite entre otras cosas mostrar un PedidoUsuario con cout.
-	 */
 	friend ostream& operator<<(ostream&, const PedidoUsuario&);
 
-	/**
-	 * @brief Destructor de la clase PedidoUsuario.
-	 */
 	~PedidoUsuario();
 };
 
