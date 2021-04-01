@@ -26,8 +26,8 @@ public:
 
 	PedidoUsuario();
 
-	PedidoUsuario(Libro *libro, Usuario *usuario, Fecha aFecha, int aPrioridad,
-			float aPrecio, bool aTramitado);
+	PedidoUsuario::PedidoUsuario(Fecha aFecha, int aPrioridad, float aPrecio,
+			bool aTramitado, Usuario *usuario, Libro *libro);
 
 	Usuario* daUsuario();
 

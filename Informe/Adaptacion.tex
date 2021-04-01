@@ -20,24 +20,378 @@
 	
 		\subsubsection{Enlace al sitio web del estándar seleccionado}
 		
+			\paragraph{}\url{https://wiki.sei.cmu.edu/confluence/display/cplusplus/OOP53-CPP.+Write+constructor+member+initializers+in+the+canonical+order}
+		
 		\subsubsection{Explicación sobre su utilidad}
 		
+			\paragraph{}Este estándar nos dice que la lista de inicializadores de miembros para un constructor permite que los miembros se inicialicen a valores especificados y que los constructores de clases base sean llamados con argumentos específicos.
+			
+			\paragraph{}Es decir, en el caso de que un atributo miembro de la clase necesite el valor de otro atributo miembro, este debe de estar inicializado previamente. El atributo miembro dependiente irá después del miembro del que depende en la lista de atributos y en el constructor.
+			
+			\paragraph{}En el caso de que no se cumpliera este estándar y en el constructor el miembro dependiente se intentara inicializar antes de que se haya inicializado el miembro del que depende, daría lugar a un comportamiento indefinido, como por ejemplo leer memoria no inicializada (datos basura).
+			
+			\paragraph{}En definitiva, se deben de escribir siempre los inicializadores de miembros en un constructor en el orden canónico: primero las clases base directas en el orden en que aparecen en la lista de especificador-base para la clase, luego los miembros de datos no estáticos en el orden en que se declaran en la definición de la clase.
+		
 		\subsubsection{Aplicación del estándar al proyecto}
-
+		
+			\paragraph{}En nuestro proyecto se encuentran las siguientes clases:
+			
+			\begin{itemize}
+				\item Aplication
+				\item Biblioteca
+				\item Fecha
+				\item Libro
+				\item lista$\_$sin
+				\item PedidoBiblioteca
+				\item PedidoUsuario
+				\item Usuario
+			\end{itemize}
+		
+			\paragraph{}Para la clase Aplication, tenemos la siguiente lista de miembros:
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.55]{img/captura2.png}
+				\caption{Captura de pantalla de los atributos miembros de la clase Aplication.}
+				\label{captura2}
+			\end{figure}
+		
+			\paragraph{}En la siguiente captura de pantalla se puede apreciar cómo no se cumple claramente con el estándar, ya que la inicialización de los atributos miembros de la clase no siguen el orden establecido en la declaración  de la clase y hay atributos que no se inicializan.
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.7]{img/captura3.png}
+				\caption{Captura de pantalla del incumplimiento del estándar OOP53-CPP.}
+				\label{captura3}
+			\end{figure}
+		
+			\paragraph{} A continuación, se ha incluido la inicialización de los atributos que no aparecían y se han inicializado todos los atributos en el orden con el que se declaran en la clase:
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.7]{img/captura4.png}
+				\caption{Captura de pantalla del cumplimiento del estándar OOP53-CPP.}
+				\label{captura4}
+			\end{figure}
+		
+				\paragraph{}Para la clase Biblioteca, tenemos la siguiente lista de miembros:
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.45]{img/captura5.png}
+				\caption{Captura de pantalla de los atributos miembros de la clase Biblioteca.}
+				\label{captura5}
+			\end{figure}
+		
+			\paragraph{}En la siguiente captura de pantalla se puede apreciar cómo sí se cumple claramente con el estándar, ya que la inicialización de los atributos miembros de la clase siguen el orden establecido en la declaración  de la clase y se inicializan todos los atributos.
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.7]{img/captura6.png}
+				\caption{Captura de pantalla del cumplimiento del estándar OOP53-CPP.}
+				\label{captura6}
+			\end{figure}
+		
+			\paragraph{}Para la clase Fecha, tenemos la siguiente lista de miembros:
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.7]{img/captura7.png}
+				\caption{Captura de pantalla de los atributos miembros de la clase Fecha.}
+				\label{captura7}
+			\end{figure}
+		
+			\paragraph{}En la siguiente captura de pantalla se muestra el código fuente del constructor por defecto de la clase. Se puede observar que se delega la inicialización de las variables en una función externa, por lo que daremos por no cumplido el estándar.
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.6]{img/captura8.png}
+				\caption{Captura de pantalla en la que se muestra el incumplimiento del estándar OOP53-CPP.}
+				\label{captura8}
+			\end{figure}
+		
+			\paragraph{}Para corregirlo, añadimos la inicialización de los atributos miembros de la clase al final, en el orden de declaración de los mismos:
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.6]{img/captura9.png}
+				\caption{Captura de pantalla en la que se muestra el cumplimiento del estándar OOP53-CPP.}
+				\label{captura9}
+			\end{figure}
+		
+			\paragraph{}Tanto para el constructor parametrizado como para el constructor por copia, se puede observar en las siguientes capturas de pantalla que se cumple con el estándar:
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.5]{img/captura10.png}
+				\caption{Captura de pantalla en la que se muestra el cumplimiento del estándar OOP53-CPP.}
+				\label{captura10}
+			\end{figure}
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.7]{img/captura11.png}
+				\caption{Captura de pantalla en la que se muestra el cumplimiento del estándar OOP53-CPP.}
+				\label{captura11}
+			\end{figure}
+		
+			\paragraph{}Para la clase Libro, tenemos la siguiente lista de miembros:
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.55]{img/captura12.png}
+				\caption{Captura de pantalla de los atributos miembros de la clase Libro.}
+				\label{captura12}
+			\end{figure}
+		
+			\paragraph{}En la siguiente captura de pantalla se puede comprobar que en el constructor por defecto de la clase no se cumple el estándar, ya que no respeta el orden de los atributos miembros de la clase:
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.5]{img/captura13.png}
+				\caption{Captura de pantalla en la que se muestra el incumplimiento del estándar OOP53-CPP.}
+				\label{captura13}
+			\end{figure}
+		
+			\paragraph{}Esto se soluciona reordenando la inicialización en el orden correcto:
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.5]{img/captura14.png}
+				\caption{Captura de pantalla en la que se muestra el cumplimiento del estándar OOP53-CPP.}
+				\label{captura14}
+			\end{figure}
+		
+			\paragraph{}Para el constructor parametrizado y el constructor por copia observamos que sí se cumple el estándar:
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.5]{img/captura15.png}
+				\caption{Captura de pantalla en la que se muestra el cumplimiento del estándar OOP53-CPP.}
+				\label{captura15}
+			\end{figure}
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.55]{img/captura16.png}
+				\caption{Captura de pantalla en la que se muestra el cumplimiento del estándar OOP53-CPP.}
+				\label{captura16}
+			\end{figure}
+		
+			\paragraph{}Para la clase plantilla lista$\_$sin, tenemos la siguiente lista de miembros:
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.6]{img/captura17.png}
+				\caption{Captura de pantalla de los atributos miembros de la clase lista$\_$sin.}
+				\label{captura17}
+			\end{figure}
+			
+			\paragraph{}Podemos observar en las siguientes capturas de pantalla que tanto el constructor por defecto como el constructor por copia cumplen con el estándar:
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.7]{img/captura18.png}
+				\caption{Captura de pantalla en la que se muestra el cumplimiento del estándar OOP53-CPP.}
+				\label{captura18}
+			\end{figure}
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.7]{img/captura19.png}
+				\caption{Captura de pantalla en la que se muestra el cumplimiento del estándar OOP53-CPP.}
+				\label{captura19}
+			\end{figure}
+		
+			\paragraph{}Para la clase clase PedidoBiblioteca, tenemos la siguiente lista de miembros:
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.5]{img/captura20.png}
+				\caption{Captura de pantalla de los atributos miembros de la clase PedidoBiblioteca.}
+				\label{captura20}
+			\end{figure}
+		
+			\paragraph{}El constructor por defecto, parametrizado y por copia de la clase no respetan el orden establecido de los atributos miembros, no cumpliendo de este modo con el estándar:
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.7]{img/captura21.png}
+				\caption{Captura de pantalla en la que se muestra el incumplimiento del estándar OOP53-CPP.}
+				\label{captura21}
+			\end{figure}
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.7]{img/captura22.png}
+				\caption{Captura de pantalla en la que se muestra el incumplimiento del estándar OOP53-CPP.}
+				\label{captura22}
+			\end{figure}
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.5]{img/captura25.png}
+				\caption{Captura de pantalla en la que se muestra el incumplimiento del estándar OOP53-CPP.}
+				\label{captura25}
+			\end{figure}
+		
+			\paragraph{}Para poder cumplir con el estándar lo único que tenemos que hacer es ordenar la inicialización de los atributos del siguiente modo:
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.7]{img/captura23.png}
+				\caption{Captura de pantalla en la que se muestra el cumplimiento del estándar OOP53-CPP.}
+				\label{captura23}
+			\end{figure}
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.7]{img/captura24.png}
+				\caption{Captura de pantalla en la que se muestra el cumplimiento del estándar OOP53-CPP.}
+				\label{captura24}
+			\end{figure}
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.5]{img/captura26.png}
+				\caption{Captura de pantalla en la que se muestra el cumplimiento del estándar OOP53-CPP.}
+				\label{captura26}
+			\end{figure}
+		
+			\paragraph{}Para la clase clase PedidoUsuario, tenemos la siguiente lista de miembros:
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.5]{img/captura27.png}
+				\caption{Captura de pantalla de los atributos miembros de la clase PedidoUsuario.}
+				\label{captura27}
+			\end{figure}
+		
+			\paragraph{}Para los constructores por defecto y parametrizado podemos observar que no se cumple el estándar, como se puede observar en las siguientes capturas de pantalla:
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.6]{img/captura28.png}
+				\caption{Captura de pantalla en la que se muestra el incumplimiento del estándar OOP53-CPP.}
+				\label{captura28}
+			\end{figure}
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.45]{img/captura30.png}
+				\caption{Captura de pantalla en la que se muestra el incumplimiento del estándar OOP53-CPP.}
+				\label{captura30}
+			\end{figure}
+		
+			\paragraph{}Para hacer que se cumpla con el estándar, debemos inicializar los atributos miembros según el orden establecido en la declaración de la clase, como se muestra en las siguientes capturas de pantalla:
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.6]{img/captura29.png}
+				\caption{Captura de pantalla en la que se muestra el cumplimiento del estándar OOP53-CPP.}
+				\label{captura29}
+			\end{figure}
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.45]{img/captura31.png}
+				\caption{Captura de pantalla en la que se muestra el cumplimiento del estándar OOP53-CPP.}
+				\label{captura31}
+			\end{figure}
+		
+			\paragraph{}Para la clase clase Usuario, tenemos la siguiente lista de miembros:
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.8]{img/captura32.png}
+				\caption{Captura de pantalla de los atributos miembros de la clase Usuario.}
+				\label{captura32}
+			\end{figure}
+		
+			\paragraph{}En el caso de esta clase, solo se dispone de un constructor por defecto. En este, no se respeta el estándar ya que no se inicializan los atributos miembro en el orden canónico, como se puede observar en la siguiente captura de pantalla:
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.9]{img/captura33.png}
+				\caption{Captura de pantalla en la que se muestra el incumplimiento del estándar OOP53-CPP.}
+				\label{captura33}
+			\end{figure}
+			
+			
+		
 	\subsection{MSC52-CPP. Las funciones que devuelven un valor deben devolver un valor desde todas las rutas de salida.}
 	
 		\subsubsection{Enlace al sitio web del estándar seleccionado}
 		
+			\paragraph{}\url{https://wiki.sei.cmu.edu/confluence/display/cplusplus/MSC52-CPP.+Value-returning+functions+must+return+a+value+from+all+exit+paths}
+		
 		\subsubsection{Explicación sobre su utilidad}
 		
+			\paragraph{}La utilidad de la aplicación de este estándar es bastante conocida. Este estándar nos dice que, siempre que una función devuelve un valor, cada ruta de ejecución de la misma debe de devolver siempre un valor. En el caso de que en algún caso no se devolviera nada, esto podría desembocar en un comportamiento indefinido de la aplicación.
+		
 		\subsubsection{Aplicación del estándar al proyecto}
+		
+			\paragraph{}En nuestro proyecto, todas las funciones que devuelven un valor cumplen con este estándar. Dentro de las funciones que devuelven un valor, en nuestro proyecto hay tres tipos diferenciados: las funciones que solo tienen una ruta de ejecución, las funciones que tienen más de una ruta de ejecución y devuelven un valor en cada ruta, y las funciones que tienen más de una ruta de ejecución pero no devuelven un valor en todas.
+			
+			\paragraph{}Las funciones que solo tienen una ruta de ejecución las obviaremos en este informe, ya que el cumplimiento de este estándar resulta algo trivial de comprobar.
+			
+			\paragraph{}Para el segundo tipo de funciones pondremos un par de ejemplos a continuación en los que se puede comprobar claramente que no existe ninguna ruta de ejecución en la que no se devuelva ningún valor.
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.45]{img/captura34.png}
+				\caption{Captura de pantalla del cumplimiento del estándar MSC52-CPP.}
+				\label{captura34}
+			\end{figure}
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.45]{img/captura35.png}
+				\caption{Captura de pantalla del cumplimiento del estándar MSC52-CPP.}
+				\label{captura35}
+			\end{figure}
+		
+			\paragraph{}Para el tercer tipo de funciones, si bien no se devuelve un valor en alguna de las rutas de ejecución, esto es debido a que la devolución de un valor no válido produciría un error de ejecución. Por este motivo, no se devuelve un valor sino que se ejecuta una excepción que detiene la ejecución para evitar comportamientos impredecibles.
+			
+			\paragraph{}Teniendo en cuenta lo anterior, en el resto de rutas de ejecución que no causan excepciones sí se devuelve siempre un valor. Por este motivo, se considera cumplido el estándar. A continuación, dejamos un par de capturas de funciones de este tipo: 
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.5]{img/captura36.png}
+				\caption{Captura de pantalla del cumplimiento del estándar MSC52-CPP.}
+				\label{captura36}
+			\end{figure}
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.45]{img/captura37.png}
+				\caption{Captura de pantalla del cumplimiento del estándar MSC52-CPP.}
+				\label{captura37}
+			\end{figure}
 
 	\subsection{FIO51-CPP. Cerrar los archivos cuando ya no sean necesarios.}
 	
 		\subsubsection{Enlace al sitio web del estándar seleccionado}
 		
+			\paragraph{}\url{https://wiki.sei.cmu.edu/confluence/display/cplusplus/FIO51-CPP.+Close+files+when+they+are+no+longer+needed}
+		
 		\subsubsection{Explicación sobre su utilidad}
 		
+			\paragraph{}Una llamada a la función $std::basic\_filebuf<T>::open()$ siempre debe ir acompañada de otra llamada a la función $std::basic_filebuf<T>::close()$ antes de la finalización del ciclo de vida del último puntero que almacenase el valor devuelto por la llamada de la primera función ó antes de la finalización del programa, lo que ocurriese antes.
+			
+			\paragraph{}La mala praxis de este estándar puede provocar la utilización innecesaria de memoria estática durante toda la ejecución del programa. En el peor de los casos si se abrieran muchos archivos y no se cerrara ninguno durante la ejecución del programa, podría llegar a provocar un desbordamiento de la memoria estática. Aún utilizando memoria dinámica, si no cerramos el archivo cuando ya no sea necesario, seguiríamos desperdiciando memoria igualmente.
+		
 		\subsubsection{Aplicación del estándar al proyecto}
+		
+			\paragraph{}En el proyecto elegido para la realización de las prácticas solo se hace lectura de un fichero en una única función en todo el programa, esta función es "$void Biblioteca::cargaLibros(string fichero)$".
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.55]{img/captura1.png}
+				\caption{Captura de pantalla del cumplimiento del estándar FIO51-CPP.}
+				\label{captura1}
+			\end{figure}
+		
+			\paragraph{}En la captura de pantalla anterior observamos que en la línea número 64 se abre el archivo "fichero" y, cuando ya se han realizado todas las operaciones de lectura del contenido del mismo, se procede a su cierre en la línea 88, quedando verificado el cumplimiento del estándar.
 
 \newpage

@@ -23,6 +23,7 @@ class Aplication {
 	lista_sin<PedidoUsuario *> * pedusu;    ///< Lista de los pedidos hechos por los usuarios.
 	lista_sin<Libro *> * libro;             ///< Lista de todos los libros pedidos por todos los usuarios.
 	PedidoBiblioteca *pedbipunt;            ///< Lista de los pedidos de la biblioteca no tramitados.
+
 public:
 
 	Aplication();

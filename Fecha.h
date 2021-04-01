@@ -13,7 +13,11 @@ using namespace std;
  * @brief Clase sencilla para representar fechas y horas.
  */
 class Fecha {
-	unsigned dia, mes, anio, hora, min; ///< Información de fecha y hora.
+	unsigned dia; ///< Información de día.
+	unsigned mes; ///< Información de mes.
+	unsigned anio; ///<Información de año.
+	unsigned hora; ///< Información de hora.
+	unsigned min; ///< Información de minutos.
 	static const unsigned diasMes[12]; ///< Almacena los dias por mes.
 
 public:
