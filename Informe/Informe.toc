@@ -11,65 +11,78 @@
 \contentsline {paragraph}{}{2}{section*.10}%
 \contentsline {section}{\numberline {2}Selección de los estándares a seguir}{3}{section.2}%
 \contentsline {paragraph}{}{3}{section*.11}%
-\contentsline {section}{\numberline {3}Aplicación de estándares sobre el proyecto}{4}{section.3}%
-\contentsline {subsection}{\numberline {3.1}DCL51-CPP. No declare ni defina un identificador reservado}{4}{subsection.3.1}%
-\contentsline {subsubsection}{\numberline {3.1.1}Enlace al sitio web del estándar seleccionado}{4}{subsubsection.3.1.1}%
-\contentsline {subsubsection}{\numberline {3.1.2}Explicación sobre su utilidad}{4}{subsubsection.3.1.2}%
-\contentsline {subsubsection}{\numberline {3.1.3}Aplicación del estándar al proyecto}{4}{subsubsection.3.1.3}%
-\contentsline {subsection}{\numberline {3.2}DCL52-CPP. Nunca califique un tipo de referencia con constante o volátil}{4}{subsection.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.1}Enlace al sitio web del estándar seleccionado}{4}{subsubsection.3.2.1}%
-\contentsline {subsubsection}{\numberline {3.2.2}Explicación sobre su utilidad}{4}{subsubsection.3.2.2}%
-\contentsline {subsubsection}{\numberline {3.2.3}Aplicación del estándar al proyecto}{4}{subsubsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.3}OOP53-CPP. Escribir los inicializadores de miembros de los constructores en el orden canónico.}{4}{subsection.3.3}%
-\contentsline {subsubsection}{\numberline {3.3.1}Enlace al sitio web del estándar seleccionado}{4}{subsubsection.3.3.1}%
-\contentsline {paragraph}{}{4}{section*.12}%
-\contentsline {subsubsection}{\numberline {3.3.2}Explicación sobre su utilidad}{4}{subsubsection.3.3.2}%
-\contentsline {paragraph}{}{4}{section*.13}%
+\contentsline {section}{\numberline {3}Aplicación de estándares sobre el proyecto}{3}{section.3}%
+\contentsline {subsection}{\numberline {3.1}DCL51-CPP. No declare ni defina un identificador reservado}{3}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Enlace al sitio web del estándar seleccionado}{3}{subsubsection.3.1.1}%
+\contentsline {paragraph}{}{3}{section*.12}%
+\contentsline {subsubsection}{\numberline {3.1.2}Explicación sobre su utilidad}{3}{subsubsection.3.1.2}%
+\contentsline {paragraph}{}{3}{section*.13}%
 \contentsline {paragraph}{}{4}{section*.14}%
 \contentsline {paragraph}{}{4}{section*.15}%
+\contentsline {subsubsection}{\numberline {3.1.3}Aplicación del estándar al proyecto}{4}{subsubsection.3.1.3}%
 \contentsline {paragraph}{}{4}{section*.16}%
-\contentsline {subsubsection}{\numberline {3.3.3}Aplicación del estándar al proyecto}{5}{subsubsection.3.3.3}%
-\contentsline {paragraph}{}{5}{section*.17}%
 \contentsline {paragraph}{}{5}{section*.18}%
 \contentsline {paragraph}{}{5}{section*.20}%
-\contentsline {paragraph}{}{6}{section*.22}%
-\contentsline {paragraph}{}{6}{section*.24}%
+\contentsline {subsection}{\numberline {3.2}DCL52-CPP. Nunca califique un tipo de referencia con constante o volátil}{5}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Enlace al sitio web del estándar seleccionado}{5}{subsubsection.3.2.1}%
+\contentsline {paragraph}{}{5}{section*.21}%
+\contentsline {subsubsection}{\numberline {3.2.2}Explicación sobre su utilidad}{5}{subsubsection.3.2.2}%
+\contentsline {paragraph}{}{5}{section*.22}%
+\contentsline {paragraph}{}{5}{section*.23}%
+\contentsline {paragraph}{}{5}{section*.24}%
+\contentsline {subsubsection}{\numberline {3.2.3}Aplicación del estándar al proyecto}{5}{subsubsection.3.2.3}%
+\contentsline {paragraph}{}{5}{section*.25}%
 \contentsline {paragraph}{}{6}{section*.26}%
-\contentsline {paragraph}{}{6}{section*.28}%
-\contentsline {paragraph}{}{7}{section*.30}%
+\contentsline {subsection}{\numberline {3.3}OOP53-CPP. Escribir los inicializadores de miembros de los constructores en el orden canónico.}{6}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Enlace al sitio web del estándar seleccionado}{6}{subsubsection.3.3.1}%
+\contentsline {paragraph}{}{6}{section*.29}%
+\contentsline {subsubsection}{\numberline {3.3.2}Explicación sobre su utilidad}{6}{subsubsection.3.3.2}%
+\contentsline {paragraph}{}{6}{section*.30}%
+\contentsline {paragraph}{}{7}{section*.31}%
 \contentsline {paragraph}{}{7}{section*.32}%
+\contentsline {paragraph}{}{7}{section*.33}%
+\contentsline {subsubsection}{\numberline {3.3.3}Aplicación del estándar al proyecto}{7}{subsubsection.3.3.3}%
 \contentsline {paragraph}{}{7}{section*.34}%
+\contentsline {paragraph}{}{7}{section*.35}%
 \contentsline {paragraph}{}{8}{section*.37}%
 \contentsline {paragraph}{}{8}{section*.39}%
-\contentsline {paragraph}{}{9}{section*.41}%
+\contentsline {paragraph}{}{8}{section*.41}%
 \contentsline {paragraph}{}{9}{section*.43}%
-\contentsline {paragraph}{}{9}{section*.46}%
-\contentsline {paragraph}{}{10}{section*.48}%
+\contentsline {paragraph}{}{9}{section*.45}%
+\contentsline {paragraph}{}{9}{section*.47}%
+\contentsline {paragraph}{}{9}{section*.49}%
 \contentsline {paragraph}{}{10}{section*.51}%
-\contentsline {paragraph}{}{11}{section*.53}%
-\contentsline {paragraph}{}{11}{section*.57}%
-\contentsline {paragraph}{}{12}{section*.61}%
-\contentsline {paragraph}{}{13}{section*.63}%
-\contentsline {paragraph}{}{13}{section*.66}%
-\contentsline {paragraph}{}{14}{section*.69}%
-\contentsline {paragraph}{}{14}{section*.71}%
-\contentsline {subsection}{\numberline {3.4}MSC52-CPP. Las funciones que devuelven un valor deben devolver un valor desde todas las rutas de salida.}{15}{subsection.3.4}%
-\contentsline {subsubsection}{\numberline {3.4.1}Enlace al sitio web del estándar seleccionado}{15}{subsubsection.3.4.1}%
-\contentsline {paragraph}{}{15}{section*.73}%
-\contentsline {subsubsection}{\numberline {3.4.2}Explicación sobre su utilidad}{15}{subsubsection.3.4.2}%
-\contentsline {paragraph}{}{15}{section*.74}%
-\contentsline {subsubsection}{\numberline {3.4.3}Aplicación del estándar al proyecto}{15}{subsubsection.3.4.3}%
-\contentsline {paragraph}{}{15}{section*.75}%
-\contentsline {paragraph}{}{15}{section*.76}%
-\contentsline {paragraph}{}{15}{section*.77}%
-\contentsline {paragraph}{}{16}{section*.80}%
-\contentsline {paragraph}{}{16}{section*.81}%
-\contentsline {subsection}{\numberline {3.5}FIO51-CPP. Cerrar los archivos cuando ya no sean necesarios.}{17}{subsection.3.5}%
-\contentsline {subsubsection}{\numberline {3.5.1}Enlace al sitio web del estándar seleccionado}{17}{subsubsection.3.5.1}%
-\contentsline {paragraph}{}{17}{section*.84}%
-\contentsline {subsubsection}{\numberline {3.5.2}Explicación sobre su utilidad}{17}{subsubsection.3.5.2}%
-\contentsline {paragraph}{}{17}{section*.85}%
+\contentsline {paragraph}{}{10}{section*.54}%
+\contentsline {paragraph}{}{11}{section*.56}%
+\contentsline {paragraph}{}{11}{section*.58}%
+\contentsline {paragraph}{}{11}{section*.60}%
+\contentsline {paragraph}{}{12}{section*.63}%
+\contentsline {paragraph}{}{12}{section*.65}%
+\contentsline {paragraph}{}{13}{section*.68}%
+\contentsline {paragraph}{}{13}{section*.70}%
+\contentsline {paragraph}{}{14}{section*.74}%
+\contentsline {paragraph}{}{15}{section*.78}%
+\contentsline {paragraph}{}{15}{section*.80}%
+\contentsline {paragraph}{}{16}{section*.83}%
 \contentsline {paragraph}{}{17}{section*.86}%
-\contentsline {subsubsection}{\numberline {3.5.3}Aplicación del estándar al proyecto}{18}{subsubsection.3.5.3}%
-\contentsline {paragraph}{}{18}{section*.87}%
-\contentsline {paragraph}{}{18}{section*.89}%
+\contentsline {paragraph}{}{17}{section*.88}%
+\contentsline {subsection}{\numberline {3.4}MSC52-CPP. Las funciones que devuelven un valor deben devolver un valor desde todas las rutas de salida.}{18}{subsection.3.4}%
+\contentsline {subsubsection}{\numberline {3.4.1}Enlace al sitio web del estándar seleccionado}{18}{subsubsection.3.4.1}%
+\contentsline {paragraph}{}{18}{section*.90}%
+\contentsline {subsubsection}{\numberline {3.4.2}Explicación sobre su utilidad}{18}{subsubsection.3.4.2}%
+\contentsline {paragraph}{}{18}{section*.91}%
+\contentsline {subsubsection}{\numberline {3.4.3}Aplicación del estándar al proyecto}{18}{subsubsection.3.4.3}%
+\contentsline {paragraph}{}{18}{section*.92}%
+\contentsline {paragraph}{}{18}{section*.93}%
+\contentsline {paragraph}{}{18}{section*.94}%
+\contentsline {paragraph}{}{19}{section*.97}%
+\contentsline {paragraph}{}{19}{section*.98}%
+\contentsline {subsection}{\numberline {3.5}FIO51-CPP. Cerrar los archivos cuando ya no sean necesarios.}{20}{subsection.3.5}%
+\contentsline {subsubsection}{\numberline {3.5.1}Enlace al sitio web del estándar seleccionado}{20}{subsubsection.3.5.1}%
+\contentsline {paragraph}{}{20}{section*.101}%
+\contentsline {subsubsection}{\numberline {3.5.2}Explicación sobre su utilidad}{20}{subsubsection.3.5.2}%
+\contentsline {paragraph}{}{20}{section*.102}%
+\contentsline {paragraph}{}{20}{section*.103}%
+\contentsline {subsubsection}{\numberline {3.5.3}Aplicación del estándar al proyecto}{21}{subsubsection.3.5.3}%
+\contentsline {paragraph}{}{21}{section*.104}%
+\contentsline {paragraph}{}{21}{section*.106}%

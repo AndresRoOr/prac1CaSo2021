@@ -4,17 +4,84 @@
 
 		\subsubsection{Enlace al sitio web del estándar seleccionado}
 		
+			\paragraph{}\url{https://wiki.sei.cmu.edu/confluence/display/cplusplus/DCL51-CPP.+Do+not+declare+or+define+a+reserved+identifier}
+		
 		\subsubsection{Explicación sobre su utilidad}
 		
+			\paragraph{}El estándar de C++ (ISO/IEC 14882-2014) que hace referencia a los nombres reservados especifica las siguientes reglas:
+			
+			\begin{itemize}
+				\item "\textit{Una unidad de traducción que incluye un encabezado de biblioteca estándar no debe \#define o \#undef nombres declarados en ningún encabezado de biblioteca estándar.}
+				\item \textit{Una unidad de traducción no debe \#define o \#undef nombres léxicamente idénticos a palabras clave, a los identificadores enumerados en la Tabla 3, o a los atributos-tokens descritos en 7.6.}
+				\item \textit{Cada nombre que contenga un guión bajo doble \_ \_ o comience con un guión bajo seguido de una letra mayúscula está reservado a la implementación para cualquier uso.}
+				\item \textit{Cada nombre que comienza con un guión bajo se reserva para la implementación para su uso como nombre en el espacio de nombres global.}
+				\item \textit{Cada nombre declarado como un objeto con enlace externo en un encabezado está reservado a la implementación para designar ese objeto de biblioteca con enlace externo, tanto en el espacio de nombres estándar como en el espacio de nombres global.}
+				\item \textit{Cada firma de función global declarada con enlace externo en un encabezado está reservada a la implementación para designar esa firma de función con enlace externo.}
+				\item \textit{Cada nombre de la biblioteca C estándar declarado con enlace externo está reservado a la implementación para su uso como un nombre con enlace C externo, tanto en el espacio de nombres estándar como en el espacio de nombres global.}
+				\item \textit{Cada firma de función de la biblioteca C estándar declarada con enlace externo está reservada a la implementación para su uso como firma de función con enlace externo C y externo C++, o como nombre del ámbito del espacio de nombres en el espacio de nombres global.}
+				\item \textit{Para cada tipo T de la biblioteca C estándar, los tipos ::T y std::T están reservados para la implementación y, cuando se defina, ::T será idéntico a std::T.}
+				\item \textit{Los identificadores de sufijos literales que no comienzan con un guión bajo están reservados para una futura estandarización.}"
+			\end{itemize}
+		
+			\paragraph{}Los identificadores y nombres de atributos a los que se hace referencia en el extracto anterior son override, final, alignas, carry\_dependency, deprecated y noreturn. Ningunos otros identificadores están reservados.
+			
+			\paragraph{}Declarar o definir identificadores en un contexto en el que estén reservados derivará en un comportamiento indefinido o impredecible. Para evitar esto, siempre hay que evitar reservar o definir identificadores que estén reservados.
+		
 		\subsubsection{Aplicación del estándar al proyecto}
+		
+			\paragraph{}Nuestro proyecto cumple perfectamente con el estándar, ya que no hace uso de ningún identificador reservado. Uno de los ejemplos de las reglas definidas en el apartado anterior es la nomenclatura de las cabeceras de los archivos, a continuación una captura de pantalla de una de ellas:
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.5]{img/captura40.png}
+				\caption{Captura de pantalla del cumplimiento del estándar DCL51-CPP.}
+				\label{captura40}
+			\end{figure}
+		
+			\paragraph{}Otro ejemplo de cumplimiento del estándar es el uso del identificador T en la implementación de las plantillas del programa. A continuación, una captura de pantalla de dicho uso:
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.5]{img/captura41.png}
+				\caption{Captura de pantalla del cumplimiento del estándar DCL51-CPP.}
+				\label{captura41}
+			\end{figure}
+		
+			\paragraph{}Estos son los dos ejemplos más claros de cumplimiento del estándar. No podemos mostrar más capturas de pantalla ya que, al no hacer uso de identificadores reservados, no podemos mostrar las correcciones de los incumplimientos.
 
 	\subsection{DCL52-CPP. Nunca califique un tipo de referencia con constante o volátil}
 	
 		\subsubsection{Enlace al sitio web del estándar seleccionado}
 		
+			\paragraph{}\url{https://wiki.sei.cmu.edu/confluence/display/cplusplus/DCL52-CPP.+Never+qualify+a+reference+type+with+const+or+volatile}
+		
 		\subsubsection{Explicación sobre su utilidad}
 		
+			\paragraph{}Como sabemos de cursos anteriores, C++ no permite modificar el valor de una variable que haya sido calificada con constante (const). 
+			
+			\paragraph{}En el caso de objetos que sea referenciados, es decir, utilizando el caracter reservado '$\&$' se puede cometer el error de escribir la expresión de la siguiente forma: "$char$ $const\&$ $p$", C++ ignora o prohibe la asignación de referencia a la palabra reservada "const". Este hecho puede desencadenar en escrituras accidentales en la variable constante, probocando resultados no esperados en la ejecución del programa.
+			
+			\paragraph{}Para que la expresión fuera correcta, debería escribirse de una de las siguientes formas: "$const$ $char$ $\&p$" ó "$char$ $const$ $\&p$"
+		
 		\subsubsection{Aplicación del estándar al proyecto}
+		
+			\paragraph{}En nuestro proyecto hacemos uso repetidas veces de expresiones con referencias de este tipo, y en todas ellas respetamos la sintaxis que se describe en el presente estándar.
+			
+			\paragraph{}A continuación, presentamos capturas de pantalla de alguna de las expresiones que se encuentran en el código fuente a modo de ejemplo:
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.45]{img/captura38.png}
+				\caption{Captura de pantalla del cumplimiento del estándar DCL52-CPP.}
+				\label{captura38}
+			\end{figure}
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.6]{img/captura39.png}
+				\caption{Captura de pantalla del cumplimiento del estándar DCL52-CPP.}
+				\label{captura39}
+			\end{figure}
 
 	\subsection{OOP53-CPP. Escribir los inicializadores de miembros de los constructores en el orden canónico.}
 	
