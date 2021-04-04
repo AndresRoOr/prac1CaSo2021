@@ -83,6 +83,212 @@
 				\label{captura39}
 			\end{figure}
 
+	\subsection{DCL59-CPP. No defina un espacio de nombres sin nombre en un archivo de encabezado.}
+	
+		\subsubsection{Enlace al sitio web del estándar seleccionado}
+			
+			\paragraph{}\url{https://wiki.sei.cmu.edu/confluence/display/cplusplus/DCL59-CPP.+Do+not+define+an+unnamed+namespace+in+a+header+file}
+		
+		\subsubsection{Explicación sobre su utilidad}
+		
+			\paragraph{}El código C++ de calidad de producción utiliza con frecuencia archivos de encabezado como medio para compartir código entre unidades de traducción. Un archivo de encabezado es cualquier archivo que se inserta en una unidad de traducción a través de una directiva. No defina un espacio de nombres sin nombre en un archivo de encabezado. Cuando se define un espacio de nombres sin nombre en un archivo de encabezado, puede dar lugar a resultados sorprendentes. Debido al vínculo interno predeterminado, cada unidad de traducción definirá su propia instancia única de los miembros del espacio de nombres sin nombre que se usan en ODR dentro de esa unidad de traducción. Esto puede causar resultados inesperados, hinchar el ejecutable resultante o desencadenar inadvertidamente el comportamiento indefinido debido a infracciones de una regla de una definición.
+		
+		\subsubsection{Aplicación del estándar al proyecto}
+		
+			\paragraph{}Los espacios de nombres sin nombre se usan para definir un espacio de nombres que es único para la unidad de traducción, donde los nombres contenidos tienen vinculación interna de forma predeterminada.
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.8]{img/img1.png}
+				\caption{Captura de pantalla del cumplimiento del estándar DCL59-CPP.}
+				\label{img1}
+			\end{figure}
+			
+			\paragraph{}Aquí observamos como en un archivo cabecera al incluir un nuevo espacio de nombres, se le ha tenido que poner un nombre distinto para no confundir a la unidad de traducción. En este caso el nombre ofrecido ha sido el de “excepcionesBi”.
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.8]{img/img2.png}
+				\caption{Captura de pantalla del cumplimiento del estándar DCL59-CPP.}
+				\label{img2}
+			\end{figure}
+			
+			\paragraph{}Así puede ser perfectamente referenciado desde el .cpp de dicho archivo Biblioteca como podemos ver en la imagen:
+	
+	\subsection{MEM51-CPP. Desasignar correctamente la memoria asignada a los objetos dinámicamente.}
+	
+		\subsubsection{Enlace al sitio web del estándar seleccionado}
+		
+			\paragraph{}\url{https://wiki.sei.cmu.edu/confluence/display/cplusplus/MEM51-CPP.+Properly+deallocate+dynamically+allocated+resources}
+		
+		\subsubsection{Explicación sobre su utilidad}
+		
+			\paragraph{}La desasignación de un puntero que no está asignado dinámicamente (incluidos los punteros no dinámicos devueltos por las llamadas a la ubicación new ()) es un comportamiento indefinido porque el valor del puntero no se obtuvo mediante una función de asignación. La desasignación de un puntero que ya se ha pasado a una función de desasignación es un comportamiento indefinido porque el valor del puntero ya no apunta a la memoria que se ha asignado dinámicamente.
+			
+			\paragraph{}Cuando new se llama a un operador como el resultado es una llamada a un operador sobre cargable con el mismo nombre, como operator new (). Estas funciones sobrecargables se pueden llamar directamente, pero tienen las mismas restricciones que sus contrapartes de operador. Es decir, llamar operator delete () y pasar un parámetro de puntero tiene las mismas restricciones que llamar al delete operador en ese puntero. Además, las sobrecargas están sujetas a la resolución del alcance, por lo que es posible (pero no permitido) llamar a un operador específico de clase para asignar un objeto, pero a un operador global para desasignar el objeto.
+		
+		\subsubsection{Aplicación del estándar al proyecto}
+		
+			\paragraph{}Aquí vemos como se llama al operador new ():
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.8]{img/img3.png}
+				\caption{Captura de pantalla del cumplimiento del estándar MEM51-CPP.}
+				\label{img3}
+			\end{figure}
+			
+			\paragraph{}Para desasignar correctamente la memoria asignada dinámicamente a estos objetos observamos como en el destructor se hacen las llamadas correspondientes al operador delete () que es la contraparte de new () y además a la función de limpieza, que internamente hace también una llamada al operador delete ().
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.8]{img/img4.png}
+				\caption{Captura de pantalla del cumplimiento del estándar DCL59-CPP.}
+				\label{img4}
+			\end{figure}
+		
+	\subsection{MEM52-CPP. Detectar errores de asignación de memoria}
+	
+		\subsubsection{Enlace al sitio web del estándar seleccionado}
+		
+			\paragraph{}\url{https://wiki.sei.cmu.edu/confluence/display/cplusplus/MEM52-CPP.+Detect+and+handle+memory+allocation+errors}
+		
+		\subsubsection{Explicación sobre su utilidad}
+		
+			\paragraph{}El operador de asignación de memoria predeterminado ::operator new (std::size\_t), lanza una excepción std::bad\_alloc si falla la asignación. Por lo tanto, no es necesario verificar si la llamada ::operator new(std::size\_t) da como resultado nullptr . La forma de ::operator new(std::size\_t, const std::nothrow\_t $\&$)no lanzar, no lanza una excepción si la asignación falla, sino que regresa nullptr. Los mismos comportamientos se aplican a las operator new [] versiones de ambas funciones de asignación. Además, el objeto de asignación predeterminado ( std::allocator) se usa  ::operator new(std::size\_t)para realizar asignaciones y debe tratarse de manera similar.
+		
+		\subsubsection{Aplicación del estándar al proyecto}
+
+			\paragraph{}Por ejemplo, si no se ha podido asignar memoria para usu con el operador new (), aparte de las excepciones personalizadas que nos mostrarían un mensaje, es correcto que en el primer bloque catch se atrapara también esta excepción si acaso fallase la asignación.
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.8]{img/img5.png}
+				\caption{Captura de pantalla del incumplimiento del estándar MEM52-CPP.}
+				\label{img5}
+			\end{figure}
+			
+			\paragraph{}Una vez arreglado, se muestra ya en los catch la “bad\_alloc” si falla la asignación de memoria:
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.8]{img/img6.png}
+				\caption{Captura de pantalla del cumplimiento del estándar MEM52-CPP.}
+				\label{img6}
+			\end{figure}
+		
+	\subsection{FIO50-CPP. No ingrese y elabore alternativamente desde un flujo sin una llamada de posicionamiento.}
+	
+		\subsubsection{Enlace al sitio web del estándar seleccionado}
+		
+			\paragraph{}\url{https://wiki.sei.cmu.edu/confluence/display/cplusplus/FIO50-CPP.+Do+not+alternately+input+and+output+from+a+file+stream+without+an+intervening+positioning+call}
+		
+		\subsubsection{Explicación sobre su utilidad}
+		
+			\paragraph{}Cuando se abre un archivo, tanto la entrada como la salida pueden realizarse en el flujo asociado. Sin embargo, la salida no será seguido directamente por la entrada sin una llamada de intervenir para la  fflush función o a una función de archivo de posicionamiento ( fseek,  fsetpos o rewind), y la entrada no será seguida directamente por la salida sin una llamada de intervención para una función de fichero de posicionamiento, a menos que la operación de entrada encuentra el final del archivo.
+		
+		\subsubsection{Aplicación del estándar al proyecto}
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.8]{img/img7.png}
+				\caption{Captura de pantalla del cumplimiento del estándar FIO50-CPP.}
+				\label{img7}
+			\end{figure}
+		
+			\paragraph{}En esta solución compatible, la std::basic$\_$istream$<$T$>$::seekg() función se llama en la línea 73,  entre la salida y la entrada,  posicionando el puntero al comienzo de la lectura, eliminando el comportamiento indefinido .
+		
+	\subsection{FIO51-CPP. Cerrar los archivos cuando ya no sean necesarios.}
+	
+		\subsubsection{Enlace al sitio web del estándar seleccionado}
+	
+			\paragraph{}\url{https://wiki.sei.cmu.edu/confluence/display/cplusplus/FIO51-CPP.+Close+files+when+they+are+no+longer+needed}
+	
+		\subsubsection{Explicación sobre su utilidad}
+	
+			\paragraph{}Una llamada a la función $std::basic\_filebuf<T>::open()$ siempre debe ir acompañada de otra llamada a la función $std::basic_filebuf<T>::close()$ antes de la finalización del ciclo de vida del último puntero que almacenase el valor devuelto por la llamada de la primera función ó antes de la finalización del programa, lo que ocurriese antes.
+	
+			\paragraph{}La mala praxis de este estándar puede provocar la utilización innecesaria de memoria estática durante toda la ejecución del programa. En el peor de los casos si se abrieran muchos archivos y no se cerrara ninguno durante la ejecución del programa, podría llegar a provocar un desbordamiento de la memoria estática. Aún utilizando memoria dinámica, si no cerramos el archivo cuando ya no sea necesario, seguiríamos desperdiciando memoria igualmente.
+	
+		\subsubsection{Aplicación del estándar al proyecto}
+	
+			\paragraph{}En el proyecto elegido para la realización de las prácticas solo se hace lectura de un fichero en una única función en todo el programa, esta función es "$void Biblioteca::cargaLibros(string fichero)$".
+	
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.55]{img/captura1.png}
+				\caption{Captura de pantalla del cumplimiento del estándar FIO51-CPP.}
+				\label{captura1}
+			\end{figure}
+	
+			\paragraph{}En la captura de pantalla anterior observamos que en la línea número 64 se abre el archivo "fichero" y, cuando ya se han realizado todas las operaciones de lectura del contenido del mismo, se procede a su cierre en la línea 88, quedando verificado el cumplimiento del estándar.
+			
+	\subsection{ERR51-CPP. Manejar todas las excepciones.}
+	
+		\subsubsection{Enlace al sitio web del estándar seleccionado}
+			
+			\paragraph{}\url{https://wiki.sei.cmu.edu/confluence/display/cplusplus/ERR51-CPP.+Handle+all+exceptions}
+			
+		\subsubsection{Explicación sobre su utilidad}
+		
+			\paragraph{}Cuando se produce una excepción, el control se transfiere al controlador más cercano con un tipo que coincide con el tipo de la excepción producida. Si no se encuentra ningún controlador coincidente directamente dentro de los controladores para un bloque try en el que se produce la excepción, la búsqueda de un controlador coincidente continúa buscando dinámicamente controladores en los bloques de prueba circundantes del mismo subproceso.
+			
+			\paragraph{}Todas las excepciones producidas por una aplicación deben ser detectadas por un controlador de excepciones coincidente. Incluso si la excepción no se puede recuperar correctamente, el uso del controlador de excepciones coincidente garantiza que la pila se desenrollará correctamente y proporciona la oportunidad de administrar correctamente los recursos externos antes de finalizar el proceso.
+			
+		\subsubsection{Aplicación del estándar al proyecto}
+		
+			\paragraph{}Aquí podemos ver como se lanzan excepciones, pero no son tratadas correctamente:
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.8]{img/img8.png}
+				\caption{Captura de pantalla del incumplimiento del estándar ERR51-CPP.}
+				\label{img8}
+			\end{figure}
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.8]{img/img9.png}
+				\caption{Captura de pantalla del incumplimiento del estándar ERR51-CPP.}
+				\label{img9}
+			\end{figure}
+			
+			\paragraph{}Ya que las clases no derivan de la clase exception ni tienen nada definido para ellas:
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.8]{img/img10.png}
+				\caption{Captura de pantalla del incumplimiento del estándar ERR51-CPP.}
+				\label{img10}
+			\end{figure}
+			
+			\paragraph{}Una vez le hemos dado definición a dichas excepciones y con la inclusión de la directiva $\#$include $<$exception$>$ en el fichero de cabecera, ya podemos controlar las excepciones, lo que garantiza que la pila se desenrolla hasta la función y permite una gestión elegante de los recursos externos.
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.8]{img/img11.png}
+				\caption{Captura de pantalla del cumplimiento del estándar ERR51-CPP.}
+				\label{img11}
+			\end{figure}
+			
+			\paragraph{}Se atrapan las excepciones lanzadas por los throw en los bloques catch pero no se tratan adecuadamente.
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.8]{img/img12.png}
+				\caption{Captura de pantalla del incumplimiento del estándar ERR51-CPP.}
+				\label{img12}
+			\end{figure}
+			
+			\paragraph{}Y ya aquí se atrapan en el catch correspondiente y se tratan adecuadamente.
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.8]{img/img13.png}
+				\caption{Captura de pantalla del cumplimiento del estándar ERR51-CPP.}
+				\label{img13}
+			\end{figure}
+	
 	\subsection{OOP53-CPP. Escribir los inicializadores de miembros de los constructores en el orden canónico.}
 	
 		\subsubsection{Enlace al sitio web del estándar seleccionado}
@@ -436,29 +642,6 @@
 				\label{captura37}
 			\end{figure}
 
-	\subsection{FIO51-CPP. Cerrar los archivos cuando ya no sean necesarios.}
 	
-		\subsubsection{Enlace al sitio web del estándar seleccionado}
-		
-			\paragraph{}\url{https://wiki.sei.cmu.edu/confluence/display/cplusplus/FIO51-CPP.+Close+files+when+they+are+no+longer+needed}
-		
-		\subsubsection{Explicación sobre su utilidad}
-		
-			\paragraph{}Una llamada a la función $std::basic\_filebuf<T>::open()$ siempre debe ir acompañada de otra llamada a la función $std::basic_filebuf<T>::close()$ antes de la finalización del ciclo de vida del último puntero que almacenase el valor devuelto por la llamada de la primera función ó antes de la finalización del programa, lo que ocurriese antes.
-			
-			\paragraph{}La mala praxis de este estándar puede provocar la utilización innecesaria de memoria estática durante toda la ejecución del programa. En el peor de los casos si se abrieran muchos archivos y no se cerrara ninguno durante la ejecución del programa, podría llegar a provocar un desbordamiento de la memoria estática. Aún utilizando memoria dinámica, si no cerramos el archivo cuando ya no sea necesario, seguiríamos desperdiciando memoria igualmente.
-		
-		\subsubsection{Aplicación del estándar al proyecto}
-		
-			\paragraph{}En el proyecto elegido para la realización de las prácticas solo se hace lectura de un fichero en una única función en todo el programa, esta función es "$void Biblioteca::cargaLibros(string fichero)$".
-			
-			\begin{figure}[H]
-				\centering
-				\includegraphics[scale=0.55]{img/captura1.png}
-				\caption{Captura de pantalla del cumplimiento del estándar FIO51-CPP.}
-				\label{captura1}
-			\end{figure}
-		
-			\paragraph{}En la captura de pantalla anterior observamos que en la línea número 64 se abre el archivo "fichero" y, cuando ya se han realizado todas las operaciones de lectura del contenido del mismo, se procede a su cierre en la línea 88, quedando verificado el cumplimiento del estándar.
 
 \newpage
