@@ -16,6 +16,8 @@
 #include <cstdlib>
 #include <string>
 #include <sstream>
+#include <exception>
+
 
 using namespace std;
 
@@ -24,31 +26,51 @@ namespace excepcionesBi {
 /**
  * @brief Excepción personalizada para indicar que no se ha encontrado un usuario.
  */
-class usuNoEncontrado {
+class usuNoEncontrado : public exception {
+public:
+    	const char* what() const throw () {
+        return "\nError: El usuario no se pudo encontrar.\n";
+    }
 };
 
 /**
  * @brief Excepción personalizada para indicar que ha habido un error en la apertura de un archivo.
  */
-class errorApertura {
+class errorApertura : public exception {
+public:
+    	const char* what() const throw () {
+        return "\nError: El Fichero no se pudo abrir.\n";
+    }
 };
 
 /**
  * @brief Excepción personalizada para indicar que no se ha encontrado un libro.
  */
-class libroNoencontrado {
+class libroNoencontrado : public exception {
+public:
+    	const char* what() const throw () {
+        return "\nError: El libro no se pudo encontrar.\n";
+    }
 };
 
 /**
  * @brief Excepción personalizada para indicar que no se ha encontrado un pedido de un usuario.
  */
-class pedidoUsuarioNoencontrado {
+class pedidoUsuarioNoencontrado : public exception {
+public:
+    	const char* what() const throw () {
+        return "\nError: El pedido de usuario no se pudo encontrar.\n";
+    }
 };
 
 /**
  * @brief Excepción personalizada para indicar que no se ha encontrado un pedido hecho por la biblioteca.
  */
-class pedidoBibliotecaNoencontrado {
+class pedidoBibliotecaNoencontrado : public exception {
+public:
+		const char* what() const throw () {
+        return "\nError: El pedido de la biblioteca no se pudo encontrar.\n";
+    }
 };
 }
 
@@ -117,4 +139,5 @@ public:
 };
 
 #endif	/* BIBLIOTECA_H */
+
 

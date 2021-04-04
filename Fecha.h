@@ -7,17 +7,15 @@
 #ifndef FECHA_H
 #define FECHA_H
 #include <string>
+#include <exception>
+
 using namespace std;
 
 /**
  * @brief Clase sencilla para representar fechas y horas.
  */
 class Fecha {
-	unsigned dia; ///< Información de día.
-	unsigned mes; ///< Información de mes.
-	unsigned anio; ///<Información de año.
-	unsigned hora; ///< Información de hora.
-	unsigned min; ///< Información de minutos.
+	unsigned dia, mes, anio, hora, min; ///< Información de fecha y hora.
 	static const unsigned diasMes[12]; ///< Almacena los dias por mes.
 
 public:
@@ -123,7 +121,11 @@ public:
 	/**
 	 * @brief Excepción que representa fechas incorrectas.
 	 */
-	class ErrorFechaIncorrecta {
+	class ErrorFechaIncorrecta : public exception {
+	public:
+	    	const char* what() const throw () {
+	        return "\nError: Fecha incorrecta.\n";
+	    }
 	};
 
 	~Fecha();

@@ -10,15 +10,14 @@
  * @brief Constructor por defecto.
  */
 Aplication::Aplication() {
-	bi = Biblioteca();
-	usu = new Usuario;
-	lusu = new lista_sin<Usuario>();
-	li = Libro();
-	pedBi = new PedidoBiblioteca;
-	pedbi = new lista_sin<PedidoBiblioteca *>;
 	pedusu = new lista_sin<PedidoUsuario *>;
+	pedbi = new lista_sin<PedidoBiblioteca *>;
 	libro = new lista_sin<Libro *>;
+	usu = new Usuario;
 	pedbipunt = new PedidoBiblioteca;
+	pedbipunt = NULL;
+	pedBi = new PedidoBiblioteca;
+
 }
 
 /**
@@ -41,8 +40,7 @@ void Aplication::aplicacion_admin() {
 			cout
 					<< "De entre las siguientes opciones indique la que quiera elegir, para salir pulse 0: "
 					<< endl << endl;
-			cout
-					<< " 		1.- Muestra lista de pedidos pendientes de un usuario. \n"
+			cout << " 		1.- Muestra lista de pedidos pendientes de un usuario."
 					<< endl;
 			cout << "  		2.- Cierra pedido biblioteca. " << endl;
 			cout << "		3.- Crear pedido biblioteca. " << endl;
@@ -76,10 +74,13 @@ void Aplication::aplicacion_admin() {
 						cout << *(pedusu->lee(i)) << endl;
 						i++;
 					}
-				} catch (excepcionesBi::usuNoEncontrado&) {
-					cout << " Usuario no encontrado. " << endl;
-				} catch (excepcionesBi::pedidoUsuarioNoencontrado&) {
-					cout << " El usuario no tiene pedidos pendientes. " << endl;
+				} catch (bad_alloc&) {
+				} catch (const excepcionesBi::usuNoEncontrado& e) {
+					cerr << e.what();
+				} catch (const excepcionesBi::pedidoUsuarioNoencontrado& e) {
+					cerr << e.what();
+				} catch (const ErrorElemento& e) {
+					cerr << e.what();
 				}
 			}
 				break;
@@ -93,8 +94,9 @@ void Aplication::aplicacion_admin() {
 				try {
 					pedBi = bi.daListaPedBiblioteca(num);
 					bi.cierraPedidoBiblioteca(pedBi, num);
-				} catch (excepcionesBi::pedidoBibliotecaNoencontrado&) {
-					cout << " Pedido Bibloteca no creado. " << endl;
+				} catch (bad_alloc&) {
+				} catch (const excepcionesBi::pedidoBibliotecaNoencontrado& e) {
+					cerr << e.what();
 				}
 			}
 				break;
@@ -135,11 +137,13 @@ void Aplication::aplicacion_admin() {
 						i++;
 					}
 					bi.tramitaPedidoUsuario(min, pedBi);
-				} catch (excepcionesBi::usuNoEncontrado&) {
-					cout << " Usuario no encontrado. " << endl;
-				} catch (excepcionesBi::pedidoBibliotecaNoencontrado&) {
-					cout << " El Pedido de la Biblioteca no fue creado. "
-							<< endl;
+				} catch (bad_alloc&) {
+				} catch (const excepcionesBi::usuNoEncontrado& e) {
+					cerr << e.what();
+				} catch (const excepcionesBi::pedidoBibliotecaNoencontrado& e) {
+					cerr << e.what();
+				} catch (const ErrorElemento& e) {
+					cerr << e.what();
 				}
 			}
 				break;
@@ -161,8 +165,11 @@ void Aplication::aplicacion_admin() {
 						cout << *(pedusu->lee(i)) << endl;
 						i++;
 					}
-				} catch (excepcionesBi::usuNoEncontrado&) {
-					cout << " Usuario no encontrado. " << endl;
+				} catch (bad_alloc&) {
+				} catch (const excepcionesBi::usuNoEncontrado& e) {
+					cerr << e.what();
+				} catch (const ErrorElemento& e) {
+					cerr << e.what();
 				}
 			}
 				break;
@@ -178,9 +185,11 @@ void Aplication::aplicacion_admin() {
 						cout << *(pedbi->lee(i)) << endl;
 						i++;
 					}
-				} catch (excepcionesBi::pedidoBibliotecaNoencontrado&) {
-					cout << " No existen pedidos de la biblioteca tramitados. "
-							<< endl;
+				} catch (bad_alloc&) {
+				} catch (const excepcionesBi::pedidoBibliotecaNoencontrado& e) {
+					cerr << e.what();
+				} catch (const ErrorElemento& e) {
+					cerr << e.what();
 				}
 			}
 				break;
@@ -196,9 +205,11 @@ void Aplication::aplicacion_admin() {
 						cout << *(pedbi->lee(i)) << endl;
 						i++;
 					}
-				} catch (excepcionesBi::pedidoBibliotecaNoencontrado&) {
-					cout << " No existen pedidos de la biblioteca pendientes. "
-							<< endl;
+				} catch (bad_alloc&) {
+				} catch (const excepcionesBi::pedidoBibliotecaNoencontrado& e) {
+					cerr << e.what();
+				} catch (const ErrorElemento& e) {
+					cerr << e.what();
 				}
 			}
 			}
@@ -219,8 +230,9 @@ void Aplication::aplicacion_usuario() {
 	unsigned i;
 	try {
 		bi.cargaLibros("../libros.txt");
-	} catch (excepcionesBi::errorApertura&) {
-		cout << " No se han podido cargar los libros. " << endl;
+	} catch (bad_alloc&) {
+	} catch (const excepcionesBi::errorApertura& e) {
+		cerr << e.what();
 	}
 
 	cout << "Bienvenido a nuestra Biblioteca.\n\n" << endl;
@@ -258,8 +270,9 @@ void Aplication::aplicacion_usuario() {
 				cout << " Introduzca clave nueva. " << endl;
 				cin >> claven;
 				usu->cambiarClave(claven);
-			} catch (excepcionesBi::usuNoEncontrado&) {
-				cout << " La clave introducida no es válida. " << endl;
+			} catch (bad_alloc&) {
+			} catch (const excepcionesBi::usuNoEncontrado& e) {
+				cerr << e.what();
 			}
 		}
 			break;
@@ -274,8 +287,11 @@ void Aplication::aplicacion_usuario() {
 					if (i % 5 == 0)
 						system("pause");
 				}
-			} catch (excepcionesBi::libroNoencontrado&) {
-				cout << " No existen coincidencias. " << endl;
+			} catch (bad_alloc&) {
+			} catch (const excepcionesBi::libroNoencontrado& e) {
+				cerr << e.what();
+			} catch (const ErrorElemento& e) {
+				cerr << e.what();
 			}
 		}
 			break;
@@ -287,8 +303,11 @@ void Aplication::aplicacion_usuario() {
 			try {
 				libro = bi.consultaLibros(atitulo);
 				bi.creaPedidoUsuario(usu, libro->lee(0), 0);
-			} catch (excepcionesBi::libroNoencontrado&) {
-				cout << " No existen coincidencias. " << endl;
+			} catch (bad_alloc&) {
+			} catch (const excepcionesBi::libroNoencontrado& e) {
+				cerr << e.what();
+			} catch (const ErrorElemento& e) {
+				cerr << e.what();
 			}
 		}
 		}
