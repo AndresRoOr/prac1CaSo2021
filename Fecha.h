@@ -7,6 +7,8 @@
 #ifndef FECHA_H
 #define FECHA_H
 #include <string>
+#include <exception>
+
 using namespace std;
 
 /**
@@ -119,7 +121,11 @@ public:
 	/**
 	 * @brief Excepción que representa fechas incorrectas.
 	 */
-	class ErrorFechaIncorrecta {
+	class ErrorFechaIncorrecta : public exception {
+	public:
+	    	const char* what() const throw () {
+	        return "\nError: Fecha incorrecta.\n";
+	    }
 	};
 
 	~Fecha();

@@ -32,8 +32,8 @@ public:
 		fecha() {
 		importe = 0;
 		tramitado = false;
-		this->pedido_usu = pedido_usu;
 		this->num = anum;
+		this->pedido_usu = pedido_usu;
 	}
 
 	/**
@@ -44,8 +44,8 @@ public:
 		this->fecha = pedbi.fecha;
 		this->importe = pedbi.importe;
 		this->tramitado = pedbi.tramitado;
-		this->pedido_usu = pedbi.pedido_usu;
 		this->num = pedbi.num;
+		this->pedido_usu = pedbi.pedido_usu;
 	}
 
 	bool daTrami();

@@ -8,6 +8,8 @@
 #define	LISTA_SIN_H
 
 #include <iostream>
+#include <exception>
+
 using namespace std;
 
 template<class T>
@@ -104,7 +106,11 @@ public:
 /**
  * @brief Clase que representa error de tipo de elemento referenciado.
  */
-class ErrorElemento {
+class ErrorElemento  : public exception {
+public:
+    	const char* what() const throw () {
+        return "\nError: Error de tipo de elemento referenciado.\n";
+    }
 };
 
 template<class T>

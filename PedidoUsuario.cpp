@@ -14,8 +14,8 @@ PedidoUsuario::PedidoUsuario() :
 	prioridad = 0;         ///< Prioridad concedida al pedido del usuario.
 	precio = 0;            ///< Precio del pedido inicializado a cero.
 	tramitado = false;     ///< De entrada el pedido aun no ha sido tramitado.
-	libro = NULL;          ///< De entrada no se esta apuntando a ningun libro en concreto.
 	usuario = NULL;        ///< De entrada no se esta apuntando a ningun usuario en concreto.
+	libro = NULL;          ///< De entrada no se esta apuntando a ningun libro en concreto.
 }
 
 /**
@@ -27,7 +27,7 @@ PedidoUsuario::PedidoUsuario() :
  * @param [in] aPrecio float.
  * @param [in] aTramitado bool.
  */
-PedidoUsuario::PedidoUsuario(Libro *libro, Usuario *usuario, Fecha aFecha, int aPrioridad, float aPrecio, bool aTramitado) {
+PedidoUsuario::PedidoUsuario(Fecha aFecha, int aPrioridad, float aPrecio, bool aTramitado, Usuario *usuario, Libro *libro) {
 	fecha = aFecha;          ///< Copia de la fecha que queda registrada al hacer un pedido.
 	prioridad = aPrioridad;  ///< Copia de la prioridad que queda registrada al hacer un pedido.
 	precio = aPrecio;        ///< Copia del precio de un pedido.

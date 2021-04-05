@@ -8,7 +8,8 @@
 #include <cstdio>
 #include "Fecha.h"
 
-const unsigned Fecha::diasMes[12] = { 31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+const unsigned Fecha::diasMes[12] = { 31, 29, 31, 30, 31, 30, 31, 31, 30, 31,
+		30, 31 };
 
 /**
  * @brief Constructor por defecto de la clase Fecha.
@@ -19,14 +20,19 @@ Fecha::Fecha() {
 	struct tm *fechaActual;
 	time(&tiempoActual); /// Obtiene la hora actual del sistema.
 	fechaActual = localtime(&tiempoActual); /// Decodifica la hora en campos separados.
-	leerTiempo(*fechaActual);
+	dia = fechaActual->tm_mday;
+	mes = fechaActual->tm_mon + 1;
+	anio = fechaActual->tm_year + 1900;
+	hora = fechaActual->tm_hour;
+	min = fechaActual->tm_min;
 }
 
 /**
  * @brief Constructor parametrizado de la clase Fecha.
  * Crea una fecha concreta. Devuelve una excepción ErrorFechaIncorrecta si la fecha introducida no es correcta.
  */
-Fecha::Fecha(unsigned aDia, unsigned aMes, unsigned aAnio, unsigned aHora, unsigned aMin) {
+Fecha::Fecha(unsigned aDia, unsigned aMes, unsigned aAnio, unsigned aHora,
+		unsigned aMin) {
 	comprobarFecha(aDia, aMes, aAnio, aHora, aMin); /// Filtra las fechas incorrectas.
 	dia = aDia;
 	mes = aMes;
@@ -199,7 +205,8 @@ Fecha::~Fecha() {
  * @param [in] aHora unsigned. Hora de la fecha.
  * @param [in] aMin unsigned. Minuto de la fecha.
  */
-void Fecha::comprobarFecha(unsigned aDia, unsigned aMes, unsigned aAnio, unsigned aHora, unsigned aMin) const {
+void Fecha::comprobarFecha(unsigned aDia, unsigned aMes, unsigned aAnio,
+		unsigned aHora, unsigned aMin) const {
 	if (aMin > 59 || aHora > 23)
 		throw ErrorFechaIncorrecta();
 	if (aMes < 1 || aMes > 12)

@@ -70,6 +70,7 @@ void Biblioteca::cargaLibros(string fichero) {
 	string aPrecioActual;
 	string espacio;
 	if (entrada) {
+		entrada.seekg(0, ios::beg);
 		while (!entrada.eof()) {
 			getline(entrada, aTitulo);
 			getline(entrada, aAutores);
@@ -120,7 +121,7 @@ PedidoUsuario* Biblioteca::creaPedidoUsuario(Usuario *usuario, Libro *libro, int
 
 	Fecha fecha;
 	bool var = false;
-	PedidoUsuario *pusus = new PedidoUsuario(libro, usuario, fecha,	pedido_usu.tamanio(), libro->daPrecioActual(), var);
+	PedidoUsuario *pusus = new PedidoUsuario(fecha, prioridad, libro->daPrecioActual(), var, usuario, libro);
 	pedido_usu.aumenta(pusus);
 	return pusus;
 }
