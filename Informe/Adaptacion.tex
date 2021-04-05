@@ -123,9 +123,13 @@
 		
 		\subsubsection{Explicación sobre su utilidad}
 		
-			\paragraph{}La desasignación de un puntero que no está asignado dinámicamente (incluidos los punteros no dinámicos devueltos por las llamadas a la ubicación new ()) es un comportamiento indefinido porque el valor del puntero no se obtuvo mediante una función de asignación. La desasignación de un puntero que ya se ha pasado a una función de desasignación es un comportamiento indefinido porque el valor del puntero ya no apunta a la memoria que se ha asignado dinámicamente.
+			\paragraph{}Desasignar un puntero que no ha sido asignado con new () es un comportamiento indefinido porque el valor del puntero no se obtuvo mediante una función de asignación.
 			
-			\paragraph{}Cuando new se llama a un operador como el resultado es una llamada a un operador sobre cargable con el mismo nombre, como operator new (). Estas funciones sobrecargables se pueden llamar directamente, pero tienen las mismas restricciones que sus contrapartes de operador. Es decir, llamar operator delete () y pasar un parámetro de puntero tiene las mismas restricciones que llamar al delete operador en ese puntero. Además, las sobrecargas están sujetas a la resolución del alcance, por lo que es posible (pero no permitido) llamar a un operador específico de clase para asignar un objeto, pero a un operador global para desasignar el objeto.
+			\paragraph{}Al mismo tiempo, desasignar un puntero que ya se ha pasado a una función de desasignación es un comportamiento indefinido porque el valor del puntero ya no apunta a la memoria que se ha asignado dinámicamente. Puede estar apuntando a cualquier parte.
+			
+			\paragraph{}Cuando new () es invocado, el resultado es una llamada a un operador sobrecargable con el mismo nombre.  Esta función se puede llamar directamente, pero tiene las mismas restricciones que su contraria dijéramos.
+			
+			\paragraph{}Es decir, delete () y pasarle un parámetro de puntero tiene las mismas restricciones que llamar al operador delete () en ese puntero. Además, las sobrecargas están sujetas a la resolución del alcance, por lo que es posible (pero no permitido) llamar a un operador específico de clase para asignar un objeto, pero a un operador global para desasignar el objeto. En resumen, y como siempre se nos ha enseñado, tras un new () debe de haber un delete (), con lo cual, aparte de evitar comportamientos inesperados, haremos una buena gestión de la memoria, recurso finito que hay que tratar con eficiencia.
 		
 		\subsubsection{Aplicación del estándar al proyecto}
 		
@@ -155,7 +159,13 @@
 		
 		\subsubsection{Explicación sobre su utilidad}
 		
-			\paragraph{}El operador de asignación de memoria predeterminado ::operator new (std::size\_t), lanza una excepción std::bad\_alloc si falla la asignación. Por lo tanto, no es necesario verificar si la llamada ::operator new(std::size\_t) da como resultado nullptr . La forma de ::operator new(std::size\_t, const std::nothrow\_t $\&$)no lanzar, no lanza una excepción si la asignación falla, sino que regresa nullptr. Los mismos comportamientos se aplican a las operator new [] versiones de ambas funciones de asignación. Además, el objeto de asignación predeterminado ( std::allocator) se usa  ::operator new(std::size\_t)para realizar asignaciones y debe tratarse de manera similar.
+			\paragraph{}Como sabemos de cursos anteriores, el operador de asignación de memoria dinámica new (), produce una excepción si se produce un error en la asignación. Muchas veces nos hemos preguntado si el resultado de la llamada era nullptr o puntero nulo haciendo comprobaciones.
+			
+			\paragraph{}Pues bien, no es necesario hacer dichas comprobaciones debido a la excepción que se produce.
+			
+			\paragraph{}Además, también nos evita que el valor devuelto no lo sea antes de tener acceso al puntero o de tener a este apuntando a lo que conocemos como “basura”.
+			
+			\paragraph{}Esta excepción es la (std::bad\_alloc), que detecta si no se puede asignar suficiente memoria.
 		
 		\subsubsection{Aplicación del estándar al proyecto}
 
@@ -185,7 +195,16 @@
 		
 		\subsubsection{Explicación sobre su utilidad}
 		
-			\paragraph{}Cuando se abre un archivo, tanto la entrada como la salida pueden realizarse en el flujo asociado. Sin embargo, la salida no será seguido directamente por la entrada sin una llamada de intervenir para la  fflush función o a una función de archivo de posicionamiento ( fseek,  fsetpos o rewind), y la entrada no será seguida directamente por la salida sin una llamada de intervención para una función de fichero de posicionamiento, a menos que la operación de entrada encuentra el final del archivo.
+			\paragraph{}Cuando se abre un archivo, entre la secuencia de entrada al mismo y la de cierre, ha de situarse una función o llamada para un posicionamiento correcto dentro del mismo.
+			
+			\paragraph{}Si no nos situamos correctamente dentro de el podemos dar lugar a algunos comportamientos no deseados como:
+			
+			\begin{itemize}
+				\item El puntero de lectura/escritura puede escribir datos al final de un archivo y a continuación leer del mismo. Si no hay una llamada para un posicionamiento intermedio, el comportamiento es indefinido.
+				\item El puntero de lectura/escritura puede comenzar leer datos al comienzo de un archivo y a continuación escribir en el mismo.
+			\end{itemize}
+		
+			\paragraph{}De ahí que sea necesario una función intermedia, que posicione correctamente el puntero de lectura/escritura, situada entre la entrada al fichero y el cierre del mismo para evitar comportamientos indeseados. En este caso ha sido la función std::basic\_istream$<$T$>$::seekg().
 		
 		\subsubsection{Aplicación del estándar al proyecto}
 		
