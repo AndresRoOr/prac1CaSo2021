@@ -1,7 +1,7 @@
 var classPedidoUsuario =
 [
     [ "PedidoUsuario", "classPedidoUsuario.html#ae34129c83eb4a2f11d839f7a0899a5ea", null ],
-    [ "PedidoUsuario", "classPedidoUsuario.html#a32719b7bdb7136de89cc75a950aa17a3", null ],
+    [ "PedidoUsuario", "classPedidoUsuario.html#a09913ff8abb593657f7ca77035fbd20f", null ],
     [ "~PedidoUsuario", "classPedidoUsuario.html#a63e40cdf466cffc6d50e16b6c521eb8b", null ],
     [ "daLibro", "classPedidoUsuario.html#a181a2f2228009deef91568aae5905f62", null ],
     [ "daPrecio", "classPedidoUsuario.html#a5054a655ba225d139101df6fdd2e047f", null ],

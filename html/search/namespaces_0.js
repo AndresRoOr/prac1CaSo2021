@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['excepcionesbi_179',['excepcionesBi',['../namespaceexcepcionesBi.html',1,'']]]
+  ['excepcionesbi_180',['excepcionesBi',['../namespaceexcepcionesBi.html',1,'']]]
 ];

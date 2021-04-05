@@ -1,0 +1,10 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" title=" " alt="" coords="5,165,92,192"/>
+<area shape="rect" id="node2" href="$classErrorElemento.html" title="Clase que representa error de tipo de elemento referenciado." alt="" coords="205,5,319,32"/>
+<area shape="rect" id="node3" href="$classexcepcionesBi_1_1errorApertura.html" title="Excepción personalizada para indicar que ha habido un error en la apertura de un archivo." alt="" coords="157,56,367,83"/>
+<area shape="rect" id="node4" href="$classexcepcionesBi_1_1libroNoencontrado.html" title="Excepción personalizada para indicar que no se ha encontrado un libro." alt="" coords="140,107,384,133"/>
+<area shape="rect" id="node5" href="$classexcepcionesBi_1_1pedidoBibliotecaNoencontrado.html" title="Excepción personalizada para indicar que no se ha encontrado un pedido hecho por la biblioteca." alt="" coords="145,158,379,199"/>
+<area shape="rect" id="node6" href="$classexcepcionesBi_1_1pedidoUsuarioNoencontrado.html" title="Excepción personalizada para indicar que no se ha encontrado un pedido de un usuario." alt="" coords="153,223,371,265"/>
+<area shape="rect" id="node7" href="$classexcepcionesBi_1_1usuNoEncontrado.html" title="Excepción personalizada para indicar que no se ha encontrado un usuario." alt="" coords="143,289,381,316"/>
+<area shape="rect" id="node8" href="$classFecha_1_1ErrorFechaIncorrecta.html" title="Excepción que representa fechas incorrectas." alt="" coords="161,340,363,367"/>
+</map>
