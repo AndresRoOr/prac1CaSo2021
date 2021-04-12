@@ -1,0 +1,4 @@
+<map id="excepcionesBi::libroNoencontrado" name="excepcionesBi::libroNoencontrado">
+<area shape="rect" id="node1" title="Excepción personalizada para indicar que no se ha encontrado un libro." alt="" coords="5,80,249,107"/>
+<area shape="rect" id="node2" title=" " alt="" coords="84,5,171,32"/>
+</map>

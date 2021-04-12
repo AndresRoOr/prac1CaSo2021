@@ -1,7 +1,8 @@
 <map id="Fecha.cpp" name="Fecha.cpp">
-<area shape="rect" id="node1" title="Contiene el código fuente de todas las funciones del archivo cabecera Fecha.h." alt="" coords="87,5,174,32"/>
-<area shape="rect" id="node2" href="$Fecha_8h.html" title="Archivo cabecera donde se almacena toda la información relacionada con la clase Fecha." alt="" coords="5,80,77,107"/>
-<area shape="rect" id="node4" title=" " alt="" coords="101,80,160,107"/>
-<area shape="rect" id="node5" title=" " alt="" coords="184,80,245,107"/>
-<area shape="rect" id="node3" title=" " alt="" coords="12,155,71,181"/>
+<area shape="rect" id="node1" title="Contiene el código fuente de todas las funciones del archivo cabecera Fecha.h." alt="" coords="129,5,215,32"/>
+<area shape="rect" id="node2" href="$Fecha_8h.html" title="Archivo cabecera donde se almacena toda la información relacionada con la clase Fecha." alt="" coords="47,80,119,107"/>
+<area shape="rect" id="node5" title=" " alt="" coords="143,80,201,107"/>
+<area shape="rect" id="node6" title=" " alt="" coords="225,80,287,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,155,64,181"/>
+<area shape="rect" id="node4" title=" " alt="" coords="89,155,175,181"/>
 </map>

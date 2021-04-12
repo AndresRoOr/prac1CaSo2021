@@ -6,11 +6,11 @@ var files_dup =
     ] ],
     [ "Biblioteca.cpp", "Biblioteca_8cpp.html", null ],
     [ "Biblioteca.h", "Biblioteca_8h.html", [
-      [ "usuNoEncontrado", "classexcepcionesBi_1_1usuNoEncontrado.html", null ],
-      [ "errorApertura", "classexcepcionesBi_1_1errorApertura.html", null ],
-      [ "libroNoencontrado", "classexcepcionesBi_1_1libroNoencontrado.html", null ],
-      [ "pedidoUsuarioNoencontrado", "classexcepcionesBi_1_1pedidoUsuarioNoencontrado.html", null ],
-      [ "pedidoBibliotecaNoencontrado", "classexcepcionesBi_1_1pedidoBibliotecaNoencontrado.html", null ],
+      [ "usuNoEncontrado", "classexcepcionesBi_1_1usuNoEncontrado.html", "classexcepcionesBi_1_1usuNoEncontrado" ],
+      [ "errorApertura", "classexcepcionesBi_1_1errorApertura.html", "classexcepcionesBi_1_1errorApertura" ],
+      [ "libroNoencontrado", "classexcepcionesBi_1_1libroNoencontrado.html", "classexcepcionesBi_1_1libroNoencontrado" ],
+      [ "pedidoUsuarioNoencontrado", "classexcepcionesBi_1_1pedidoUsuarioNoencontrado.html", "classexcepcionesBi_1_1pedidoUsuarioNoencontrado" ],
+      [ "pedidoBibliotecaNoencontrado", "classexcepcionesBi_1_1pedidoBibliotecaNoencontrado.html", "classexcepcionesBi_1_1pedidoBibliotecaNoencontrado" ],
       [ "Biblioteca", "classBiblioteca.html", "classBiblioteca" ]
     ] ],
     [ "Fecha.cpp", "Fecha_8cpp.html", "Fecha_8cpp" ],
@@ -22,7 +22,7 @@ var files_dup =
     [ "lista_sin.h", "lista__sin_8h.html", [
       [ "nodo", "structnodo.html", "structnodo" ],
       [ "lista_sin", "classlista__sin.html", "classlista__sin" ],
-      [ "ErrorElemento", "classErrorElemento.html", null ]
+      [ "ErrorElemento", "classErrorElemento.html", "classErrorElemento" ]
     ] ],
     [ "main.cpp", "main_8cpp.html", "main_8cpp" ],
     [ "PedidoBiblioteca.cpp", "PedidoBiblioteca_8cpp.html", "PedidoBiblioteca_8cpp" ],

@@ -3,7 +3,7 @@ var annotated_dup =
     [ "excepcionesBi", "namespaceexcepcionesBi.html", "namespaceexcepcionesBi" ],
     [ "Aplication", "classAplication.html", "classAplication" ],
     [ "Biblioteca", "classBiblioteca.html", "classBiblioteca" ],
-    [ "ErrorElemento", "classErrorElemento.html", null ],
+    [ "ErrorElemento", "classErrorElemento.html", "classErrorElemento" ],
     [ "Fecha", "classFecha.html", "classFecha" ],
     [ "Libro", "classLibro.html", "classLibro" ],
     [ "lista_sin", "classlista__sin.html", "classlista__sin" ],
