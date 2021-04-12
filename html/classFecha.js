@@ -1,6 +1,6 @@
 var classFecha =
 [
-    [ "ErrorFechaIncorrecta", "classFecha_1_1ErrorFechaIncorrecta.html", null ],
+    [ "ErrorFechaIncorrecta", "classFecha_1_1ErrorFechaIncorrecta.html", "classFecha_1_1ErrorFechaIncorrecta" ],
     [ "Fecha", "classFecha.html#a5fbc6564d9c48e73cf8d27568a2a7fc5", null ],
     [ "Fecha", "classFecha.html#a2548cec49fb9b07debabd9ee0565514f", null ],
     [ "Fecha", "classFecha.html#a7201e00ac3fa1e07dfa124f3bd999dec", null ],

@@ -1,8 +1,8 @@
 var namespaceexcepcionesBi =
 [
-    [ "errorApertura", "classexcepcionesBi_1_1errorApertura.html", null ],
-    [ "libroNoencontrado", "classexcepcionesBi_1_1libroNoencontrado.html", null ],
-    [ "pedidoBibliotecaNoencontrado", "classexcepcionesBi_1_1pedidoBibliotecaNoencontrado.html", null ],
-    [ "pedidoUsuarioNoencontrado", "classexcepcionesBi_1_1pedidoUsuarioNoencontrado.html", null ],
-    [ "usuNoEncontrado", "classexcepcionesBi_1_1usuNoEncontrado.html", null ]
+    [ "errorApertura", "classexcepcionesBi_1_1errorApertura.html", "classexcepcionesBi_1_1errorApertura" ],
+    [ "libroNoencontrado", "classexcepcionesBi_1_1libroNoencontrado.html", "classexcepcionesBi_1_1libroNoencontrado" ],
+    [ "pedidoBibliotecaNoencontrado", "classexcepcionesBi_1_1pedidoBibliotecaNoencontrado.html", "classexcepcionesBi_1_1pedidoBibliotecaNoencontrado" ],
+    [ "pedidoUsuarioNoencontrado", "classexcepcionesBi_1_1pedidoUsuarioNoencontrado.html", "classexcepcionesBi_1_1pedidoUsuarioNoencontrado" ],
+    [ "usuNoEncontrado", "classexcepcionesBi_1_1usuNoEncontrado.html", "classexcepcionesBi_1_1usuNoEncontrado" ]
 ];

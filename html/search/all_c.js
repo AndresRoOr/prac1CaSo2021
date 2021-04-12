@@ -8,7 +8,7 @@ var searchData=
   ['pedidobiblioteca_2ecpp_113',['PedidoBiblioteca.cpp',['../PedidoBiblioteca_8cpp.html',1,'']]],
   ['pedidobiblioteca_2eh_114',['PedidoBiblioteca.h',['../PedidoBiblioteca_8h.html',1,'']]],
   ['pedidobibliotecanoencontrado_115',['pedidoBibliotecaNoencontrado',['../classexcepcionesBi_1_1pedidoBibliotecaNoencontrado.html',1,'excepcionesBi']]],
-  ['pedidousuario_116',['PedidoUsuario',['../classPedidoUsuario.html',1,'PedidoUsuario'],['../classPedidoUsuario.html#ae34129c83eb4a2f11d839f7a0899a5ea',1,'PedidoUsuario::PedidoUsuario()'],['../classPedidoUsuario.html#a32719b7bdb7136de89cc75a950aa17a3',1,'PedidoUsuario::PedidoUsuario(Libro *libro, Usuario *usuario, Fecha aFecha, int aPrioridad, float aPrecio, bool aTramitado)']]],
+  ['pedidousuario_116',['PedidoUsuario',['../classPedidoUsuario.html',1,'PedidoUsuario'],['../classPedidoUsuario.html#ae34129c83eb4a2f11d839f7a0899a5ea',1,'PedidoUsuario::PedidoUsuario()'],['../classPedidoUsuario.html#a09913ff8abb593657f7ca77035fbd20f',1,'PedidoUsuario::PedidoUsuario(Fecha aFecha, int aPrioridad, float aPrecio, bool aTramitado, Usuario *usuario, Libro *libro)']]],
   ['pedidousuario_2ecpp_117',['PedidoUsuario.cpp',['../PedidoUsuario_8cpp.html',1,'']]],
   ['pedidousuario_2eh_118',['PedidoUsuario.h',['../PedidoUsuario_8h.html',1,'']]],
   ['pedidousuarionoencontrado_119',['pedidoUsuarioNoencontrado',['../classexcepcionesBi_1_1pedidoUsuarioNoencontrado.html',1,'excepcionesBi']]],

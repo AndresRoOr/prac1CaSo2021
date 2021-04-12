@@ -1,4 +1,5 @@
 <map id="Fecha.h" name="Fecha.h">
-<area shape="rect" id="node1" title="Archivo cabecera donde se almacena toda la información relacionada con la clase Fecha." alt="" coords="5,5,77,32"/>
-<area shape="rect" id="node2" title=" " alt="" coords="12,80,71,107"/>
+<area shape="rect" id="node1" title="Archivo cabecera donde se almacena toda la información relacionada con la clase Fecha." alt="" coords="47,5,119,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,80,64,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="89,80,175,107"/>
 </map>

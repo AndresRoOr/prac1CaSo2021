@@ -15,8 +15,8 @@ Libro::Libro() {
 	autores = "";
 	editorial = "";
 	ISBN = "";
-	precioActual = 0;
 	anio = 0;
+	precioActual = 0;
 }
 
 /**

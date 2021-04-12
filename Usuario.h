@@ -17,6 +17,7 @@ class Usuario {
 	string nombre;   ///< Nombre del usuario.
 	string clave;    ///< Clave que lo autenticará ante el sistema.
 	string login;    ///< Login del usuario.
+
 public:
 
 	Usuario();
