@@ -69,5 +69,39 @@
 				\caption{Captura de pantalla de la función elimina\_dato}
 				\label{captura47}
 			\end{figure}
+		
+	\subsection{Error nº3: Mismatching allocation and deallocation}
+
+		\subsubsection{Origen/explicación del error detectado}
+		
+		\paragraph{}A continuación presentamos una captura de pantalla de la función \textit{limpia} de la clase plantilla \textit{lista\_sin}.
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.7]{img/captura48.png}
+			\caption{Captura de pantalla de la función limpia}
+			\label{captura48}
+		\end{figure}
+	
+		\paragraph{}En esta función, en la línea 253, cppcheck nos indica que hay un error. Dicho error es originado dado que hacemos un $"delete[]"$, es decir, una liberación de memoria para un vector/array de punteros. En el caso de la variable \textit{nuevo}, podemos comprobar que se trata de un atributo de la clase \textit{lista\_sin} y que se trata de un puntero a una estructura llamada \textit{nodo}. Justo esto anterior es lo que genera el error, es decir, estamos intentando liberar la memoria asignada de un vector/array cuando la variable \textbf{no es ninguno de estos}.
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.38]{img/captura49.png}
+			\caption{Detalle del mensaje de error de cppcheck}
+			\label{captura49}
+		\end{figure}
+
+		\subsubsection{Corrección realizada para solventar el error}
+		
+		\paragraph{}Para corregir este error lo único que deberemos realizar es sustituir la sentencia $"delete[]$ $nuevo"$ por la sentencia $"delete$ $nuevo"$. Una vez realizado esto el error habrá desaparecido, como se puede comprobar en la siguiente captura de pantalla:
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.7]{img/captura50.png}
+			\caption{Captura de pantalla de la función limpia tras la resolución del error}
+			\label{captura50}
+		\end{figure}
+
 
 \newpage

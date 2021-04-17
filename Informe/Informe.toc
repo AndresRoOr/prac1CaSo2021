@@ -153,3 +153,9 @@
 \contentsline {paragraph}{}{33}{section*.162}%
 \contentsline {subsubsection}{\numberline {4.2.2}Corrección realizada para solventar el error}{33}{subsubsection.4.2.2}%
 \contentsline {paragraph}{}{33}{section*.164}%
+\contentsline {subsection}{\numberline {4.3}Error nº3: Mismatching allocation and deallocation}{34}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}Origen/explicación del error detectado}{34}{subsubsection.4.3.1}%
+\contentsline {paragraph}{}{34}{section*.166}%
+\contentsline {paragraph}{}{34}{section*.168}%
+\contentsline {subsubsection}{\numberline {4.3.2}Corrección realizada para solventar el error}{35}{subsubsection.4.3.2}%
+\contentsline {paragraph}{}{35}{section*.170}%
