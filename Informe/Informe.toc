@@ -147,3 +147,9 @@
 \contentsline {subsubsection}{\numberline {4.1.2}Corrección realizada para solventar el error}{31}{subsubsection.4.1.2}%
 \contentsline {paragraph}{}{31}{section*.157}%
 \contentsline {paragraph}{nota:}{32}{section*.159}%
+\contentsline {subsection}{\numberline {4.2}Error nº2: Memory leak}{32}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}Origen/explicación del error detectado}{32}{subsubsection.4.2.1}%
+\contentsline {paragraph}{}{32}{section*.160}%
+\contentsline {paragraph}{}{33}{section*.162}%
+\contentsline {subsubsection}{\numberline {4.2.2}Corrección realizada para solventar el error}{33}{subsubsection.4.2.2}%
+\contentsline {paragraph}{}{33}{section*.164}%
