@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.10.15)  5 APR 2021 10:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.10.15)  17 APR 2021 18:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -349,12 +349,12 @@ Package caption Info: End \AtBeginDocument code.
 LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
  (./Portada.tex
-<img/np_UJA_generica_6.png, id=176, 883.3pt x 451.6875pt>
+<img/np_UJA_generica_6.png, id=192, 883.3pt x 451.6875pt>
 File: img/np_UJA_generica_6.png Graphic file (type png)
 <use img/np_UJA_generica_6.png>
 Package pdftex.def Info: img/np_UJA_generica_6.png  used on input line 3.
 (pdftex.def)             Requested size: 176.65686pt x 90.33589pt.
-<img/Logo_EPS.png, id=178, 339.2675pt x 251.94125pt>
+<img/Logo_EPS.png, id=194, 339.2675pt x 251.94125pt>
 File: img/Logo_EPS.png Graphic file (type png)
 <use img/Logo_EPS.png>
 Package pdftex.def Info: img/Logo_EPS.png  used on input line 4.
@@ -433,7 +433,7 @@ File: img/Logo_EPS.png Graphic file (type png)
 Package pdftex.def Info: img/Logo_EPS.png  used on input line 16.
 (pdftex.def)             Requested size: 81.42586pt x 60.46713pt.
 [4]
-<img/captura40.png, id=318, 674.52pt x 94.10156pt>
+<img/captura40.png, id=343, 674.52pt x 94.10156pt>
 File: img/captura40.png Graphic file (type png)
 <use img/captura40.png>
 Package pdftex.def Info: img/captura40.png  used on input line 36.
@@ -447,7 +447,7 @@ File: img/Logo_EPS.png Graphic file (type png)
 Package pdftex.def Info: img/Logo_EPS.png  used on input line 39.
 (pdftex.def)             Requested size: 81.42586pt x 60.46713pt.
  [5]
-<img/captura41.png, id=325, 671.50874pt x 168.63pt>
+<img/captura41.png, id=350, 671.50874pt x 168.63pt>
 File: img/captura41.png Graphic file (type png)
 <use img/captura41.png>
 Package pdftex.def Info: img/captura41.png  used on input line 45.
@@ -467,12 +467,12 @@ File: img/Logo_EPS.png Graphic file (type png)
 Package pdftex.def Info: img/Logo_EPS.png  used on input line 63.
 (pdftex.def)             Requested size: 81.42586pt x 60.46713pt.
 [6 <./img/captura40.png (PNG copy)> <./img/captura41.png (PNG copy)>]
-<img/captura38.png, id=341, 742.27313pt x 398.23781pt>
+<img/captura38.png, id=366, 742.27313pt x 398.23781pt>
 File: img/captura38.png Graphic file (type png)
 <use img/captura38.png>
 Package pdftex.def Info: img/captura38.png  used on input line 74.
 (pdftex.def)             Requested size: 334.01982pt x 179.20535pt.
-<img/captura39.png, id=342, 520.19344pt x 152.06813pt>
+<img/captura39.png, id=367, 520.19344pt x 152.06813pt>
 File: img/captura39.png Graphic file (type png)
 <use img/captura39.png>
 Package pdftex.def Info: img/captura39.png  used on input line 81.
@@ -492,12 +492,12 @@ File: img/Logo_EPS.png Graphic file (type png)
 Package pdftex.def Info: img/Logo_EPS.png  used on input line 92.
 (pdftex.def)             Requested size: 81.42586pt x 60.46713pt.
 [7 <./img/captura38.png (PNG copy)> <./img/captura39.png (PNG copy)>]
-<img/img1.png, id=355, 426.393pt x 133.6995pt>
+<img/img1.png, id=380, 426.393pt x 133.6995pt>
 File: img/img1.png Graphic file (type png)
 <use img/img1.png>
 Package pdftex.def Info: img/img1.png  used on input line 102.
 (pdftex.def)             Requested size: 341.11485pt x 106.95973pt.
-<img/img2.png, id=356, 426.0645pt x 28.908pt>
+<img/img2.png, id=381, 426.0645pt x 28.908pt>
 File: img/img2.png Graphic file (type png)
 <use img/img2.png>
 Package pdftex.def Info: img/img2.png  used on input line 111.
@@ -516,7 +516,7 @@ Overfull \hbox (1.49709pt too wide) in paragraph at lines 122--123
 play / cplusplus / MEM51-[]CPP .
  []
 
-<img/img3.png, id=368, 426.393pt x 116.289pt>
+<img/img3.png, id=393, 426.393pt x 116.289pt>
 File: img/img3.png Graphic file (type png)
 <use img/img3.png>
 Package pdftex.def Info: img/img3.png  used on input line 140.
@@ -530,7 +530,7 @@ File: img/Logo_EPS.png Graphic file (type png)
 Package pdftex.def Info: img/Logo_EPS.png  used on input line 144.
 (pdftex.def)             Requested size: 81.42586pt x 60.46713pt.
 [9 <./img/img2.png>]
-<img/img4.png, id=382, 427.05pt x 72.5985pt>
+<img/img4.png, id=407, 427.05pt x 72.5985pt>
 File: img/img4.png Graphic file (type png)
 <use img/img4.png>
 Package pdftex.def Info: img/img4.png  used on input line 149.
@@ -550,12 +550,12 @@ File: img/Logo_EPS.png Graphic file (type png)
 Package pdftex.def Info: img/Logo_EPS.png  used on input line 173.
 (pdftex.def)             Requested size: 81.42586pt x 60.46713pt.
 [10 <./img/img3.png> <./img/img4.png>]
-<img/img5.png, id=397, 426.393pt x 69.9705pt>
+<img/img5.png, id=423, 426.393pt x 69.9705pt>
 File: img/img5.png Graphic file (type png)
 <use img/img5.png>
 Package pdftex.def Info: img/img5.png  used on input line 176.
 (pdftex.def)             Requested size: 341.11485pt x 55.97646pt.
-<img/img6.png, id=398, 426.7215pt x 109.062pt>
+<img/img6.png, id=424, 426.7215pt x 109.062pt>
 File: img/img6.png Graphic file (type png)
 <use img/img6.png>
 Package pdftex.def Info: img/img6.png  used on input line 185.
@@ -581,7 +581,7 @@ File: img/Logo_EPS.png Graphic file (type png)
 Package pdftex.def Info: img/Logo_EPS.png  used on input line 205.
 (pdftex.def)             Requested size: 81.42586pt x 60.46713pt.
 [11 <./img/img5.png> <./img/img6.png>]
-<img/img7.png, id=414, 425.736pt x 256.23pt>
+<img/img7.png, id=439, 425.736pt x 256.23pt>
 File: img/img7.png Graphic file (type png)
 <use img/img7.png>
 Package pdftex.def Info: img/img7.png  used on input line 213.
@@ -601,7 +601,7 @@ File: img/Logo_EPS.png Graphic file (type png)
 Package pdftex.def Info: img/Logo_EPS.png  used on input line 229.
 (pdftex.def)             Requested size: 81.42586pt x 60.46713pt.
 [12 <./img/img7.png>]
-<img/captura1.png, id=428, 621.82312pt x 411.03563pt>
+<img/captura1.png, id=453, 621.82312pt x 411.03563pt>
 File: img/captura1.png Graphic file (type png)
 <use img/captura1.png>
 Package pdftex.def Info: img/captura1.png  used on input line 238.
@@ -621,17 +621,17 @@ File: img/Logo_EPS.png Graphic file (type png)
 Package pdftex.def Info: img/Logo_EPS.png  used on input line 251.
 (pdftex.def)             Requested size: 81.42586pt x 60.46713pt.
 [13 <./img/captura1.png (PNG copy)>]
-<img/img8.png, id=438, 427.05pt x 50.589pt>
+<img/img8.png, id=463, 427.05pt x 50.589pt>
 File: img/img8.png Graphic file (type png)
 <use img/img8.png>
 Package pdftex.def Info: img/img8.png  used on input line 263.
 (pdftex.def)             Requested size: 341.64046pt x 40.47124pt.
-<img/img9.png, id=439, 426.0645pt x 63.072pt>
+<img/img9.png, id=464, 426.0645pt x 63.072pt>
 File: img/img9.png Graphic file (type png)
 <use img/img9.png>
 Package pdftex.def Info: img/img9.png  used on input line 270.
 (pdftex.def)             Requested size: 340.85207pt x 50.45766pt.
-<img/img10.png, id=440, 426.393pt x 224.694pt>
+<img/img10.png, id=465, 426.393pt x 224.694pt>
 File: img/img10.png Graphic file (type png)
 <use img/img10.png>
 Package pdftex.def Info: img/img10.png  used on input line 279.
@@ -645,12 +645,12 @@ File: img/Logo_EPS.png Graphic file (type png)
 Package pdftex.def Info: img/Logo_EPS.png  used on input line 283.
 (pdftex.def)             Requested size: 81.42586pt x 60.46713pt.
  [14 <./img/img8.png> <./img/img9.png>]
-<img/img11.png, id=453, 426.393pt x 268.056pt>
+<img/img11.png, id=478, 426.393pt x 268.056pt>
 File: img/img11.png Graphic file (type png)
 <use img/img11.png>
 Package pdftex.def Info: img/img11.png  used on input line 288.
 (pdftex.def)             Requested size: 341.11485pt x 214.44508pt.
-<img/img12.png, id=454, 426.393pt x 103.149pt>
+<img/img12.png, id=479, 426.393pt x 103.149pt>
 File: img/img12.png Graphic file (type png)
 <use img/img12.png>
 Package pdftex.def Info: img/img12.png  used on input line 297.
@@ -665,7 +665,7 @@ Package pdftex.def Info: img/Logo_EPS.png  used on input line 301.
 (pdftex.def)             Requested size: 81.42586pt x 60.46713pt.
 
 [15 <./img/img10.png> <./img/img11.png>]
-<img/img13.png, id=463, 426.0645pt x 102.492pt>
+<img/img13.png, id=488, 426.0645pt x 102.492pt>
 File: img/img13.png Graphic file (type png)
 <use img/img13.png>
 Package pdftex.def Info: img/img13.png  used on input line 306.
@@ -685,7 +685,7 @@ File: img/Logo_EPS.png Graphic file (type png)
 Package pdftex.def Info: img/Logo_EPS.png  used on input line 326.
 (pdftex.def)             Requested size: 81.42586pt x 60.46713pt.
 [16 <./img/img12.png> <./img/img13.png>]
-<img/captura2.png, id=477, 666.99188pt x 172.39406pt>
+<img/captura2.png, id=502, 666.99188pt x 172.39406pt>
 File: img/captura2.png Graphic file (type png)
 <use img/captura2.png>
 Package pdftex.def Info: img/captura2.png  used on input line 346.
@@ -695,7 +695,7 @@ Overfull \hbox (21.84666pt too wide) in paragraph at lines 346--347
  [][] 
  []
 
-<img/captura3.png, id=478, 313.17pt x 182.18062pt>
+<img/captura3.png, id=503, 313.17pt x 182.18062pt>
 File: img/captura3.png Graphic file (type png)
 <use img/captura3.png>
 Package pdftex.def Info: img/captura3.png  used on input line 355.
@@ -709,17 +709,17 @@ File: img/Logo_EPS.png Graphic file (type png)
 Package pdftex.def Info: img/Logo_EPS.png  used on input line 359.
 (pdftex.def)             Requested size: 81.42586pt x 60.46713pt.
 [17 <./img/captura2.png (PNG copy)>]
-<img/captura4.png, id=488, 309.40594pt x 204.01219pt>
+<img/captura4.png, id=513, 309.40594pt x 204.01219pt>
 File: img/captura4.png Graphic file (type png)
 <use img/captura4.png>
 Package pdftex.def Info: img/captura4.png  used on input line 364.
 (pdftex.def)             Requested size: 216.58267pt x 142.80756pt.
-<img/captura5.png, id=489, 740.7675pt x 142.28156pt>
+<img/captura5.png, id=514, 740.7675pt x 142.28156pt>
 File: img/captura5.png Graphic file (type png)
 <use img/captura5.png>
 Package pdftex.def Info: img/captura5.png  used on input line 373.
 (pdftex.def)             Requested size: 333.34229pt x 64.0261pt.
-<img/captura6.png, id=490, 401.24907pt x 109.91063pt>
+<img/captura6.png, id=515, 401.24907pt x 109.91063pt>
 File: img/captura6.png Graphic file (type png)
 <use img/captura6.png>
 Package pdftex.def Info: img/captura6.png  used on input line 382.
@@ -734,17 +734,17 @@ Package pdftex.def Info: img/Logo_EPS.png  used on input line 386.
 (pdftex.def)             Requested size: 81.42586pt x 60.46713pt.
  [18 <./img/captura3.png (PNG copy)> <./img/captura4.png (PNG copy)> <./img/cap
 tura5.png (PNG copy)>]
-<img/captura7.png, id=502, 452.4403pt x 154.32657pt>
+<img/captura7.png, id=528, 452.4403pt x 154.32657pt>
 File: img/captura7.png Graphic file (type png)
 <use img/captura7.png>
 Package pdftex.def Info: img/captura7.png  used on input line 391.
 (pdftex.def)             Requested size: 316.70605pt x 108.02785pt.
-<img/captura8.png, id=503, 553.31718pt x 154.32657pt>
+<img/captura8.png, id=529, 553.31718pt x 154.32657pt>
 File: img/captura8.png Graphic file (type png)
 <use img/captura8.png>
 Package pdftex.def Info: img/captura8.png  used on input line 400.
 (pdftex.def)             Requested size: 331.99286pt x 92.59663pt.
-<img/captura9.png, id=504, 551.81157pt x 219.06844pt>
+<img/captura9.png, id=530, 551.81157pt x 219.06844pt>
 File: img/captura9.png Graphic file (type png)
 <use img/captura9.png>
 Package pdftex.def Info: img/captura9.png  used on input line 409.
@@ -759,7 +759,7 @@ Package pdftex.def Info: img/Logo_EPS.png  used on input line 413.
 (pdftex.def)             Requested size: 81.42586pt x 60.46713pt.
  [19 <./img/captura6.png (PNG copy)> <./img/captura7.png (PNG copy)> <./img/cap
 tura8.png (PNG copy)>]
-<img/captura10.png, id=515, 698.61pt x 196.48407pt>
+<img/captura10.png, id=541, 698.61pt x 196.48407pt>
 File: img/captura10.png Graphic file (type png)
 <use img/captura10.png>
 Package pdftex.def Info: img/captura10.png  used on input line 418.
@@ -769,12 +769,12 @@ Overfull \hbox (4.30414pt too wide) in paragraph at lines 418--419
  [][] 
  []
 
-<img/captura11.png, id=516, 486.31688pt x 105.39375pt>
+<img/captura11.png, id=542, 486.31688pt x 105.39375pt>
 File: img/captura11.png Graphic file (type png)
 <use img/captura11.png>
 Package pdftex.def Info: img/captura11.png  used on input line 425.
 (pdftex.def)             Requested size: 340.4195pt x 73.7751pt.
-<img/captura12.png, id=517, 643.6547pt x 141.52875pt>
+<img/captura12.png, id=543, 643.6547pt x 141.52875pt>
 File: img/captura12.png Graphic file (type png)
 <use img/captura12.png>
 Package pdftex.def Info: img/captura12.png  used on input line 434.
@@ -794,7 +794,7 @@ Package pdftex.def Info: img/Logo_EPS.png  used on input line 438.
 (pdftex.def)             Requested size: 81.42586pt x 60.46713pt.
 [20 <./img/captura9.png (PNG copy)> <./img/captura10.png (PNG copy)> <./img/cap
 tura11.png (PNG copy)>]
-<img/captura13.png, id=528, 706.13812pt x 164.86594pt>
+<img/captura13.png, id=553, 706.13812pt x 164.86594pt>
 File: img/captura13.png Graphic file (type png)
 <use img/captura13.png>
 Package pdftex.def Info: img/captura13.png  used on input line 443.
@@ -804,7 +804,7 @@ Overfull \hbox (8.06819pt too wide) in paragraph at lines 443--444
  [][] 
  []
 
-<img/captura14.png, id=529, 703.87968pt x 176.15813pt>
+<img/captura14.png, id=554, 703.87968pt x 176.15813pt>
 File: img/captura14.png Graphic file (type png)
 <use img/captura14.png>
 Package pdftex.def Info: img/captura14.png  used on input line 452.
@@ -814,7 +814,7 @@ Overfull \hbox (6.93898pt too wide) in paragraph at lines 452--453
  [][] 
  []
 
-<img/captura15.png, id=530, 700.86844pt x 231.11343pt>
+<img/captura15.png, id=555, 700.86844pt x 231.11343pt>
 File: img/captura15.png Graphic file (type png)
 <use img/captura15.png>
 Package pdftex.def Info: img/captura15.png  used on input line 461.
@@ -834,17 +834,17 @@ Package pdftex.def Info: img/Logo_EPS.png  used on input line 465.
 (pdftex.def)             Requested size: 81.42586pt x 60.46713pt.
 [21 <./img/captura12.png (PNG copy)> <./img/captura13.png (PNG copy)> <./img/ca
 ptura14.png (PNG copy)>]
-<img/captura16.png, id=541, 621.07031pt x 178.41656pt>
+<img/captura16.png, id=566, 621.07031pt x 178.41656pt>
 File: img/captura16.png Graphic file (type png)
 <use img/captura16.png>
 Package pdftex.def Info: img/captura16.png  used on input line 468.
 (pdftex.def)             Requested size: 341.58972pt x 98.1294pt.
-<img/captura17.png, id=542, 437.38406pt x 141.52875pt>
+<img/captura17.png, id=567, 437.38406pt x 141.52875pt>
 File: img/captura17.png Graphic file (type png)
 <use img/captura17.png>
 Package pdftex.def Info: img/captura17.png  used on input line 477.
 (pdftex.def)             Requested size: 262.43245pt x 84.9179pt.
-<img/captura18.png, id=543, 198.7425pt x 115.93312pt>
+<img/captura18.png, id=568, 198.7425pt x 115.93312pt>
 File: img/captura18.png Graphic file (type png)
 <use img/captura18.png>
 Package pdftex.def Info: img/captura18.png  used on input line 486.
@@ -859,22 +859,22 @@ Package pdftex.def Info: img/Logo_EPS.png  used on input line 490.
 (pdftex.def)             Requested size: 81.42586pt x 60.46713pt.
  [22 <./img/captura15.png (PNG copy)> <./img/captura16.png (PNG copy)> <./img/c
 aptura17.png (PNG copy)>]
-<img/captura19.png, id=553, 340.27126pt x 153.57375pt>
+<img/captura19.png, id=578, 340.27126pt x 153.57375pt>
 File: img/captura19.png Graphic file (type png)
 <use img/captura19.png>
 Package pdftex.def Info: img/captura19.png  used on input line 493.
 (pdftex.def)             Requested size: 238.18825pt x 107.50089pt.
-<img/captura20.png, id=554, 688.82344pt x 142.28156pt>
+<img/captura20.png, id=579, 688.82344pt x 142.28156pt>
 File: img/captura20.png Graphic file (type png)
 <use img/captura20.png>
 Package pdftex.def Info: img/captura20.png  used on input line 502.
 (pdftex.def)             Requested size: 344.41087pt x 71.1406pt.
-<img/captura21.png, id=555, 405.76593pt x 143.78719pt>
+<img/captura21.png, id=580, 405.76593pt x 143.78719pt>
 File: img/captura21.png Graphic file (type png)
 <use img/captura21.png>
 Package pdftex.def Info: img/captura21.png  used on input line 511.
 (pdftex.def)             Requested size: 284.03421pt x 100.65034pt.
-<img/captura22.png, id=556, 447.17062pt x 158.09062pt>
+<img/captura22.png, id=581, 447.17062pt x 158.09062pt>
 File: img/captura22.png Graphic file (type png)
 <use img/captura22.png>
 Package pdftex.def Info: img/captura22.png  used on input line 518.
@@ -889,17 +889,17 @@ Package pdftex.def Info: img/Logo_EPS.png  used on input line 522.
 (pdftex.def)             Requested size: 81.42586pt x 60.46713pt.
  [23 <./img/captura18.png (PNG copy)> <./img/captura19.png (PNG copy)> <./img/c
 aptura20.png (PNG copy)> <./img/captura21.png (PNG copy)>]
-<img/captura25.png, id=567, 630.10406pt x 163.3603pt>
+<img/captura25.png, id=592, 630.10406pt x 163.3603pt>
 File: img/captura25.png Graphic file (type png)
 <use img/captura25.png>
 Package pdftex.def Info: img/captura25.png  used on input line 525.
 (pdftex.def)             Requested size: 315.05125pt x 81.67995pt.
-<img/captura23.png, id=568, 407.27156pt x 155.07938pt>
+<img/captura23.png, id=593, 407.27156pt x 155.07938pt>
 File: img/captura23.png Graphic file (type png)
 <use img/captura23.png>
 Package pdftex.def Info: img/captura23.png  used on input line 534.
 (pdftex.def)             Requested size: 285.08813pt x 108.55481pt.
-<img/captura24.png, id=569, 443.40656pt x 164.86594pt>
+<img/captura24.png, id=594, 443.40656pt x 164.86594pt>
 File: img/captura24.png Graphic file (type png)
 <use img/captura24.png>
 Package pdftex.def Info: img/captura24.png  used on input line 541.
@@ -914,17 +914,17 @@ Package pdftex.def Info: img/Logo_EPS.png  used on input line 545.
 (pdftex.def)             Requested size: 81.42586pt x 60.46713pt.
  [24 <./img/captura22.png (PNG copy)> <./img/captura25.png (PNG copy)> <./img/c
 aptura23.png (PNG copy)>]
-<img/captura26.png, id=579, 633.11531pt x 167.87718pt>
+<img/captura26.png, id=604, 633.11531pt x 167.87718pt>
 File: img/captura26.png Graphic file (type png)
 <use img/captura26.png>
 Package pdftex.def Info: img/captura26.png  used on input line 548.
 (pdftex.def)             Requested size: 316.55687pt x 83.93839pt.
-<img/captura27.png, id=580, 573.64313pt x 155.83218pt>
+<img/captura27.png, id=605, 573.64313pt x 155.83218pt>
 File: img/captura27.png Graphic file (type png)
 <use img/captura27.png>
 Package pdftex.def Info: img/captura27.png  used on input line 557.
 (pdftex.def)             Requested size: 286.82086pt x 77.9159pt.
-<img/captura28.png, id=581, 587.19376pt x 170.88844pt>
+<img/captura28.png, id=606, 587.19376pt x 170.88844pt>
 File: img/captura28.png Graphic file (type png)
 <use img/captura28.png>
 Package pdftex.def Info: img/captura28.png  used on input line 566.
@@ -944,7 +944,7 @@ Package pdftex.def Info: img/Logo_EPS.png  used on input line 570.
 (pdftex.def)             Requested size: 81.42586pt x 60.46713pt.
 [25 <./img/captura24.png (PNG copy)> <./img/captura26.png (PNG copy)> <./img/ca
 ptura27.png (PNG copy)>]
-<img/captura30.png, id=591, 774.64406pt x 243.15843pt>
+<img/captura30.png, id=616, 774.64406pt x 243.15843pt>
 File: img/captura30.png Graphic file (type png)
 <use img/captura30.png>
 Package pdftex.def Info: img/captura30.png  used on input line 573.
@@ -954,7 +954,7 @@ Overfull \hbox (3.58661pt too wide) in paragraph at lines 573--574
  [][] 
  []
 
-<img/captura29.png, id=592, 589.4522pt x 179.92218pt>
+<img/captura29.png, id=617, 589.4522pt x 179.92218pt>
 File: img/captura29.png Graphic file (type png)
 <use img/captura29.png>
 Package pdftex.def Info: img/captura29.png  used on input line 582.
@@ -964,7 +964,7 @@ Overfull \hbox (8.67404pt too wide) in paragraph at lines 582--583
  [][] 
  []
 
-<img/captura31.png, id=593, 776.14969pt x 245.41687pt>
+<img/captura31.png, id=618, 776.14969pt x 245.41687pt>
 File: img/captura31.png Graphic file (type png)
 <use img/captura31.png>
 Package pdftex.def Info: img/captura31.png  used on input line 589.
@@ -984,7 +984,7 @@ Package pdftex.def Info: img/Logo_EPS.png  used on input line 593.
 (pdftex.def)             Requested size: 81.42586pt x 60.46713pt.
 [26 <./img/captura28.png (PNG copy)> <./img/captura30.png (PNG copy)> <./img/ca
 ptura29.png (PNG copy)>]
-<img/captura32.png, id=602, 432.86719pt x 112.92188pt>
+<img/captura32.png, id=627, 432.86719pt x 112.92188pt>
 File: img/captura32.png Graphic file (type png)
 <use img/captura32.png>
 Package pdftex.def Info: img/captura32.png  used on input line 598.
@@ -994,7 +994,7 @@ Overfull \hbox (1.2942pt too wide) in paragraph at lines 598--599
  [][] 
  []
 
-<img/captura33.png, id=603, 350.05782pt x 119.69719pt>
+<img/captura33.png, id=628, 350.05782pt x 119.69719pt>
 File: img/captura33.png Graphic file (type png)
 <use img/captura33.png>
 Package pdftex.def Info: img/captura33.png  used on input line 607.
@@ -1021,7 +1021,7 @@ Package pdftex.def Info: img/Logo_EPS.png  used on input line 620.
 (pdftex.def)             Requested size: 81.42586pt x 60.46713pt.
 [27 <./img/captura31.png (PNG copy)> <./img/captura32.png (PNG copy)> <./img/ca
 ptura33.png (PNG copy)>]
-<img/captura34.png, id=614, 771.63281pt x 346.29375pt>
+<img/captura34.png, id=639, 771.63281pt x 346.29375pt>
 File: img/captura34.png Graphic file (type png)
 <use img/captura34.png>
 Package pdftex.def Info: img/captura34.png  used on input line 634.
@@ -1040,12 +1040,12 @@ File: img/Logo_EPS.png Graphic file (type png)
 Package pdftex.def Info: img/Logo_EPS.png  used on input line 638.
 (pdftex.def)             Requested size: 81.42586pt x 60.46713pt.
 [28]
-<img/captura35.png, id=625, 747.54282pt x 420.82219pt>
+<img/captura35.png, id=650, 747.54282pt x 420.82219pt>
 File: img/captura35.png Graphic file (type png)
 <use img/captura35.png>
 Package pdftex.def Info: img/captura35.png  used on input line 641.
 (pdftex.def)             Requested size: 336.39116pt x 189.36823pt.
-<img/captura36.png, id=626, 679.03688pt x 269.50688pt>
+<img/captura36.png, id=651, 679.03688pt x 269.50688pt>
 File: img/captura36.png Graphic file (type png)
 <use img/captura36.png>
 Package pdftex.def Info: img/captura36.png  used on input line 652.
@@ -1059,7 +1059,7 @@ File: img/Logo_EPS.png Graphic file (type png)
 Package pdftex.def Info: img/Logo_EPS.png  used on input line 656.
 (pdftex.def)             Requested size: 81.42586pt x 60.46713pt.
  [29 <./img/captura34.png (PNG copy)> <./img/captura35.png (PNG copy)>]
-<img/captura37.png, id=635, 728.7225pt x 308.65312pt>
+<img/captura37.png, id=660, 728.7225pt x 308.65312pt>
 File: img/captura37.png Graphic file (type png)
 <use img/captura37.png>
 Package pdftex.def Info: img/captura37.png  used on input line 659.
@@ -1074,7 +1074,45 @@ Package pdftex.def Info: img/Logo_EPS.png  used on input line 666.
 (pdftex.def)             Requested size: 81.42586pt x 60.46713pt.
 
 [30 <./img/captura36.png (PNG copy)> <./img/captura37.png (PNG copy)>])
-(./Referencias.tex
+(./Análisis.tex
+<img/captura42.png, id=669, 350.05782pt x 219.06844pt>
+File: img/captura42.png Graphic file (type png)
+<use img/captura42.png>
+Package pdftex.def Info: img/captura42.png  used on input line 11.
+(pdftex.def)             Requested size: 245.03879pt x 153.34685pt.
+<img/captura43.png, id=670, 929.72343pt x 24.84282pt>
+File: img/captura43.png Graphic file (type png)
+<use img/captura43.png>
+Package pdftex.def Info: img/captura43.png  used on input line 20.
+(pdftex.def)             Requested size: 353.29857pt x 9.44035pt.
+
+Overfull \hbox (8.29857pt too wide) in paragraph at lines 20--21
+ [][] 
+ []
+
+<img/captura44.png, id=671, 357.58594pt x 216.05719pt>
+File: img/captura44.png Graphic file (type png)
+<use img/captura44.png>
+Package pdftex.def Info: img/captura44.png  used on input line 33.
+(pdftex.def)             Requested size: 250.30844pt x 151.23898pt.
+File: img/np_UJA_generica_6.png Graphic file (type png)
+<use img/np_UJA_generica_6.png>
+Package pdftex.def Info: img/np_UJA_generica_6.png  used on input line 36.
+(pdftex.def)             Requested size: 88.33517pt x 45.17139pt.
+File: img/Logo_EPS.png Graphic file (type png)
+<use img/Logo_EPS.png>
+Package pdftex.def Info: img/Logo_EPS.png  used on input line 36.
+(pdftex.def)             Requested size: 81.42586pt x 60.46713pt.
+[31 <./img/captura42.png (PNG copy)> <./img/captura43.png (PNG copy)>]
+File: img/np_UJA_generica_6.png Graphic file (type png)
+<use img/np_UJA_generica_6.png>
+Package pdftex.def Info: img/np_UJA_generica_6.png  used on input line 42.
+(pdftex.def)             Requested size: 88.33517pt x 45.17139pt.
+File: img/Logo_EPS.png Graphic file (type png)
+<use img/Logo_EPS.png>
+Package pdftex.def Info: img/Logo_EPS.png  used on input line 42.
+(pdftex.def)             Requested size: 81.42586pt x 60.46713pt.
+ [32 <./img/captura44.png (PNG copy)>]) (./Referencias.tex
 Underfull \hbox (badness 10000) in paragraph at lines 6--7
 [][]$\OT1/cmtt/m/n/10 https : / / wiki . sei . cmu . edu / confluence / display
  / seccode / SEI + CERT +
@@ -1177,50 +1215,52 @@ Underfull \hbox (badness 10000) in paragraph at lines 30--31
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 19.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 21.
 File: img/np_UJA_generica_6.png Graphic file (type png)
 <use img/np_UJA_generica_6.png>
-Package pdftex.def Info: img/np_UJA_generica_6.png  used on input line 19.
+Package pdftex.def Info: img/np_UJA_generica_6.png  used on input line 21.
 (pdftex.def)             Requested size: 88.33517pt x 45.17139pt.
 File: img/Logo_EPS.png Graphic file (type png)
 <use img/Logo_EPS.png>
-Package pdftex.def Info: img/Logo_EPS.png  used on input line 19.
+Package pdftex.def Info: img/Logo_EPS.png  used on input line 21.
 (pdftex.def)             Requested size: 81.42586pt x 60.46713pt.
- [31]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 19.
+ [33]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 21.
  (./Informe.aux
 LaTeX Info: Redefining \. on input line 24.
 LaTeX Info: Redefining \% on input line 24.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 19.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 19.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 21.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 21.
 Package rerunfilecheck Info: File `Informe.out' has not changed.
-(rerunfilecheck)             Checksum: 564695E99D1D7395795FE5D70F3382BD;4479.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 19.
+(rerunfilecheck)             Checksum: 281058BF77A64AFF4C159DA70E1E39B0;4847.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 21.
  ) 
 Here is how much of TeX's memory you used:
- 8382 strings out of 481239
- 130378 string characters out of 5920376
- 406550 words of memory out of 5000000
- 23219 multiletter control sequences out of 15000+600000
- 535319 words of font info for 34 fonts, out of 8000000 for 9000
+ 8430 strings out of 481239
+ 131135 string characters out of 5920376
+ 406813 words of memory out of 5000000
+ 23245 multiletter control sequences out of 15000+600000
+ 535995 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,17n,47p,944b,620s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmtt10.pfb>
-Output written on Informe.pdf (32 pages, 2397010 bytes).
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/sh
+are/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type
+1/public/cm-super/sfrm1000.pfb>
+Output written on Informe.pdf (34 pages, 2486977 bytes).
 PDF statistics:
- 784 PDF objects out of 1000 (max. 8388607)
- 674 compressed objects within 7 object streams
- 241 named destinations out of 1000 (max. 500000)
- 625 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 840 PDF objects out of 1000 (max. 8388607)
+ 722 compressed objects within 8 object streams
+ 255 named destinations out of 1000 (max. 500000)
+ 672 words of extra memory for PDF output out of 10000 (max. 10000000)
 
