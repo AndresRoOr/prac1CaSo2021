@@ -14,9 +14,9 @@
  * @brief Clase que representa de manera genérica un pedido hecho por la biblioteca.
  */
 class PedidoBiblioteca {
-	Fecha fecha;        ///< Queda registrada la fecha del pedido actualizada con la fecha y hora del sistema.
+	Fecha fecha; ///< Queda registrada la fecha del pedido actualizada con la fecha y hora del sistema.
 	float importe;      ///< Importe total de todos los usuarios.
-	bool tramitado;     ///< Booleano a true si el pedido esta tramitado, false en otro caso.
+	bool tramitado; ///< Booleano a true si el pedido esta tramitado, false en otro caso.
 	unsigned num;       ///< Número de pedido de biblioteca.
 	lista_sin<PedidoUsuario *> pedido_usu; ///< Registro en la estructura de datos del pedido de un usuario.
 
@@ -28,8 +28,8 @@ public:
 	 * @brief Constructor parametrizado de la clase PedidoBiblioteca.
 	 * @param [in] anum unsigned.
 	 */
-	PedidoBiblioteca(unsigned anum) :
-		fecha() {
+	PedidoBiblioteca(unsigned anum = 0) :
+			fecha(){
 		importe = 0;
 		tramitado = false;
 		this->num = anum;
@@ -40,7 +40,7 @@ public:
 	 * @brief Constructor por copia de la clase PedidoBiblioteca.
 	 * @param [in] pedbi PedidoBiblioteca (dir). Instancia de PedidoBiblioteca que se quiere copiar.
 	 */
-	PedidoBiblioteca(PedidoBiblioteca &pedbi) {
+	PedidoBiblioteca(const PedidoBiblioteca &pedbi) {
 		this->fecha = pedbi.fecha;
 		this->importe = pedbi.importe;
 		this->tramitado = pedbi.tramitado;

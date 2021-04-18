@@ -159,3 +159,23 @@
 \contentsline {paragraph}{}{34}{section*.168}%
 \contentsline {subsubsection}{\numberline {4.3.2}Corrección realizada para solventar el error}{35}{subsubsection.4.3.2}%
 \contentsline {paragraph}{}{35}{section*.170}%
+\contentsline {subsection}{\numberline {4.4}Error nº4: Class has a constructor with 1 argument that is not explicit}{35}{subsection.4.4}%
+\contentsline {subsubsection}{\numberline {4.4.1}Origen/explicación del error detectado}{35}{subsubsection.4.4.1}%
+\contentsline {paragraph}{}{35}{section*.172}%
+\contentsline {paragraph}{}{36}{section*.174}%
+\contentsline {paragraph}{}{36}{section*.175}%
+\contentsline {paragraph}{}{36}{section*.176}%
+\contentsline {paragraph}{}{36}{section*.177}%
+\contentsline {paragraph}{}{36}{section*.178}%
+\contentsline {subsubsection}{\numberline {4.4.2}Corrección realizada para solventar el error}{36}{subsubsection.4.4.2}%
+\contentsline {paragraph}{}{36}{section*.180}%
+\contentsline {paragraph}{Nota:}{37}{section*.182}%
+\contentsline {subsection}{\numberline {4.5}Error nº5: Parameter can be declared with const}{37}{subsection.4.5}%
+\contentsline {subsubsection}{\numberline {4.5.1}Origen/explicación del error detectado}{37}{subsubsection.4.5.1}%
+\contentsline {paragraph}{}{37}{section*.183}%
+\contentsline {paragraph}{}{37}{section*.185}%
+\contentsline {paragraph}{}{37}{section*.186}%
+\contentsline {paragraph}{}{37}{section*.187}%
+\contentsline {subsubsection}{\numberline {4.5.2}Corrección realizada para solventar el error}{37}{subsubsection.4.5.2}%
+\contentsline {paragraph}{}{37}{section*.189}%
+\contentsline {paragraph}{Nota:}{38}{section*.191}%

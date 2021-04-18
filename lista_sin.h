@@ -175,7 +175,6 @@ template<class T>
 void lista_sin<T>::modifica(T elem, unsigned pos) {
 	unsigned i = 0;
 	nodo<T> *iter;
-	iter = new struct nodo<T>;
 	iter = primero;
 	if (iter == NULL) {
 		throw ErrorElemento();
@@ -217,7 +216,6 @@ T lista_sin<T>::elimina_dato(unsigned pos) {
 	unsigned i = 1;
 	T var;
 	nodo<T> *viejo;
-	viejo = new struct nodo<T>;
 	viejo = primero;
 	nuevo = primero;
 	if (numElem == 1) {
@@ -252,7 +250,7 @@ void lista_sin<T>::limpia() {
 	while (primero) {
 		nuevo = primero;
 		primero = primero->sige;
-		delete[] nuevo;
+		delete nuevo;
 	}
 }
 
