@@ -166,6 +166,13 @@
 	
 		\begin{figure}[H]
 			\centering
+			\includegraphics[scale=0.38]{img/captura61.png}
+			\caption{Detalle del mensaje de error de cppcheck}
+			\label{captura61}
+		\end{figure}
+	
+		\begin{figure}[H]
+			\centering
 			\includegraphics[scale=0.5]{img/captura57.png}
 			\caption{Captura de pantalla del operador de asignación de la clase PedidoBiblioteca}
 			\label{captura57}
@@ -206,5 +213,41 @@
 		\end{figure}
 		
 		\paragraph{Nota:}En el caso de que en nuestro constructor ó función necesitáramos por algún motivo modificar el valor de alguno de los atributos miembro del parámetro y, aún así, nos saltara el aviso de cppcheck deberíamos hacer caso omiso ya que de este modo nos daría un error al compilar el código.
+		
+	\subsection{Error nº5: The function is never used}
+		
+		\subsubsection{Origen/explicación del error detectado}
+		
+			\paragraph{}En este caso, cppcheck nos indica que las siguientes funciones no son utilizadas en nuestro código:
+			
+			\begin{itemize}
+				\item \textit{anadirAnios, anadirDias, anadirHoras, anadirMeses, anadirMin, asignarDia y asignarHora} del archivo \textit{Fecha.cpp}.
+				\item \textit{daISBN} del archivo \textit{Libro.cpp}.
+				\item \textit{daLBiblioteca} del archivo \textit{Biblioteca.cpp}.
+				\item \textit{daLibro} del archivo \textit{PedidoUsuario.cpp}.
+				\item \textit{daPedidoUsuario} del archivo \textit{PedidoBiblioteca.cpp}.
+				\item \textit{validarClave} del archivo \textit{Usuario.cpp}.
+			\end{itemize}
+		
+			\paragraph{}En el caso de este error explicar el origen de este error resulta de lo más trivial. Las funciones anteriormente enumerada se han definido en sus respectivos archivos y no se llegan a utilizar en el código del programa.
+			
+			\paragraph{}Por este motivo cppcheck nos alerta de este evento para, en el caso pertinente, eliminar el código fuente de estas funciones y reducir el número de líneas de código de nuestro programa.
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.38]{img/captura62.png}
+				\caption{Detalle del mensaje de error de cppcheck}
+				\label{captura62}
+			\end{figure}
+		
+		\subsubsection{Corrección realizada para solventar el error}
+		
+			\paragraph{}En nuestro caso particular resolvemos este error indicándole a cppcheck que ignore estos errores. El motivo de tomar tal decisión es debido a que, si bien en el programa no se utilizan estas funciones, en un futuro podrían ser de gran utilidad debido a la naturaleza de las mismas (modificar, obtener y validar atributos de las clases).
+			
+			\paragraph{}Si bien es cierto que se trata de un programa de granja realizado en el contexto de una práctica de asignatura de la carrera, hemos aplicado un punto de vista simulando que la aplicación se encuentra en producción, que está mantenida y que tendrá futuras actualizaciones de funcionalidades.
+			
+			\paragraph{}Una vez ignorados los errores no volverán a ser listados por cppcheck.
+			
+			\paragraph{Nota:}No hemos incluido capturas de pantalla ya que las funciones no presentan ningún error como tal y solo se mostrarían los avisos de cppcheck, haciendo aumentar considerablemente la extensión del presente documento.
 	
 \newpage
