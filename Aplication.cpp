@@ -25,13 +25,12 @@ Aplication::Aplication() {
  * @pre La clave debe ser correcta.
  */
 void Aplication::aplicacion_admin() {
-
-	int opcion;
-	unsigned i = 0, num, nume_ped_bi, cpb = 0;
 	string aclave, alogin, contra = "hola", contrase;
 	cout << " Introduzca contraseña: " << endl;
 	cin >> contrase;
 	if (contrase.compare(contra) == 0) {
+
+		int opcion;
 
 		do {
 			cout
@@ -56,6 +55,8 @@ void Aplication::aplicacion_admin() {
 					<< endl;
 			cin >> opcion;
 			switch (opcion) {
+
+			unsigned i = 0;
 
 			case 1: {
 				i = 0;
@@ -86,6 +87,7 @@ void Aplication::aplicacion_admin() {
 				break;
 
 			case 2: {
+				unsigned num;
 				cout
 						<< " Introduzca la numeración del pedido de la biblioteca que quiere tramitar: "
 						<< endl;
@@ -102,6 +104,7 @@ void Aplication::aplicacion_admin() {
 				break;
 
 			case 3: {
+				unsigned cpb = 0;
 				cout << " Se ha creado el pedido de biblioteca num: " << ++cpb
 						<< endl;
 				pedbipunt = bi.abrePedidoBiblioteca(--cpb);
@@ -110,6 +113,7 @@ void Aplication::aplicacion_admin() {
 				break;
 
 			case 4: {
+				unsigned  nume_ped_bi;
 				PedidoUsuario * min = new PedidoUsuario;
 				cout
 						<< " Introduzca los datos del usuario del que quiere tramitar sus pedidos: "

@@ -249,5 +249,173 @@
 			\paragraph{}Una vez ignorados los errores no volverán a ser listados por cppcheck.
 			
 			\paragraph{Nota:}No hemos incluido capturas de pantalla ya que las funciones no presentan ningún error como tal y solo se mostrarían los avisos de cppcheck, haciendo aumentar considerablemente la extensión del presente documento.
+			
+	\subsection{Error nº6: The scope of the variable can be reduced}
 	
+		\subsubsection{Origen/explicación del error detectado}
+		
+			\paragraph{}Para este error, cppcheck nos lista 11 incidencias, las cuales mostramos a continuación a modo de captura de pantalla.
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.38]{img/captura63.png}
+				\caption{Detalle del mensaje de error de cppcheck}
+				\label{captura63}
+			\end{figure}
+		
+			\paragraph{}Todos los errores que se generan tienen su origen en la declaración al inicio de la función de las variables para, más adelante, ser inicializadas cuando vayan a utilizarse.
+			
+			\paragraph{}Es recomendable que se declaren e inicialicen las variables locales de una función justo en el fragmento de código en el que vayan a ser utilizados. Por ejemplo, en vez de definir la variable iteradora 'i' de un bucle \textit{for} al inicio de la función y asignarle el valor inicial en el bucle, se debe inicializar y asignar el valor en el mismo bucle.
+			
+			\paragraph{}En todas las capturas de pantalla siguientes se puede observar cómo cppcheck nos indica que cometemos este error en todas las variables resaltadas.
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.7]{img/captura64.png}
+				\caption{Captura de pantalla del error cppcheck en el código fuente}
+				\label{captura64}
+			\end{figure}
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.55]{img/captura65.png}
+				\caption{Captura de pantalla del error cppcheck en el código fuente}
+				\label{captura65}
+			\end{figure}
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.55]{img/captura66.png}
+				\caption{Captura de pantalla del error cppcheck en el código fuente}
+				\label{captura66}
+			\end{figure}
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.55]{img/captura74.png}
+				\caption{Captura de pantalla del error cppcheck en el código fuente}
+				\label{captura74}
+			\end{figure}
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.55]{img/captura67.png}
+				\caption{Captura de pantalla del error cppcheck en el código fuente}
+				\label{captura67}
+			\end{figure}
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.55]{img/captura68.png}
+				\caption{Captura de pantalla del error cppcheck en el código fuente}
+				\label{captura68}
+			\end{figure}
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.55]{img/captura69.png}
+				\caption{Captura de pantalla del error cppcheck en el código fuente}
+				\label{captura69}
+			\end{figure}
+		
+		\subsubsection{Corrección realizada para solventar el error}
+		
+			\paragraph{}Para el error existente en la línea 29 de la figura \ref*{captura64} la solución consistirá en realizar la declaración  dentro del bloque \textit{if} de la función.
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.7]{img/captura70.png}
+				\caption{Captura de pantalla del error cppcheck  resuelto en el código fuente}
+				\label{captura70}
+			\end{figure}
+	
+			\paragraph{}Para el error que hace referencia a la variable \textit{cpb} existente en la línea 30 de la figura \ref*{captura64} la solución consistirá en realizar la declaración e inicialización dentro del bloque \textit{switch - case} de la función.
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.6]{img/captura71.png}
+				\caption{Captura de pantalla del error cppcheck  resuelto en el código fuente}
+				\label{captura71}
+			\end{figure}
+		
+			\paragraph{}Para el error que hace referencia a la variable \textit{i} existente en la línea 30 de la figura \ref*{captura64} la solución consistirá en realizar la declaración e inicialización dentro del bloque \textit{switch - case} de la función.
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.7]{img/captura72.png}
+				\caption{Captura de pantalla del error cppcheck  resuelto en el código fuente}
+				\label{captura72}
+			\end{figure}
+		
+			\paragraph{}Para el error que hace referencia a la variable \textit{i} existente en la línea 16 de la figura \ref*{captura65} la solución consistirá en realizar la declaración e inicialización dentro del bucle \textit{for} de la función.
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.6]{img/captura73.png}
+				\caption{Captura de pantalla del error cppcheck  resuelto en el código fuente}
+				\label{captura73}
+			\end{figure}
+		
+			\paragraph{}Para el error que hace referencia a la variable \textit{i} existente en la línea 161 de la figura \ref*{captura74} la solución consistirá en realizar la declaración e inicialización dentro del bloque \textit{else} de la función.
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.7]{img/captura75.png}
+				\caption{Captura de pantalla del error cppcheck  resuelto en el código fuente}
+				\label{captura75}
+			\end{figure}
+		
+			\paragraph{}Para el error que hace referencia a la variable \textit{i} existente en la línea 176 de la figura \ref*{captura66} la solución consistirá en realizar la declaración e inicialización dentro del bloque \textit{else} de la función.
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.7]{img/captura76.png}
+				\caption{Captura de pantalla del error cppcheck  resuelto en el código fuente}
+				\label{captura76}
+			\end{figure}
+		
+			\paragraph{}Para el error que hace referencia a la variable \textit{i} existente en la línea 194 de la figura \ref*{captura67} la solución consistirá en realizar la declaración e inicialización dentro del bloque \textit{else} de la función.
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.7]{img/captura77.png}
+				\caption{Captura de pantalla del error cppcheck  resuelto en el código fuente}
+				\label{captura77}
+			\end{figure}
+		
+			\paragraph{}Para el error que hace referencia a la variable \textit{i} existente en la línea 216 de la figura \ref*{captura68} la solución consistirá en realizar la declaración e inicialización dentro del bloque \textit{else} de la función.
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.7]{img/captura78.png}
+				\caption{Captura de pantalla del error cppcheck  resuelto en el código fuente}
+				\label{captura78}
+			\end{figure}
+		
+			\paragraph{}Para el error que hace referencia a la variable \textit{num} existente en la línea 30 de la figura \ref*{captura64} la solución consistirá en realizar la declaración e inicialización dentro del bloque \textit{switch - case} de la función.
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.5]{img/captura79.png}
+				\caption{Captura de pantalla del error cppcheck  resuelto en el código fuente}
+				\label{captura79}
+			\end{figure}
+		
+			\paragraph{}Para el error que hace referencia a la variable \textit{nume\_ped\_bi} existente en la línea 30 de la figura \ref*{captura64} la solución consistirá en realizar la declaración e inicialización dentro del bloque \textit{switch - case} de la función.
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.5]{img/captura80.png}
+				\caption{Captura de pantalla del error cppcheck  resuelto en el código fuente}
+				\label{captura80}
+			\end{figure}
+		
+			\paragraph{}Para el error que hace referencia a la variable \textit{pos} existente en la línea 98 de la figura \ref*{captura69} la solución consistirá en realizar la declaración e inicialización dentro del bucle \textit{for} de la función.
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.55]{img/captura81.png}
+				\caption{Captura de pantalla del error cppcheck  resuelto en el código fuente}
+				\label{captura81}
+			\end{figure}
 \newpage

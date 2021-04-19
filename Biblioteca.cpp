@@ -13,12 +13,11 @@
  */
 bool Biblioteca::nuevoUsuario(string login, string nombre, string clave) {
 	usu->rellena(login, nombre, clave);
-	unsigned i;
 	if (usur.tamanio() == 0) { /// Devuelve true si está el Usuario y ya no se puede introducir Usuario por motivos obvios.
 		usur.aumenta(usu);
 		return true;
 	} else {
-		for (i = 0; i < usur.tamanio(); i++) {
+		for (unsigned i = 0; i < usur.tamanio(); i++) {
 			if (usu->daClave() == usur.lee(i)->daClave()) {
 				return false;
 			} else {
@@ -96,10 +95,9 @@ void Biblioteca::cargaLibros(string fichero) {
  */
 lista_sin<Libro *> * Biblioteca::consultaLibros(string titulo) {
 	unsigned i;
-	int pos = -1;
 	lista_sin<Libro *> *libros = new lista_sin<Libro *>;
 	for (i = 0; i < libro.tamanio(); i++) {
-		pos = libro.lee(i)->daTitulo().find(titulo); /// Devuelve la posición en la cadena.
+		int pos = libro.lee(i)->daTitulo().find(titulo); /// Devuelve la posición en la cadena.
 		if (pos != -1) { /// Si no se modifica el -1 entonces es que no está.
 			libros->aumenta(libro.lee(i));
 		}

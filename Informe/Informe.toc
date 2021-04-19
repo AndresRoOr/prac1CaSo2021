@@ -186,3 +186,21 @@
 \contentsline {paragraph}{}{40}{section*.202}%
 \contentsline {paragraph}{}{40}{section*.203}%
 \contentsline {paragraph}{Nota:}{41}{section*.204}%
+\contentsline {subsection}{\numberline {4.6}Error nº6: The scope of the variable can be reduced}{41}{subsection.4.6}%
+\contentsline {subsubsection}{\numberline {4.6.1}Origen/explicación del error detectado}{41}{subsubsection.4.6.1}%
+\contentsline {paragraph}{}{41}{section*.205}%
+\contentsline {paragraph}{}{41}{section*.207}%
+\contentsline {paragraph}{}{41}{section*.208}%
+\contentsline {paragraph}{}{41}{section*.209}%
+\contentsline {subsubsection}{\numberline {4.6.2}Corrección realizada para solventar el error}{44}{subsubsection.4.6.2}%
+\contentsline {paragraph}{}{44}{section*.217}%
+\contentsline {paragraph}{}{44}{section*.219}%
+\contentsline {paragraph}{}{45}{section*.221}%
+\contentsline {paragraph}{}{45}{section*.223}%
+\contentsline {paragraph}{}{45}{section*.225}%
+\contentsline {paragraph}{}{46}{section*.227}%
+\contentsline {paragraph}{}{46}{section*.229}%
+\contentsline {paragraph}{}{47}{section*.231}%
+\contentsline {paragraph}{}{48}{section*.233}%
+\contentsline {paragraph}{}{48}{section*.235}%
+\contentsline {paragraph}{}{49}{section*.237}%

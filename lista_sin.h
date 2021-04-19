@@ -158,11 +158,11 @@ void lista_sin<T>::aumenta(T elem) {
 
 template<class T>
 T lista_sin<T>::lee(unsigned pos) {
-	unsigned i = 0;
 	nuevo = primero;
 	if (nuevo == NULL) {
 		throw ErrorElemento();
 	} else {
+		unsigned i = 0;
 		while (nuevo && i < pos) {
 			i++;
 			nuevo = nuevo->sige;
@@ -173,12 +173,12 @@ T lista_sin<T>::lee(unsigned pos) {
 
 template<class T>
 void lista_sin<T>::modifica(T elem, unsigned pos) {
-	unsigned i = 0;
 	nodo<T> *iter;
 	iter = primero;
 	if (iter == NULL) {
 		throw ErrorElemento();
 	} else {
+		unsigned i = 0;
 		while (iter && i < pos) {
 			i++;
 			iter = iter->sige;
@@ -191,12 +191,12 @@ template<class T>
 void lista_sin<T>::inserta_dato(const T &dato, unsigned pos) {
 	nodo<T> *iter;
 	iter = new struct nodo<T>;
-	unsigned i = 1;
 	if (ultimo == NULL) {
 		iter->sige = NULL;
 		iter->date = dato;
 		primero = ultimo = iter;
 	} else {
+		unsigned i = 1;
 		nuevo = primero;
 		while ((i < pos) && nuevo) {
 			nuevo = nuevo->sige;
@@ -213,7 +213,6 @@ void lista_sin<T>::inserta_dato(const T &dato, unsigned pos) {
 
 template<class T>
 T lista_sin<T>::elimina_dato(unsigned pos) {
-	unsigned i = 1;
 	T var;
 	nodo<T> *viejo;
 	viejo = primero;
@@ -227,6 +226,7 @@ T lista_sin<T>::elimina_dato(unsigned pos) {
 		ultimo = NULL;
 		return var;
 	} else {
+		unsigned i = 1;
 		while (nuevo && i < pos) {
 			i++;
 			nuevo = nuevo->sige;
