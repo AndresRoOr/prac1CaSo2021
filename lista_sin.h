@@ -218,7 +218,6 @@ T lista_sin<T>::elimina_dato(unsigned pos) {
 	viejo = primero;
 	nuevo = primero;
 	if (numElem == 1) {
-		viejo = primero;
 		var = viejo->date;
 		delete viejo;
 		numElem--;

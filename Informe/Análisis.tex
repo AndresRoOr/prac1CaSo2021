@@ -451,4 +451,38 @@
 			\caption{Captura de pantalla del error cppcheck resuelto en el código fuente}
 			\label{captura84}
 		\end{figure}
+	
+	\subsection{Error nº8: Variable is reassigned a value before the old one has been used}
+	
+	\subsubsection{Origen/explicación del error detectado}
+	
+		\paragraph{}Este error tiene su origen en la línea 221 del archivo \textit{lista\_sin.h}.
+	
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.55]{img/captura86.png}
+			\caption{Captura de pantalla del error cppcheck en el código fuente}
+			\label{captura86}
+		\end{figure}
+	
+		\paragraph{}Este error se origina cuando, tras declarar la variable \textit{viejo} en la línea 217, se le asigna la dirección de memoria que hay guardada en la variable \textit{primero} (línea 218).
+		
+		\paragraph{}Una vez que hemos hecho esto, en la línea 221 volvemos a asignarle el valor de \textit{primero}. En nuestro código no habría problema, pero si en la primera asignación le hubiéramos pasado otro valor no habríamos llegado a realizar ninguna operación con este primer valor. Es decir, hemos guardado una información que no hemos utilizado para nada. En consecuencia, habremos realizado una operación innecesaria (primera asignación). Este es el porqué de que cppcheck nos lance una advertencia al respecto.
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.38]{img/captura85.png}
+			\caption{Detalle del mensaje de error de cppcheck}
+			\label{captura85}
+		\end{figure}
+	
+	\subsubsection{Corrección realizada para solventar el error}
+	
+		\paragraph{}La solución a este error pasa por eliminar la segunda asignación del código fuente (línea 221), ya que la primera asignación es válida al entrar en la ejecución del bloque \textit{if}. De este modo, el error habrá sido solventado.
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.55]{img/captura87.png}
+			\caption{Captura de pantalla del error cppcheck resuelto en el código fuente}
+			\label{captura87}
+		\end{figure}
 \newpage

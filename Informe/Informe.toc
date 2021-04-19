@@ -210,3 +210,10 @@
 \contentsline {paragraph}{}{49}{section*.241}%
 \contentsline {subsubsection}{\numberline {4.7.2}Corrección realizada para solventar el error}{50}{subsubsection.4.7.2}%
 \contentsline {paragraph}{}{50}{section*.243}%
+\contentsline {subsection}{\numberline {4.8}Error nº8: Variable is reassigned a value before the old one has been used}{50}{subsection.4.8}%
+\contentsline {subsubsection}{\numberline {4.8.1}Origen/explicación del error detectado}{50}{subsubsection.4.8.1}%
+\contentsline {paragraph}{}{50}{section*.245}%
+\contentsline {paragraph}{}{51}{section*.247}%
+\contentsline {paragraph}{}{51}{section*.248}%
+\contentsline {subsubsection}{\numberline {4.8.2}Corrección realizada para solventar el error}{51}{subsubsection.4.8.2}%
+\contentsline {paragraph}{}{51}{section*.250}%
