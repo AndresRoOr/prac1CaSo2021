@@ -142,40 +142,35 @@
 \contentsline {subsection}{\numberline {4.1}Error nº1: Memory leak}{31}{subsection.4.1}%
 \contentsline {subsubsection}{\numberline {4.1.1}Origen/explicación del error detectado}{31}{subsubsection.4.1.1}%
 \contentsline {paragraph}{}{31}{section*.152}%
-\contentsline {paragraph}{}{31}{section*.154}%
-\contentsline {paragraph}{}{31}{section*.156}%
-\contentsline {subsubsection}{\numberline {4.1.2}Corrección realizada para solventar el error}{31}{subsubsection.4.1.2}%
-\contentsline {paragraph}{}{31}{section*.157}%
-\contentsline {paragraph}{nota:}{32}{section*.159}%
-\contentsline {subsection}{\numberline {4.2}Error nº2: Memory leak}{32}{subsection.4.2}%
-\contentsline {subsubsection}{\numberline {4.2.1}Origen/explicación del error detectado}{32}{subsubsection.4.2.1}%
-\contentsline {paragraph}{}{32}{section*.160}%
-\contentsline {paragraph}{}{33}{section*.162}%
-\contentsline {subsubsection}{\numberline {4.2.2}Corrección realizada para solventar el error}{33}{subsubsection.4.2.2}%
-\contentsline {paragraph}{}{33}{section*.164}%
-\contentsline {subsection}{\numberline {4.3}Error nº3: Mismatching allocation and deallocation}{34}{subsection.4.3}%
-\contentsline {subsubsection}{\numberline {4.3.1}Origen/explicación del error detectado}{34}{subsubsection.4.3.1}%
-\contentsline {paragraph}{}{34}{section*.166}%
-\contentsline {paragraph}{}{34}{section*.168}%
-\contentsline {subsubsection}{\numberline {4.3.2}Corrección realizada para solventar el error}{35}{subsubsection.4.3.2}%
+\contentsline {paragraph}{}{32}{section*.155}%
+\contentsline {paragraph}{}{32}{section*.158}%
+\contentsline {paragraph}{}{33}{section*.159}%
+\contentsline {subsubsection}{\numberline {4.1.2}Corrección realizada para solventar el error}{33}{subsubsection.4.1.2}%
+\contentsline {paragraph}{}{33}{section*.160}%
+\contentsline {paragraph}{nota:}{34}{section*.163}%
+\contentsline {subsection}{\numberline {4.2}Error nº3: Mismatching allocation and deallocation}{34}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}Origen/explicación del error detectado}{34}{subsubsection.4.2.1}%
+\contentsline {paragraph}{}{34}{section*.164}%
+\contentsline {paragraph}{}{35}{section*.166}%
+\contentsline {subsubsection}{\numberline {4.2.2}Corrección realizada para solventar el error}{35}{subsubsection.4.2.2}%
+\contentsline {paragraph}{}{35}{section*.168}%
+\contentsline {subsection}{\numberline {4.3}Error nº4: Class has a constructor with 1 argument that is not explicit}{35}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}Origen/explicación del error detectado}{35}{subsubsection.4.3.1}%
 \contentsline {paragraph}{}{35}{section*.170}%
-\contentsline {subsection}{\numberline {4.4}Error nº4: Class has a constructor with 1 argument that is not explicit}{35}{subsection.4.4}%
-\contentsline {subsubsection}{\numberline {4.4.1}Origen/explicación del error detectado}{35}{subsubsection.4.4.1}%
-\contentsline {paragraph}{}{35}{section*.172}%
+\contentsline {paragraph}{}{36}{section*.172}%
+\contentsline {paragraph}{}{36}{section*.173}%
 \contentsline {paragraph}{}{36}{section*.174}%
 \contentsline {paragraph}{}{36}{section*.175}%
 \contentsline {paragraph}{}{36}{section*.176}%
-\contentsline {paragraph}{}{36}{section*.177}%
+\contentsline {subsubsection}{\numberline {4.3.2}Corrección realizada para solventar el error}{36}{subsubsection.4.3.2}%
 \contentsline {paragraph}{}{36}{section*.178}%
-\contentsline {subsubsection}{\numberline {4.4.2}Corrección realizada para solventar el error}{36}{subsubsection.4.4.2}%
-\contentsline {paragraph}{}{36}{section*.180}%
-\contentsline {paragraph}{Nota:}{37}{section*.182}%
-\contentsline {subsection}{\numberline {4.5}Error nº5: Parameter can be declared with const}{37}{subsection.4.5}%
-\contentsline {subsubsection}{\numberline {4.5.1}Origen/explicación del error detectado}{37}{subsubsection.4.5.1}%
+\contentsline {paragraph}{Nota:}{37}{section*.180}%
+\contentsline {subsection}{\numberline {4.4}Error nº5: Parameter can be declared with const}{37}{subsection.4.4}%
+\contentsline {subsubsection}{\numberline {4.4.1}Origen/explicación del error detectado}{37}{subsubsection.4.4.1}%
+\contentsline {paragraph}{}{37}{section*.181}%
 \contentsline {paragraph}{}{37}{section*.183}%
-\contentsline {paragraph}{}{37}{section*.185}%
-\contentsline {paragraph}{}{37}{section*.186}%
-\contentsline {paragraph}{}{37}{section*.187}%
-\contentsline {subsubsection}{\numberline {4.5.2}Corrección realizada para solventar el error}{37}{subsubsection.4.5.2}%
-\contentsline {paragraph}{}{37}{section*.189}%
-\contentsline {paragraph}{Nota:}{38}{section*.191}%
+\contentsline {paragraph}{}{37}{section*.184}%
+\contentsline {paragraph}{}{38}{section*.185}%
+\contentsline {subsubsection}{\numberline {4.4.2}Corrección realizada para solventar el error}{38}{subsubsection.4.4.2}%
+\contentsline {paragraph}{}{38}{section*.187}%
+\contentsline {paragraph}{Nota:}{38}{section*.189}%
