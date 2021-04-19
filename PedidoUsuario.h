@@ -46,7 +46,7 @@ public:
 	 * @param [in] pedido PedidoUsuario (ref). Instancia de PedidoUsuario que se quiere copiar
 	 * @return Instancia copia creada de la clase PedidoUsuario.
 	 */
-	PedidoUsuario& operator=(PedidoUsuario &pedido) {
+	PedidoUsuario& operator=(const PedidoUsuario &pedido) {
 		this->fecha = pedido.fecha;
 		this->prioridad = pedido.prioridad;
 		this->precio = pedido.precio;

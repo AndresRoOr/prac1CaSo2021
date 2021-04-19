@@ -155,11 +155,27 @@
 		
 		\paragraph{}Es por este motivo que cppcheck nos avisa de que podemos hacer este parámetro constante.
 		
+		\paragraph{}Este error también es detectado para el parámetro \textit{pedbi}, en la línea 70 del archivo \textit{PedidoBiblioteca.h}; y para el parámetro \textit{pedido}, en la línea 49 del archivo \textit{PedidoUsuario.h}. A continuación, presentamos capturas de pantalla de las funciones en las que aparecen estos errores.
+		
 		\begin{figure}[H]
 			\centering
 			\includegraphics[scale=0.38]{img/captura55.png}
 			\caption{Detalle del mensaje de error de cppcheck}
 			\label{captura55}
+		\end{figure}
+	
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.5]{img/captura57.png}
+			\caption{Captura de pantalla del operador de asignación de la clase PedidoBiblioteca}
+			\label{captura57}
+		\end{figure}
+	
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.55]{img/captura58.png}
+			\caption{Captura de pantalla del operador de asignación de la clase PedidoUsuario}
+			\label{captura58}
 		\end{figure}
 	
 		\subsubsection{Corrección realizada para solventar el error}
@@ -172,7 +188,23 @@
 			\caption{Captura de pantalla del constructor por copia de la clase PedidoBiblioteca tras la corrección del error}
 			\label{captura56}
 		\end{figure}
+	
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.5]{img/captura59.png}
+			\caption{Captura de pantalla del operador de asignación de la clase PedidoBiblioteca tras la resolución del error}
+			\label{captura59}
+		\end{figure}
+	
+		\paragraph{Nota:}El aviso que se muestra en la captura de pantalla se debe a otro origen; el error de este apartado ha sido solucionado.
 		
-		\paragraph{Nota:}En el caso de que en nuestro constructor necesitáramos por algún motivo modificar el valor de alguno de los atributos miembro del parámetro y, aún así, nos saltara el aviso de cppcheck deberíamos hacer caso omiso ya que de este modo nos daría un error al compilar el código.
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.55]{img/captura60.png}
+			\caption{Captura de pantalla del operador de asignación de la clase PedidoUsuario tras la resolución del error}
+			\label{captura60}
+		\end{figure}
+		
+		\paragraph{Nota:}En el caso de que en nuestro constructor ó función necesitáramos por algún motivo modificar el valor de alguno de los atributos miembro del parámetro y, aún así, nos saltara el aviso de cppcheck deberíamos hacer caso omiso ya que de este modo nos daría un error al compilar el código.
 	
 \newpage

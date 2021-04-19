@@ -67,7 +67,7 @@ public:
 	 * @param pedbi [in] PedidoBiblioteca (ref). PedidoBiblioteca de la que se quiere realizar una copia.
 	 * @return Instancia copia realizada.
 	 */
-	PedidoBiblioteca& operator=(PedidoBiblioteca& pedbi) {
+	PedidoBiblioteca& operator=(const PedidoBiblioteca& pedbi) {
 		this->fecha = pedbi.fecha;
 		this->importe = pedbi.importe;
 		this->tramitado = pedbi.tramitado;
