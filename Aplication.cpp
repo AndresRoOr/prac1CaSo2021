@@ -229,7 +229,7 @@ void Aplication::aplicacion_admin() {
 void Aplication::aplicacion_usuario() {
 
 	int opcion;
-	string alogin, aclave, anombre, aISBN, atitulo, claven, basura;
+	string alogin, aclave, anombre, aISBN, atitulo, claven;
 	bool var;
 	unsigned i;
 	try {

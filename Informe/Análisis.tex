@@ -418,4 +418,37 @@
 				\caption{Captura de pantalla del error cppcheck  resuelto en el código fuente}
 				\label{captura81}
 			\end{figure}
+		
+	\subsection{Error nº7: Unused varriable}
+	
+		\subsubsection{Origen/explicación del error detectado}
+		
+		\paragraph{}Cppcheck nos indica en este caso que el error se origina en la línea 232 del archivo \textit{Application.cpp}, más concretamente en la variable \textit{basura}.
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.55]{img/captura82.png}
+			\caption{Captura de pantalla del error cppcheck en el código fuente}
+			\label{captura82}
+		\end{figure}
+	
+		\paragraph{}El error se origina debido a que declaramos esta variable pero no llegamos a utilizarla en toda la función, generando en consecuencia un desperdicio de la memoria local de la función. Por este motivo, cppcheck nos alerta al respecto.
+	
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.38]{img/captura83.png}
+			\caption{Detalle del mensaje de error de cppcheck}
+			\label{captura83}
+		\end{figure}
+		
+		\subsubsection{Corrección realizada para solventar el error}
+		
+		\paragraph{}La resolución de este error consiste en la eliminación de dicha variable de nuestro código. Una vez realizado esto, el error habrá sido eliminado.
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.55]{img/captura84.png}
+			\caption{Captura de pantalla del error cppcheck resuelto en el código fuente}
+			\label{captura84}
+		\end{figure}
 \newpage
