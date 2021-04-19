@@ -60,7 +60,7 @@
 		
 			\paragraph{nota:}Cabe destacar que también se podría haber resuelto este error realizando un $"delete$ $iter/viejo"$ antes de asignarle la dirección de memoria del atributo \textit{primero} pero en este caso hemos descartado esta opción ya que la estructura con la que se inicializa no se utiliza para nada y supondría la realización de operaciones adicionales innecesarias.
 	
-	\subsection{Error nº3: Mismatching allocation and deallocation}
+	\subsection{Error nº2: Mismatching allocation and deallocation}
 
 		\subsubsection{Origen/explicación del error detectado}
 		
@@ -93,7 +93,7 @@
 				\label{captura50}
 			\end{figure}
 		
-	\subsection{Error nº4: Class has a constructor with 1 argument that is not explicit}
+	\subsection{Error nº3: Class has a constructor with 1 argument that is not explicit}
 	
 		\subsubsection{Origen/explicación del error detectado}
 	
@@ -136,7 +136,7 @@
 		
 			\paragraph{Nota:} Una segunda forma de corregir el error habría sido declarar el constructor como explícito, es decir, añadir \textit{explicit} a la declaración del constructor. Hemos descartado esta opción ya que en algunos casos esto podría ocasionar un comportamiento indeseado en la ejecución del programa en ciertas situaciones.
 
-	\subsection{Error nº5: Parameter can be declared with const}
+	\subsection{Error nº4: Parameter can be declared with const}
 	
 		\subsubsection{Origen/explicación del error detectado}
 		
