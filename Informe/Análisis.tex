@@ -485,4 +485,39 @@
 			\caption{Captura de pantalla del error cppcheck resuelto en el código fuente}
 			\label{captura87}
 		\end{figure}
+	
+	\subsection{Error nº9: Either the condition is redundant or there is possible null pointer dereference}
+	
+		\subsubsection{Origen/explicación del error detectado}
+		
+			\paragraph{}Este error se encuentra en la línea 186 del archivo \textit{lista\_sin.h}, en la siguiente captura de pantalla se muestra la función en la que se encuentra dicho error.
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.55]{img/captura89.png}
+				\caption{Captura de pantalla del error cppcheck en el código fuente}
+				\label{captura89}
+			\end{figure}
+		
+			\paragraph{}Este error es causado porque no comprobamos que el puntero \textit{iter} no esté apuntando a NULL. En otra situación, estando \textit{iter} inicializado correctamente, no hubiera sido necesario realizar esta comprobación pero, como se puede observar en la captura de pantalla, dentro del bucle \textit{while} se va actualizando la dirección a la que apunta con el valor de \textit{sige}. 
+			
+			\paragraph{}Al final de la ejecución del bucle \textit{while} es posible que \textit{iter} esté apuntando a NULL, de hecho una de las condiciones de parada del bucle es que esté apuntando a NULL. Por este motivo cppcheck nos alerta de este hecho.
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.38]{img/captura88.png}
+				\caption{Detalle del mensaje de error de cppcheck}
+				\label{captura88}
+			\end{figure}
+		
+		\subsubsection{Corrección realizada para solventar el error}
+		
+			\paragraph{}La manera de subsanar este error es realizar la comprobación de que no esté apuntando a NULL justo antes de acceder al objeto apuntado. En la captura de pantalla que se encuentra a continuación se puede observar con detalle la solución aplicada.
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.55]{img/captura90.png}
+				\caption{Captura de pantalla del error cppcheck subsanado en el código fuente}
+				\label{captura90}
+			\end{figure}
 \newpage

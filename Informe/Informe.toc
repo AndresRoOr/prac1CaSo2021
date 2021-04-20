@@ -217,3 +217,10 @@
 \contentsline {paragraph}{}{51}{section*.248}%
 \contentsline {subsubsection}{\numberline {4.8.2}Corrección realizada para solventar el error}{51}{subsubsection.4.8.2}%
 \contentsline {paragraph}{}{51}{section*.250}%
+\contentsline {subsection}{\numberline {4.9}Error nº9: Either the condition is redundant or there is possible null pointer dereference}{52}{subsection.4.9}%
+\contentsline {subsubsection}{\numberline {4.9.1}Origen/explicación del error detectado}{52}{subsubsection.4.9.1}%
+\contentsline {paragraph}{}{52}{section*.252}%
+\contentsline {paragraph}{}{52}{section*.254}%
+\contentsline {paragraph}{}{52}{section*.255}%
+\contentsline {subsubsection}{\numberline {4.9.2}Corrección realizada para solventar el error}{52}{subsubsection.4.9.2}%
+\contentsline {paragraph}{}{52}{section*.257}%

@@ -106,11 +106,11 @@ public:
 /**
  * @brief Clase que representa error de tipo de elemento referenciado.
  */
-class ErrorElemento  : public exception {
+class ErrorElemento: public exception {
 public:
-    	const char* what() const throw () {
-        return "\nError: Error de tipo de elemento referenciado.\n";
-    }
+	const char* what() const throw () {
+		return "\nError: Error de tipo de elemento referenciado.\n";
+	}
 };
 
 template<class T>
@@ -183,7 +183,9 @@ void lista_sin<T>::modifica(T elem, unsigned pos) {
 			i++;
 			iter = iter->sige;
 		}
-		iter->date = elem;
+		if (iter != NULL) {
+			iter->date = elem;
+		}
 	}
 }
 
