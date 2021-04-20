@@ -143,6 +143,9 @@ lista_sin<T>& lista_sin<T>::operator=(lista_sin &list) {
 
 template<class T>
 void lista_sin<T>::aumenta(T elem) {
+	if(nuevo==NULL){
+		delete nuevo;
+	}
 	nuevo = new struct nodo<T>;
 	nuevo->date = elem;
 	nuevo->sige = NULL;

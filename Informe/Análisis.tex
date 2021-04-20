@@ -520,4 +520,37 @@
 				\caption{Captura de pantalla del error cppcheck subsanado en el código fuente}
 				\label{captura90}
 			\end{figure}
+		
+	\subsection{Error nº10: Possible leak in public function. The pointer is not deallocated before is allocated}
+	
+		\subsubsection{Origen/explicación del error detectado}
+		
+			\paragraph{}En la siguiente captura de pantalla se muestra la función que contiene el error de cppcheck.
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.55]{img/captura91.png}
+				\caption{Captura de pantalla del error cppcheck en el código fuente}
+				\label{captura91}
+			\end{figure}
+		
+			\paragraph{}Se puede observar que en la línea 146 se le asigna la dirección de memoria de un nuevo \textit{nodo} al puntero \textit{nuevo}. \textit{nuevo} es un atributo miembro de la clase y es posible que ya estuviera apuntando a otra dirección de memoria y, por lo tanto, es posible que se esté produciendo una fuga de memoria. Es por esto que cppcheck nos lanza la advertencia.
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.38]{img/captura92.png}
+				\caption{Detalle del mensaje de error de cppcheck}
+				\label{captura92}
+			\end{figure}
+	
+		\subsubsection{Corrección realizada para solventar el error}
+		
+			\paragraph{}En la captura de pantalla siguiente se puede observar la solución aplicada al código fuente para solventar el error. Esta solución consiste en liberar la memoria de \textit{nuevo}, previa comprobación de que no esté apuntando a NULL para evitar posibles errores.
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.55]{img/captura93.png}
+				\caption{Captura de pantalla del error cppcheck subsanado en el código fuente}
+				\label{captura9}
+			\end{figure}
 \newpage
