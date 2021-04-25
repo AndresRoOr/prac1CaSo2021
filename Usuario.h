@@ -20,7 +20,7 @@ class Usuario {
 
 public:
 
-	Usuario();
+	Usuario(string nombre, string clave, string login);
 
 	string daClave();
 

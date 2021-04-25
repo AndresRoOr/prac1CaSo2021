@@ -28,6 +28,8 @@ public:
 
 	Aplication();
 
+	Aplication(const Aplication &apl);
+
 	void aplicacion_usuario();
 
 	void aplicacion_admin();

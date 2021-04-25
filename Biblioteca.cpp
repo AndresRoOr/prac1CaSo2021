@@ -43,7 +43,7 @@ lista_sin<PedidoBiblioteca *> * Biblioteca::daLBiblioteca() {
  * @param [in] clave string. Clave del Usuario. Clave del Usuario que se busca
  * @return Devuelve un puntero al Usuario que se busca.
  */
-Usuario* Biblioteca::buscaUsuario(string login, string clave) {
+Usuario* Biblioteca::buscaUsuario(const string login, const string clave) {
 
 	for (unsigned i = 0; i < usur.tamanio(); i++) {
 		if (usur.lee(i)->daLogin() == login

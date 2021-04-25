@@ -10,11 +10,8 @@
  * @brief Constructor por defecto de la clase Libro.
  * @pre Al estar inicializando un objeto de la clase, todos los atributos aparecen vacíos o inicializados a cero.
  */
-Libro::Libro() {
-	titulo = "";
-	autores = "";
-	editorial = "";
-	ISBN = "";
+Libro::Libro(string atitulo = "", string aautores = "", string aeditorial = "", string aISBN = "") : titulo(atitulo), autores(aautores),
+editorial(aeditorial), ISBN(aISBN) {
 	anio = 0;
 	precioActual = 0;
 }
@@ -28,7 +25,7 @@ Libro::Libro() {
  * @param [in] aAnio int. Año de publicación del libro.
  * @param [in] aPrecioActual float. Precio del libro.
  */
-Libro::Libro(string aTitulo, string aAutores, string aEditorial, string aISBN, int aAnio, float aPrecioActual) {
+Libro::Libro(const string aTitulo, const string aAutores, const string aEditorial, const string aISBN, int aAnio, float aPrecioActual) {
 	titulo = aTitulo;
 	autores = aAutores;
 	editorial = aEditorial;
@@ -37,13 +34,6 @@ Libro::Libro(string aTitulo, string aAutores, string aEditorial, string aISBN, i
 	precioActual = aPrecioActual;
 }
 
-/**
- * @brief Método getter del atributo ISBN.
- * @return ISBN string. El International Standard Book Number del libro.
- */
-	string Libro::daISBN() {
-		return ISBN;
-	}
 
 /**
  * @brief Método getter del atributo título con parámetro.

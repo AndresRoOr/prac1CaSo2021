@@ -71,6 +71,7 @@ public:
 		this->fecha = pedbi.fecha;
 		this->importe = pedbi.importe;
 		this->tramitado = pedbi.tramitado;
+		this->num = pedbi.num;
 		this->pedido_usu = pedbi.pedido_usu;
 		return *this;
 	}

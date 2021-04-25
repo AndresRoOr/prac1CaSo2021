@@ -23,7 +23,7 @@ class Libro {
 
 public:
 
-	Libro();
+	Libro(string titulo, string autores, string editorial, string ISBN);
 
 	Libro(string aTitulo, string aAutores, string aEditorial, string aISBN,	int aAnio, float aPrecioActual);
 
@@ -40,7 +40,6 @@ public:
 		this->precioActual = lib.precioActual;
 	}
 
-	string daISBN();
 
 	string daTitulo(Libro *libro);
 
@@ -58,6 +57,8 @@ public:
 		this->autores = lib.autores;
 		this->editorial = lib.editorial;
 		this->ISBN = lib.ISBN;
+		this->anio = lib.anio;
+		this->precioActual = lib.precioActual;
 		return *this;
 	}
 

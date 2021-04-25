@@ -138,11 +138,12 @@ lista_sin<T>& lista_sin<T>::operator=(lista_sin &list) {
 	for (unsigned i = 0; i < list.tamanio(); i++) {
 		this->aumenta(list.lee(i)); /// Gracias a "aumenta" se reserva memoria para cada nodo.
 	}
+	this->numElem = list.numElem;
 	return (*this);
 }
 
 template<class T>
-void lista_sin<T>::aumenta(T elem) {
+void lista_sin<T>::aumenta(T const &elem) {
 	if(nuevo==NULL){
 		delete nuevo;
 	}
@@ -175,7 +176,7 @@ T lista_sin<T>::lee(unsigned pos) {
 }
 
 template<class T>
-void lista_sin<T>::modifica(T elem, unsigned pos) {
+void lista_sin<T>::modifica(T const &elem, unsigned pos) {
 	nodo<T> *iter;
 	iter = primero;
 	if (iter == NULL) {

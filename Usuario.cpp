@@ -9,11 +9,7 @@
 /**
  * @brief Constructor por defecto de la clase Usuario.
  */
-Usuario::Usuario() {
-	nombre = "";
-	clave = "";
-	login = "";
-}
+Usuario::Usuario(string anombre = "", string aclave = "", string alogin = "") : nombre(anombre), clave(aclave), login(alogin ){}
 
 /**
  * @brief Método getter del atributo clave.
@@ -37,7 +33,7 @@ string Usuario::daLogin() {
  * @param [in] alogin string. Login del Usuario.
  * @param [in] aclave string. Clave del Usuario.
  */
-void Usuario::rellena(string anombre, string alogin, string aclave) {
+void Usuario::rellena(const string anombre, const string alogin, const string aclave) {
 	nombre = anombre;
 	clave = aclave;
 	login = alogin;
@@ -49,7 +45,7 @@ void Usuario::rellena(string anombre, string alogin, string aclave) {
  * @pre Esta función sera llamada por nuevoUsuario de biblioteca.
  * @return True si existe la clave, false en cualquier otro caso.
  */
-bool Usuario::validarClave(string claven) {
+bool Usuario::validarClave(const string claven) {
 
 	if (this->clave == claven)
 		return true;
@@ -62,7 +58,7 @@ bool Usuario::validarClave(string claven) {
  * @param [in] nuevaClave string.
  * @pre Antes ha de ser utilizada la función anterior.
  */
-void Usuario::cambiarClave(string claven) {
+void Usuario::cambiarClave(const string claven) {
 	this->clave = claven;
 }
 
