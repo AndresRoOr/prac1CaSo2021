@@ -553,4 +553,341 @@
 				\caption{Captura de pantalla del error cppcheck subsanado en el código fuente}
 				\label{captura9}
 			\end{figure}
+		
+	\subsection{Warning Nº 1}
+	
+		\subsubsection{Origen/explicación del warning detectado:}
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.55]{img/esteban1.png}
+				\label{esteban1}
+			\end{figure}
+		
+			\paragraph{}Se observa el warning en la línea 16 que nos informa que 
+			
+		\subsubsection{Corrección realizada para solventar el warning:}
+		
+			\paragraph{}Captura de pantalla
+			
+	\subsection{Warning Nº 5}
+	
+		\subsubsection{Origen/explicación del warning detectado:}
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.55]{img/esteban2.png}
+				\label{esteban2}
+			\end{figure}
+		
+			\paragraph{}Se observa el warning en la línea seleccionada que nos informa que la variable miembro anio no tiene asignado valor en el operador de igualdad.
+			
+		\subsubsection{Corrección realizada para solventar el warning:}
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.55]{img/esteban3.png}
+				\label{esteban3}
+			\end{figure}
+		
+			\paragraph{}Se coloca dentro del operador de igualdad para que la variable miembro anio pueda tener un valor asignado.
+			
+	\subsection{Warning Nº 6}
+	
+		\subsubsection{Origen/explicación del warning detectado:}
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.55]{img/esteban4.png}
+				\label{esteban4}
+			\end{figure}
+		
+			\paragraph{}Se observa el warning en la línea seleccionada que nos informa que la variable miembro precioActual no tiene asignado valor en el operador de igualdad.
+			
+		\subsubsection{Corrección realizada para solventar el warning:}
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.55]{img/esteban5.png}
+				\label{esteban5}
+			\end{figure}
+		
+			\paragraph{}Se coloca dentro del operador de igualdad para que precioActual pueda tener un valor asignado.
+			
+	\subsection{Warning Nº 7}
+		
+		\subsubsection{Origen/explicación del warning detectado:}
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.55]{img/esteban6.png}
+				\label{esteban6}
+			\end{figure}
+		
+			\paragraph{}En este warning en la línea seleccionada que nos informa que la variable miembro numElem no tiene asignado valor en el operador de igualdad.
+			
+		\subsubsection{Corrección realizada para solventar el warning:}
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.55]{img/esteban7.png}
+				\label{esteban7}
+			\end{figure}
+		
+			\paragraph{}Se coloca dentro del operador de igualdad para que numElem pueda tener un valor asignado.
+			
+	\subsection{Warning Nº 13}
+	
+		\subsubsection{Origen/explicación del warning detectado:}
+		
+			\paragraph{}En este warning en la línea seleccionada que nos informa que la variable miembro num de la clase PedidoBiblioteca no tiene asignado valor en el operador de igualdad.
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.55]{img/esteban8.png}
+				\label{esteban8}
+			\end{figure}
+		
+		\subsubsection{Corrección realizada para solventar el warning:}
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.55]{img/esteban9.png}
+				\label{esteban9}
+			\end{figure}
+		
+			\paragraph{}Se coloca dentro del operador de igualdad para que num pueda tener un valor asignado.
+			
+	\subsection{INFO N.º 1}
+	
+		\subsubsection{Origen/explicación del info detectado:}
+		
+			\paragraph{}En este info se nos informa que Cppcheck no puede encontrar todos los archivos Include.
+			
+		\subsubsection{Corrección realizada para solventar el info:}
+		
+	\subsection{INFO N.º 2}
+	
+		\subsubsection{Origen/explicación del info detectado:}
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.55]{img/esteban10.png}
+				\label{esteban10}
+			\end{figure}
+		
+			\paragraph{}En este info se nos informa que el parámetro de la función aTitulo debería ser pasado por referencia constante, al igual que aAutores, aEditorial y aISBN.
+			
+		\subsubsection{ Corrección realizada para solventar el info:}
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.55]{img/esteban11.png}
+				\label{esteban11}
+			\end{figure}
+		
+			\paragraph{}Le hemos añadido la palabra reservada const antes del tipo de las variables.
+			
+			\paragraph{NOTA}Haciendo esto mismo, hemos logrado eliminar 4 Infos.
+			
+	\subsection{INFO N.º 6}
+	
+		\subsubsection{Origen/explicación del info detectado:}
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.55]{img/esteban12.png}
+				\label{esteban12}
+			\end{figure}
+		
+			\paragraph{}En este info se nos informa que el parámetro de la función anombre, al igual que alogin y aclave, deberían ser pasados por referencia constante, al igual la info anterior.
+			
+		\subsubsection{Corrección realizada para solventar el info:}
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.55]{img/esteban13.png}
+				\label{esteban13}
+			\end{figure}
+		
+			\paragraph{}Le hemos añadido la palabra reservada const antes del tipo de las variables.
+			
+			\paragraph{NOTA}Haciendo esto mismo, hemos logrado eliminar otras 2 Infos.
+	\subsection{INFO N.º 9}
+	
+		\subsubsection{Origen/explicación del info detectado:}
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.55]{img/esteban14.png}
+				\label{esteban14}
+			\end{figure}	
+		
+			\paragraph{}En este info se nos informa que el parámetro de la función aFecha debería ser pasado por referencia constante, al igual las infos anteriores.
+			
+		\subsubsection{Corrección realizada para solventar el info:}
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.55]{img/esteban15.png}
+				\label{esteban15}
+			\end{figure}
+		
+			\paragraph{}Le hemos añadido la palabra reservada const antes del tipo de la variable.
+			
+	\subsection{INFO N.º 10}
+	
+		\subsubsection{Origen/explicación del info detectado:}
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.55]{img/esteban16.png}
+				\label{esteban16}
+			\end{figure}
+		
+			\paragraph{}En este info se nos informa que el parámetro de la función login y clave deberían ser pasado s por referencia constante, al igual las infos anteriores.
+			
+		\subsubsection{Corrección realizada para solventar el info:}
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.55]{img/esteban17.png}
+				\label{esteban17}
+			\end{figure}
+		
+			\paragraph{}Le hemos añadido la palabra reservada const antes del tipo de las variables.
+			
+			\paragraph{NOTA}Haciendo esto mismo, hemos logrado eliminar otras Info.	
+			
+	\subsection{INFO N.º 12 y N.º 13}
+	
+		\subsubsection{Origen/explicación de los infos detectados:}
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.55]{img/esteban18.png}
+				\label{esteban18}
+			\end{figure}
+		
+			\paragraph{}En estos info se nos informa que los parámetros claven de ambas funciones, deberían ser pasados por referencia constante, al igual que los infos anteriores.
+			
+		\subsubsection{Corrección realizada para solventar los infos:}
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.55]{img/esteban19.png}
+				\label{esteban19}
+			\end{figure}
+		
+			\paragraph{}Le hemos añadido la palabra reservada const antes del tipo de las variables.
+			
+	\subsection{ INFO N.º 14}
+	
+		\subsubsection{Origen/explicación de los infos detectados:}
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.55]{img/esteban20.png}
+				\label{esteban20}
+			\end{figure}
+		
+			\paragraph{}En este info se nos informa que el parámetro elem, debería ser pasado por referencia constante, al igual que los infos anteriores.
+			
+		\subsubsection{Corrección realizada para solventar el info:}
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.55]{img/esteban21.png}
+				\label{esteban21}
+			\end{figure}
+		
+			\paragraph{}Le hemos añadido la palabra reservada const antes del tipo de la variable y la referencia.
+			
+	\subsection{INFO N.º 15}
+	
+		\subsubsection{Origen/explicación de los infos detectados:}
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.55]{img/esteban22.png}
+				\label{esteban22}
+			\end{figure}
+			
+			\paragraph{}En este info se nos informa que el parámetro elem, debería ser pasado por referencia constante, al igual que los infos anteriores.
+			
+		\subsubsection{Corrección realizada para solventar el info:}
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.55]{img/esteban23.png}
+				\label{esteban23}
+			\end{figure}
+		
+			\paragraph{}Le hemos añadido la palabra reservada const antes del tipo de la variable y la referencia.
+			
+	\subsection{INFOS N.º 16 y 17}
+	
+		\subsubsection{Origen/explicación de los infos detectados:}
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.55]{img/esteban24.png}
+				\label{esteban24}
+			\end{figure}
+		
+			\paragraph{}En este info se nos informa que el parámetro aFecha, debería ser pasado por referencia constante, al igual que los infos anteriores, del mismo modo, al solventar este info nos damos cuenta que nos desaparece otro más, el de que la variable fecha es asignada en el cuerpo del constructor y que deberíamos considerar inicializarla en la lista.
+			
+		\subsubsection{Corrección realizada para solventar los dos infos:}
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.55]{img/esteban25.png}
+				\label{esteban25}
+			\end{figure}
+		
+			\paragraph{}Le hemos añadido la palabra reservada const antes del tipo de la variable aFecha junto con su referencia. De este modo, Cppcheck ha considerado que la variable fecha es inicializada en la lista en lugar del cuerpo del constructor y nos ha eliminado dicha info.
+			
+	\subsection{INFOS N.º 18, 19, 20 y 21}
+	
+		\subsubsection{Origen/explicación de los infos detectados:}
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.55]{img/esteban26.png}
+				\label{esteban26}
+			\end{figure}
+		
+			\paragraph{}En estos cuatro infos se nos informa que las variables título, autores, editorial y ISBN son asignados en el cuerpo del constructor y que deberíamos considerar inicializarlos en la lista.
+			
+		\subsubsection{Corrección realizada para solventar los cuatro infos:}
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.55]{img/esteban27.png}
+				\label{esteban27}
+			\end{figure}
+		
+			\paragraph{}De este modo, Cppcheck ha considerado que las variables anteriores quedan inicializadas en la lista en lugar del cuerpo del constructor y nos ha eliminado dichas infos.
+			
+	\subsection{INFOS N.º 22, 23 y 24}
+	
+		\subsubsection{Origen/explicación de los infos detectados:}
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.55]{img/esteban28.png}
+				\label{esteban28}
+			\end{figure}
+		
+			\paragraph{}En estos tres infos se nos informa que las variables nombre, clave y login son asignados en el cuerpo del constructor y que deberíamos considerar inicializarlos en la lista.
+			
+		\subsubsection{Corrección realizada para solventar los tres infos:}
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.55]{img/esteban29.png}
+				\label{esteban29}
+			\end{figure}
+		
+			\paragraph{}Al igual que hemos procedido anteriormente, Cppcheck ha considerado que las variables anteriores quedan inicializadas en la lista en lugar del cuerpo del constructor y nos ha eliminado dichas infos.
 \newpage
