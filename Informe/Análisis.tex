@@ -556,6 +556,10 @@
 		
 	\subsection{Warning Nº 1}
 	
+		\paragraph{[cppcheck warning] Class 'Aplication' does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s).}
+		
+		\paragraph{[cppcheck warning] Class 'Aplication' does not have a operator= which is recommended since it has dynamic memory/resource allocation(s).}
+	
 		\subsubsection{Origen/explicación del warning detectado:}
 		
 			\begin{figure}[H]
@@ -571,6 +575,8 @@
 			\paragraph{}Captura de pantalla
 			
 	\subsection{Warning Nº 5}
+	
+		\paragraph{[cppcheck warning] Member variable 'Libro::anio' is not assigned a value in 'Libro::operator='.}
 	
 		\subsubsection{Origen/explicación del warning detectado:}
 		
@@ -594,6 +600,8 @@
 			
 	\subsection{Warning Nº 6}
 	
+		\paragraph{[cppcheck warning] Member variable 'Libro::precioActual' is not assigned a value in 'Libro::operator='.}
+	
 		\subsubsection{Origen/explicación del warning detectado:}
 		
 			\begin{figure}[H]
@@ -615,6 +623,8 @@
 			\paragraph{}Se coloca dentro del operador de igualdad para que precioActual pueda tener un valor asignado.
 			
 	\subsection{Warning Nº 7}
+	
+		\paragraph{[cppcheck warning)] Member variable 'lista\_sin $<$ Libro * $>$::numElem' is not assigned a value in 'lista\_sin $<$ Libro * $>$::operator='.}
 		
 		\subsubsection{Origen/explicación del warning detectado:}
 		
@@ -636,7 +646,19 @@
 		
 			\paragraph{}Se coloca dentro del operador de igualdad para que numElem pueda tener un valor asignado.
 			
+			\paragraph{Nota:}Al arreglar los dos últimos warnings,  Cppcheck ha obviado los siguientes warnings, siempre referentes a la misma variable miembro ‘numElem’…a saber:
+			
+			\paragraph{[cppcheck warning] Member variable 'lista\_sin $<$ PedidoUsuario * $>$::numElem' is not assigned a value in 'lista\_sin $<$ PedidoUsuario * $>$::operator='.	}
+			
+			\paragraph{[cppcheck warning] Member variable 'lista\_sin $<$ Usuario * $>$::numElem' is not assigned a value in 'lista\_sin $<$ Usuario * $>$::operator='.}
+			
+			\paragraph{[cppcheck warning] Member variable 'lista\_sin $<$ Usuario $>$::numElem' is not assigned a value in 'lista\_sin $<$ Usuario $>$::operator='.}
+			
+			\paragraph{[cppcheck warning] Member variable 'lista\_sin::numElem' is not assigned a value in 'lista\_sin::operator='.}
+			
 	\subsection{Warning Nº 13}
+	
+		\paragraph{ [cppcheck warning]  Member variable 'PedidoBiblioteca::num' is not assigned a value in 'PedidoBiblioteca::operator='.}
 	
 		\subsubsection{Origen/explicación del warning detectado:}
 		
@@ -660,13 +682,23 @@
 			
 	\subsection{INFO N.º 1}
 	
+		\paragraph{[cppcheck information] Cppcheck cannot find all the include files (use --check-config for details)}
+	
 		\subsubsection{Origen/explicación del info detectado:}
 		
 			\paragraph{}En este info se nos informa que Cppcheck no puede encontrar todos los archivos Include.
 			
 		\subsubsection{Corrección realizada para solventar el info:}
 		
-	\subsection{INFO N.º 2}
+	\subsection{INFO N. º 2, 3, 4 y 5 }
+	
+		\paragraph{[cppcheck performance] Function parameter 'aTitulo' should be passed by const reference.}
+		
+		\paragraph{[cppcheck performance] Function parameter 'aAutores' should be passed by const reference.	}
+		
+		\paragraph{[cppcheck performance] Function parameter 'aEditorial' should be passed by const reference.}
+		
+		\paragraph{[cppcheck performance] Function parameter 'aISBN' should be passed by const reference.}
 	
 		\subsubsection{Origen/explicación del info detectado:}
 		
@@ -690,7 +722,13 @@
 			
 			\paragraph{NOTA}Haciendo esto mismo, hemos logrado eliminar 4 Infos.
 			
-	\subsection{INFO N.º 6}
+	\subsection{INFO N. º 6, 7 y 8}
+	
+		\paragraph{[cppcheck performance] Function parameter 'anombre' should be passed by const reference.}
+		
+		\paragraph{[cppcheck performance] Function parameter 'alogin' should be passed by const reference.}
+		
+		\paragraph{[cppcheck performance] Function parameter 'aclave' should be passed by const reference.}
 	
 		\subsubsection{Origen/explicación del info detectado:}
 		
@@ -715,6 +753,8 @@
 			\paragraph{NOTA}Haciendo esto mismo, hemos logrado eliminar otras 2 Infos.
 	\subsection{INFO N.º 9}
 	
+		\paragraph{[cppcheck performance] Function parameter 'aFecha' should be passed by const reference.}
+	
 		\subsubsection{Origen/explicación del info detectado:}
 		
 			\begin{figure}[H]
@@ -735,7 +775,11 @@
 		
 			\paragraph{}Le hemos añadido la palabra reservada const antes del tipo de la variable.
 			
-	\subsection{INFO N.º 10}
+	\subsection{INFO N. º 10 y 11}
+	
+		\paragraph{[cppcheck performance] Function parameter 'login' should be passed by const reference.}
+		
+		\paragraph{[cppcheck performance] Function parameter 'clave' should be passed by const reference.}
 	
 		\subsubsection{Origen/explicación del info detectado:}
 		
@@ -761,6 +805,10 @@
 			
 	\subsection{INFO N.º 12 y N.º 13}
 	
+		\paragraph{[cppcheck performance] Function parameter 'claven' should be passed by const reference.}
+		
+		\paragraph{[cppcheck performance] Function parameter 'claven' should be passed by const reference.}
+	
 		\subsubsection{Origen/explicación de los infos detectados:}
 		
 			\begin{figure}[H]
@@ -782,6 +830,8 @@
 			\paragraph{}Le hemos añadido la palabra reservada const antes del tipo de las variables.
 			
 	\subsection{ INFO N.º 14}
+	
+		\paragraph{[cppcheck performance] Function parameter 'elem' should be passed by const reference.}
 	
 		\subsubsection{Origen/explicación de los infos detectados:}
 		
@@ -805,6 +855,8 @@
 			
 	\subsection{INFO N.º 15}
 	
+		\paragraph{[cppcheck performance] Function parameter 'elem' should be passed by const reference.}
+	
 		\subsubsection{Origen/explicación de los infos detectados:}
 		
 			\begin{figure}[H]
@@ -826,6 +878,10 @@
 			\paragraph{}Le hemos añadido la palabra reservada const antes del tipo de la variable y la referencia.
 			
 	\subsection{INFOS N.º 16 y 17}
+	
+		\paragraph{[cppcheck performance] Function parameter 'aFecha' should be passed by const reference.}
+		
+		\paragraph{[cppcheck performance] Variable 'fecha' is assigned in constructor body. Consider performing initialization in initialization list.}
 	
 		\subsubsection{Origen/explicación de los infos detectados:}
 		
@@ -849,6 +905,14 @@
 			
 	\subsection{INFOS N.º 18, 19, 20 y 21}
 	
+		\paragraph{[cppcheck performance] Variable 'titulo' is assigned in constructor body. Consider performing initialization in initialization list.}
+		
+		\paragraph{[cppcheck performance] Variable 'autores' is assigned in constructor body. Consider performing initialization in initialization list.}
+		
+		\paragraph{[cppcheck performance] Variable 'editorial' is assigned in constructor body. Consider performing initialization in initialization list.}
+		
+		\paragraph{[cppcheck performance] Variable 'ISBN' is assigned in constructor body. Consider performing initialization in initialization list.}
+	
 		\subsubsection{Origen/explicación de los infos detectados:}
 		
 			\begin{figure}[H]
@@ -870,6 +934,12 @@
 			\paragraph{}De este modo, Cppcheck ha considerado que las variables anteriores quedan inicializadas en la lista en lugar del cuerpo del constructor y nos ha eliminado dichas infos.
 			
 	\subsection{INFOS N.º 22, 23 y 24}
+	
+		\paragraph{[cppcheck performance] Variable 'nombre' is assigned in constructor body. Consider performing initialization in initialization list.}
+		
+		\paragraph{[cppcheck performance] Variable 'clave' is assigned in constructor body. Consider performing initialization in initialization list.}
+		
+		\paragraph{[cppcheck performance] Variable 'login' is assigned in constructor body. Consider performing initialization in initialization list.}
 	
 		\subsubsection{Origen/explicación de los infos detectados:}
 		
