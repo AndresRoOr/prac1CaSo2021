@@ -34,6 +34,19 @@ public:
 
 	void aplicacion_admin();
 
+	Aplication::Aplication& operator=(const Aplication& apl) {
+			this->bi = apl.bi;
+			this->usu = apl.usu;
+			this->lusu = apl.lusu;
+			this->li = apl.li;
+			this->pedBi = apl.pedBi;
+			this->pedbi = apl.pedbi;
+			this->pedusu = apl.pedusu;
+			this->libro = apl.libro;
+			this->pedbipunt = apl.pedbipunt;
+			return *this;
+		}
+
 	/**
 	 * @brief	Destructor de la clase Aplication.
 	 */

@@ -127,6 +127,15 @@ public:
 
 	PedidoBiblioteca * daListaPedBiblioteca(unsigned num);
 
+	Biblioteca::Biblioteca& operator=(const Biblioteca& bib) {
+				this->usur = bib.usur;
+				this->pedido_usu = bib.pedido_usu;
+				this->pedidoBi = bib.pedidoBi;
+				this->libro = bib.libro;
+				this->usu = bib.usu;
+				return *this;
+			}
+
 	/**
 	 * @brief Destructor de la clase Biblioteca.
 	 */

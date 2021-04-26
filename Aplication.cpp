@@ -9,7 +9,7 @@
 /**
  * @brief Constructor por defecto.
  */
-Aplication::Aplication() {
+Aplication::Aplication(Libro li = new Libro) {
 	pedusu = new lista_sin<PedidoUsuario *>;
 	pedbi = new lista_sin<PedidoBiblioteca *>;
 	libro = new lista_sin<Libro *>;
