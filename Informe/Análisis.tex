@@ -554,7 +554,7 @@
 				\label{captura9}
 			\end{figure}
 		
-	\subsection{Warning Nº 1}
+	\subsection{Warning Nº 1 y 2}
 	
 		\paragraph{[cppcheck warning] Class 'Aplication' does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s).}
 		
@@ -568,11 +568,25 @@
 				\label{esteban1}
 			\end{figure}
 		
-			\paragraph{}Se observa el warning en la línea 16 que nos informa que 
+			\paragraph{}Se observa el warning en la línea 16 que nos informa que sería recomendable para la clase Aplicación el contar con un constructor de copia debido a que cuenta con recursos en memoria dinámica, asimismo, se nos ofrece en esta misma línea otro warning diciendo que sería recomendable la implementación de un operador de igualdad por el mismo motivo..
 			
 		\subsubsection{Corrección realizada para solventar el warning:}
 		
-			\paragraph{}Captura de pantalla
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.55]{img/esteban30.png}
+				\label{esteban30}
+			\end{figure}
+		
+			\paragraph{}Este mismo warning nos aparece, pero para la clase Biblioteca que nos dice que:
+			
+			\paragraph{[cppcheck warning] Class 'Aplication' does not have a operator= which is recommended since it has dynamic memory/resource allocation(s).}
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.55]{img/esteban31.png}
+				\label{esteban31}
+			\end{figure}
 			
 	\subsection{Warning Nº 5}
 	

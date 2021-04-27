@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.10.15)  26 APR 2021 11:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.10.15)  26 APR 2021 12:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -405,11 +405,11 @@ Package pdftex.def Info: img/Logo_EPS.png  used on input line 231.
  [2]
 File: img/np_UJA_generica_6.png Graphic file (type png)
 <use img/np_UJA_generica_6.png>
-Package pdftex.def Info: img/np_UJA_generica_6.png  used on input line 342.
+Package pdftex.def Info: img/np_UJA_generica_6.png  used on input line 343.
 (pdftex.def)             Requested size: 88.33517pt x 45.17139pt.
 File: img/Logo_EPS.png Graphic file (type png)
 <use img/Logo_EPS.png>
-Package pdftex.def Info: img/Logo_EPS.png  used on input line 342.
+Package pdftex.def Info: img/Logo_EPS.png  used on input line 343.
 (pdftex.def)             Requested size: 81.42586pt x 60.46713pt.
  [3])
 \tf@toc=\write4
@@ -1656,47 +1656,58 @@ File: img/esteban1.png Graphic file (type png)
 <use img/esteban1.png>
 Package pdftex.def Info: img/esteban1.png  used on input line 567.
 (pdftex.def)             Requested size: 234.3362pt x 96.30006pt.
+<img/esteban30.png, id=1398, 369.12906pt x 147.04938pt>
+File: img/esteban30.png Graphic file (type png)
+<use img/esteban30.png>
+Package pdftex.def Info: img/esteban30.png  used on input line 577.
+(pdftex.def)             Requested size: 203.0216pt x 80.8774pt.
 File: img/np_UJA_generica_6.png Graphic file (type png)
 <use img/np_UJA_generica_6.png>
-Package pdftex.def Info: img/np_UJA_generica_6.png  used on input line 581.
+Package pdftex.def Info: img/np_UJA_generica_6.png  used on input line 580.
 (pdftex.def)             Requested size: 88.33517pt x 45.17139pt.
 File: img/Logo_EPS.png Graphic file (type png)
 <use img/Logo_EPS.png>
-Package pdftex.def Info: img/Logo_EPS.png  used on input line 581.
+Package pdftex.def Info: img/Logo_EPS.png  used on input line 580.
 (pdftex.def)             Requested size: 81.42586pt x 60.46713pt.
  [56 <./img/captura93.png (PNG copy)> <./img/esteban1.png (PNG copy)>]
-<img/esteban2.png, id=1408, 426.0645pt x 117.9315pt>
+<img/esteban31.png, id=1408, 391.4625pt x 97.36375pt>
+File: img/esteban31.png Graphic file (type png)
+<use img/esteban31.png>
+Package pdftex.def Info: img/esteban31.png  used on input line 587.
+(pdftex.def)             Requested size: 215.30502pt x 53.55022pt.
+<img/esteban2.png, id=1409, 426.0645pt x 117.9315pt>
 File: img/esteban2.png Graphic file (type png)
 <use img/esteban2.png>
-Package pdftex.def Info: img/esteban2.png  used on input line 585.
+Package pdftex.def Info: img/esteban2.png  used on input line 599.
 (pdftex.def)             Requested size: 234.3362pt x 64.86252pt.
-<img/esteban3.png, id=1409, 426.0645pt x 117.9315pt>
+<img/esteban3.png, id=1410, 426.0645pt x 117.9315pt>
 File: img/esteban3.png Graphic file (type png)
 <use img/esteban3.png>
-Package pdftex.def Info: img/esteban3.png  used on input line 595.
+Package pdftex.def Info: img/esteban3.png  used on input line 609.
 (pdftex.def)             Requested size: 234.3362pt x 64.86252pt.
-<img/esteban4.png, id=1410, 426.0645pt x 117.9315pt>
-File: img/esteban4.png Graphic file (type png)
-<use img/esteban4.png>
-Package pdftex.def Info: img/esteban4.png  used on input line 609.
-(pdftex.def)             Requested size: 234.3362pt x 64.86252pt.
-<img/esteban5.png, id=1411, 426.7215pt x 138.9555pt>
-File: img/esteban5.png Graphic file (type png)
-<use img/esteban5.png>
-Package pdftex.def Info: img/esteban5.png  used on input line 619.
-(pdftex.def)             Requested size: 234.69754pt x 76.42575pt.
 File: img/np_UJA_generica_6.png Graphic file (type png)
 <use img/np_UJA_generica_6.png>
-Package pdftex.def Info: img/np_UJA_generica_6.png  used on input line 622.
+Package pdftex.def Info: img/np_UJA_generica_6.png  used on input line 612.
 (pdftex.def)             Requested size: 88.33517pt x 45.17139pt.
 File: img/Logo_EPS.png Graphic file (type png)
 <use img/Logo_EPS.png>
-Package pdftex.def Info: img/Logo_EPS.png  used on input line 622.
+Package pdftex.def Info: img/Logo_EPS.png  used on input line 612.
 (pdftex.def)             Requested size: 81.42586pt x 60.46713pt.
 
-[57 <./img/esteban2.png (PNG copy)> <./img/esteban3.png (PNG copy)> <./img/este
-ban4.png (PNG copy)>]
-Overfull \hbox (1.38408pt too wide) in paragraph at lines 629--629
+[57 <./img/esteban30.png (PNG copy)> <./img/esteban31.png (PNG copy)> <./img/es
+teban2.png (PNG copy)>]
+<img/esteban4.png, id=1422, 426.0645pt x 117.9315pt>
+File: img/esteban4.png Graphic file (type png)
+<use img/esteban4.png>
+Package pdftex.def Info: img/esteban4.png  used on input line 623.
+(pdftex.def)             Requested size: 234.3362pt x 64.86252pt.
+<img/esteban5.png, id=1423, 426.7215pt x 138.9555pt>
+File: img/esteban5.png Graphic file (type png)
+<use img/esteban5.png>
+Package pdftex.def Info: img/esteban5.png  used on input line 633.
+(pdftex.def)             Requested size: 234.69754pt x 76.42575pt.
+
+Overfull \hbox (1.38408pt too wide) in paragraph at lines 643--643
  []\OT1/cmr/bx/n/10 [cppcheck war-ning)] Mem-ber va-ria-ble 'lis-ta[]sin $\OML/
 cmm/m/it/10 <$ \OT1/cmr/bx/n/10 Li-bro * $\OML/cmm/m/it/10 >$\OT1/cmr/bx/n/10 :
 :numElem'
@@ -1705,242 +1716,253 @@ cmm/m/it/10 <$ \OT1/cmr/bx/n/10 Li-bro * $\OML/cmm/m/it/10 >$\OT1/cmr/bx/n/10 :
 <img/esteban6.png, id=1424, 426.7215pt x 80.154pt>
 File: img/esteban6.png Graphic file (type png)
 <use img/esteban6.png>
-Package pdftex.def Info: img/esteban6.png  used on input line 633.
+Package pdftex.def Info: img/esteban6.png  used on input line 647.
 (pdftex.def)             Requested size: 234.69754pt x 44.08484pt.
-<img/esteban7.png, id=1425, 426.393pt x 89.6805pt>
+File: img/np_UJA_generica_6.png Graphic file (type png)
+<use img/np_UJA_generica_6.png>
+Package pdftex.def Info: img/np_UJA_generica_6.png  used on input line 650.
+(pdftex.def)             Requested size: 88.33517pt x 45.17139pt.
+File: img/Logo_EPS.png Graphic file (type png)
+<use img/Logo_EPS.png>
+Package pdftex.def Info: img/Logo_EPS.png  used on input line 650.
+(pdftex.def)             Requested size: 81.42586pt x 60.46713pt.
+[58 <./img/esteban3.png (PNG copy)> <./img/esteban4.png (PNG copy)> <./img/este
+ban5.png (PNG copy)>]
+<img/esteban7.png, id=1437, 426.393pt x 89.6805pt>
 File: img/esteban7.png Graphic file (type png)
 <use img/esteban7.png>
-Package pdftex.def Info: img/esteban7.png  used on input line 643.
+Package pdftex.def Info: img/esteban7.png  used on input line 657.
 (pdftex.def)             Requested size: 234.51686pt x 49.32442pt.
 
-Overfull \hbox (8.96872pt too wide) in paragraph at lines 655--655
+Overfull \hbox (8.96872pt too wide) in paragraph at lines 669--669
  []\OT1/cmr/bx/n/10 [cppcheck war-ning] Mem-ber va-ria-ble 'lis-ta[]sin $\OML/c
 mm/m/it/10 <$ \OT1/cmr/bx/n/10 Usua-rio * $\OML/cmm/m/it/10 >$\OT1/cmr/bx/n/10 
 ::numElem'
  []
 
-File: img/np_UJA_generica_6.png Graphic file (type png)
-<use img/np_UJA_generica_6.png>
-Package pdftex.def Info: img/np_UJA_generica_6.png  used on input line 655.
-(pdftex.def)             Requested size: 88.33517pt x 45.17139pt.
-File: img/Logo_EPS.png Graphic file (type png)
-<use img/Logo_EPS.png>
-Package pdftex.def Info: img/Logo_EPS.png  used on input line 655.
-(pdftex.def)             Requested size: 81.42586pt x 60.46713pt.
-[58 <./img/esteban5.png (PNG copy)> <./img/esteban6.png (PNG copy)> <./img/este
-ban7.png (PNG copy)>]
-Overfull \hbox (0.66321pt too wide) in paragraph at lines 657--657
+
+Overfull \hbox (0.66321pt too wide) in paragraph at lines 671--671
  []\OT1/cmr/bx/n/10 [cppcheck war-ning] Mem-ber va-ria-ble 'lis-ta[]sin $\OML/c
 mm/m/it/10 <$ \OT1/cmr/bx/n/10 Usua-rio $\OML/cmm/m/it/10 >$\OT1/cmr/bx/n/10 ::
 numElem'
  []
 
-<img/esteban8.png, id=1439, 397.73593pt x 92.59593pt>
+<img/esteban8.png, id=1438, 397.73593pt x 92.59593pt>
 File: img/esteban8.png Graphic file (type png)
 <use img/esteban8.png>
-Package pdftex.def Info: img/esteban8.png  used on input line 669.
+Package pdftex.def Info: img/esteban8.png  used on input line 683.
 (pdftex.def)             Requested size: 218.75543pt x 50.9279pt.
-<img/esteban9.png, id=1440, 470.00594pt x 104.64093pt>
+File: img/np_UJA_generica_6.png Graphic file (type png)
+<use img/np_UJA_generica_6.png>
+Package pdftex.def Info: img/np_UJA_generica_6.png  used on input line 685.
+(pdftex.def)             Requested size: 88.33517pt x 45.17139pt.
+File: img/Logo_EPS.png Graphic file (type png)
+<use img/Logo_EPS.png>
+Package pdftex.def Info: img/Logo_EPS.png  used on input line 685.
+(pdftex.def)             Requested size: 81.42586pt x 60.46713pt.
+[59 <./img/esteban6.png (PNG copy)> <./img/esteban7.png (PNG copy)>]
+<img/esteban9.png, id=1453, 470.00594pt x 104.64093pt>
 File: img/esteban9.png Graphic file (type png)
 <use img/esteban9.png>
-Package pdftex.def Info: img/esteban9.png  used on input line 677.
+Package pdftex.def Info: img/esteban9.png  used on input line 691.
 (pdftex.def)             Requested size: 258.50406pt x 57.55267pt.
 File: img/np_UJA_generica_6.png Graphic file (type png)
 <use img/np_UJA_generica_6.png>
-Package pdftex.def Info: img/np_UJA_generica_6.png  used on input line 697.
+Package pdftex.def Info: img/np_UJA_generica_6.png  used on input line 717.
 (pdftex.def)             Requested size: 88.33517pt x 45.17139pt.
 File: img/Logo_EPS.png Graphic file (type png)
 <use img/Logo_EPS.png>
-Package pdftex.def Info: img/Logo_EPS.png  used on input line 697.
+Package pdftex.def Info: img/Logo_EPS.png  used on input line 717.
 (pdftex.def)             Requested size: 81.42586pt x 60.46713pt.
-[59 <./img/esteban8.png (PNG copy)> <./img/esteban9.png (PNG copy)>]
-<img/esteban10.png, id=1455, 427.05pt x 65.043pt>
+ [60 <./img/esteban8.png (PNG copy)> <./img/esteban9.png (PNG copy)>]
+<img/esteban10.png, id=1468, 427.05pt x 65.043pt>
 File: img/esteban10.png Graphic file (type png)
 <use img/esteban10.png>
-Package pdftex.def Info: img/esteban10.png  used on input line 707.
+Package pdftex.def Info: img/esteban10.png  used on input line 721.
 (pdftex.def)             Requested size: 234.87822pt x 35.77374pt.
-<img/esteban11.png, id=1456, 426.393pt x 85.7385pt>
+<img/esteban11.png, id=1469, 426.393pt x 85.7385pt>
 File: img/esteban11.png Graphic file (type png)
 <use img/esteban11.png>
-Package pdftex.def Info: img/esteban11.png  used on input line 717.
+Package pdftex.def Info: img/esteban11.png  used on input line 731.
 (pdftex.def)             Requested size: 234.51686pt x 47.15631pt.
-File: img/np_UJA_generica_6.png Graphic file (type png)
-<use img/np_UJA_generica_6.png>
-Package pdftex.def Info: img/np_UJA_generica_6.png  used on input line 733.
-(pdftex.def)             Requested size: 88.33517pt x 45.17139pt.
-File: img/Logo_EPS.png Graphic file (type png)
-<use img/Logo_EPS.png>
-Package pdftex.def Info: img/Logo_EPS.png  used on input line 733.
-(pdftex.def)             Requested size: 81.42586pt x 60.46713pt.
- [60 <./img/esteban10.png (PNG copy)> <./img/esteban11.png (PNG copy)>]
-<img/esteban12.png, id=1474, 452.18938pt x 64.49094pt>
+<img/esteban12.png, id=1470, 452.18938pt x 64.49094pt>
 File: img/esteban12.png Graphic file (type png)
 <use img/esteban12.png>
-Package pdftex.def Info: img/esteban12.png  used on input line 737.
+Package pdftex.def Info: img/esteban12.png  used on input line 751.
 (pdftex.def)             Requested size: 248.70491pt x 35.47011pt.
-<img/esteban13.png, id=1475, 426.0645pt x 103.149pt>
+<img/esteban13.png, id=1471, 426.0645pt x 103.149pt>
 File: img/esteban13.png Graphic file (type png)
 <use img/esteban13.png>
-Package pdftex.def Info: img/esteban13.png  used on input line 747.
+Package pdftex.def Info: img/esteban13.png  used on input line 761.
 (pdftex.def)             Requested size: 234.3362pt x 56.73212pt.
-<img/esteban14.png, id=1476, 426.0645pt x 83.1105pt>
+File: img/np_UJA_generica_6.png Graphic file (type png)
+<use img/np_UJA_generica_6.png>
+Package pdftex.def Info: img/np_UJA_generica_6.png  used on input line 764.
+(pdftex.def)             Requested size: 88.33517pt x 45.17139pt.
+File: img/Logo_EPS.png Graphic file (type png)
+<use img/Logo_EPS.png>
+Package pdftex.def Info: img/Logo_EPS.png  used on input line 764.
+(pdftex.def)             Requested size: 81.42586pt x 60.46713pt.
+ [61 <./img/esteban10.png (PNG copy)> <./img/esteban11.png (PNG copy)> <./img/e
+steban12.png (PNG copy)>]
+<img/esteban14.png, id=1488, 426.0645pt x 83.1105pt>
 File: img/esteban14.png Graphic file (type png)
 <use img/esteban14.png>
-Package pdftex.def Info: img/esteban14.png  used on input line 762.
+Package pdftex.def Info: img/esteban14.png  used on input line 776.
 (pdftex.def)             Requested size: 234.3362pt x 45.71089pt.
-<img/esteban15.png, id=1477, 426.393pt x 55.845pt>
+<img/esteban15.png, id=1489, 426.393pt x 55.845pt>
 File: img/esteban15.png Graphic file (type png)
 <use img/esteban15.png>
-Package pdftex.def Info: img/esteban15.png  used on input line 772.
+Package pdftex.def Info: img/esteban15.png  used on input line 786.
 (pdftex.def)             Requested size: 234.51686pt x 30.71483pt.
-File: img/np_UJA_generica_6.png Graphic file (type png)
-<use img/np_UJA_generica_6.png>
-Package pdftex.def Info: img/np_UJA_generica_6.png  used on input line 775.
-(pdftex.def)             Requested size: 88.33517pt x 45.17139pt.
-File: img/Logo_EPS.png Graphic file (type png)
-<use img/Logo_EPS.png>
-Package pdftex.def Info: img/Logo_EPS.png  used on input line 775.
-(pdftex.def)             Requested size: 81.42586pt x 60.46713pt.
- [61 <./img/esteban12.png (PNG copy)> <./img/esteban13.png (PNG copy)> <./img/e
-steban14.png (PNG copy)>]
-<img/esteban16.png, id=1491, 388.6155pt x 104.463pt>
+<img/esteban16.png, id=1490, 388.6155pt x 104.463pt>
 File: img/esteban16.png Graphic file (type png)
 <use img/esteban16.png>
-Package pdftex.def Info: img/esteban16.png  used on input line 788.
+Package pdftex.def Info: img/esteban16.png  used on input line 802.
 (pdftex.def)             Requested size: 213.73918pt x 57.4548pt.
-<img/esteban17.png, id=1492, 426.7215pt x 117.603pt>
+File: img/np_UJA_generica_6.png Graphic file (type png)
+<use img/np_UJA_generica_6.png>
+Package pdftex.def Info: img/np_UJA_generica_6.png  used on input line 805.
+(pdftex.def)             Requested size: 88.33517pt x 45.17139pt.
+File: img/Logo_EPS.png Graphic file (type png)
+<use img/Logo_EPS.png>
+Package pdftex.def Info: img/Logo_EPS.png  used on input line 805.
+(pdftex.def)             Requested size: 81.42586pt x 60.46713pt.
+ [62 <./img/esteban13.png (PNG copy)> <./img/esteban14.png (PNG copy)> <./img/e
+steban15.png (PNG copy)>]
+<img/esteban17.png, id=1505, 426.7215pt x 117.603pt>
 File: img/esteban17.png Graphic file (type png)
 <use img/esteban17.png>
-Package pdftex.def Info: img/esteban17.png  used on input line 798.
+Package pdftex.def Info: img/esteban17.png  used on input line 812.
 (pdftex.def)             Requested size: 234.69754pt x 64.68184pt.
-File: img/np_UJA_generica_6.png Graphic file (type png)
-<use img/np_UJA_generica_6.png>
-Package pdftex.def Info: img/np_UJA_generica_6.png  used on input line 812.
-(pdftex.def)             Requested size: 88.33517pt x 45.17139pt.
-File: img/Logo_EPS.png Graphic file (type png)
-<use img/Logo_EPS.png>
-Package pdftex.def Info: img/Logo_EPS.png  used on input line 812.
-(pdftex.def)             Requested size: 81.42586pt x 60.46713pt.
- [62 <./img/esteban15.png (PNG copy)> <./img/esteban16.png (PNG copy)> <./img/e
-steban17.png (PNG copy)>]
-<img/esteban18.png, id=1507, 426.393pt x 173.448pt>
+<img/esteban18.png, id=1506, 426.393pt x 173.448pt>
 File: img/esteban18.png Graphic file (type png)
 <use img/esteban18.png>
-Package pdftex.def Info: img/esteban18.png  used on input line 816.
+Package pdftex.def Info: img/esteban18.png  used on input line 830.
 (pdftex.def)             Requested size: 234.51686pt x 95.39668pt.
-<img/esteban19.png, id=1508, 418.509pt x 185.931pt>
+<img/esteban19.png, id=1507, 418.509pt x 185.931pt>
 File: img/esteban19.png Graphic file (type png)
 <use img/esteban19.png>
-Package pdftex.def Info: img/esteban19.png  used on input line 826.
+Package pdftex.def Info: img/esteban19.png  used on input line 840.
 (pdftex.def)             Requested size: 230.18066pt x 102.26234pt.
-<img/esteban20.png, id=1509, 315.0315pt x 64.386pt>
-File: img/esteban20.png Graphic file (type png)
-<use img/esteban20.png>
-Package pdftex.def Info: img/esteban20.png  used on input line 840.
-(pdftex.def)             Requested size: 173.26785pt x 35.4124pt.
-<img/esteban21.png, id=1510, 247.42438pt x 66.2475pt>
-File: img/esteban21.png Graphic file (type png)
-<use img/esteban21.png>
-Package pdftex.def Info: img/esteban21.png  used on input line 850.
-(pdftex.def)             Requested size: 136.08382pt x 36.43622pt.
 File: img/np_UJA_generica_6.png Graphic file (type png)
 <use img/np_UJA_generica_6.png>
-Package pdftex.def Info: img/np_UJA_generica_6.png  used on input line 853.
+Package pdftex.def Info: img/np_UJA_generica_6.png  used on input line 843.
 (pdftex.def)             Requested size: 88.33517pt x 45.17139pt.
 File: img/Logo_EPS.png Graphic file (type png)
 <use img/Logo_EPS.png>
-Package pdftex.def Info: img/Logo_EPS.png  used on input line 853.
+Package pdftex.def Info: img/Logo_EPS.png  used on input line 843.
 (pdftex.def)             Requested size: 81.42586pt x 60.46713pt.
- [63 <./img/esteban18.png (PNG copy)> <./img/esteban19.png (PNG copy)> <./img/e
-steban20.png (PNG copy)>]
+ [63 <./img/esteban16.png (PNG copy)> <./img/esteban17.png (PNG copy)> <./img/e
+steban18.png (PNG copy)>]
+<img/esteban20.png, id=1521, 315.0315pt x 64.386pt>
+File: img/esteban20.png Graphic file (type png)
+<use img/esteban20.png>
+Package pdftex.def Info: img/esteban20.png  used on input line 854.
+(pdftex.def)             Requested size: 173.26785pt x 35.4124pt.
+<img/esteban21.png, id=1522, 247.42438pt x 66.2475pt>
+File: img/esteban21.png Graphic file (type png)
+<use img/esteban21.png>
+Package pdftex.def Info: img/esteban21.png  used on input line 864.
+(pdftex.def)             Requested size: 136.08382pt x 36.43622pt.
 <img/esteban22.png, id=1523, 317.68687pt x 75.03032pt>
 File: img/esteban22.png Graphic file (type png)
 <use img/esteban22.png>
-Package pdftex.def Info: img/esteban22.png  used on input line 864.
+Package pdftex.def Info: img/esteban22.png  used on input line 878.
 (pdftex.def)             Requested size: 174.7283pt x 41.26678pt.
-<img/esteban23.png, id=1524, 351.3125pt x 83.81313pt>
+File: img/np_UJA_generica_6.png Graphic file (type png)
+<use img/np_UJA_generica_6.png>
+Package pdftex.def Info: img/np_UJA_generica_6.png  used on input line 881.
+(pdftex.def)             Requested size: 88.33517pt x 45.17139pt.
+File: img/Logo_EPS.png Graphic file (type png)
+<use img/Logo_EPS.png>
+Package pdftex.def Info: img/Logo_EPS.png  used on input line 881.
+(pdftex.def)             Requested size: 81.42586pt x 60.46713pt.
+ [64 <./img/esteban19.png (PNG copy)> <./img/esteban20.png (PNG copy)> <./img/e
+steban21.png (PNG copy)>]
+<img/esteban23.png, id=1536, 351.3125pt x 83.81313pt>
 File: img/esteban23.png Graphic file (type png)
 <use img/esteban23.png>
-Package pdftex.def Info: img/esteban23.png  used on input line 874.
+Package pdftex.def Info: img/esteban23.png  used on input line 888.
 (pdftex.def)             Requested size: 193.22246pt x 46.09734pt.
-<img/esteban24.png, id=1525, 426.0645pt x 56.8305pt>
+<img/esteban24.png, id=1537, 426.0645pt x 56.8305pt>
 File: img/esteban24.png Graphic file (type png)
 <use img/esteban24.png>
-Package pdftex.def Info: img/esteban24.png  used on input line 890.
+Package pdftex.def Info: img/esteban24.png  used on input line 904.
 (pdftex.def)             Requested size: 234.3362pt x 31.25687pt.
-File: img/np_UJA_generica_6.png Graphic file (type png)
-<use img/np_UJA_generica_6.png>
-Package pdftex.def Info: img/np_UJA_generica_6.png  used on input line 893.
-(pdftex.def)             Requested size: 88.33517pt x 45.17139pt.
-File: img/Logo_EPS.png Graphic file (type png)
-<use img/Logo_EPS.png>
-Package pdftex.def Info: img/Logo_EPS.png  used on input line 893.
-(pdftex.def)             Requested size: 81.42586pt x 60.46713pt.
- [64 <./img/esteban21.png (PNG copy)> <./img/esteban22.png (PNG copy)> <./img/e
-steban23.png (PNG copy)>]
-<img/esteban25.png, id=1539, 426.393pt x 104.1345pt>
+<img/esteban25.png, id=1538, 426.393pt x 104.1345pt>
 File: img/esteban25.png Graphic file (type png)
 <use img/esteban25.png>
-Package pdftex.def Info: img/esteban25.png  used on input line 900.
+Package pdftex.def Info: img/esteban25.png  used on input line 914.
 (pdftex.def)             Requested size: 234.51686pt x 57.27414pt.
-<img/esteban26.png, id=1540, 426.0645pt x 96.579pt>
+File: img/np_UJA_generica_6.png Graphic file (type png)
+<use img/np_UJA_generica_6.png>
+Package pdftex.def Info: img/np_UJA_generica_6.png  used on input line 917.
+(pdftex.def)             Requested size: 88.33517pt x 45.17139pt.
+File: img/Logo_EPS.png Graphic file (type png)
+<use img/Logo_EPS.png>
+Package pdftex.def Info: img/Logo_EPS.png  used on input line 917.
+(pdftex.def)             Requested size: 81.42586pt x 60.46713pt.
+[65 <./img/esteban22.png (PNG copy)> <./img/esteban23.png (PNG copy)> <./img/es
+teban24.png (PNG copy)>]
+<img/esteban26.png, id=1551, 426.0645pt x 96.579pt>
 File: img/esteban26.png Graphic file (type png)
 <use img/esteban26.png>
-Package pdftex.def Info: img/esteban26.png  used on input line 920.
+Package pdftex.def Info: img/esteban26.png  used on input line 934.
 (pdftex.def)             Requested size: 234.3362pt x 53.1186pt.
-File: img/np_UJA_generica_6.png Graphic file (type png)
-<use img/np_UJA_generica_6.png>
-Package pdftex.def Info: img/np_UJA_generica_6.png  used on input line 923.
-(pdftex.def)             Requested size: 88.33517pt x 45.17139pt.
-File: img/Logo_EPS.png Graphic file (type png)
-<use img/Logo_EPS.png>
-Package pdftex.def Info: img/Logo_EPS.png  used on input line 923.
-(pdftex.def)             Requested size: 81.42586pt x 60.46713pt.
- [65 <./img/esteban24.png (PNG copy)> <./img/esteban25.png (PNG copy)>]
-<img/esteban27.png, id=1553, 780.41562pt x 110.91437pt>
+<img/esteban27.png, id=1552, 780.41562pt x 110.91437pt>
 File: img/esteban27.png Graphic file (type png)
 <use img/esteban27.png>
-Package pdftex.def Info: img/esteban27.png  used on input line 930.
+Package pdftex.def Info: img/esteban27.png  used on input line 944.
 (pdftex.def)             Requested size: 429.22992pt x 61.00307pt.
 
-Overfull \hbox (84.22992pt too wide) in paragraph at lines 930--932
+Overfull \hbox (84.22992pt too wide) in paragraph at lines 944--946
  [][] 
  []
 
-<img/esteban28.png, id=1554, 329.73187pt x 94.85437pt>
+File: img/np_UJA_generica_6.png Graphic file (type png)
+<use img/np_UJA_generica_6.png>
+Package pdftex.def Info: img/np_UJA_generica_6.png  used on input line 947.
+(pdftex.def)             Requested size: 88.33517pt x 45.17139pt.
+File: img/Logo_EPS.png Graphic file (type png)
+<use img/Logo_EPS.png>
+Package pdftex.def Info: img/Logo_EPS.png  used on input line 947.
+(pdftex.def)             Requested size: 81.42586pt x 60.46713pt.
+[66 <./img/esteban25.png (PNG copy)> <./img/esteban26.png (PNG copy)>]
+<img/esteban28.png, id=1566, 329.73187pt x 94.85437pt>
 File: img/esteban28.png Graphic file (type png)
 <use img/esteban28.png>
-Package pdftex.def Info: img/esteban28.png  used on input line 948.
+Package pdftex.def Info: img/esteban28.png  used on input line 962.
 (pdftex.def)             Requested size: 181.35307pt x 52.17004pt.
-File: img/np_UJA_generica_6.png Graphic file (type png)
-<use img/np_UJA_generica_6.png>
-Package pdftex.def Info: img/np_UJA_generica_6.png  used on input line 953.
-(pdftex.def)             Requested size: 88.33517pt x 45.17139pt.
-File: img/Logo_EPS.png Graphic file (type png)
-<use img/Logo_EPS.png>
-Package pdftex.def Info: img/Logo_EPS.png  used on input line 953.
-(pdftex.def)             Requested size: 81.42586pt x 60.46713pt.
-[66 <./img/esteban26.png (PNG copy)> <./img/esteban27.png (PNG copy)> <./img/es
-teban28.png (PNG copy)>]
-<img/esteban29.png, id=1569, 745.28438pt x 61.47969pt>
+<img/esteban29.png, id=1567, 745.28438pt x 61.47969pt>
 File: img/esteban29.png Graphic file (type png)
 <use img/esteban29.png>
-Package pdftex.def Info: img/esteban29.png  used on input line 958.
+Package pdftex.def Info: img/esteban29.png  used on input line 972.
 (pdftex.def)             Requested size: 409.90767pt x 33.81392pt.
 
-Overfull \hbox (64.90767pt too wide) in paragraph at lines 958--960
+Overfull \hbox (64.90767pt too wide) in paragraph at lines 972--974
  [][] 
  []
 
 File: img/np_UJA_generica_6.png Graphic file (type png)
 <use img/np_UJA_generica_6.png>
-Package pdftex.def Info: img/np_UJA_generica_6.png  used on input line 963.
+Package pdftex.def Info: img/np_UJA_generica_6.png  used on input line 977.
 (pdftex.def)             Requested size: 88.33517pt x 45.17139pt.
 File: img/Logo_EPS.png Graphic file (type png)
 <use img/Logo_EPS.png>
-Package pdftex.def Info: img/Logo_EPS.png  used on input line 963.
+Package pdftex.def Info: img/Logo_EPS.png  used on input line 977.
 (pdftex.def)             Requested size: 81.42586pt x 60.46713pt.
-[67 <./img/esteban29.png (PNG copy)>]) (./Referencias.tex
+[67 <./img/esteban27.png (PNG copy)> <./img/esteban28.png (PNG copy)> <./img/es
+teban29.png (PNG copy)>]
+File: img/np_UJA_generica_6.png Graphic file (type png)
+<use img/np_UJA_generica_6.png>
+Package pdftex.def Info: img/np_UJA_generica_6.png  used on input line 977.
+(pdftex.def)             Requested size: 88.33517pt x 45.17139pt.
+File: img/Logo_EPS.png Graphic file (type png)
+<use img/Logo_EPS.png>
+Package pdftex.def Info: img/Logo_EPS.png  used on input line 977.
+(pdftex.def)             Requested size: 81.42586pt x 60.46713pt.
+ [68]) (./Referencias.tex
 Underfull \hbox (badness 10000) in paragraph at lines 6--7
 [][]$\OT1/cmtt/m/n/10 https : / / wiki . sei . cmu . edu / confluence / display
  / seccode / SEI + CERT +
@@ -2052,7 +2074,7 @@ File: img/Logo_EPS.png Graphic file (type png)
 <use img/Logo_EPS.png>
 Package pdftex.def Info: img/Logo_EPS.png  used on input line 21.
 (pdftex.def)             Requested size: 81.42586pt x 60.46713pt.
- [68]
+ [69]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 21.
  (./Informe.aux
 LaTeX Info: Redefining \. on input line 24.
@@ -2061,7 +2083,7 @@ LaTeX Info: Redefining \% on input line 24.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 21.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 21.
 Package rerunfilecheck Info: File `Informe.out' has not changed.
-(rerunfilecheck)             Checksum: 39A797A971B3DB131FB2D1E957656280;12355.
+(rerunfilecheck)             Checksum: 98EAF042F88C37A571FC0668C6678D81;12359.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -2069,10 +2091,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 21.
  ) 
 Here is how much of TeX's memory you used:
- 9366 strings out of 481239
- 147085 string characters out of 5920376
- 415632 words of memory out of 5000000
- 23789 multiletter control sequences out of 15000+600000
+ 9384 strings out of 481239
+ 147396 string characters out of 5920376
+ 415943 words of memory out of 5000000
+ 23801 multiletter control sequences out of 15000+600000
  535995 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,17n,47p,944b,620s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2089,10 +2111,10 @@ pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/sh
 are/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type
 1/public/cm-super/sfrm1000.pfb>
-Output written on Informe.pdf (69 pages, 6381809 bytes).
+Output written on Informe.pdf (70 pages, 6489037 bytes).
 PDF statistics:
- 1794 PDF objects out of 2073 (max. 8388607)
- 1555 compressed objects within 16 object streams
- 569 named destinations out of 1000 (max. 500000)
- 1662 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1804 PDF objects out of 2073 (max. 8388607)
+ 1562 compressed objects within 16 object streams
+ 573 named destinations out of 1000 (max. 500000)
+ 1672 words of extra memory for PDF output out of 10000 (max. 10000000)
 

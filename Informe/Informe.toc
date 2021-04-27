@@ -230,120 +230,121 @@
 \contentsline {paragraph}{}{55}{section*.261}%
 \contentsline {subsubsection}{\numberline {4.10.2}Corrección realizada para solventar el error}{55}{subsubsection.4.10.2}%
 \contentsline {paragraph}{}{55}{section*.263}%
-\contentsline {subsection}{\numberline {4.11}Warning Nº 1}{56}{subsection.4.11}%
+\contentsline {subsection}{\numberline {4.11}Warning Nº 1 y 2}{56}{subsection.4.11}%
 \contentsline {paragraph}{[cppcheck warning] Class 'Aplication' does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s).}{56}{section*.265}%
 \contentsline {paragraph}{[cppcheck warning] Class 'Aplication' does not have a operator= which is recommended since it has dynamic memory/resource allocation(s).}{56}{section*.266}%
 \contentsline {subsubsection}{\numberline {4.11.1}Origen/explicación del warning detectado:}{56}{subsubsection.4.11.1}%
 \contentsline {paragraph}{}{56}{section*.268}%
-\contentsline {subsubsection}{\numberline {4.11.2}Corrección realizada para solventar el warning:}{56}{subsubsection.4.11.2}%
-\contentsline {paragraph}{}{56}{section*.269}%
+\contentsline {subsubsection}{\numberline {4.11.2}Corrección realizada para solventar el warning:}{57}{subsubsection.4.11.2}%
+\contentsline {paragraph}{}{57}{section*.270}%
+\contentsline {paragraph}{[cppcheck warning] Class 'Aplication' does not have a operator= which is recommended since it has dynamic memory/resource allocation(s).}{57}{figure.caption.272}%
 \contentsline {subsection}{\numberline {4.12}Warning Nº 5}{57}{subsection.4.12}%
-\contentsline {paragraph}{[cppcheck warning] Member variable 'Libro::anio' is not assigned a value in 'Libro::operator='.}{57}{section*.270}%
+\contentsline {paragraph}{[cppcheck warning] Member variable 'Libro::anio' is not assigned a value in 'Libro::operator='.}{57}{section*.273}%
 \contentsline {subsubsection}{\numberline {4.12.1}Origen/explicación del warning detectado:}{57}{subsubsection.4.12.1}%
-\contentsline {paragraph}{}{57}{section*.272}%
-\contentsline {subsubsection}{\numberline {4.12.2}Corrección realizada para solventar el warning:}{57}{subsubsection.4.12.2}%
-\contentsline {paragraph}{}{57}{section*.274}%
-\contentsline {subsection}{\numberline {4.13}Warning Nº 6}{57}{subsection.4.13}%
-\contentsline {paragraph}{[cppcheck warning] Member variable 'Libro::precioActual' is not assigned a value in 'Libro::operator='.}{57}{section*.275}%
-\contentsline {subsubsection}{\numberline {4.13.1}Origen/explicación del warning detectado:}{57}{subsubsection.4.13.1}%
-\contentsline {paragraph}{}{57}{section*.277}%
+\contentsline {paragraph}{}{57}{section*.275}%
+\contentsline {subsubsection}{\numberline {4.12.2}Corrección realizada para solventar el warning:}{58}{subsubsection.4.12.2}%
+\contentsline {paragraph}{}{58}{section*.277}%
+\contentsline {subsection}{\numberline {4.13}Warning Nº 6}{58}{subsection.4.13}%
+\contentsline {paragraph}{[cppcheck warning] Member variable 'Libro::precioActual' is not assigned a value in 'Libro::operator='.}{58}{section*.278}%
+\contentsline {subsubsection}{\numberline {4.13.1}Origen/explicación del warning detectado:}{58}{subsubsection.4.13.1}%
+\contentsline {paragraph}{}{58}{section*.280}%
 \contentsline {subsubsection}{\numberline {4.13.2}Corrección realizada para solventar el warning:}{58}{subsubsection.4.13.2}%
-\contentsline {paragraph}{}{58}{section*.279}%
-\contentsline {subsection}{\numberline {4.14}Warning Nº 7}{58}{subsection.4.14}%
-\contentsline {paragraph}{[cppcheck warning)] Member variable 'lista\_sin $<$ Libro * $>$::numElem' is not assigned a value in 'lista\_sin $<$ Libro * $>$::operator='.}{58}{section*.280}%
-\contentsline {subsubsection}{\numberline {4.14.1}Origen/explicación del warning detectado:}{58}{subsubsection.4.14.1}%
 \contentsline {paragraph}{}{58}{section*.282}%
-\contentsline {subsubsection}{\numberline {4.14.2}Corrección realizada para solventar el warning:}{58}{subsubsection.4.14.2}%
-\contentsline {paragraph}{}{58}{section*.284}%
-\contentsline {paragraph}{Nota:}{58}{section*.285}%
-\contentsline {paragraph}{[cppcheck warning] Member variable 'lista\_sin $<$ PedidoUsuario * $>$::numElem' is not assigned a value in 'lista\_sin $<$ PedidoUsuario * $>$::operator='. }{58}{section*.286}%
-\contentsline {paragraph}{[cppcheck warning] Member variable 'lista\_sin $<$ Usuario * $>$::numElem' is not assigned a value in 'lista\_sin $<$ Usuario * $>$::operator='.}{59}{section*.287}%
-\contentsline {paragraph}{[cppcheck warning] Member variable 'lista\_sin $<$ Usuario $>$::numElem' is not assigned a value in 'lista\_sin $<$ Usuario $>$::operator='.}{59}{section*.288}%
-\contentsline {paragraph}{[cppcheck warning] Member variable 'lista\_sin::numElem' is not assigned a value in 'lista\_sin::operator='.}{59}{section*.289}%
+\contentsline {subsection}{\numberline {4.14}Warning Nº 7}{58}{subsection.4.14}%
+\contentsline {paragraph}{[cppcheck warning)] Member variable 'lista\_sin $<$ Libro * $>$::numElem' is not assigned a value in 'lista\_sin $<$ Libro * $>$::operator='.}{58}{section*.283}%
+\contentsline {subsubsection}{\numberline {4.14.1}Origen/explicación del warning detectado:}{59}{subsubsection.4.14.1}%
+\contentsline {paragraph}{}{59}{section*.285}%
+\contentsline {subsubsection}{\numberline {4.14.2}Corrección realizada para solventar el warning:}{59}{subsubsection.4.14.2}%
+\contentsline {paragraph}{}{59}{section*.287}%
+\contentsline {paragraph}{Nota:}{59}{section*.288}%
+\contentsline {paragraph}{[cppcheck warning] Member variable 'lista\_sin $<$ PedidoUsuario * $>$::numElem' is not assigned a value in 'lista\_sin $<$ PedidoUsuario * $>$::operator='. }{59}{section*.289}%
+\contentsline {paragraph}{[cppcheck warning] Member variable 'lista\_sin $<$ Usuario * $>$::numElem' is not assigned a value in 'lista\_sin $<$ Usuario * $>$::operator='.}{59}{section*.290}%
+\contentsline {paragraph}{[cppcheck warning] Member variable 'lista\_sin $<$ Usuario $>$::numElem' is not assigned a value in 'lista\_sin $<$ Usuario $>$::operator='.}{59}{section*.291}%
+\contentsline {paragraph}{[cppcheck warning] Member variable 'lista\_sin::numElem' is not assigned a value in 'lista\_sin::operator='.}{59}{section*.292}%
 \contentsline {subsection}{\numberline {4.15}Warning Nº 13}{59}{subsection.4.15}%
-\contentsline {paragraph}{ [cppcheck warning] Member variable 'PedidoBiblioteca::num' is not assigned a value in 'PedidoBiblioteca::operator='.}{59}{section*.290}%
-\contentsline {subsubsection}{\numberline {4.15.1}Origen/explicación del warning detectado:}{59}{subsubsection.4.15.1}%
-\contentsline {paragraph}{}{59}{section*.291}%
-\contentsline {subsubsection}{\numberline {4.15.2}Corrección realizada para solventar el warning:}{59}{subsubsection.4.15.2}%
-\contentsline {paragraph}{}{59}{section*.294}%
-\contentsline {subsection}{\numberline {4.16}INFO N.º 1}{59}{subsection.4.16}%
-\contentsline {paragraph}{[cppcheck information] Cppcheck cannot find all the include files (use --check-config for details)}{59}{section*.295}%
-\contentsline {subsubsection}{\numberline {4.16.1}Origen/explicación del info detectado:}{59}{subsubsection.4.16.1}%
-\contentsline {paragraph}{}{59}{section*.296}%
+\contentsline {paragraph}{ [cppcheck warning] Member variable 'PedidoBiblioteca::num' is not assigned a value in 'PedidoBiblioteca::operator='.}{59}{section*.293}%
+\contentsline {subsubsection}{\numberline {4.15.1}Origen/explicación del warning detectado:}{60}{subsubsection.4.15.1}%
+\contentsline {paragraph}{}{60}{section*.294}%
+\contentsline {subsubsection}{\numberline {4.15.2}Corrección realizada para solventar el warning:}{60}{subsubsection.4.15.2}%
+\contentsline {paragraph}{}{60}{section*.297}%
+\contentsline {subsection}{\numberline {4.16}INFO N.º 1}{60}{subsection.4.16}%
+\contentsline {paragraph}{[cppcheck information] Cppcheck cannot find all the include files (use --check-config for details)}{60}{section*.298}%
+\contentsline {subsubsection}{\numberline {4.16.1}Origen/explicación del info detectado:}{60}{subsubsection.4.16.1}%
+\contentsline {paragraph}{}{60}{section*.299}%
 \contentsline {subsubsection}{\numberline {4.16.2}Corrección realizada para solventar el info:}{60}{subsubsection.4.16.2}%
 \contentsline {subsection}{\numberline {4.17}INFO N. º 2, 3, 4 y 5 }{60}{subsection.4.17}%
-\contentsline {paragraph}{[cppcheck performance] Function parameter 'aTitulo' should be passed by const reference.}{60}{section*.297}%
-\contentsline {paragraph}{[cppcheck performance] Function parameter 'aAutores' should be passed by const reference. }{60}{section*.298}%
-\contentsline {paragraph}{[cppcheck performance] Function parameter 'aEditorial' should be passed by const reference.}{60}{section*.299}%
-\contentsline {paragraph}{[cppcheck performance] Function parameter 'aISBN' should be passed by const reference.}{60}{section*.300}%
-\contentsline {subsubsection}{\numberline {4.17.1}Origen/explicación del info detectado:}{60}{subsubsection.4.17.1}%
-\contentsline {paragraph}{}{60}{section*.302}%
-\contentsline {subsubsection}{\numberline {4.17.2} Corrección realizada para solventar el info:}{60}{subsubsection.4.17.2}%
-\contentsline {paragraph}{}{60}{section*.304}%
-\contentsline {paragraph}{NOTA}{60}{section*.305}%
-\contentsline {subsection}{\numberline {4.18}INFO N. º 6, 7 y 8}{60}{subsection.4.18}%
-\contentsline {paragraph}{[cppcheck performance] Function parameter 'anombre' should be passed by const reference.}{60}{section*.306}%
-\contentsline {paragraph}{[cppcheck performance] Function parameter 'alogin' should be passed by const reference.}{60}{section*.307}%
-\contentsline {paragraph}{[cppcheck performance] Function parameter 'aclave' should be passed by const reference.}{61}{section*.308}%
+\contentsline {paragraph}{[cppcheck performance] Function parameter 'aTitulo' should be passed by const reference.}{60}{section*.300}%
+\contentsline {paragraph}{[cppcheck performance] Function parameter 'aAutores' should be passed by const reference. }{60}{section*.301}%
+\contentsline {paragraph}{[cppcheck performance] Function parameter 'aEditorial' should be passed by const reference.}{60}{section*.302}%
+\contentsline {paragraph}{[cppcheck performance] Function parameter 'aISBN' should be passed by const reference.}{61}{section*.303}%
+\contentsline {subsubsection}{\numberline {4.17.1}Origen/explicación del info detectado:}{61}{subsubsection.4.17.1}%
+\contentsline {paragraph}{}{61}{section*.305}%
+\contentsline {subsubsection}{\numberline {4.17.2} Corrección realizada para solventar el info:}{61}{subsubsection.4.17.2}%
+\contentsline {paragraph}{}{61}{section*.307}%
+\contentsline {paragraph}{NOTA}{61}{section*.308}%
+\contentsline {subsection}{\numberline {4.18}INFO N. º 6, 7 y 8}{61}{subsection.4.18}%
+\contentsline {paragraph}{[cppcheck performance] Function parameter 'anombre' should be passed by const reference.}{61}{section*.309}%
+\contentsline {paragraph}{[cppcheck performance] Function parameter 'alogin' should be passed by const reference.}{61}{section*.310}%
+\contentsline {paragraph}{[cppcheck performance] Function parameter 'aclave' should be passed by const reference.}{61}{section*.311}%
 \contentsline {subsubsection}{\numberline {4.18.1}Origen/explicación del info detectado:}{61}{subsubsection.4.18.1}%
-\contentsline {paragraph}{}{61}{section*.310}%
-\contentsline {subsubsection}{\numberline {4.18.2}Corrección realizada para solventar el info:}{61}{subsubsection.4.18.2}%
-\contentsline {paragraph}{}{61}{section*.312}%
-\contentsline {paragraph}{NOTA}{61}{section*.313}%
-\contentsline {subsection}{\numberline {4.19}INFO N.º 9}{61}{subsection.4.19}%
-\contentsline {paragraph}{[cppcheck performance] Function parameter 'aFecha' should be passed by const reference.}{61}{section*.314}%
-\contentsline {subsubsection}{\numberline {4.19.1}Origen/explicación del info detectado:}{61}{subsubsection.4.19.1}%
-\contentsline {paragraph}{}{61}{section*.316}%
+\contentsline {paragraph}{}{61}{section*.313}%
+\contentsline {subsubsection}{\numberline {4.18.2}Corrección realizada para solventar el info:}{62}{subsubsection.4.18.2}%
+\contentsline {paragraph}{}{62}{section*.315}%
+\contentsline {paragraph}{NOTA}{62}{section*.316}%
+\contentsline {subsection}{\numberline {4.19}INFO N.º 9}{62}{subsection.4.19}%
+\contentsline {paragraph}{[cppcheck performance] Function parameter 'aFecha' should be passed by const reference.}{62}{section*.317}%
+\contentsline {subsubsection}{\numberline {4.19.1}Origen/explicación del info detectado:}{62}{subsubsection.4.19.1}%
+\contentsline {paragraph}{}{62}{section*.319}%
 \contentsline {subsubsection}{\numberline {4.19.2}Corrección realizada para solventar el info:}{62}{subsubsection.4.19.2}%
-\contentsline {paragraph}{}{62}{section*.318}%
+\contentsline {paragraph}{}{62}{section*.321}%
 \contentsline {subsection}{\numberline {4.20}INFO N. º 10 y 11}{62}{subsection.4.20}%
-\contentsline {paragraph}{[cppcheck performance] Function parameter 'login' should be passed by const reference.}{62}{section*.319}%
-\contentsline {paragraph}{[cppcheck performance] Function parameter 'clave' should be passed by const reference.}{62}{section*.320}%
-\contentsline {subsubsection}{\numberline {4.20.1}Origen/explicación del info detectado:}{62}{subsubsection.4.20.1}%
-\contentsline {paragraph}{}{62}{section*.322}%
-\contentsline {subsubsection}{\numberline {4.20.2}Corrección realizada para solventar el info:}{62}{subsubsection.4.20.2}%
-\contentsline {paragraph}{}{62}{section*.324}%
-\contentsline {paragraph}{NOTA}{62}{section*.325}%
-\contentsline {subsection}{\numberline {4.21}INFO N.º 12 y N.º 13}{62}{subsection.4.21}%
-\contentsline {paragraph}{[cppcheck performance] Function parameter 'claven' should be passed by const reference.}{62}{section*.326}%
-\contentsline {paragraph}{[cppcheck performance] Function parameter 'claven' should be passed by const reference.}{63}{section*.327}%
+\contentsline {paragraph}{[cppcheck performance] Function parameter 'login' should be passed by const reference.}{62}{section*.322}%
+\contentsline {paragraph}{[cppcheck performance] Function parameter 'clave' should be passed by const reference.}{62}{section*.323}%
+\contentsline {subsubsection}{\numberline {4.20.1}Origen/explicación del info detectado:}{63}{subsubsection.4.20.1}%
+\contentsline {paragraph}{}{63}{section*.325}%
+\contentsline {subsubsection}{\numberline {4.20.2}Corrección realizada para solventar el info:}{63}{subsubsection.4.20.2}%
+\contentsline {paragraph}{}{63}{section*.327}%
+\contentsline {paragraph}{NOTA}{63}{section*.328}%
+\contentsline {subsection}{\numberline {4.21}INFO N.º 12 y N.º 13}{63}{subsection.4.21}%
+\contentsline {paragraph}{[cppcheck performance] Function parameter 'claven' should be passed by const reference.}{63}{section*.329}%
+\contentsline {paragraph}{[cppcheck performance] Function parameter 'claven' should be passed by const reference.}{63}{section*.330}%
 \contentsline {subsubsection}{\numberline {4.21.1}Origen/explicación de los infos detectados:}{63}{subsubsection.4.21.1}%
-\contentsline {paragraph}{}{63}{section*.329}%
-\contentsline {subsubsection}{\numberline {4.21.2}Corrección realizada para solventar los infos:}{63}{subsubsection.4.21.2}%
-\contentsline {paragraph}{}{63}{section*.331}%
-\contentsline {subsection}{\numberline {4.22} INFO N.º 14}{63}{subsection.4.22}%
-\contentsline {paragraph}{[cppcheck performance] Function parameter 'elem' should be passed by const reference.}{63}{section*.332}%
-\contentsline {subsubsection}{\numberline {4.22.1}Origen/explicación de los infos detectados:}{63}{subsubsection.4.22.1}%
-\contentsline {paragraph}{}{63}{section*.334}%
+\contentsline {paragraph}{}{63}{section*.332}%
+\contentsline {subsubsection}{\numberline {4.21.2}Corrección realizada para solventar los infos:}{64}{subsubsection.4.21.2}%
+\contentsline {paragraph}{}{64}{section*.334}%
+\contentsline {subsection}{\numberline {4.22} INFO N.º 14}{64}{subsection.4.22}%
+\contentsline {paragraph}{[cppcheck performance] Function parameter 'elem' should be passed by const reference.}{64}{section*.335}%
+\contentsline {subsubsection}{\numberline {4.22.1}Origen/explicación de los infos detectados:}{64}{subsubsection.4.22.1}%
+\contentsline {paragraph}{}{64}{section*.337}%
 \contentsline {subsubsection}{\numberline {4.22.2}Corrección realizada para solventar el info:}{64}{subsubsection.4.22.2}%
-\contentsline {paragraph}{}{64}{section*.336}%
-\contentsline {subsection}{\numberline {4.23}INFO N.º 15}{64}{subsection.4.23}%
-\contentsline {paragraph}{[cppcheck performance] Function parameter 'elem' should be passed by const reference.}{64}{section*.337}%
-\contentsline {subsubsection}{\numberline {4.23.1}Origen/explicación de los infos detectados:}{64}{subsubsection.4.23.1}%
 \contentsline {paragraph}{}{64}{section*.339}%
-\contentsline {subsubsection}{\numberline {4.23.2}Corrección realizada para solventar el info:}{64}{subsubsection.4.23.2}%
-\contentsline {paragraph}{}{64}{section*.341}%
-\contentsline {subsection}{\numberline {4.24}INFOS N.º 16 y 17}{64}{subsection.4.24}%
-\contentsline {paragraph}{[cppcheck performance] Function parameter 'aFecha' should be passed by const reference.}{64}{section*.342}%
-\contentsline {paragraph}{[cppcheck performance] Variable 'fecha' is assigned in constructor body. Consider performing initialization in initialization list.}{64}{section*.343}%
+\contentsline {subsection}{\numberline {4.23}INFO N.º 15}{64}{subsection.4.23}%
+\contentsline {paragraph}{[cppcheck performance] Function parameter 'elem' should be passed by const reference.}{64}{section*.340}%
+\contentsline {subsubsection}{\numberline {4.23.1}Origen/explicación de los infos detectados:}{65}{subsubsection.4.23.1}%
+\contentsline {paragraph}{}{65}{section*.342}%
+\contentsline {subsubsection}{\numberline {4.23.2}Corrección realizada para solventar el info:}{65}{subsubsection.4.23.2}%
+\contentsline {paragraph}{}{65}{section*.344}%
+\contentsline {subsection}{\numberline {4.24}INFOS N.º 16 y 17}{65}{subsection.4.24}%
+\contentsline {paragraph}{[cppcheck performance] Function parameter 'aFecha' should be passed by const reference.}{65}{section*.345}%
+\contentsline {paragraph}{[cppcheck performance] Variable 'fecha' is assigned in constructor body. Consider performing initialization in initialization list.}{65}{section*.346}%
 \contentsline {subsubsection}{\numberline {4.24.1}Origen/explicación de los infos detectados:}{65}{subsubsection.4.24.1}%
-\contentsline {paragraph}{}{65}{section*.345}%
-\contentsline {subsubsection}{\numberline {4.24.2}Corrección realizada para solventar los dos infos:}{65}{subsubsection.4.24.2}%
-\contentsline {paragraph}{}{65}{section*.347}%
-\contentsline {subsection}{\numberline {4.25}INFOS N.º 18, 19, 20 y 21}{65}{subsection.4.25}%
-\contentsline {paragraph}{[cppcheck performance] Variable 'titulo' is assigned in constructor body. Consider performing initialization in initialization list.}{65}{section*.348}%
-\contentsline {paragraph}{[cppcheck performance] Variable 'autores' is assigned in constructor body. Consider performing initialization in initialization list.}{65}{section*.349}%
-\contentsline {paragraph}{[cppcheck performance] Variable 'editorial' is assigned in constructor body. Consider performing initialization in initialization list.}{65}{section*.350}%
-\contentsline {paragraph}{[cppcheck performance] Variable 'ISBN' is assigned in constructor body. Consider performing initialization in initialization list.}{65}{section*.351}%
+\contentsline {paragraph}{}{65}{section*.348}%
+\contentsline {subsubsection}{\numberline {4.24.2}Corrección realizada para solventar los dos infos:}{66}{subsubsection.4.24.2}%
+\contentsline {paragraph}{}{66}{section*.350}%
+\contentsline {subsection}{\numberline {4.25}INFOS N.º 18, 19, 20 y 21}{66}{subsection.4.25}%
+\contentsline {paragraph}{[cppcheck performance] Variable 'titulo' is assigned in constructor body. Consider performing initialization in initialization list.}{66}{section*.351}%
+\contentsline {paragraph}{[cppcheck performance] Variable 'autores' is assigned in constructor body. Consider performing initialization in initialization list.}{66}{section*.352}%
+\contentsline {paragraph}{[cppcheck performance] Variable 'editorial' is assigned in constructor body. Consider performing initialization in initialization list.}{66}{section*.353}%
+\contentsline {paragraph}{[cppcheck performance] Variable 'ISBN' is assigned in constructor body. Consider performing initialization in initialization list.}{66}{section*.354}%
 \contentsline {subsubsection}{\numberline {4.25.1}Origen/explicación de los infos detectados:}{66}{subsubsection.4.25.1}%
-\contentsline {paragraph}{}{66}{section*.353}%
-\contentsline {subsubsection}{\numberline {4.25.2}Corrección realizada para solventar los cuatro infos:}{66}{subsubsection.4.25.2}%
-\contentsline {paragraph}{}{66}{section*.355}%
-\contentsline {subsection}{\numberline {4.26}INFOS N.º 22, 23 y 24}{66}{subsection.4.26}%
-\contentsline {paragraph}{[cppcheck performance] Variable 'nombre' is assigned in constructor body. Consider performing initialization in initialization list.}{66}{section*.356}%
-\contentsline {paragraph}{[cppcheck performance] Variable 'clave' is assigned in constructor body. Consider performing initialization in initialization list.}{66}{section*.357}%
-\contentsline {paragraph}{[cppcheck performance] Variable 'login' is assigned in constructor body. Consider performing initialization in initialization list.}{66}{section*.358}%
-\contentsline {subsubsection}{\numberline {4.26.1}Origen/explicación de los infos detectados:}{66}{subsubsection.4.26.1}%
-\contentsline {paragraph}{}{67}{section*.360}%
+\contentsline {paragraph}{}{66}{section*.356}%
+\contentsline {subsubsection}{\numberline {4.25.2}Corrección realizada para solventar los cuatro infos:}{67}{subsubsection.4.25.2}%
+\contentsline {paragraph}{}{67}{section*.358}%
+\contentsline {subsection}{\numberline {4.26}INFOS N.º 22, 23 y 24}{67}{subsection.4.26}%
+\contentsline {paragraph}{[cppcheck performance] Variable 'nombre' is assigned in constructor body. Consider performing initialization in initialization list.}{67}{section*.359}%
+\contentsline {paragraph}{[cppcheck performance] Variable 'clave' is assigned in constructor body. Consider performing initialization in initialization list.}{67}{section*.360}%
+\contentsline {paragraph}{[cppcheck performance] Variable 'login' is assigned in constructor body. Consider performing initialization in initialization list.}{67}{section*.361}%
+\contentsline {subsubsection}{\numberline {4.26.1}Origen/explicación de los infos detectados:}{67}{subsubsection.4.26.1}%
+\contentsline {paragraph}{}{67}{section*.363}%
 \contentsline {subsubsection}{\numberline {4.26.2}Corrección realizada para solventar los tres infos:}{67}{subsubsection.4.26.2}%
-\contentsline {paragraph}{}{67}{section*.362}%
+\contentsline {paragraph}{}{68}{section*.365}%
