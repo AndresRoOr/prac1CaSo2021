@@ -34,6 +34,14 @@ Libro::Libro(const string aTitulo, const string aAutores, const string aEditoria
 	precioActual = aPrecioActual;
 }
 
+Libro::Libro(const Libro &lib) {
+			this->titulo = lib.titulo;
+			this->autores = lib.autores;
+			this->editorial = lib.editorial;
+			this->ISBN = lib.ISBN;
+			this->anio = lib.anio;
+			this->precioActual = lib.precioActual;
+		}
 
 /**
  * @brief Método getter del atributo título con parámetro.

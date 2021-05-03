@@ -31,14 +31,7 @@ public:
 	 * @brief Constructor por copia de la clase Libro.
 	 * @param [in] lib Libro(dir). Instancia de la clase Libro de la cual se va realizar una copia.
 	 */
-	Libro(const Libro &lib) {
-		this->titulo = lib.titulo;
-		this->autores = lib.autores;
-		this->editorial = lib.editorial;
-		this->ISBN = lib.ISBN;
-		this->anio = lib.anio;
-		this->precioActual = lib.precioActual;
-	}
+	Libro(const Libro &lib);
 
 
 	string daTitulo(Libro *libro);

@@ -6,10 +6,12 @@
 
 #include "Aplication.h"
 
+using namespace std;
+
 /**
- * @brief Constructor por defecto.
+ * @brief Constructor por defecto de la clase Aplication.
  */
-Aplication::Aplication(Libro li = new Libro) {
+Aplication::Aplication() : li(new Libro) {
 	pedusu = new lista_sin<PedidoUsuario *>;
 	pedbi = new lista_sin<PedidoBiblioteca *>;
 	libro = new lista_sin<Libro *>;
@@ -20,6 +22,9 @@ Aplication::Aplication(Libro li = new Libro) {
 
 }
 
+/**
+ * @brief Constructor por copia de la clase Aplication.
+ */
 Aplication::Aplication(const Aplication &apl) : bi(apl.bi), usu(apl.usu), lusu(apl.lusu), li(apl.li), pedBi(apl.pedBi), pedbi(apl.pedbi),
 		pedusu(apl.pedusu), libro(apl.libro), pedbipunt(apl.pedbipunt) {}
 

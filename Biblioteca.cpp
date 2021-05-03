@@ -30,6 +30,12 @@ bool Biblioteca::nuevoUsuario(string login, string nombre, string clave) {
 }
 
 /**
+ * @brief Constructor por copia de la clase Biblioteca.
+ */
+Biblioteca::Biblioteca(const Biblioteca &bib) : usur(bib.usur), pedido_usu(bib.pedido_usu), pedidoBi(bib.pedidoBi), libro(bib.libro),
+			usu(bib.usu) {}
+
+/**
  * @brief Método getter del atributo pedidoBi de la clase.
  * @return El atributo pedidoBi de la clase.
  */

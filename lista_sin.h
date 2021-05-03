@@ -10,7 +10,6 @@
 #include <iostream>
 #include <exception>
 
-using namespace std;
 
 template<class T>
 
@@ -106,7 +105,7 @@ public:
 /**
  * @brief Clase que representa error de tipo de elemento referenciado.
  */
-class ErrorElemento: public exception {
+class ErrorElemento: public std::exception {
 public:
 	const char* what() const throw () {
 		return "\nError: Error de tipo de elemento referenciado.\n";
@@ -143,7 +142,7 @@ lista_sin<T>& lista_sin<T>::operator=(lista_sin &list) {
 }
 
 template<class T>
-void lista_sin<T>::aumenta(T const &elem) {
+void lista_sin<T>::lista_sin<T>::aumenta(T const &elem) {
 	if(nuevo==NULL){
 		delete nuevo;
 	}
@@ -175,6 +174,7 @@ T lista_sin<T>::lee(unsigned pos) {
 	}
 }
 
+using namespace std{
 template<class T>
 void lista_sin<T>::modifica(T const &elem, unsigned pos) {
 	nodo<T> *iter;
@@ -192,7 +192,7 @@ void lista_sin<T>::modifica(T const &elem, unsigned pos) {
 		}
 	}
 }
-
+}
 template<class T>
 void lista_sin<T>::inserta_dato(const T &dato, unsigned pos) {
 	nodo<T> *iter;

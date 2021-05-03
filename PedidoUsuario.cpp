@@ -5,6 +5,8 @@
 
 #include "PedidoUsuario.h"
 
+using namespace std;
+
 /**
  * @brief Constructor por defecto del pedido de un usuario en concreto.
  * @return La inicialización de un pedido por parte del usuario con su fecha, precio, etc.
@@ -27,11 +29,11 @@ PedidoUsuario::PedidoUsuario() :
  * @param [in] aPrecio float.
  * @param [in] aTramitado bool.
  */
-PedidoUsuario::PedidoUsuario(const Fecha &aFecha, int aPrioridad, float aPrecio, bool aTramitado, Usuario *usuario, Libro *libro) {
+PedidoUsuario::PedidoUsuario(const Fecha &aFecha, int aPrioridad, float aPrecio, bool aTramitado, Usuario *usuario, Libro *libro) : &fecha(aFecha) {
 	fecha = aFecha;          ///< Copia de la fecha que queda registrada al hacer un pedido.
 	prioridad = aPrioridad;  ///< Copia de la prioridad que queda registrada al hacer un pedido.
 	precio = aPrecio;        ///< Copia del precio de un pedido.
-	tramitado = aTramitado;  ///< Copia de la tramitación de un pedido.
+	tramitado = aTramitado;  ///< Copia de la tramitaciÃ³n de un pedido.
 	this->usuario = usuario; ///< Referencia al usuario mediante el objeto this.
 	this->libro = libro;     ///< Referencia al libro mediante el objeto this.
 }

@@ -95,6 +95,8 @@ public:
 		usu = new Usuario;
 	}
 
+	Biblioteca(const Biblioteca &bib);
+
 	lista_sin<PedidoBiblioteca *> * daLBiblioteca();
 
 	bool nuevoUsuario(string login, string nombre, string clave);
