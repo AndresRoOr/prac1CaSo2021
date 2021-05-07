@@ -10,6 +10,7 @@
 #include <iostream>
 #include <exception>
 
+using namespace std;
 
 template<class T>
 
@@ -42,21 +43,21 @@ public:
 	 * @brief Añade un elemento nuevo a la lista_sin.
 	 * @param [in] elem T. Objeto que queremos añadir.
 	 */
-	void aumenta(T elem);
+	void aumenta(const T &elem);
 
 	/**
 	 * @brief Devuelve el objeto que se encuentra en la posición pasada como parámetro.
 	 * @param [in] pos unsigned. Posición en la que se encuentra el objeto.
 	 * @return Devuelve el tipo de dato que se encuentra en esa posición.
 	 */
-	T lee(unsigned pos);
+	T lee(unsigned pos) const;
 
 	/**
 	 * @brief Modifica el objeto situado en la posición pasada como parámetro con el objeto pasado como parámetro.
 	 * @param [in] elem T. Objeto que queremos introducir.
 	 * @param [in] pos unsigned. Posición de la lista_sin en la que queremos introducir el objeto.
 	 */
-	void modifica(T elem, unsigned pos);
+	void modifica(T const &elem, unsigned pos);
 
 	/**
 	 * @brief Inserta el objeto que se pasa como parámetro en una posición determinada de lista_sin.
@@ -76,7 +77,7 @@ public:
 	 * @brief Devuelve el tamaño de la lista_sin.
 	 * @return Devuelve el tamaño de la lista_sin representado como un entero sin signo.
 	 */
-	unsigned tamanio();
+	unsigned tamanio() const;
 
 	/**
 	 * @brief Elimina todos los elementos almacenados en la lista_sin.
@@ -88,13 +89,13 @@ public:
 	 * @param [in] list lista_sin (dir). lista_sin que queremos copiar.
 	 * @return lista_sin copia de la lista_sin pasada como parámetro.
 	 */
-	lista_sin& operator=(lista_sin &list);
+	lista_sin& operator=(const lista_sin &list);
 
 	/**
 	 * @brief Constructor por copia de la clase lista_sin.
 	 * @param [in] list lista_sin (dir). lista_sin que queremos copiar.
 	 */
-	lista_sin(lista_sin &list);
+	lista_sin(const lista_sin &list);
 
 	/**
 	 * @brief Destructor de la clase lista_sin.
@@ -121,7 +122,7 @@ lista_sin<T>::lista_sin() {
 }
 
 template<class T>
-lista_sin<T>::lista_sin(lista_sin &list) {
+lista_sin<T>::lista_sin(const lista_sin &list) {
 	nuevo = NULL;
 	primero = NULL;
 	ultimo = NULL;
@@ -132,9 +133,9 @@ lista_sin<T>::lista_sin(lista_sin &list) {
 }
 
 template<class T>
-lista_sin<T>& lista_sin<T>::operator=(lista_sin &list) {
+lista_sin<T>& lista_sin<T>::operator=(const lista_sin &list) {
 	this->limpia();
-	for (unsigned i = 0; i < list.tamanio(); i++) {
+	for (unsigned  i = 0; i < list.tamanio(); i++) {
 		this->aumenta(list.lee(i)); /// Gracias a "aumenta" se reserva memoria para cada nodo.
 	}
 	this->numElem = list.numElem;
@@ -142,8 +143,8 @@ lista_sin<T>& lista_sin<T>::operator=(lista_sin &list) {
 }
 
 template<class T>
-void lista_sin<T>::lista_sin<T>::aumenta(T const &elem) {
-	if(nuevo==NULL){
+void lista_sin<T>::aumenta(const T &elem) {
+	if (nuevo == NULL) {
 		delete nuevo;
 	}
 	nuevo = new struct nodo<T>;
@@ -160,39 +161,44 @@ void lista_sin<T>::lista_sin<T>::aumenta(T const &elem) {
 }
 
 template<class T>
-T lista_sin<T>::lee(unsigned pos) {
-	nuevo = primero;
-	if (nuevo == NULL) {
+T lista_sin<T>::lee(unsigned pos) const{
+	nodo<T> *iterador = primero;
+	if (iterador == NULL) {
 		throw ErrorElemento();
 	} else {
 		unsigned i = 0;
-		while (nuevo && i < pos) {
+		while (iterador && i < pos) {
 			i++;
-			nuevo = nuevo->sige;
+			iterador = iterador->sige;
 		}
-		return nuevo->date;
+		if(iterador){
+		return iterador->date;
+		} else {
+			throw ErrorElemento();
+		}
 	}
 }
 
-using namespace std{
-template<class T>
-void lista_sin<T>::modifica(T const &elem, unsigned pos) {
-	nodo<T> *iter;
-	iter = primero;
-	if (iter == NULL) {
-		throw ErrorElemento();
-	} else {
-		unsigned i = 0;
-		while (iter && i < pos) {
-			i++;
-			iter = iter->sige;
-		}
-		if (iter != NULL) {
-			iter->date = elem;
+
+
+	template<class T>
+	void lista_sin<T>::modifica(T const &elem, unsigned pos) {
+		nodo<T> *iter;
+		iter = primero;
+		if (iter == NULL) {
+			throw ErrorElemento();
+		} else {
+			unsigned i = 0;
+			while (iter && i < pos) {
+				i++;
+				iter = iter->sige;
+			}
+			if (iter != NULL) {
+				iter->date = elem;
+			}
 		}
 	}
-}
-}
+
 template<class T>
 void lista_sin<T>::inserta_dato(const T &dato, unsigned pos) {
 	nodo<T> *iter;
@@ -246,7 +252,7 @@ T lista_sin<T>::elimina_dato(unsigned pos) {
 }
 
 template<class T>
-unsigned lista_sin<T>::tamanio() {
+unsigned lista_sin<T>::tamanio() const {
 	return numElem;
 }
 

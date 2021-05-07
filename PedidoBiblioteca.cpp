@@ -6,17 +6,6 @@
 #include "PedidoBiblioteca.h"
 
 /**
- * @brief Constructor por defecto de la clase PedidoBiblioteca.
- */
-PedidoBiblioteca::PedidoBiblioteca() :
-	fecha() {
-	importe = 0;
-	tramitado = false;
-	num = 0;
-	this->pedido_usu = pedido_usu;
-}
-
-/**
  * @brief Método getter del atributo tramitado.
  * @return tramitado bool. Atributo de la clase.
  */

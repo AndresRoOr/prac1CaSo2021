@@ -6,6 +6,12 @@
 #include "Usuario.h"
 #include <cstring>
 
+Usuario::Usuario(){
+	this->clave="";
+	this->login="";
+	this->nombre="";
+}
+
 /**
  * @brief Constructor por defecto de la clase Usuario.
  */

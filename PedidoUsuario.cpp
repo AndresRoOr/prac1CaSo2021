@@ -29,8 +29,7 @@ PedidoUsuario::PedidoUsuario() :
  * @param [in] aPrecio float.
  * @param [in] aTramitado bool.
  */
-PedidoUsuario::PedidoUsuario(const Fecha &aFecha, int aPrioridad, float aPrecio, bool aTramitado, Usuario *usuario, Libro *libro) : &fecha(aFecha) {
-	fecha = aFecha;          ///< Copia de la fecha que queda registrada al hacer un pedido.
+PedidoUsuario::PedidoUsuario(const Fecha &aFecha, int aPrioridad, float aPrecio, bool aTramitado, Usuario *usuario, Libro *libro) : fecha(aFecha) {
 	prioridad = aPrioridad;  ///< Copia de la prioridad que queda registrada al hacer un pedido.
 	precio = aPrecio;        ///< Copia del precio de un pedido.
 	tramitado = aTramitado;  ///< Copia de la tramitaciÃ³n de un pedido.

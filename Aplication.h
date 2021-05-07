@@ -34,7 +34,7 @@ public:
 
 	void aplicacion_admin();
 
-	Aplication::Aplication& operator=(const Aplication& apl) {
+	Aplication& operator=(const Aplication& apl) {
 			this->bi = apl.bi;
 			this->usu = apl.usu;
 			this->lusu = apl.lusu;

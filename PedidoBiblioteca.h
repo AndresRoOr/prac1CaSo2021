@@ -22,7 +22,6 @@ class PedidoBiblioteca {
 
 public:
 
-	PedidoBiblioteca();
 
 	/**
 	 * @brief Constructor parametrizado de la clase PedidoBiblioteca.
@@ -40,7 +39,7 @@ public:
 	 * @brief Constructor por copia de la clase PedidoBiblioteca.
 	 * @param [in] pedbi PedidoBiblioteca (dir). Instancia de PedidoBiblioteca que se quiere copiar.
 	 */
-	PedidoBiblioteca(const PedidoBiblioteca &pedbi) {
+	PedidoBiblioteca(const PedidoBiblioteca& pedbi) {
 		this->fecha = pedbi.fecha;
 		this->importe = pedbi.importe;
 		this->tramitado = pedbi.tramitado;
@@ -57,6 +56,8 @@ public:
 	void insertaPedidoLibro(PedidoUsuario *pedidoUsuario);
 
 	void cierraPedido();
+
+
 
 	PedidoUsuario* daPedidoUsuario(unsigned i);
 
@@ -75,6 +76,7 @@ public:
 		this->pedido_usu = pedbi.pedido_usu;
 		return *this;
 	}
+
 
 	/**
 	 * @brief Destructor de la clase PedidoBiblioteca.

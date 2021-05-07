@@ -5,6 +5,15 @@
 
 #include "Libro.h"
 
+Libro::Libro(){
+	this->titulo="";
+	this->autores="";
+	this->editorial="";
+	this->ISBN="";
+	this->anio=0;
+	this->precioActual=0;
+}
+
 
 /**
  * @brief Constructor por defecto de la clase Libro.

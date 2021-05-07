@@ -23,6 +23,8 @@ class Libro {
 
 public:
 
+	Libro();
+
 	Libro(string titulo, string autores, string editorial, string ISBN);
 
 	Libro(string aTitulo, string aAutores, string aEditorial, string aISBN,	int aAnio, float aPrecioActual);
