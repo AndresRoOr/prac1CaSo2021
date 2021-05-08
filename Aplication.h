@@ -47,6 +47,20 @@ public:
 			return *this;
 		}
 
+	void mostrarMenu();
+
+	void mostrarListaPedidosPendientes(string alogin, string aclave);
+
+	void mostrarTramitarPedido();
+
+	void mostrarTramitarPedidosUsuario(string alogin, string aclave);
+
+	void mostrarConsultarPedidosUsuario(string alogin, string aclave);
+
+	void mostrarListaPedidosTramitados();
+
+	void mostrarListaPedidosPendientesBiblioteca();
+
 	/**
 	 * @brief	Destructor de la clase Aplication.
 	 */

@@ -44,72 +44,18 @@ void Aplication::aplicacion_admin() {
 		int opcion;
 
 		do {
-			cout
-					<< "  			#########   Bienvenido a la Administración de la biblioteca.   #########\n\n"
-					<< endl;
-			cout
-					<< "De entre las siguientes opciones indique la que quiera elegir, para salir pulse 0: "
-					<< endl << endl;
-			cout << " 		1.- Muestra lista de pedidos pendientes de un usuario."
-					<< endl;
-			cout << "  		2.- Cierra pedido biblioteca. " << endl;
-			cout << "		3.- Crear pedido biblioteca. " << endl;
-			cout << " 		4.- Tramitar pedidos de un usuario. " << endl;
-			cout
-					<< " 		5.- Muestra una lista de pedidos de un usuario tramitados. "
-					<< endl;
-			cout
-					<< " 		6.- Muestra una lista de pedidos tramitados de la biblioteca. "
-					<< endl;
-			cout
-					<< " 		7.- Muestra una lista de pedidos pendientes de la biblioteca. "
-					<< endl;
+			mostrarMenu();
 			cin >> opcion;
 			switch (opcion) {
 
 			case 1: {
 
-				cout
-						<< " Introduzca el usuario del cual quiere saber sus pedidos pendientes: "
-						<< endl;
-				cout << " Introduzca el login: " << endl;
-				cin >> alogin;
-				cout << " Introduzca la clave del usuario: " << endl;
-				cin >> aclave;
-
-				try {
-					unsigned i = 0;
-					usu = bi.buscaUsuario(alogin, aclave);
-					pedusu = bi.buscaPedidosUsuarioPendientes(usu);
-					while (i < pedusu->tamanio()) {
-						cout << *(pedusu->lee(i)) << endl;
-						i++;
-					}
-				} catch (bad_alloc&) {
-				} catch (const excepcionesBi::usuNoEncontrado& e) {
-					cerr << e.what();
-				} catch (const excepcionesBi::pedidoUsuarioNoencontrado& e) {
-					cerr << e.what();
-				} catch (const ErrorElemento& e) {
-					cerr << e.what();
-				}
+				mostrarListaPedidosPendientes(alogin, aclave);
 			}
 				break;
 
 			case 2: {
-				unsigned num;
-				cout
-						<< " Introduzca la numeración del pedido de la biblioteca que quiere tramitar: "
-						<< endl;
-				cin >> num;
-				num--;
-				try {
-					pedBi = bi.daListaPedBiblioteca(num);
-					bi.cierraPedidoBiblioteca(pedBi, num);
-				} catch (bad_alloc&) {
-				} catch (const excepcionesBi::pedidoBibliotecaNoencontrado& e) {
-					cerr << e.what();
-				}
+				mostrarTramitarPedido();
 			}
 				break;
 
@@ -123,114 +69,23 @@ void Aplication::aplicacion_admin() {
 				break;
 
 			case 4: {
-
-				unsigned nume_ped_bi;
-				PedidoUsuario * min = new PedidoUsuario;
-				cout
-						<< " Introduzca los datos del usuario del que quiere tramitar sus pedidos: "
-						<< endl;
-				cout << " Introudzca la clave del usuario: " << endl;
-				cin >> aclave;
-				cout << " Introduzca el login: " << endl;
-				cin >> alogin;
-				cout
-						<< " Introduzca el número del pedido de la biblioteca a la que quiere dirigir el pedido del usuario: "
-						<< endl;
-				cin >> nume_ped_bi;
-				nume_ped_bi--;
-				try {
-					unsigned i = 0;
-					pedBi = bi.daListaPedBiblioteca(nume_ped_bi); /// Obtengo el pedido biblioteca con el número especificado.
-					usu = bi.buscaUsuario(alogin, aclave);
-					pedusu = bi.buscaPedidosUsuarioPendientes(usu);
-					i = 0;
-					min = pedusu->lee(0);
-					while (i < pedusu->tamanio()) {
-						if (min->daPrioridad()
-								> pedusu->lee(i)->daPrioridad()) {
-							min = pedusu->lee(i);
-						}
-						i++;
-					}
-					bi.tramitaPedidoUsuario(min, pedBi);
-				} catch (bad_alloc&) {
-				} catch (const excepcionesBi::usuNoEncontrado& e) {
-					cerr << e.what();
-				} catch (const excepcionesBi::pedidoBibliotecaNoencontrado& e) {
-					cerr << e.what();
-				} catch (const ErrorElemento& e) {
-					cerr << e.what();
-				}
+				mostrarTramitarPedidosUsuario(alogin, aclave);
 			}
 				break;
 
 			case 5: {
-				unsigned i = 0;
-				i = 0;
-				cout
-						<< " Introduzca el usuario del que quiere saber sus pedidos pendientes: "
-						<< endl;
-				cout << " Introduzca la clave del usuario: " << endl;
-				cin >> aclave;
-				cout << " Introduzca el login: " << endl;
-				cin >> alogin;
-				try {
-					usu = bi.buscaUsuario(alogin, aclave);
-					pedusu = bi.buscaPedidosUsuarioTramitados(usu);
-
-					while (i < pedusu->tamanio()) {
-						cout << *(pedusu->lee(i)) << endl;
-						i++;
-					}
-				} catch (bad_alloc&) {
-				} catch (const excepcionesBi::usuNoEncontrado& e) {
-					cerr << e.what();
-				} catch (const ErrorElemento& e) {
-					cerr << e.what();
-				}
+				mostrarConsultarPedidosUsuario(alogin, aclave);
 			}
 				break;
 
 			case 6: {
 
-				try {
-					unsigned i = 0;
-					i = 0;
-					pedbi = bi.buscaPedidosBibliotecaTramitados();
-					cout
-							<< " La lista de pedidos de la bilioteca tramitados es la siguiente: "
-							<< endl;
-					while (i < pedbi->tamanio()) {
-						cout << *(pedbi->lee(i)) << endl;
-						i++;
-					}
-				} catch (bad_alloc&) {
-				} catch (const excepcionesBi::pedidoBibliotecaNoencontrado& e) {
-					cerr << e.what();
-				} catch (const ErrorElemento& e) {
-					cerr << e.what();
-				}
+				mostrarListaPedidosTramitados();
 			}
 				break;
 
 			case 7: {
-				unsigned i = 0;
-				i = 0;
-				try {
-					pedbi = bi.buscaPedidosBibliotecaPendientes();
-					cout
-							<< " La lista de pedidos de la bilioteca pendientes es la siguiente: "
-							<< endl;
-					while (i < pedbi->tamanio()) {
-						cout << *(pedbi->lee(i)) << endl;
-						i++;
-					}
-				} catch (bad_alloc&) {
-				} catch (const excepcionesBi::pedidoBibliotecaNoencontrado& e) {
-					cerr << e.what();
-				} catch (const ErrorElemento& e) {
-					cerr << e.what();
-				}
+				mostrarListaPedidosPendientesBiblioteca();
 			}
 			}
 		} while (opcion != 0);
@@ -332,4 +187,198 @@ void Aplication::aplicacion_usuario() {
 		}
 		}
 	} while (opcion != 0);
+}
+
+/**
+ * @brief Muestra el menú de interacción de la aplicación por pantalla
+ */
+void Aplication::mostrarMenu() {
+	cout
+			<< "  			#########   Bienvenido a la Administración de la biblioteca.   #########\n\n"
+			<< endl;
+	cout
+			<< "De entre las siguientes opciones indique la que quiera elegir, para salir pulse 0: "
+			<< endl << endl;
+	cout << " 		1.- Muestra lista de pedidos pendientes de un usuario." << endl;
+	cout << "  		2.- Cierra pedido biblioteca. " << endl;
+	cout << "		3.- Crear pedido biblioteca. " << endl;
+	cout << " 		4.- Tramitar pedidos de un usuario. " << endl;
+	cout << " 		5.- Muestra una lista de pedidos de un usuario tramitados. "
+			<< endl;
+	cout << " 		6.- Muestra una lista de pedidos tramitados de la biblioteca. "
+			<< endl;
+	cout << " 		7.- Muestra una lista de pedidos pendientes de la biblioteca. "
+			<< endl;
+}
+
+/**
+ * @brief Muestra por pantalla una lista con todos los pedidos pendientes de un usuario determinado
+ * @param [in] alogin string. Login del usuario
+ * @param [in] aclave string. Clave de acceso del usuario
+ */
+void Aplication::mostrarListaPedidosPendientes(string alogin, string aclave) {
+	cout
+			<< " Introduzca el usuario del cual quiere saber sus pedidos pendientes: "
+			<< endl;
+	cout << " Introduzca el login: " << endl;
+	cin >> alogin;
+	cout << " Introduzca la clave del usuario: " << endl;
+	cin >> aclave;
+
+	try {
+		unsigned i = 0;
+		usu = bi.buscaUsuario(alogin, aclave);
+		pedusu = bi.buscaPedidosUsuarioPendientes(usu);
+		while (i < pedusu->tamanio()) {
+			cout << *(pedusu->lee(i)) << endl;
+			i++;
+		}
+	} catch (bad_alloc&) {
+	} catch (const excepcionesBi::usuNoEncontrado& e) {
+		cerr << e.what();
+	} catch (const excepcionesBi::pedidoUsuarioNoencontrado& e) {
+		cerr << e.what();
+	} catch (const ErrorElemento& e) {
+		cerr << e.what();
+	}
+}
+
+/**
+ * @brief Permite tramitar un pedido de biblioteca determinado
+ */
+void Aplication::mostrarTramitarPedido() {
+	unsigned num;
+	cout
+			<< " Introduzca la numeración del pedido de la biblioteca que quiere tramitar: "
+			<< endl;
+	cin >> num;
+	num--;
+	try {
+		pedBi = bi.daListaPedBiblioteca(num);
+		bi.cierraPedidoBiblioteca(pedBi, num);
+	} catch (bad_alloc&) {
+	} catch (const excepcionesBi::pedidoBibliotecaNoencontrado& e) {
+		cerr << e.what();
+	}
+}
+
+/**
+ * @brief Tramita un pedido de un usuario determinado
+ * @param [in] alogin string. Login del usuario.
+ * @param [in] aclave string. Clave de acceso del usuario.
+ */
+void Aplication::mostrarTramitarPedidosUsuario(string alogin, string aclave) {
+	unsigned nume_ped_bi;
+	PedidoUsuario * min = new PedidoUsuario;
+	cout
+			<< " Introduzca los datos del usuario del que quiere tramitar sus pedidos: "
+			<< endl;
+	cout << " Introudzca la clave del usuario: " << endl;
+	cin >> aclave;
+	cout << " Introduzca el login: " << endl;
+	cin >> alogin;
+	cout
+			<< " Introduzca el número del pedido de la biblioteca a la que quiere dirigir el pedido del usuario: "
+			<< endl;
+	cin >> nume_ped_bi;
+	nume_ped_bi--;
+	try {
+		unsigned i = 0;
+		pedBi = bi.daListaPedBiblioteca(nume_ped_bi); /// Obtengo el pedido biblioteca con el número especificado.
+		usu = bi.buscaUsuario(alogin, aclave);
+		pedusu = bi.buscaPedidosUsuarioPendientes(usu);
+		i = 0;
+		min = pedusu->lee(0);
+		while (i < pedusu->tamanio()) {
+			if (min->daPrioridad() > pedusu->lee(i)->daPrioridad()) {
+				min = pedusu->lee(i);
+			}
+			i++;
+		}
+		bi.tramitaPedidoUsuario(min, pedBi);
+	} catch (bad_alloc&) {
+	} catch (const excepcionesBi::usuNoEncontrado& e) {
+		cerr << e.what();
+	} catch (const excepcionesBi::pedidoBibliotecaNoencontrado& e) {
+		cerr << e.what();
+	} catch (const ErrorElemento& e) {
+		cerr << e.what();
+	}
+}
+
+/**
+ * @brief Muestra por pantalla los pedidos pendientes de un usuario determinado
+ * @param [in] alogin string. Login del usuario
+ * @param [in] aclave string. Clave de acceso del usuario
+ */
+void Aplication::mostrarConsultarPedidosUsuario(string alogin, string aclave) {
+	unsigned i = 0;
+	i = 0;
+	cout
+			<< " Introduzca el usuario del que quiere saber sus pedidos pendientes: "
+			<< endl;
+	cout << " Introduzca la clave del usuario: " << endl;
+	cin >> aclave;
+	cout << " Introduzca el login: " << endl;
+	cin >> alogin;
+	try {
+		usu = bi.buscaUsuario(alogin, aclave);
+		pedusu = bi.buscaPedidosUsuarioTramitados(usu);
+
+		while (i < pedusu->tamanio()) {
+			cout << *(pedusu->lee(i)) << endl;
+			i++;
+		}
+	} catch (bad_alloc&) {
+	} catch (const excepcionesBi::usuNoEncontrado& e) {
+		cerr << e.what();
+	} catch (const ErrorElemento& e) {
+		cerr << e.what();
+	}
+}
+
+/**
+ * @brief Muestra por pantalla todos los pedidos de biblioteca que han sido tramitados
+ */
+void Aplication::mostrarListaPedidosTramitados() {
+	try {
+		unsigned i = 0;
+		i = 0;
+		pedbi = bi.buscaPedidosBibliotecaTramitados();
+		cout
+				<< " La lista de pedidos de la bilioteca tramitados es la siguiente: "
+				<< endl;
+		while (i < pedbi->tamanio()) {
+			cout << *(pedbi->lee(i)) << endl;
+			i++;
+		}
+	} catch (bad_alloc&) {
+	} catch (const excepcionesBi::pedidoBibliotecaNoencontrado& e) {
+		cerr << e.what();
+	} catch (const ErrorElemento& e) {
+		cerr << e.what();
+	}
+}
+
+/**
+ * @brief Muestra por pantalla todos los pedidos pendientes de Biblioteca.
+ */
+void Aplication::mostrarListaPedidosPendientesBiblioteca() {
+	unsigned i = 0;
+	i = 0;
+	try {
+		pedbi = bi.buscaPedidosBibliotecaPendientes();
+		cout
+				<< " La lista de pedidos de la bilioteca pendientes es la siguiente: "
+				<< endl;
+		while (i < pedbi->tamanio()) {
+			cout << *(pedbi->lee(i)) << endl;
+			i++;
+		}
+	} catch (bad_alloc&) {
+	} catch (const excepcionesBi::pedidoBibliotecaNoencontrado& e) {
+		cerr << e.what();
+	} catch (const ErrorElemento& e) {
+		cerr << e.what();
+	}
 }
