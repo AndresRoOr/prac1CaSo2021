@@ -44,9 +44,148 @@
  		
  		\paragraph{}Este módulo se encuentra en implementado en la línea 38 del archivo Aplication.cpp del proyecto. Su complejidad ciclomática es de V(G)=34 en la métrica de McCabe. En las siguientes capturas de pantalla se puede observar el estado de dicho módulo antes de realizar las correcciones oportunas.
  		
+ 		\begin{figure}[H]
+ 			\centering
+ 			\includegraphics[scale=0.45]{img/captura97.png}
+ 			\caption{Detalle del módulo a corregir.}
+ 			\label{captura97}
+ 		\end{figure}
+ 	
+ 		\begin{figure}[H]
+ 			\centering
+ 			\includegraphics[scale=0.45]{img/captura98.png}
+ 			\caption{Detalle del módulo a corregir.}
+ 			\label{captura98}
+ 		\end{figure}
+ 	
+ 		\begin{figure}[H]
+ 			\centering
+ 			\includegraphics[scale=0.45]{img/captura99.png}
+ 			\caption{Detalle del módulo a corregir.}
+ 			\label{captura99}
+ 		\end{figure}
  		
- 		
+ 		\begin{figure}[H]
+ 			\centering
+ 			\includegraphics[scale=0.5]{img/captura100.png}
+ 			\caption{Detalle del módulo a corregir.}
+ 			\label{captura100}
+ 		\end{figure}
+ 	
  		\subsubsection{Estado del módulo después de la corrección}
  		
-
+ 			\paragraph{}Como se puede observar en las capturas de pantalla del módulo en el apartado anterior se trata de un módulo con un altísimo número de líneas de código. Una primera estrategia que seguiremos será la de modularizar parte de este código.
+ 			
+ 			\paragraph{}En concreto, modularizaremos el código que se encuentra en cada uno de los \textit{case} para reducir la complejidad y la legibilidad del código. Una vez hecho esto, se crearán las siguientes funciones:
+ 			
+ 			\begin{itemize}
+ 				\item void Aplication::mostrarMenu()
+ 				\item void Aplication::mostrarListaPedidosPendientes(string alogin, string aclave)
+ 				\item void Aplication::mostrarTramitarPedido()
+ 				\item void Aplication::mostrarTramitarPedidosUsuario(string alogin, string aclave)
+ 				\item void Aplication::mostrarConsultarPedidosUsuario(string alogin, string aclave)
+ 				\item void Aplication::mostrarListaPedidosTramitados()
+ 				\item void Aplication::mostrarListaPedidosPendientesBiblioteca()
+ 			\end{itemize}
+ 		
+ 			\paragraph{}A continuación, presentamos capturas de pantalla de todos los módulos enumerados anteriormente.
+ 			
+ 			\begin{figure}[H]
+ 				\centering
+ 				\includegraphics[scale=0.5]{img/captura101.png}
+ 				\caption{Detalle del módulo mostrarMenu.}
+ 				\label{captura101}
+ 			\end{figure}
+ 			
+ 			\begin{figure}[H]
+ 				\centering
+ 				\includegraphics[scale=0.5]{img/captura102.png}
+ 				\caption{Detalle del módulo mostrarListaPedidosPendientes.}
+ 				\label{captura102}
+ 			\end{figure}
+ 		
+ 			\begin{figure}[H]
+ 				\centering
+ 				\includegraphics[scale=0.5]{img/captura103.png}
+ 				\caption{Detalle del módulo mostrarTramitarPedido.}
+ 				\label{captura103}
+ 			\end{figure}
+ 		
+ 			\begin{figure}[H]
+ 				\centering
+ 				\includegraphics[scale=0.5]{img/captura104.png}
+ 				\caption{Detalle del módulo mostrarTramitarPedidosUsuario.}
+ 				\label{captura104}
+ 			\end{figure}
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.5]{img/captura105.png}
+				\caption{Detalle del módulo mostrarConsultarPedidosUsuario.}
+				\label{captura105}
+			\end{figure}
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.5]{img/captura106.png}
+				\caption{Detalle del módulo mostrarListaPedidosTramitados.}
+				\label{captura106}
+			\end{figure}
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.5]{img/captura107.png}
+				\caption{Detalle del módulo mostrarListaPedidosPendientesBiblioteca.}
+				\label{captura107}
+			\end{figure}
+		
+			\paragraph{}Una vez creados todos los anteriores módulos el estado del módulo a corregir es el que se muestra en la siguiente captura de pantalla.
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.5]{img/captura108.png}
+				\caption{Detalle del módulo corregido.}
+				\label{captura108}
+			\end{figure}
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.7]{img/captura109.png}
+				\caption{Detalle del módulo corregido.}
+				\label{captura109}
+			\end{figure}
+		
+			\paragraph{}A continuación, realizamos un nuevo análisis de metriculator para comprobar en que grado hemos disminuido V(G). Obtenemos los siguientes resultados.
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.32]{img/captura110.png}
+				\caption{Resultados de metriculator tras las correcciones realizadas.}
+				\label{captura110}
+			\end{figure}
+		
+			\paragraph{}Podemos comprobar que hemos conseguido obtener un V(G)=9 en la métrica de McCabe, por lo que hemos conseguido cumplir con el objetivo de la corrección.
+			
+			\paragraph{}Para terminar, ejecutamos un nuevo test de cppcheck para comprobar que no arrastremos ningún error o warning en las funciones nuevas. Obtenemos los siguientes resultados.
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.32]{img/captura96.png}
+				\caption{Resultados de cppcheck tras las correcciones realizadas.}
+				\label{captura111}
+			\end{figure}
+		
+			\paragraph{}Podemos observar que no obtenemos ningún error, warning o aviso; por lo tanto, damos por concluida la corrección del módulo.
+			
+	\subsection{Corrección del módulo $"void$ $Aplication::aplicacion\_usuario()"$}
+	
+	\subsubsection{Estado del módulo antes de la corrección}
+	
+	\subsubsection{Estado del módulo después de la corrección}
+	
+	\subsection{Corrección del módulo $"void$ $Fecha::comprobarFecha(unsigned$ $aDia,$ $unsigned$ $aMes,$ $unsigned$ $aAnio,$ $unsigned$ $aHora,$ $unsigned$ $aMin)$ $const"$}
+	
+	\subsubsection{Estado del módulo antes de la corrección}
+	
+	\subsubsection{Estado del módulo después de la corrección}
 \newpage
