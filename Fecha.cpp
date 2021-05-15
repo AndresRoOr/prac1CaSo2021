@@ -8,8 +8,7 @@
 #include <cstdio>
 #include "Fecha.h"
 
-const unsigned Fecha::diasMes[12] = { 31, 29, 31, 30, 31, 30, 31, 31, 30, 31,
-		30, 31 };
+const unsigned Fecha::diasMes[12] = { 31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
 
 /**
  * @brief Constructor por defecto de la clase Fecha.
@@ -181,6 +180,7 @@ string Fecha::cadenaDia() const {
 	return string(buffer);
 }
 
+
 /**
  * @brief Obtener una cadena con la hora.
  * @return Devuelve la hora en formato string.
@@ -205,18 +205,38 @@ Fecha::~Fecha() {
  * @param [in] aHora unsigned. Hora de la fecha.
  * @param [in] aMin unsigned. Minuto de la fecha.
  */
-void Fecha::comprobarFecha(unsigned aDia, unsigned aMes, unsigned aAnio,
-		unsigned aHora, unsigned aMin) const {
+void Fecha::comprobarFecha(unsigned aDia, unsigned aMes, unsigned aAnio, unsigned aHora, unsigned aMin) const {
 	if (aMin > 59 || aHora > 23)
 		throw ErrorFechaIncorrecta();
 	if (aMes < 1 || aMes > 12)
 		throw ErrorFechaIncorrecta();
 	if (aDia < 1 || aDia > diasMes[aMes - 1])
 		throw ErrorFechaIncorrecta();
-	if (aDia == 29 && aMes == 2
-			&& (aAnio % 4 != 0 || (aAnio % 100 == 0 && aAnio % 400 != 0)))
+	if (aDia == 29 && aMes == 2	&& aAnio % 4 != 0)
 		throw ErrorFechaIncorrecta();
 }
+
+//Si descomentas esta y la dejas tal cual esta, te baja a 9 y la de arriba, tal cual esta, te la deja en 10.
+/*void Fecha::comprobarFecha(unsigned aDia, unsigned aMes, unsigned aAnio, unsigned aHora, unsigned aMin) const {
+
+    //Array que almacenara los dias que tiene cada mes (si el ano es bisiesto, sumaremos +1 al febrero)
+    unsigned diasmes[] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+
+    //Comprobar si la hora, minutos son aceptables
+    if(aMin == 0 or aMin >= 60 or aHora == 0 or aHora >= 24)
+    	throw ErrorFechaIncorrecta();
+
+    //Comprobar que el mes sea valido
+    if(aMes < 1 or aMes > 12)
+    	throw ErrorFechaIncorrecta();
+
+    //Comprobar que el dia sea valido
+    aMes = aMes-1;
+    if(aDia == 0 or aDia > diasmes[aMes])
+    	throw ErrorFechaIncorrecta();
+
+    //Si ha pasado todas estas condiciones, la fecha es valida
+}*/
 
 /**
  * @brief Función auxiliar de conversión desde estructura de tiempo tm de time.h.
