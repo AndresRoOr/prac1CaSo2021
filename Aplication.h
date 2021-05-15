@@ -61,6 +61,16 @@ public:
 
 	void mostrarListaPedidosPendientesBiblioteca();
 
+	void mostrarMenuUsuario();
+
+	void registro(string alogin, string anombre, string aclave);
+
+	void cambiaClave(string alogin, string aclave, string claven);
+
+	void consultaLibro(string atitulo);
+
+	void hazPedido(string aISBN, string atitulo);
+
 	/**
 	 * @brief	Destructor de la clase Aplication.
 	 */
