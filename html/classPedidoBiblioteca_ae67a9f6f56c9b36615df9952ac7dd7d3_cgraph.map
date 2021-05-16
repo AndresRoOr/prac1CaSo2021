@@ -1,5 +1,5 @@
 <map id="PedidoBiblioteca::insertaPedidoLibro" name="PedidoBiblioteca::insertaPedidoLibro">
 <area shape="rect" id="node1" title="Se inserta el pedido de un usuario a un libro en concreto en la estructura de datos." alt="" coords="5,23,189,65"/>
-<area shape="rect" id="node2" href="$classlista__sin.html#a799467fd5cb655e9be70e57701b4c80a" title="Añade un elemento nuevo a la lista_sin." alt="" coords="256,5,399,32"/>
+<area shape="rect" id="node2" href="$classlista__sin.html#ae83960b1dea93235e47e90068bb04cf7" title="Añade un elemento nuevo a la lista_sin." alt="" coords="256,5,399,32"/>
 <area shape="rect" id="node3" href="$classPedidoUsuario.html#a5054a655ba225d139101df6fdd2e047f" title="Método getter del atributo precio." alt="" coords="237,56,417,83"/>
 </map>

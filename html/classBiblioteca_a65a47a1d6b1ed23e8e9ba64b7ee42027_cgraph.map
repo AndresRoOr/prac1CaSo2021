@@ -1,9 +1,9 @@
 <map id="Biblioteca::buscaPedidosUsuarioPendientes" name="Biblioteca::buscaPedidosUsuarioPendientes">
 <area shape="rect" id="node1" title="Devuelve una lista con las refencias a todos los pedidos de un Usuario pendientes." alt="" coords="5,125,189,166"/>
-<area shape="rect" id="node2" href="$classlista__sin.html#a799467fd5cb655e9be70e57701b4c80a" title="Añade un elemento nuevo a la lista_sin." alt="" coords="269,5,411,32"/>
+<area shape="rect" id="node2" href="$classlista__sin.html#ae83960b1dea93235e47e90068bb04cf7" title="Añade un elemento nuevo a la lista_sin." alt="" coords="269,5,411,32"/>
 <area shape="rect" id="node3" href="$classUsuario.html#ab83b5bf1b61f6330e56c6c89e6e81e7f" title="Método getter del atributo login." alt="" coords="275,56,405,83"/>
 <area shape="rect" id="node4" href="$classPedidoUsuario.html#a941ba9486999ed392291be1df61478ac" title="Método getter del atributo tramitado." alt="" coords="237,107,443,133"/>
 <area shape="rect" id="node5" href="$classPedidoUsuario.html#aa2bc45cb599333f4e88f47842d54f563" title="Método getter del atributo ususario." alt="" coords="245,157,435,184"/>
-<area shape="rect" id="node6" href="$classlista__sin.html#a0bc9b82811a175ab607f7278ceac2132" title="Devuelve el objeto que se encuentra en la posición pasada como parámetro." alt="" coords="288,208,392,235"/>
-<area shape="rect" id="node7" href="$classlista__sin.html#ab5279c2eafb58f2fddec09fd814fd81e" title="Devuelve el tamaño de la lista_sin." alt="" coords="271,259,409,285"/>
+<area shape="rect" id="node6" href="$classlista__sin.html#aee3cd5cd030369fb005dff3bb4442035" title="Devuelve el objeto que se encuentra en la posición pasada como parámetro." alt="" coords="288,208,392,235"/>
+<area shape="rect" id="node7" href="$classlista__sin.html#a513e80506e2633a916345c0ca34f31c1" title="Devuelve el tamaño de la lista_sin." alt="" coords="271,259,409,285"/>
 </map>

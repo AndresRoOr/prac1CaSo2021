@@ -1,6 +1,7 @@
 var classBiblioteca =
 [
     [ "Biblioteca", "classBiblioteca.html#a5e12ea4e7a4edb14d210a41708fc1c10", null ],
+    [ "Biblioteca", "classBiblioteca.html#a48c524c9e609d4bff9f4d5b3cf71f82a", null ],
     [ "~Biblioteca", "classBiblioteca.html#ae3f55e8952ed4bdddb82ece48c52f6c0", null ],
     [ "abrePedidoBiblioteca", "classBiblioteca.html#a47e69811bf055693e17ddcec2da38d12", null ],
     [ "buscaPedidosBibliotecaPendientes", "classBiblioteca.html#a3d37a667ede7eac8bf7ab79c9ea91aa7", null ],
@@ -15,6 +16,7 @@ var classBiblioteca =
     [ "daLBiblioteca", "classBiblioteca.html#aa69ed9cf1a50c3d37f2a69c12bc4acf8", null ],
     [ "daListaPedBiblioteca", "classBiblioteca.html#a26f40c3834ff5718cea7b1e742ebfb0c", null ],
     [ "nuevoUsuario", "classBiblioteca.html#aa4c063048c2da1da78b87c35c531b9de", null ],
+    [ "operator=", "classBiblioteca.html#abce1755270472d57b8d19218abfeafb7", null ],
     [ "tramitaPedidoUsuario", "classBiblioteca.html#ab93622295e20ec1136344962e8886eea", null ],
     [ "libro", "classBiblioteca.html#a9b73834890c379465963c9346314fc1c", null ],
     [ "pedido_usu", "classBiblioteca.html#a9ec4b5ad6ad6e3d51f8b4b121a8b57e3", null ],

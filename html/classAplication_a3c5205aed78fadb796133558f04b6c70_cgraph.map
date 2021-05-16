@@ -1,0 +1,10 @@
+<map id="Aplication::mostrarTramitarPedido" name="Aplication::mostrarTramitarPedido">
+<area shape="rect" id="node1" title="Permite tramitar un pedido de biblioteca determinado." alt="" coords="5,123,205,164"/>
+<area shape="rect" id="node2" href="$classBiblioteca.html#aa85618140ee8be7b2b1a643e96e30d6f" title="Cierra un pedido de biblioteca marcándolo como tramitado." alt="" coords="282,64,458,105"/>
+<area shape="rect" id="node7" href="$classBiblioteca.html#a26f40c3834ff5718cea7b1e742ebfb0c" title="Devuelve la lista del pedido de la biblioteca del número de pedido que se le pasa." alt="" coords="255,130,485,157"/>
+<area shape="rect" id="node8" href="$classexcepcionesBi_1_1pedidoBibliotecaNoencontrado.html#ad33dd686353cb6449b7b1a23e7ccca52" title=" " alt="" coords="253,181,487,223"/>
+<area shape="rect" id="node3" href="$classPedidoBiblioteca.html#a7886124ecb1579d5887e1177a163dc7f" title="Da por concluido el trámite de hacer el pedido." alt="" coords="550,5,726,47"/>
+<area shape="rect" id="node4" href="$classPedidoBiblioteca.html#a1f35ca9770d64dd4cdc35f448d3991ec" title="Método getter del atributo num." alt="" coords="535,71,741,98"/>
+<area shape="rect" id="node5" href="$classlista__sin.html#aee3cd5cd030369fb005dff3bb4442035" title="Devuelve el objeto que se encuentra en la posición pasada como parámetro." alt="" coords="586,122,690,149"/>
+<area shape="rect" id="node6" href="$classlista__sin.html#a513e80506e2633a916345c0ca34f31c1" title="Devuelve el tamaño de la lista_sin." alt="" coords="569,173,707,199"/>
+</map>

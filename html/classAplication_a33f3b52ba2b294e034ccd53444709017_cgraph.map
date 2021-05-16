@@ -1,0 +1,10 @@
+<map id="Aplication::cambiaClave" name="Aplication::cambiaClave">
+<area shape="rect" id="node1" title="Cambia la contraseña de un usuario ofreciendo la anterior que tenia." alt="" coords="5,132,185,159"/>
+<area shape="rect" id="node2" href="$classBiblioteca.html#a1b41ecaa2b16d0b541747d9f56e8c5c5" title="Busca un Usuario en la biblioteca." alt="" coords="261,81,444,108"/>
+<area shape="rect" id="node7" href="$classUsuario.html#a6eaa8c8c13f25d4cb539aa432f163d23" title="Cambia el atributo clave con el string pasado como parámetro." alt="" coords="267,132,438,159"/>
+<area shape="rect" id="node8" href="$classexcepcionesBi_1_1usuNoEncontrado.html#a603c6ed8590d8ae941b3c9868561684e" title=" " alt="" coords="233,183,472,225"/>
+<area shape="rect" id="node3" href="$classUsuario.html#a9ae104370f83a125e1facc7e5aea3037" title="Método getter del atributo clave." alt="" coords="523,5,656,32"/>
+<area shape="rect" id="node4" href="$classUsuario.html#ab83b5bf1b61f6330e56c6c89e6e81e7f" title="Método getter del atributo login." alt="" coords="524,56,655,83"/>
+<area shape="rect" id="node5" href="$classlista__sin.html#aee3cd5cd030369fb005dff3bb4442035" title="Devuelve el objeto que se encuentra en la posición pasada como parámetro." alt="" coords="537,107,641,133"/>
+<area shape="rect" id="node6" href="$classlista__sin.html#a513e80506e2633a916345c0ca34f31c1" title="Devuelve el tamaño de la lista_sin." alt="" coords="520,157,659,184"/>
+</map>

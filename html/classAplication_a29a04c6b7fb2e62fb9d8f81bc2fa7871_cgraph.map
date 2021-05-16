@@ -1,0 +1,10 @@
+<map id="Aplication::mostrarListaPedidosTramitados" name="Aplication::mostrarListaPedidosTramitados">
+<area shape="rect" id="node1" title="Muestra por pantalla todos los pedidos de biblioteca que han sido tramitados." alt="" coords="5,179,183,221"/>
+<area shape="rect" id="node2" href="$classBiblioteca.html#a50f37e6e56e3188920bc7714ba07a6bf" title="Devuelve una lista de las referencias de los pedidos de biblioteca tramitados." alt="" coords="255,91,439,133"/>
+<area shape="rect" id="node5" href="$classlista__sin.html#aee3cd5cd030369fb005dff3bb4442035" title="Devuelve el objeto que se encuentra en la posición pasada como parámetro." alt="" coords="555,157,659,184"/>
+<area shape="rect" id="node7" href="$classexcepcionesBi_1_1pedidoBibliotecaNoencontrado.html#ad33dd686353cb6449b7b1a23e7ccca52" title=" " alt="" coords="231,209,464,250"/>
+<area shape="rect" id="node8" href="$classErrorElemento.html#a4c0843e3d714e573668d526b64db0576" title=" " alt="" coords="270,275,425,301"/>
+<area shape="rect" id="node3" href="$classlista__sin.html#ae83960b1dea93235e47e90068bb04cf7" title="Añade un elemento nuevo a la lista_sin." alt="" coords="536,5,679,32"/>
+<area shape="rect" id="node4" href="$classPedidoBiblioteca.html#a6cd15a1bd98be02a107251c92a43e7de" title="Método getter del atributo tramitado." alt="" coords="512,56,703,83"/>
+<area shape="rect" id="node6" href="$classlista__sin.html#a513e80506e2633a916345c0ca34f31c1" title="Devuelve el tamaño de la lista_sin." alt="" coords="538,107,677,133"/>
+</map>

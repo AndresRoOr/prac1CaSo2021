@@ -81,7 +81,7 @@ Libro::Libro(const Libro &lib) {
  * @brief Sobrecarga del operador << (de inserción) que permite entre otras cosas, mostrar un libro con cout.
  * @param [in]  co ostream. El propio flujo de salida (por referencia).
  * @param [in] Libro. Un libro en concreto con su título, ISBN, Editorial y autor/es (por referencia también).
- * @return [out] co. El flujo de salida ostream debidamente sobrecargado.
+ * @return El flujo de salida ostream debidamente sobrecargado.
  */
 ostream& operator<<(ostream& co, const Libro& l) {
 	co << "Titulo: " << l.titulo << endl << "ISBN: " << l.ISBN << endl

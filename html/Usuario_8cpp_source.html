@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>prac2G5: Usuario.cpp Source File</title>
+<title>prac4G5: Usuario.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -29,7 +29,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">prac2G5
+   <div id="projectname">prac4G5
    </div>
   </td>
  </tr>
@@ -93,66 +93,68 @@ $(document).ready(function(){initNavTree('Usuario_8cpp_source.html','');});
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Usuario_8h.html">Usuario.h</a>&quot;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;cstring&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classUsuario.html#aa85a5371a098dfba5449140d9b8a472f">   12</a></span>&#160;<a class="code" href="classUsuario.html#aa85a5371a098dfba5449140d9b8a472f">Usuario::Usuario</a>() {</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="classUsuario.html#a013ece9773a8eb8895e20b7656d5161c">nombre</a> = <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="classUsuario.html#a39ec5b6c04edfd5bdb6defc134039ca7">clave</a> = <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="classUsuario.html#a822d91d77f33cbde8fa864b610ca2208">login</a> = <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;}</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classUsuario.html#a9ae104370f83a125e1facc7e5aea3037">   22</a></span>&#160;<span class="keywordtype">string</span> <a class="code" href="classUsuario.html#a9ae104370f83a125e1facc7e5aea3037">Usuario::daClave</a>() {</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classUsuario.html#a39ec5b6c04edfd5bdb6defc134039ca7">clave</a>;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classUsuario.html#ab83b5bf1b61f6330e56c6c89e6e81e7f">   30</a></span>&#160;<span class="keywordtype">string</span> <a class="code" href="classUsuario.html#ab83b5bf1b61f6330e56c6c89e6e81e7f">Usuario::daLogin</a>() {</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classUsuario.html#a822d91d77f33cbde8fa864b610ca2208">login</a>;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classUsuario.html#a092d79d196a7f670186cd80bf4acdf99">   40</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classUsuario.html#a092d79d196a7f670186cd80bf4acdf99">Usuario::rellena</a>(<span class="keywordtype">string</span> anombre, <span class="keywordtype">string</span> alogin, <span class="keywordtype">string</span> aclave) {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="classUsuario.html#a013ece9773a8eb8895e20b7656d5161c">nombre</a> = anombre;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="classUsuario.html#a39ec5b6c04edfd5bdb6defc134039ca7">clave</a> = aclave;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="classUsuario.html#a822d91d77f33cbde8fa864b610ca2208">login</a> = alogin;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="classUsuario.html#a90900c725182e4d63e62088ce02f629d">   52</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="classUsuario.html#a90900c725182e4d63e62088ce02f629d">Usuario::validarClave</a>(<span class="keywordtype">string</span> claven) {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">if</span> (this-&gt;<a class="code" href="classUsuario.html#a39ec5b6c04edfd5bdb6defc134039ca7">clave</a> == claven)</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classUsuario.html#a6eaa8c8c13f25d4cb539aa432f163d23">   65</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classUsuario.html#a6eaa8c8c13f25d4cb539aa432f163d23">Usuario::cambiarClave</a>(<span class="keywordtype">string</span> claven) {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    this-&gt;<a class="code" href="classUsuario.html#a39ec5b6c04edfd5bdb6defc134039ca7">clave</a> = claven;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="classUsuario.html#a2f4b9bb5f409aa1ac14c2f91166ca5f7">   75</a></span>&#160;<span class="keywordtype">string</span> <a class="code" href="classUsuario.html#ab83b5bf1b61f6330e56c6c89e6e81e7f">Usuario::daLogin</a>(<a class="code" href="classUsuario.html">Usuario</a> *usuario) {</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classUsuario.html#a822d91d77f33cbde8fa864b610ca2208">login</a>;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="Usuario_8cpp.html#ab49ae7a692df482aae9d481849fd34f7">   85</a></span>&#160;ostream&amp; <a class="code" href="Usuario_8cpp.html#ab49ae7a692df482aae9d481849fd34f7">operator&lt;&lt;</a>(ostream&amp; co, <span class="keyword">const</span> <a class="code" href="classUsuario.html">Usuario</a>&amp; u) {</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    co &lt;&lt; u.<a class="code" href="classUsuario.html#a013ece9773a8eb8895e20b7656d5161c">nombre</a> &lt;&lt; endl &lt;&lt; u.<a class="code" href="classUsuario.html#a822d91d77f33cbde8fa864b610ca2208">login</a> &lt;&lt; endl;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">return</span> co;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="classUsuario.html#ab4096b0b8300ecb47b10c555fb09c997">   93</a></span>&#160;<a class="code" href="classUsuario.html#ab4096b0b8300ecb47b10c555fb09c997">Usuario::~Usuario</a>() {</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="classUsuario.html#aa85a5371a098dfba5449140d9b8a472f">    9</a></span>&#160;<a class="code" href="classUsuario.html#aa85a5371a098dfba5449140d9b8a472f">Usuario::Usuario</a>(){</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    this-&gt;<a class="code" href="classUsuario.html#a39ec5b6c04edfd5bdb6defc134039ca7">clave</a>=<span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    this-&gt;<a class="code" href="classUsuario.html#a822d91d77f33cbde8fa864b610ca2208">login</a>=<span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    this-&gt;<a class="code" href="classUsuario.html#a013ece9773a8eb8895e20b7656d5161c">nombre</a>=<span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;}</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classUsuario.html#ad26b68b47f7bc3928603120892a66a42">   18</a></span>&#160;<a class="code" href="classUsuario.html#aa85a5371a098dfba5449140d9b8a472f">Usuario::Usuario</a>(<span class="keywordtype">string</span> anombre = <span class="stringliteral">&quot;&quot;</span>, <span class="keywordtype">string</span> aclave = <span class="stringliteral">&quot;&quot;</span>, <span class="keywordtype">string</span> alogin = <span class="stringliteral">&quot;&quot;</span>) : nombre(anombre), clave(aclave), login(alogin ){}</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classUsuario.html#a9ae104370f83a125e1facc7e5aea3037">   24</a></span>&#160;<span class="keywordtype">string</span> <a class="code" href="classUsuario.html#a9ae104370f83a125e1facc7e5aea3037">Usuario::daClave</a>() {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classUsuario.html#a39ec5b6c04edfd5bdb6defc134039ca7">clave</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classUsuario.html#ab83b5bf1b61f6330e56c6c89e6e81e7f">   32</a></span>&#160;<span class="keywordtype">string</span> <a class="code" href="classUsuario.html#ab83b5bf1b61f6330e56c6c89e6e81e7f">Usuario::daLogin</a>() {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classUsuario.html#a822d91d77f33cbde8fa864b610ca2208">login</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classUsuario.html#a092d79d196a7f670186cd80bf4acdf99">   42</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classUsuario.html#a092d79d196a7f670186cd80bf4acdf99">Usuario::rellena</a>(<span class="keyword">const</span> <span class="keywordtype">string</span> anombre, <span class="keyword">const</span> <span class="keywordtype">string</span> alogin, <span class="keyword">const</span> <span class="keywordtype">string</span> aclave) {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="classUsuario.html#a013ece9773a8eb8895e20b7656d5161c">nombre</a> = anombre;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="classUsuario.html#a39ec5b6c04edfd5bdb6defc134039ca7">clave</a> = aclave;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="classUsuario.html#a822d91d77f33cbde8fa864b610ca2208">login</a> = alogin;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classUsuario.html#a90900c725182e4d63e62088ce02f629d">   54</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="classUsuario.html#a90900c725182e4d63e62088ce02f629d">Usuario::validarClave</a>(<span class="keyword">const</span> <span class="keywordtype">string</span> claven) {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">if</span> (this-&gt;<a class="code" href="classUsuario.html#a39ec5b6c04edfd5bdb6defc134039ca7">clave</a> == claven)</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="classUsuario.html#a6eaa8c8c13f25d4cb539aa432f163d23">   67</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classUsuario.html#a6eaa8c8c13f25d4cb539aa432f163d23">Usuario::cambiarClave</a>(<span class="keyword">const</span> <span class="keywordtype">string</span> claven) {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    this-&gt;<a class="code" href="classUsuario.html#a39ec5b6c04edfd5bdb6defc134039ca7">clave</a> = claven;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classUsuario.html#a2f4b9bb5f409aa1ac14c2f91166ca5f7">   77</a></span>&#160;<span class="keywordtype">string</span> <a class="code" href="classUsuario.html#ab83b5bf1b61f6330e56c6c89e6e81e7f">Usuario::daLogin</a>(<a class="code" href="classUsuario.html">Usuario</a> *usuario) {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classUsuario.html#a822d91d77f33cbde8fa864b610ca2208">login</a>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="Usuario_8cpp.html#ab49ae7a692df482aae9d481849fd34f7">   87</a></span>&#160;ostream&amp; <a class="code" href="Usuario_8cpp.html#ab49ae7a692df482aae9d481849fd34f7">operator&lt;&lt;</a>(ostream&amp; co, <span class="keyword">const</span> <a class="code" href="classUsuario.html">Usuario</a>&amp; u) {</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    co &lt;&lt; u.<a class="code" href="classUsuario.html#a013ece9773a8eb8895e20b7656d5161c">nombre</a> &lt;&lt; endl &lt;&lt; u.<a class="code" href="classUsuario.html#a822d91d77f33cbde8fa864b610ca2208">login</a> &lt;&lt; endl;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordflow">return</span> co;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;}</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="classUsuario.html#ab4096b0b8300ecb47b10c555fb09c997">   95</a></span>&#160;<a class="code" href="classUsuario.html#ab4096b0b8300ecb47b10c555fb09c997">Usuario::~Usuario</a>() {</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aUsuario_8cpp_html_ab49ae7a692df482aae9d481849fd34f7"><div class="ttname"><a href="Usuario_8cpp.html#ab49ae7a692df482aae9d481849fd34f7">operator&lt;&lt;</a></div><div class="ttdeci">ostream &amp; operator&lt;&lt;(ostream &amp;co, const Usuario &amp;u)</div><div class="ttdoc">Sobrecarga del operador &lt;&lt; (de inserción) que permite entre otras cosas mostrar un Usuario con cout.</div><div class="ttdef"><b>Definition:</b> <a href="Usuario_8cpp_source.html#l00085">Usuario.cpp:85</a></div></div>
+<div class="ttc" id="aUsuario_8cpp_html_ab49ae7a692df482aae9d481849fd34f7"><div class="ttname"><a href="Usuario_8cpp.html#ab49ae7a692df482aae9d481849fd34f7">operator&lt;&lt;</a></div><div class="ttdeci">ostream &amp; operator&lt;&lt;(ostream &amp;co, const Usuario &amp;u)</div><div class="ttdoc">Sobrecarga del operador &lt;&lt; (de inserción) que permite entre otras cosas mostrar un Usuario con cout.</div><div class="ttdef"><b>Definition:</b> <a href="Usuario_8cpp_source.html#l00087">Usuario.cpp:87</a></div></div>
 <div class="ttc" id="aclassUsuario_html"><div class="ttname"><a href="classUsuario.html">Usuario</a></div><div class="ttdoc">Clase que representa a un usuario de la biblioteca.</div><div class="ttdef"><b>Definition:</b> <a href="Usuario_8h_source.html#l00016">Usuario.h:16</a></div></div>
-<div class="ttc" id="aclassUsuario_html_ab4096b0b8300ecb47b10c555fb09c997"><div class="ttname"><a href="classUsuario.html#ab4096b0b8300ecb47b10c555fb09c997">Usuario::~Usuario</a></div><div class="ttdeci">~Usuario()</div><div class="ttdoc">Destructor de la clase Usuario.</div><div class="ttdef"><b>Definition:</b> <a href="Usuario_8cpp_source.html#l00093">Usuario.cpp:93</a></div></div>
+<div class="ttc" id="aclassUsuario_html_ab4096b0b8300ecb47b10c555fb09c997"><div class="ttname"><a href="classUsuario.html#ab4096b0b8300ecb47b10c555fb09c997">Usuario::~Usuario</a></div><div class="ttdeci">~Usuario()</div><div class="ttdoc">Destructor de la clase Usuario.</div><div class="ttdef"><b>Definition:</b> <a href="Usuario_8cpp_source.html#l00095">Usuario.cpp:95</a></div></div>
 <div class="ttc" id="aclassUsuario_html_a39ec5b6c04edfd5bdb6defc134039ca7"><div class="ttname"><a href="classUsuario.html#a39ec5b6c04edfd5bdb6defc134039ca7">Usuario::clave</a></div><div class="ttdeci">string clave</div><div class="ttdoc">Clave que lo autenticará ante el sistema.</div><div class="ttdef"><b>Definition:</b> <a href="Usuario_8h_source.html#l00018">Usuario.h:18</a></div></div>
-<div class="ttc" id="aclassUsuario_html_ab83b5bf1b61f6330e56c6c89e6e81e7f"><div class="ttname"><a href="classUsuario.html#ab83b5bf1b61f6330e56c6c89e6e81e7f">Usuario::daLogin</a></div><div class="ttdeci">string daLogin()</div><div class="ttdoc">Método getter del atributo login.</div><div class="ttdef"><b>Definition:</b> <a href="Usuario_8cpp_source.html#l00030">Usuario.cpp:30</a></div></div>
-<div class="ttc" id="aclassUsuario_html_a90900c725182e4d63e62088ce02f629d"><div class="ttname"><a href="classUsuario.html#a90900c725182e4d63e62088ce02f629d">Usuario::validarClave</a></div><div class="ttdeci">bool validarClave(string claven)</div><div class="ttdoc">Devuelve un booleano para saber si existe la clave.</div><div class="ttdef"><b>Definition:</b> <a href="Usuario_8cpp_source.html#l00052">Usuario.cpp:52</a></div></div>
-<div class="ttc" id="aclassUsuario_html_a9ae104370f83a125e1facc7e5aea3037"><div class="ttname"><a href="classUsuario.html#a9ae104370f83a125e1facc7e5aea3037">Usuario::daClave</a></div><div class="ttdeci">string daClave()</div><div class="ttdoc">Método getter del atributo clave.</div><div class="ttdef"><b>Definition:</b> <a href="Usuario_8cpp_source.html#l00022">Usuario.cpp:22</a></div></div>
-<div class="ttc" id="aclassUsuario_html_a6eaa8c8c13f25d4cb539aa432f163d23"><div class="ttname"><a href="classUsuario.html#a6eaa8c8c13f25d4cb539aa432f163d23">Usuario::cambiarClave</a></div><div class="ttdeci">void cambiarClave(string nuevaClave)</div><div class="ttdoc">Cambia el atributo clave con el string pasado como parámetro.</div><div class="ttdef"><b>Definition:</b> <a href="Usuario_8cpp_source.html#l00065">Usuario.cpp:65</a></div></div>
+<div class="ttc" id="aclassUsuario_html_ab83b5bf1b61f6330e56c6c89e6e81e7f"><div class="ttname"><a href="classUsuario.html#ab83b5bf1b61f6330e56c6c89e6e81e7f">Usuario::daLogin</a></div><div class="ttdeci">string daLogin()</div><div class="ttdoc">Método getter del atributo login.</div><div class="ttdef"><b>Definition:</b> <a href="Usuario_8cpp_source.html#l00032">Usuario.cpp:32</a></div></div>
+<div class="ttc" id="aclassUsuario_html_a90900c725182e4d63e62088ce02f629d"><div class="ttname"><a href="classUsuario.html#a90900c725182e4d63e62088ce02f629d">Usuario::validarClave</a></div><div class="ttdeci">bool validarClave(string claven)</div><div class="ttdoc">Devuelve un booleano para saber si existe la clave.</div><div class="ttdef"><b>Definition:</b> <a href="Usuario_8cpp_source.html#l00054">Usuario.cpp:54</a></div></div>
+<div class="ttc" id="aclassUsuario_html_a9ae104370f83a125e1facc7e5aea3037"><div class="ttname"><a href="classUsuario.html#a9ae104370f83a125e1facc7e5aea3037">Usuario::daClave</a></div><div class="ttdeci">string daClave()</div><div class="ttdoc">Método getter del atributo clave.</div><div class="ttdef"><b>Definition:</b> <a href="Usuario_8cpp_source.html#l00024">Usuario.cpp:24</a></div></div>
+<div class="ttc" id="aclassUsuario_html_a6eaa8c8c13f25d4cb539aa432f163d23"><div class="ttname"><a href="classUsuario.html#a6eaa8c8c13f25d4cb539aa432f163d23">Usuario::cambiarClave</a></div><div class="ttdeci">void cambiarClave(string nuevaClave)</div><div class="ttdoc">Cambia el atributo clave con el string pasado como parámetro.</div><div class="ttdef"><b>Definition:</b> <a href="Usuario_8cpp_source.html#l00067">Usuario.cpp:67</a></div></div>
 <div class="ttc" id="aclassUsuario_html_a822d91d77f33cbde8fa864b610ca2208"><div class="ttname"><a href="classUsuario.html#a822d91d77f33cbde8fa864b610ca2208">Usuario::login</a></div><div class="ttdeci">string login</div><div class="ttdoc">Login del usuario.</div><div class="ttdef"><b>Definition:</b> <a href="Usuario_8h_source.html#l00019">Usuario.h:19</a></div></div>
 <div class="ttc" id="aUsuario_8h_html"><div class="ttname"><a href="Usuario_8h.html">Usuario.h</a></div><div class="ttdoc">Archivo cabecera donde se almacena la información de la clase Usuario.</div></div>
-<div class="ttc" id="aclassUsuario_html_a092d79d196a7f670186cd80bf4acdf99"><div class="ttname"><a href="classUsuario.html#a092d79d196a7f670186cd80bf4acdf99">Usuario::rellena</a></div><div class="ttdeci">void rellena(string anombre, string alogin, string aclave)</div><div class="ttdoc">Función que asigna a un Usuario su nombre, su Clave, y por supuesto su Login.</div><div class="ttdef"><b>Definition:</b> <a href="Usuario_8cpp_source.html#l00040">Usuario.cpp:40</a></div></div>
-<div class="ttc" id="aclassUsuario_html_aa85a5371a098dfba5449140d9b8a472f"><div class="ttname"><a href="classUsuario.html#aa85a5371a098dfba5449140d9b8a472f">Usuario::Usuario</a></div><div class="ttdeci">Usuario()</div><div class="ttdoc">Constructor por defecto de la clase Usuario.</div><div class="ttdef"><b>Definition:</b> <a href="Usuario_8cpp_source.html#l00012">Usuario.cpp:12</a></div></div>
+<div class="ttc" id="aclassUsuario_html_a092d79d196a7f670186cd80bf4acdf99"><div class="ttname"><a href="classUsuario.html#a092d79d196a7f670186cd80bf4acdf99">Usuario::rellena</a></div><div class="ttdeci">void rellena(string anombre, string alogin, string aclave)</div><div class="ttdoc">Función que asigna a un Usuario su nombre, su Clave, y por supuesto su Login.</div><div class="ttdef"><b>Definition:</b> <a href="Usuario_8cpp_source.html#l00042">Usuario.cpp:42</a></div></div>
+<div class="ttc" id="aclassUsuario_html_aa85a5371a098dfba5449140d9b8a472f"><div class="ttname"><a href="classUsuario.html#aa85a5371a098dfba5449140d9b8a472f">Usuario::Usuario</a></div><div class="ttdeci">Usuario()</div><div class="ttdef"><b>Definition:</b> <a href="Usuario_8cpp_source.html#l00009">Usuario.cpp:9</a></div></div>
 <div class="ttc" id="aclassUsuario_html_a013ece9773a8eb8895e20b7656d5161c"><div class="ttname"><a href="classUsuario.html#a013ece9773a8eb8895e20b7656d5161c">Usuario::nombre</a></div><div class="ttdeci">string nombre</div><div class="ttdoc">Nombre del usuario.</div><div class="ttdef"><b>Definition:</b> <a href="Usuario_8h_source.html#l00017">Usuario.h:17</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

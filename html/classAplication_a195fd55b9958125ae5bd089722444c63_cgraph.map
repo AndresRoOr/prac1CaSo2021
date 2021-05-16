@@ -1,0 +1,10 @@
+<map id="Aplication::consultaLibro" name="Aplication::consultaLibro">
+<area shape="rect" id="node1" title="Hace la consulta de un libro en concreto." alt="" coords="5,157,188,184"/>
+<area shape="rect" id="node2" href="$classBiblioteca.html#ae9e4cef236ed508af0d2d8945dbd502b" title="Devuelve una lista con los libros que contengan el título que se le pasa como parámetro." alt="" coords="263,56,453,83"/>
+<area shape="rect" id="node5" href="$classlista__sin.html#aee3cd5cd030369fb005dff3bb4442035" title="Devuelve el objeto que se encuentra en la posición pasada como parámetro." alt="" coords="547,107,651,133"/>
+<area shape="rect" id="node6" href="$classlista__sin.html#a513e80506e2633a916345c0ca34f31c1" title="Devuelve el tamaño de la lista_sin." alt="" coords="530,157,669,184"/>
+<area shape="rect" id="node7" href="$classexcepcionesBi_1_1libroNoencontrado.html#a3575bb536ee50a9de4ba084704e01aec" title=" " alt="" coords="236,209,480,250"/>
+<area shape="rect" id="node8" href="$classErrorElemento.html#a4c0843e3d714e573668d526b64db0576" title=" " alt="" coords="281,275,435,301"/>
+<area shape="rect" id="node3" href="$classlista__sin.html#ae83960b1dea93235e47e90068bb04cf7" title="Añade un elemento nuevo a la lista_sin." alt="" coords="528,5,671,32"/>
+<area shape="rect" id="node4" href="$classLibro.html#a66965add10036095e6ec1a11bb83d104" title="Método getter del atributo título con parámetro." alt="" coords="542,56,657,83"/>
+</map>

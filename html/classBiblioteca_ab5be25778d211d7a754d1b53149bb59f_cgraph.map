@@ -1,4 +1,4 @@
 <map id="Biblioteca::cargaLibros" name="Biblioteca::cargaLibros">
 <area shape="rect" id="node1" title="Devuelve una lista con los libros que contengan el titulo que se le pasa como parametro." alt="" coords="5,5,176,32"/>
-<area shape="rect" id="node2" href="$classlista__sin.html#a799467fd5cb655e9be70e57701b4c80a" title="Añade un elemento nuevo a la lista_sin." alt="" coords="224,5,367,32"/>
+<area shape="rect" id="node2" href="$classlista__sin.html#ae83960b1dea93235e47e90068bb04cf7" title="Añade un elemento nuevo a la lista_sin." alt="" coords="224,5,367,32"/>
 </map>
