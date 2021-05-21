@@ -111,6 +111,8 @@ public:
 
 	void anadirAnios(int numAnios);
 
+	void comprobarAnio(unsigned aDia, unsigned aMes, unsigned aAnio) const;
+
 	void comprobarFecha(unsigned aDia, unsigned aMes, unsigned aAnio,
 			unsigned aHora, unsigned aMin) const;
 
