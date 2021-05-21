@@ -3,13 +3,15 @@ var hierarchy =
     [ "Aplication", "classAplication.html", null ],
     [ "Biblioteca", "classBiblioteca.html", null ],
     [ "exception", null, [
-      [ "ErrorElemento", "classErrorElemento.html", null ],
-      [ "excepcionesBi::errorApertura", "classexcepcionesBi_1_1errorApertura.html", null ],
       [ "excepcionesBi::libroNoencontrado", "classexcepcionesBi_1_1libroNoencontrado.html", null ],
-      [ "excepcionesBi::pedidoBibliotecaNoencontrado", "classexcepcionesBi_1_1pedidoBibliotecaNoencontrado.html", null ],
       [ "excepcionesBi::pedidoUsuarioNoencontrado", "classexcepcionesBi_1_1pedidoUsuarioNoencontrado.html", null ],
       [ "excepcionesBi::usuNoEncontrado", "classexcepcionesBi_1_1usuNoEncontrado.html", null ],
       [ "Fecha::ErrorFechaIncorrecta", "classFecha_1_1ErrorFechaIncorrecta.html", null ]
+    ] ],
+    [ "exception", null, [
+      [ "ErrorElemento", "classErrorElemento.html", null ],
+      [ "excepcionesBi::errorApertura", "classexcepcionesBi_1_1errorApertura.html", null ],
+      [ "excepcionesBi::pedidoBibliotecaNoencontrado", "classexcepcionesBi_1_1pedidoBibliotecaNoencontrado.html", null ]
     ] ],
     [ "Fecha", "classFecha.html", null ],
     [ "Libro", "classLibro.html", null ],

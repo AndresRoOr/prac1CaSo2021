@@ -1,7 +1,7 @@
 var searchData=
 [
   ['bi_16',['bi',['../classAplication.html#a81af8f8b76f2f16e4a032c6905bc3567',1,'Aplication']]],
-  ['biblioteca_17',['Biblioteca',['../classBiblioteca.html',1,'Biblioteca'],['../classBiblioteca.html#a5e12ea4e7a4edb14d210a41708fc1c10',1,'Biblioteca::Biblioteca()']]],
+  ['biblioteca_17',['Biblioteca',['../classBiblioteca.html',1,'Biblioteca'],['../classBiblioteca.html#a5e12ea4e7a4edb14d210a41708fc1c10',1,'Biblioteca::Biblioteca()'],['../classBiblioteca.html#a48c524c9e609d4bff9f4d5b3cf71f82a',1,'Biblioteca::Biblioteca(const Biblioteca &amp;bib)']]],
   ['biblioteca_2ecpp_18',['Biblioteca.cpp',['../Biblioteca_8cpp.html',1,'']]],
   ['biblioteca_2eh_19',['Biblioteca.h',['../Biblioteca_8h.html',1,'']]],
   ['buscapedidosbibliotecapendientes_20',['buscaPedidosBibliotecaPendientes',['../classBiblioteca.html#a3d37a667ede7eac8bf7ab79c9ea91aa7',1,'Biblioteca']]],

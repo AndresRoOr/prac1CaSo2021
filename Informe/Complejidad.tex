@@ -42,7 +42,7 @@
  	
  		\subsubsection{Estado del módulo antes de la corrección}
  		
- 		\paragraph{}Este módulo se encuentra en implementado en la línea 38 del archivo Aplication.cpp del proyecto. Su complejidad ciclomática es de V(G)=34 en la métrica de McCabe. En las siguientes capturas de pantalla se puede observar el estado de dicho módulo antes de realizar las correcciones oportunas.
+ 		\paragraph{}Este módulo se encuentra implementado en la línea 38 del archivo Aplication.cpp del proyecto. Su complejidad ciclomática es de V(G)=34 en la métrica de McCabe. En las siguientes capturas de pantalla se puede observar el estado de dicho módulo antes de realizar las correcciones oportunas.
  		
  		\begin{figure}[H]
  			\centering
@@ -181,11 +181,157 @@
 	
 	\subsubsection{Estado del módulo antes de la corrección}
 	
+		\paragraph{}Este módulo se encuentra implementado en la línea 100 del archivo Aplication.cpp del proyecto. Su complejidad ciclomática es de V(G) = 18 en la métrica de McCabe. En las siguientes capturas de pantalla se puede observar el estado de dicho módulo antes de realizar las correcciones oportunas.
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.1]{img/estebanFinal1.png}
+			\caption{Detalles del módulo a corregir.}
+			\label{estebanFinal1}
+		\end{figure}
+	
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.1]{img/estebanFinal2.png}
+			\caption{Detalles del módulo a corregir.}
+			\label{estebanFinal2}
+		\end{figure}
+	
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.1]{img/estebanFinal3.png}
+			\caption{Detalles del módulo a corregir.}
+			\label{estebanFinal3}
+		\end{figure}
+		
+		\paragraph{}Como hemos procedido anteriormente, modularizaremos el código que se encuentra en cada uno de los case para reducir la complejidad y la legibilidad del código. Una vez hecho esto, se crearán las siguientes funciones:
+		
+		\begin{itemize}
+			\item void Aplication::mostrarMenuUsuario();
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.9]{img/estebanFinal4.png}
+				\caption{Detalles del módulo mostrarMenuUsuario.}
+				\label{estebanFinal4}
+			\end{figure}
+		
+			\item void Aplication::registro(string alogin, string aclave, string aclave);
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.9]{img/estebanFinal5.png}
+				\caption{Detalles del módulo registro.}
+				\label{estebanFinal5}
+			\end{figure}
+		
+			\item void Aplication::cambiaClave(string alogin, string aclave, string claven);
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.9]{img/estebanFinal6.png}
+				\caption{Detalles del módulo cambiaClave.}
+				\label{estebanFinal6}
+			\end{figure}
+		
+			\item void Aplication::consultaLibro(string atitulo);
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.9]{img/estebanFinal7.png}
+				\caption{Detalles del módulo consultaLibro.}
+				\label{estebanFinal7}
+			\end{figure}
+		
+			\item void Aplication::hazPedido(string aISBN, string atitulo);
+		\end{itemize}
+	
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.9]{img/estebanFinal8.png}
+				\caption{Detalles del módulo hazPedido.}
+				\label{estebanFinal8}
+			\end{figure}
+	
 	\subsubsection{Estado del módulo después de la corrección}
+	
+		\paragraph{}Una vez creados todos los anteriores módulos el estado del módulo a corregir es el que se muestra en la siguiente captura de pantalla.
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.9]{img/estebanFinal9.png}
+			\caption{Detalles del módulo corregido.}
+			\label{estebanFinal9}
+		\end{figure}
+		
+		\paragraph{}A continuación, realizamos un nuevo análisis de metriculator para comprobar en qué grado hemos disminuido V(G). Obtenemos los siguientes resultados.
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.9]{img/estebanFinal10.png}
+			\caption{Resultados de metriculator tras las correcciones realizadas.}
+			\label{estebanFinal10}
+		\end{figure}
+		
+		\paragraph{}Con lo cual hemos reducido V(g) de 18 a 7 en void Aplication :: aplicacion usuario();
 	
 	\subsection{Corrección del módulo $"void$ $Fecha::comprobarFecha(unsigned$ $aDia,$ $unsigned$ $aMes,$ $unsigned$ $aAnio,$ $unsigned$ $aHora,$ $unsigned$ $aMin)$ $const"$}
 	
 	\subsubsection{Estado del módulo antes de la corrección}
 	
+	\paragraph{}Este módulo se encuentra implementado en la línea 208 del archivo Fecha.cpp del proyecto. Su complejidad ciclomática es de V(G) = 12 en la métrica de McCabe. En la siguiente captura de pantalla se puede observar el estado de dicho módulo antes de realizar las correcciones oportunas.
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.9]{img/estebanFinal11.png}
+		\caption{Detalle del módulo a corregir.}
+		\label{estebanFinal11}
+	\end{figure}
+	
+	\paragraph{}La complejidad de este módulo es debido a las numerosas comprobaciones que han de hacerse. Además, la gran cantidad de operadores tales como $|$$|$, \&\&, $<$, $>$, ==, ¡= aumentan este valor.
+	
+	\paragraph{}Observamos que hace la comprobación de si el año es bisiesto para añadirle un día más a febrero.
+	
+	\paragraph{}Se ha decidido obviar tal comprobación al parecer excesiva para el carácter de la práctica y hemos logrado reducir la V(g) del módulo de 12 hasta 10 como podemos observar en las siguientes imágenes.
+	
 	\subsubsection{Estado del módulo después de la corrección}
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.9]{img/estebanFinal12.png}
+		\caption{Detalle del módulo después de aplicar las correcciones.}
+		\label{estebanFinal12}
+	\end{figure}
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.9]{img/estebanFinal13.png}
+		\caption{Resultados de metriculator tras las correcciones realizadas.}
+		\label{estebanFinal13}
+	\end{figure}
+
+	\subsection{Estado del proyecto después de las correcciones}
+	
+	\paragraph{}Tras realizar todas las correcciones que se exponen en los apartados anteriores, volvemos a ejecutar los tests de metriculator y cppcheck para comprobar el estado final del proyecto. Los resultados arrojados se exponen a continuación:
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.32]{img/captura111.png}
+		\caption{Captura de pantalla de los resultados arrojados tras la ejecución de metriculator.}
+		\label{captura111}
+	\end{figure}
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.32]{img/captura112.png}
+		\caption{Captura de pantalla de los resultados arrojados tras la ejecución de cppcheck.}
+		\label{captura112}
+	\end{figure}
+
+	\paragraph{}Los resutados devueltos por metriculator están ordenados por el valor de McCabe, de mayor a menor, y se puede observar como no existe ningún módulo con un V(G)$>$10.
+	
+	\paragraph{}Tras ejecutar cpppcheck, este no nos devuelve ninguna incidencia.
+	
+	\paragraph{}Estos resultados nos permiten considerar como cumplidos satisfactoriamente los objetivos fijados para esta práctica.
+	
 \newpage

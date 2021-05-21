@@ -2,6 +2,6 @@
 <area shape="rect" id="node1" title="Busca un Usuario en la biblioteca." alt="" coords="5,81,188,108"/>
 <area shape="rect" id="node2" href="$classUsuario.html#a9ae104370f83a125e1facc7e5aea3037" title="Método getter del atributo clave." alt="" coords="239,5,372,32"/>
 <area shape="rect" id="node3" href="$classUsuario.html#ab83b5bf1b61f6330e56c6c89e6e81e7f" title="Método getter del atributo login." alt="" coords="240,56,371,83"/>
-<area shape="rect" id="node4" href="$classlista__sin.html#a0bc9b82811a175ab607f7278ceac2132" title="Devuelve el objeto que se encuentra en la posición pasada como parámetro." alt="" coords="253,107,357,133"/>
-<area shape="rect" id="node5" href="$classlista__sin.html#ab5279c2eafb58f2fddec09fd814fd81e" title="Devuelve el tamaño de la lista_sin." alt="" coords="236,157,375,184"/>
+<area shape="rect" id="node4" href="$classlista__sin.html#aee3cd5cd030369fb005dff3bb4442035" title="Devuelve el objeto que se encuentra en la posición pasada como parámetro." alt="" coords="253,107,357,133"/>
+<area shape="rect" id="node5" href="$classlista__sin.html#a513e80506e2633a916345c0ca34f31c1" title="Devuelve el tamaño de la lista_sin." alt="" coords="236,157,375,184"/>
 </map>

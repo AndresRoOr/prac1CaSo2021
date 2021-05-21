@@ -1,10 +1,10 @@
 var classLibro =
 [
     [ "Libro", "classLibro.html#a9892c534a717676fdd96b48bb2e0f8bc", null ],
+    [ "Libro", "classLibro.html#a4a92c72fee4e78393f50283f376aa7c3", null ],
     [ "Libro", "classLibro.html#a28268bd21c111a925b4c3bb0f9b034bb", null ],
     [ "Libro", "classLibro.html#a29478b07d3792787e5d5e8ad8ed8f3fe", null ],
     [ "~Libro", "classLibro.html#ab8e4fbae43d4cb308d61ebbadf7dd774", null ],
-    [ "daISBN", "classLibro.html#a560bc9e9e484c7717aeed024ac95d768", null ],
     [ "daPrecioActual", "classLibro.html#a4d1adcb439076ad7e6648b15c6a17365", null ],
     [ "daTitulo", "classLibro.html#a41db89f9bb9dd9a32da615dcbd392b39", null ],
     [ "daTitulo", "classLibro.html#a66965add10036095e6ec1a11bb83d104", null ],

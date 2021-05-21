@@ -1,0 +1,9 @@
+<map id="Aplication::registro" name="Aplication::registro">
+<area shape="rect" id="node1" title="Registra un usuario en la biblioteca." alt="" coords="5,107,151,133"/>
+<area shape="rect" id="node2" href="$classBiblioteca.html#aa4c063048c2da1da78b87c35c531b9de" title="Introduce un nuevo Usuario en la biblioteca." alt="" coords="199,107,384,133"/>
+<area shape="rect" id="node3" href="$classlista__sin.html#ae83960b1dea93235e47e90068bb04cf7" title="Añade un elemento nuevo a la lista_sin." alt="" coords="432,5,575,32"/>
+<area shape="rect" id="node4" href="$classUsuario.html#a9ae104370f83a125e1facc7e5aea3037" title="Método getter del atributo clave." alt="" coords="437,56,570,83"/>
+<area shape="rect" id="node5" href="$classlista__sin.html#aee3cd5cd030369fb005dff3bb4442035" title="Devuelve el objeto que se encuentra en la posición pasada como parámetro." alt="" coords="451,107,555,133"/>
+<area shape="rect" id="node6" href="$classUsuario.html#a092d79d196a7f670186cd80bf4acdf99" title="Función que asigna a un Usuario su nombre, su Clave, y por supuesto su Login." alt="" coords="441,157,566,184"/>
+<area shape="rect" id="node7" href="$classlista__sin.html#a513e80506e2633a916345c0ca34f31c1" title="Devuelve el tamaño de la lista_sin." alt="" coords="434,208,573,235"/>
+</map>
